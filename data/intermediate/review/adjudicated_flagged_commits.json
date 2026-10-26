@@ -1,0 +1,68 @@
+[
+ {
+  "id": 6,
+  "final": "TRUE",
+  "added_in_commit": true,
+  "reason": "New .api.ts files import .electron variants, exactly what the lint pattern forbids; suppressed inline, not exempted."
+ },
+ {
+  "id": 8,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "Type-only import, erased at build; shallow root commit without parent."
+ },
+ {
+  "id": 15,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "tokio::sync locks are executor-agnostic; maintainers deliberately canonicalized them, later listed as allowed."
+ },
+ {
+  "id": 16,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "Re-exports executor-agnostic tokio::sync channels as project primitive; no runtime coupling, later explicitly allowed."
+ },
+ {
+  "id": 17,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "Macros crate re-exports tokio for select! expansion; no runtime dependency; later explicitly allowed."
+ },
+ {
+  "id": 18,
+  "final": "TRUE",
+  "added_in_commit": false,
+  "reason": "Deployer tokio::process use broke the then-strict rule, but commit only renamed ec2/ to aws/."
+ },
+ {
+  "id": 19,
+  "final": "TRUE",
+  "added_in_commit": true,
+  "reason": "New deployer profile.rs adds tokio::process while rule forbade tokio outside runtime/."
+ },
+ {
+  "id": 27,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "Import only for HubConnectionState check, no direct hub calls; using moved from ChannelView.razor."
+ },
+ {
+  "id": 28,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "ui/helpers is a leaf package, not the ui handlers package; import swapped from http/html."
+ },
+ {
+  "id": 29,
+  "final": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "ui/paths is a leaf package with no domain imports; commit swapped from http/html/paths."
+ },
+ {
+  "id": 43,
+  "final": "TRUE",
+  "added_in_commit": false,
+  "reason": "Domain imports app.api.helpers, but existing app.helpers import was only retargeted when helpers moved."
+ }
+]

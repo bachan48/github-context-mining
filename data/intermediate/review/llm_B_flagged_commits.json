@@ -1,0 +1,284 @@
+[
+ {
+  "id": 0,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "program-libs/compressible newly imports light_sdk_types from sdk-libs, adding a Cargo dependency on it."
+ },
+ {
+  "id": 1,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "compressed-token program uses light_sdk and light_sdk_types; commit moved files, imports already existed."
+ },
+ {
+  "id": 2,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "Import is only for json.RawMessage type, which the rule text allows; no marshal calls."
+ },
+ {
+  "id": 3,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Shallow boundary commit; files call json.Marshal/Unmarshal directly, but no parent to show addition."
+ },
+ {
+  "id": 4,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Rules modifier imports effect/flows; commit has no parent (shallow boundary)."
+ },
+ {
+  "id": 5,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "New presenters import wx lazily inside functions despite avoid-import-wx guidance."
+ },
+ {
+  "id": 6,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "New .api.ts files re-export from .electron platform modules directly, with lint-disable comment."
+ },
+ {
+  "id": 7,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "popup/options import background telemetryEnums; shallow boundary commit, no parent."
+ },
+ {
+  "id": 8,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "background imports OptionsData from options store (type-only); shallow boundary, no parent."
+ },
+ {
+  "id": 9,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "Files moved within superset-core, the new home of former ui-core antd wrappers; imports pre-existed."
+ },
+ {
+  "id": 10,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "New src/theme/utils/antdTokenNames.ts imports antd directly outside superset-ui-core."
+ },
+ {
+  "id": 11,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "Antd wrapper code moved from exempt superset-ui-core into superset-core; imports pre-existed."
+ },
+ {
+  "id": 12,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Commit adds inline import torch in sys_fn_autograd.py, outside torch_backend.py."
+ },
+ {
+  "id": 13,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "overlord/dot is a graph helper, not an overlord/*state package; rule targets state packages."
+ },
+ {
+  "id": 14,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "configstate/config is a leaf package, not the configstate manager the rule forbids snapstate importing."
+ },
+ {
+  "id": 15,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "utils re-exports runtime-agnostic tokio::sync locks as canonical primitives; authors treat as allowed runtime utility."
+ },
+ {
+  "id": 16,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "utils channel module re-exports tokio::sync channels, the project's canonical wrapper; runtime-agnostic."
+ },
+ {
+  "id": 17,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "Macros crate re-exports tokio only so select! expands; not runtime coupling of protocol code."
+ },
+ {
+  "id": 18,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": false,
+  "reason": "deployer is explicitly allowed to use tokio; commit only renamed ec2 to aws."
+ },
+ {
+  "id": 19,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "New deployer profile.rs uses tokio::process; deployer is a command-line tool allowed to use tokio."
+ },
+ {
+  "id": 20,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "New direct import from fp-ts/Separated instead of via @std."
+ },
+ {
+  "id": 21,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Direct fp-ts/* imports outside src/std; shallow boundary commit with no parent."
+ },
+ {
+  "id": 22,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "output-md plugin imports from sibling feature output-html; features must not depend on each other."
+ },
+ {
+  "id": 23,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "std imports are gated behind the std-only reader feature; crate stays no_std by default."
+ },
+ {
+  "id": 24,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "dryRun.ts is the dry-run wrapper module around simple-git, which the file permits raw access."
+ },
+ {
+  "id": 25,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Packages import pkg/og legacy code; shallow boundary commit, no parent."
+ },
+ {
+  "id": 26,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "xtask crates use serde and serde_json directly; shallow boundary commit, no parent."
+ },
+ {
+  "id": 27,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "ChannelView reads ChatSignalR.HubConnection.State directly; code just moved from .razor to code-behind."
+ },
+ {
+  "id": 28,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "tokens imports ui/helpers; commit swapped existing html helper import for ui/helpers (migration)."
+ },
+ {
+  "id": 29,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Domain packages import ui/paths; commit only swapped prior http/html/paths import path."
+ },
+ {
+  "id": 30,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Adds new @mui/icons-material import in Users.util.tsx and UserSelectableList."
+ },
+ {
+  "id": 31,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Adds new @mui/icons-material import, against the do-not-use-MUI rule."
+ },
+ {
+  "id": 32,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Revert re-adds MUISwitch component files importing @mui/material."
+ },
+ {
+  "id": 33,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Revert re-adds MUISwitch files importing @mui/material, which the rule forbids."
+ },
+ {
+  "id": 34,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Revert re-adds DeleteModalMUI interface importing @mui/material."
+ },
+ {
+  "id": 35,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Revert re-adds MUI DeleteModal code importing @mui/material."
+ },
+ {
+  "id": 36,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "MUI imports only reformatted in this commit; already existed before."
+ },
+ {
+  "id": 37,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "MUI imports only reformatted to one line; already existed before."
+ },
+ {
+  "id": 38,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Queries import app.services; shallow boundary commit with no parent."
+ },
+ {
+  "id": 39,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Model adds type import of FallenDirection from view/PusherNode with eslint-disable; rule says never."
+ },
+ {
+  "id": 40,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Commit adds import pwndbg.color.context to pwndbg/lib/pretty_print.py."
+ },
+ {
+  "id": 41,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Adds import of pwndbg.color.context into lib, which may only import lib."
+ },
+ {
+  "id": 42,
+  "label": "TRUE",
+  "added_in_commit": true,
+  "reason": "Adds function-level import pwndbg.aglib.qemu in dbg_mod/gdb, which must never import aglib."
+ },
+ {
+  "id": 43,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Domain services import app.api.helpers; commit relocated existing helpers import during restructuring."
+ },
+ {
+  "id": 44,
+  "label": "TRUE",
+  "added_in_commit": false,
+  "reason": "Direct httpx use in cli utils; commit only renamed fastanime to viu."
+ },
+ {
+  "id": 45,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "Rule concerns zen_stores schemas; models only import sqlalchemy lazily or for type checking."
+ },
+ {
+  "id": 46,
+  "label": "FALSE_MAPPING",
+  "added_in_commit": true,
+  "reason": "sqlalchemy imported only under TYPE_CHECKING in models; not the schema-import rule's target."
+ }
+]

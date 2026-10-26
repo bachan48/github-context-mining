@@ -1,0 +1,1 @@
+{"repo": "dequelabs/axe-core", "n_before": 2, "n_after": 2, "labels": {"a8dd81be759c670203784acf7b1894257df5457c": {"signals": [], "bot": false, "agent": false}, "3af1fb77a5382af188b69004e90b0658c43d62ba": {"signals": ["S1"], "bot": false, "agent": true}}}

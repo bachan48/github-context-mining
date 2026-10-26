@@ -1,0 +1,1 @@
+{"repo": "openshift/console-operator", "head": "5d8737da0737350a4f581ba1279d38fe81a5a1de", "head_t": 1774608088, "docs": [{"kind": "ctx", "file": "AGENTS.md", "nvers": 3, "claims": []}, {"kind": "ctx", "file": "CLAUDE.md", "nvers": 2, "claims": []}, {"kind": "readme", "file": "README.md", "nvers": 1, "claims": []}]}

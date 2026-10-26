@@ -1,0 +1,1431 @@
+[
+ {
+  "id": 0,
+  "repo": "ChristianLempa/boilerplates",
+  "clone": "clones_full/ChristianLempa__boilerplates",
+  "rule_text": "- NEVER import `Console` from `rich.console` except in display manager classes or `cli/__main__.py`",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "cli/core/display/",
+    "cli/__main__.py"
+   ],
+   "ti": [],
+   "te": [
+    "rich.console"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 3,
+  "violations_at_snapshot": 3,
+  "examples_at_snapshot": [
+   "cli/core/input/input_manager.py: from rich.console import Console",
+   "cli/core/input/prompt_manager.py: from rich.console import Console",
+   "cli/core/prompt.py: from rich.console import Console"
+  ]
+ },
+ {
+  "id": 1,
+  "repo": "Lightprotocol/light-protocol",
+  "clone": "clones_full/Lightprotocol__light-protocol",
+  "rule_text": "- depend on other program-libs or external crates only",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "program-libs/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "programs/",
+    "anchor-programs/",
+    "sdk-libs/",
+    "program-tests/",
+    "sdk-tests/",
+    "forester/",
+    "forester-utils/",
+    "prover/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "program-libs/indexed-merkle-tree/src/reference.rs: use light_merkle_tree_reference::{MerkleTree, ReferenceMerkleTreeError};"
+  ]
+ },
+ {
+  "id": 2,
+  "repo": "Lightprotocol/light-protocol",
+  "clone": "clones_full/Lightprotocol__light-protocol",
+  "rule_text": "- depend on program-libs and external crates only",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "programs/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "sdk-libs/",
+    "program-tests/",
+    "sdk-tests/",
+    "forester/",
+    "forester-utils/",
+    "prover/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 9,
+  "violations_at_snapshot": 0,
+  "examples_at_snapshot": []
+ },
+ {
+  "id": 3,
+  "repo": "QuantumNous/new-api",
+  "clone": "clones_full/QuantumNous__new-api",
+  "rule_text": "Do NOT directly import or call `encoding/json` in business code. These wrappers exist for consistency and future extensibility (e.g., swapping to a faster JSON library).",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "common/json.go"
+   ],
+   "ti": [],
+   "te": [
+    "encoding/json"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 107,
+  "violations_at_snapshot": 107,
+  "examples_at_snapshot": [
+   "common/str.go: \"encoding/json\"",
+   "common/topup-ratio.go: \"encoding/json\"",
+   "common/utils.go: \"encoding/json\""
+  ]
+ },
+ {
+  "id": 4,
+  "repo": "SR5-FoundryVTT/SR5-FoundryVTT",
+  "clone": "clones_full/SR5-FoundryVTT__SR5-FoundryVTT",
+  "rule_text": "Flows wrap specific features or functions into a modularized file, either using objects or classes, allowing for better organization and reusability of code. Flows wrap both document and rule functionality. They can contain data manipulation and retrieval for other layers as well (documents, sheets); only rules shouldn't use flows.",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "src/module/rules/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "src/module/flows/",
+    "src/module/actor/flows/",
+    "src/module/item/flows/",
+    "src/module/effect/flows/",
+    "src/module/tests/flows/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "src/module/rules/modifiers/SituationModifier.ts: import { SituationModifierEffectsFlow } from '../../effect/flows/SituationModifierEffectsFlow';"
+  ]
+ },
+ {
+  "id": 5,
+  "repo": "SigmaNight/basiliskLLM",
+  "clone": "clones_full/SigmaNight__basiliskLLM",
+  "rule_text": "Business logic layer. Receive a view via constructor injection. Avoid `import wx` where possible \u2014 delegate wx calls to the view.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "basilisk/presenters/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "wx"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 9,
+  "violations_at_snapshot": 9,
+  "examples_at_snapshot": [
+   "basilisk/presenters/attachment_panel_presenter.py: import wx",
+   "basilisk/presenters/enhanced_error_presenter.py: import wx",
+   "basilisk/presenters/main_frame_presenter.py: import wx"
+  ]
+ },
+ {
+  "id": 6,
+  "repo": "adguardteam/adguardvpnextension",
+  "clone": "clones_full/adguardteam__adguardvpnextension",
+  "rule_text": "- Never import from `background/` into `popup/` or `options/` (or vice versa)",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "src/popup/",
+    "src/options/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "src/background/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 93,
+  "violations_at_snapshot": 93,
+  "examples_at_snapshot": [
+   "src/options/components/About/About.tsx: import { TelemetryActionName, TelemetryScreenName } from '../../../background/telemetry/telemetryEnums';",
+   "src/options/components/About/About.tsx: import { FORWARDER_URL_QUERIES } from '../../../background/config';",
+   "src/options/components/Account/Account.tsx: import { FORWARDER_URL_QUERIES } from '../../../background/config';"
+  ]
+ },
+ {
+  "id": 7,
+  "repo": "adguardteam/adguardvpnextension",
+  "clone": "clones_full/adguardteam__adguardvpnextension",
+  "rule_text": "- Never import from `background/` into `popup/` or `options/` (or vice versa)",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "src/background/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "src/popup/",
+    "src/options/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "src/background/messaging/messaging.ts: import { type OptionsData } from '../../options/stores/SettingsStore';"
+  ]
+ },
+ {
+  "id": 8,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "rule_text": "- **Use @superset-ui/core** - Don't import Ant Design directly, prefer Ant Design component wrappers from @superset-ui/core/components",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "superset-frontend/"
+   ],
+   "exceptions": [
+    "superset-frontend/packages/superset-ui-core/"
+   ],
+   "ti": [],
+   "te": [
+    "antd"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 22,
+  "violations_at_snapshot": 28,
+  "examples_at_snapshot": [
+   "superset-frontend/.storybook/preview.jsx: import { App, Layout, Space, Content } from 'antd';",
+   "superset-frontend/packages/superset-core/src/components/Alert/index.tsx: import { Alert as AntdAlert } from 'antd';",
+   "superset-frontend/packages/superset-core/src/theme/Theme.tsx: import { theme as antdThemeImport, ConfigProvider } from 'antd';"
+  ]
+ },
+ {
+  "id": 9,
+  "repo": "apereo/cas",
+  "clone": "clones_full/apereo__cas",
+  "rule_text": "**Key principle**: `api/` modules define contracts, `core/` implements them, `support/` adds features. Respect module boundaries.",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "api/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "core/",
+    "support/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 8,
+  "violations_at_snapshot": 8,
+  "examples_at_snapshot": [
+   "api/cas-server-core-api-configuration-model/src/main/java/org/apereo/cas/configuration/metadata/ConfigurationMetadataFieldVisitor.java: import org.springframework.boot.configurationmetadata.ConfigurationMetadataProperty;",
+   "api/cas-server-core-api-configuration-model/src/main/java/org/apereo/cas/configuration/metadata/ConfigurationMetadataGenerator.java: import org.springframework.boot.configurationmetadata.ConfigurationMetadataProperty;",
+   "api/cas-server-core-api-configuration-model/src/main/java/org/apereo/cas/configuration/metadata/ConfigurationMetadataGenerator.java: import org.springframework.boot.configurationmetadata.Deprecation;"
+  ]
+ },
+ {
+  "id": 10,
+  "repo": "apereo/cas",
+  "clone": "clones_full/apereo__cas",
+  "rule_text": "**Key principle**: `api/` modules define contracts, `core/` implements them, `support/` adds features. Respect module boundaries.",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "core/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "support/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 5,
+  "examples_at_snapshot": [
+   "core/cas-server-core-authentication/src/main/java/org/apereo/cas/config/CasCoreAuthenticationHandlersConfiguration.java: import org.apereo.cas.authentication.principal.resolvers.PersonDirectoryPrincipalResolver;",
+   "core/cas-server-core-util-api/src/main/java/org/apereo/cas/util/SystemUtils.java: import org.springframework.boot.SpringBootVersion;",
+   "core/cas-server-core-util-api/src/main/java/org/apereo/cas/util/spring/boot/AbstractCasSpringBootServletInitializer.java: import org.springframework.boot.Banner;"
+  ]
+ },
+ {
+  "id": 11,
+  "repo": "automattic/wpcom-legacy-redirector",
+  "clone": "clones_full/automattic__wpcom-legacy-redirector",
+  "rule_text": "- **DDD layering**: Domain classes must not depend on Infrastructure or Application.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "src/Domain/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "src/Infrastructure/",
+    "src/Application/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "src/Domain/SourceUrl.php: use Automattic\\LegacyRedirector\\Infrastructure\\WordPress\\UrlUtils;"
+  ]
+ },
+ {
+  "id": 12,
+  "repo": "blockscout/frontend",
+  "clone": "clones_full/blockscout__frontend",
+  "rule_text": "- Use `lib/date/dayjs.ts` instead of importing `dayjs` directly.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "lib/date/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "dayjs"
+   ],
+   "polarity": "only",
+   "sibling": null
+  },
+  "violations_at_writing": 3,
+  "violations_at_snapshot": 3,
+  "examples_at_snapshot": [
+   "toolkit/components/charts/parts/ChartMenu.tsx: import dayjs from 'dayjs';",
+   "toolkit/components/charts/parts/ChartSelectionX.tsx: import dayjs from 'dayjs';",
+   "toolkit/components/charts/parts/ChartSelectionX.tsx: import minMax from 'dayjs/plugin/minMax';"
+  ]
+ },
+ {
+  "id": 13,
+  "repo": "canonical/snapd",
+  "clone": "clones_full/canonical__snapd",
+  "rule_text": "- `snapstate` is imported BY other managers but CANNOT import them",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "overlord/snapstate/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "overlord/hookstate/",
+    "overlord/ifacestate/",
+    "overlord/devicestate/",
+    "overlord/assertstate/",
+    "overlord/configstate/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 8,
+  "violations_at_snapshot": 9,
+  "examples_at_snapshot": [
+   "overlord/snapstate/autorefresh.go: \"github.com/snapcore/snapd/overlord/configstate/config\"",
+   "overlord/snapstate/autorefresh_gating.go: \"github.com/snapcore/snapd/overlord/ifacestate/ifacerepo\"",
+   "overlord/snapstate/handlers.go: \"github.com/snapcore/snapd/overlord/configstate/config\""
+  ]
+ },
+ {
+  "id": 14,
+  "repo": "canonical/snapd",
+  "clone": "clones_full/canonical__snapd",
+  "rule_text": "- **`overlord/*state` packages**: Only for snapd daemon, not imported by CLI tools",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "cmd/snap/",
+    "cmd/snapctl/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "overlord/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 3,
+  "violations_at_snapshot": 4,
+  "examples_at_snapshot": [
+   "cmd/snap/cmd_debug_state.go: \"github.com/snapcore/snapd/overlord/dot\"",
+   "cmd/snap/cmd_debug_state.go: \"github.com/snapcore/snapd/overlord/ifacestate/schema\"",
+   "cmd/snap/cmd_debug_state.go: \"github.com/snapcore/snapd/overlord/state\""
+  ]
+ },
+ {
+  "id": 15,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "rule_text": "- Only card definitions (files run through the card loader) can use static ESM imports from `https://cardstack.com/base/*`. Host-side modules must load the module at runtime via `loader.import(`${baseRealm.url}...`)`. Static value imports from the HTTPS specifier inside host code trigger build-time `webpackMissingModule` failures. Type imports are OK using static ESM syntax.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "packages/host/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "https://cardstack.com/base/"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 37,
+  "violations_at_snapshot": 2,
+  "examples_at_snapshot": [
+   "packages/host/app/commands/patch-fields.ts: typeof import('https://cardstack.com/base/card-api')",
+   "packages/host/app/commands/patch-fields.ts: typeof import('https://cardstack.com/base/card-api')"
+  ]
+ },
+ {
+  "id": 16,
+  "repo": "cleder/fastkml",
+  "clone": "clones_full/cleder__fastkml",
+  "rule_text": "- **Constraint**: Do NOT import `lxml` or `xml.etree` directly.",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "fastkml/"
+   ],
+   "exceptions": [
+    "fastkml/config.py"
+   ],
+   "ti": [],
+   "te": [
+    "lxml",
+    "xml.etree"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "fastkml/validator.py: from lxml import etree"
+  ]
+ },
+ {
+  "id": 17,
+  "repo": "codereclaimers/neat-python",
+  "clone": "clones_full/codereclaimers__neat-python",
+  "rule_text": "- Pure Python only \u2014 no compiled extensions, no C dependencies, no NumPy/SciPy in core.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "neat/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "numpy",
+    "scipy"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "neat/gpu/__init__.py: import numpy"
+  ]
+ },
+ {
+  "id": 18,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "runtime/"
+   ],
+   "ti": [],
+   "te": [
+    "tokio"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 3,
+  "violations_at_snapshot": 7,
+  "examples_at_snapshot": [
+   "deployer/src/aws/create.rs: use tokio::process::Command;",
+   "deployer/src/aws/ec2.rs: use tokio::time::sleep;",
+   "deployer/src/aws/profile.rs: use tokio::process::Command;"
+  ]
+ },
+ {
+  "id": 19,
+  "repo": "cytoscape/cytoscape-web",
+  "clone": "clones_full/cytoscape__cytoscape-web",
+  "rule_text": "**Rules:** Models must NOT import from React or Zustand. Stores must NOT import React components. Features consume stores through hooks.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "src/models/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "react",
+    "zustand"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "src/models/RendererModel/Renderer.ts: import { ReactElement } from 'react'"
+  ]
+ },
+ {
+  "id": 20,
+  "repo": "cytoscape/cytoscape-web",
+  "clone": "clones_full/cytoscape__cytoscape-web",
+  "rule_text": "**Rules:** Models must NOT import from React or Zustand. Stores must NOT import React components. Features consume stores through hooks.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "src/data/hooks/stores/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "src/features/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 2,
+  "violations_at_snapshot": 2,
+  "examples_at_snapshot": [
+   "src/data/hooks/stores/RendererStore.ts: import { DefaultRenderer } from '../../../features/DefaultRenderer'",
+   "src/data/hooks/stores/useAppPanel.ts: import ExternalComponent from '../../../features/AppManager/ExternalComponent'"
+  ]
+ },
+ {
+  "id": 21,
+  "repo": "danielo515/obsidian-modal-form",
+  "clone": "clones_full/danielo515__obsidian-modal-form",
+  "rule_text": "- fp-ts namespace imports must use the single-letter aliases (`O`, `E`, `A`, etc.) imported from `@std` \u2014 direct imports from `fp-ts/*` paths violate the `fp-ts/no-lib-imports` rule.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "src/std/"
+   ],
+   "ti": [],
+   "te": [
+    "fp-ts"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 42,
+  "violations_at_snapshot": 43,
+  "examples_at_snapshot": [
+   "src/core/findInputDefinitionSchema.ts: import * as E from \"fp-ts/Either\";",
+   "src/core/formDataFromFormDefaults.ts: import * as R from 'fp-ts/Record';",
+   "src/core/formDataFromFormDefaults.ts: import * as O from 'fp-ts/Option';"
+  ]
+ },
+ {
+  "id": 22,
+  "repo": "deepspeedai/DeepSpeed",
+  "clone": "clones_full/deepspeedai__DeepSpeed",
+  "rule_text": "- `check-torchdist` hook: NEVER directly import torch's distributed module. Use `import deepspeed.comm as dist` instead.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "deepspeed/comm/"
+   ],
+   "ti": [],
+   "te": [
+    "torch.distributed"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 13,
+  "violations_at_snapshot": 13,
+  "examples_at_snapshot": [
+   "deepspeed/elasticity/elastic_agent.py: from torch.distributed.elastic.agent.server.local_elastic_agent import LocalElasticAgent",
+   "deepspeed/elasticity/elastic_agent.py: from torch.distributed.elastic.utils.distributed import get_free_port",
+   "deepspeed/elasticity/elastic_agent.py: from torch.distributed.elastic.metrics import put_metric"
+  ]
+ },
+ {
+  "id": 23,
+  "repo": "dusk-network/rusk",
+  "clone": "clones_full/dusk-network__rusk",
+  "rule_text": "- **`no_std`**: `contracts/*`, `core/`, `wallet-core/`, `data-drivers/` \u2014 don't add `std` imports",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "contracts/",
+    "core/",
+    "wallet-core/",
+    "data-drivers/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "std"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 3,
+  "examples_at_snapshot": [
+   "data-drivers/data-driver/src/lib.rs: extern crate std;",
+   "data-drivers/data-driver/src/reader.rs: use std::fmt::Debug;",
+   "data-drivers/data-driver/src/reader.rs: use std::sync::Arc;"
+  ]
+ },
+ {
+  "id": 24,
+  "repo": "getsentry/craft",
+  "clone": "clones_full/getsentry__craft",
+  "rule_text": "- `no-restricted-imports`: Blocks direct `simple-git` imports",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "src/utils/git.ts"
+   ],
+   "ti": [],
+   "te": [
+    "simple-git"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 2,
+  "violations_at_snapshot": 2,
+  "examples_at_snapshot": [
+   "src/commands/publish.ts: import { SimpleGit } from 'simple-git';",
+   "src/utils/dryRun.ts: import simpleGit, { type SimpleGit } from 'simple-git';"
+  ]
+ },
+ {
+  "id": 25,
+  "repo": "grafana/pyroscope",
+  "clone": "clones_full/grafana__pyroscope",
+  "rule_text": "1. **Don't** introduce dependencies on `pkg/og/` - this is legacy code being phased out",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "pkg/og/"
+   ],
+   "ti": [
+    "pkg/og/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 21,
+  "violations_at_snapshot": 21,
+  "examples_at_snapshot": [
+   "cmd/profilecli/canary_exporter_probes.go: \"github.com/grafana/pyroscope/pkg/og/structs/flamebearer\"",
+   "pkg/adhocprofiles/adhocprofiles.go: \"github.com/grafana/pyroscope/pkg/og/structs/flamebearer\"",
+   "pkg/adhocprofiles/adhocprofiles.go: \"github.com/grafana/pyroscope/pkg/og/structs/flamebearer/convert\""
+  ]
+ },
+ {
+  "id": 26,
+  "repo": "heroic-games-launcher/heroicgameslauncher",
+  "clone": "clones_full/heroic-games-launcher__heroicgameslauncher",
+  "rule_text": "- **No direct Electron imports in frontend** \u2014 everything goes through `window.api` (enforced by ESLint `no-restricted-imports`).",
+  "context_file": ".github/copilot-instructions.md",
+  "rule": {
+   "source": [
+    "src/frontend/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "electron"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 2,
+  "violations_at_snapshot": 2,
+  "examples_at_snapshot": [
+   "src/frontend/components/UI/Sidebar/index.tsx: import { WebviewTag } from 'electron'",
+   "src/frontend/state/GlobalState.tsx: import { IpcRendererEvent } from 'electron'"
+  ]
+ },
+ {
+  "id": 27,
+  "repo": "hyperledger-iroha/iroha",
+  "clone": "clones_full/hyperledger-iroha__iroha",
+  "rule_text": "- Serialization: Use Norito everywhere instead of serde. For binary codecs use `norito::{Encode, Decode}`; for JSON use the `norito::json` helpers/macros (`norito::json::from_*`, `to_*`, `json!`, `Value`) and never fall back to `serde_json`. Do not add direct `serde`/`serde_json` dependencies to crates; if serde is required internally, rely on Norito\u2019s wrappers.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "crates/norito/"
+   ],
+   "ti": [],
+   "te": [
+    "serde",
+    "serde_json"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 24,
+  "violations_at_snapshot": 24,
+  "examples_at_snapshot": [
+   "xtask/src/bin/control_plane_mock.rs: use serde::{Deserialize, Serialize};",
+   "xtask/src/bin/control_plane_mock.rs: use serde_json::{Value, json};",
+   "xtask/src/bin/torii_mock_harness.rs: use serde::Deserialize;"
+  ]
+ },
+ {
+  "id": 28,
+  "repo": "janbjorge/PgQueuer",
+  "clone": "clones_full/janbjorge__PgQueuer",
+  "rule_text": "2. **Ports** (`pgqueuer/ports/`) must NOT import from adapters or core",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "pgqueuer/ports/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "pgqueuer/adapters/",
+    "pgqueuer/core/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "pgqueuer/ports/driver.py: from pgqueuer.core.tm import TaskManager"
+  ]
+ },
+ {
+  "id": 29,
+  "repo": "janbjorge/PgQueuer",
+  "clone": "clones_full/janbjorge__PgQueuer",
+  "rule_text": "3. **Core** (`pgqueuer/core/`) must NOT import from adapters (exceptions listed in `pyproject.toml` for migration period)",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "pgqueuer/core/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "pgqueuer/adapters/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 8,
+  "violations_at_snapshot": 8,
+  "examples_at_snapshot": [
+   "pgqueuer/core/applications.py: from pgqueuer.adapters.drivers.asyncpg import AsyncpgDriver, AsyncpgPoolDriver",
+   "pgqueuer/core/applications.py: from pgqueuer.adapters.drivers.psycopg import PsycopgDriver",
+   "pgqueuer/core/applications.py: from pgqueuer.adapters.inmemory import InMemoryDriver, InMemoryQueries"
+  ]
+ },
+ {
+  "id": 30,
+  "repo": "kumahq/kuma",
+  "clone": "clones_full/kumahq__kuma",
+  "rule_text": "- **`pkg/` cannot import `app/`**: architectural boundary enforced by depguard linter",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "pkg/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "app/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "pkg/api-server/gui_handler.go: \"github.com/kumahq/kuma/v2/app/kuma-ui/pkg/resources\""
+  ]
+ },
+ {
+  "id": 31,
+  "repo": "logicalclocks/hopsworks-api",
+  "clone": "clones_full/logicalclocks__hopsworks-api",
+  "rule_text": "- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",
+  "context_file": ".claude/CLAUDE.md",
+  "rule": {
+   "source": [
+    "python/hopsworks_common/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "python/hopsworks/",
+    "python/hsfs/",
+    "python/hsml/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 127,
+  "violations_at_snapshot": 124,
+  "examples_at_snapshot": [
+   "python/hopsworks_common/connection.py: from hsfs import feature_store",
+   "python/hopsworks_common/connection.py: from hsml.model_registry import ModelRegistry",
+   "python/hopsworks_common/connection.py: from hsml.model_serving import ModelServing"
+  ]
+ },
+ {
+  "id": 32,
+  "repo": "logicalclocks/hopsworks-api",
+  "clone": "clones_full/logicalclocks__hopsworks-api",
+  "rule_text": "- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",
+  "context_file": ".claude/CLAUDE.md",
+  "rule": {
+   "source": [
+    "python/hsfs/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "python/hsml/",
+    "python/hopsworks/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 14,
+  "violations_at_snapshot": 14,
+  "examples_at_snapshot": [
+   "python/hsfs/core/explicit_provenance.py: from hsml import model",
+   "python/hsfs/core/explicit_provenance.py: from hsml.core import explicit_provenance as hsml_explicit_provenance",
+   "python/hsfs/core/explicit_provenance.py: import hopsworks"
+  ]
+ },
+ {
+  "id": 33,
+  "repo": "logicalclocks/hopsworks-api",
+  "clone": "clones_full/logicalclocks__hopsworks-api",
+  "rule_text": "- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",
+  "context_file": ".claude/CLAUDE.md",
+  "rule": {
+   "source": [
+    "python/hsml/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "python/hsfs/",
+    "python/hopsworks/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 12,
+  "violations_at_snapshot": 12,
+  "examples_at_snapshot": [
+   "python/hsml/core/explicit_provenance.py: from hsfs import feature_view, training_dataset",
+   "python/hsml/core/explicit_provenance.py: from hsfs import feature_view",
+   "python/hsml/core/explicit_provenance.py: from hsfs.core import explicit_provenance as hsfs_explicit_provenance"
+  ]
+ },
+ {
+  "id": 34,
+  "repo": "martpie/museeks",
+  "clone": "clones_full/martpie__museeks",
+  "rule_text": "- Never call `invoke` directly from React components \u2014 extend the `bridge-*.ts` helpers in `src/lib` (or re-use the same pattern).",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "src/components/",
+    "src/elements/",
+    "src/routes/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "@tauri-apps/api/core::invoke"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 1,
+  "violations_at_snapshot": 1,
+  "examples_at_snapshot": [
+   "src/routes/settings.tsx: import { invoke } from '@tauri-apps/api/core';"
+  ]
+ },
+ {
+  "id": 35,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "rule_text": "- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library \u2014 do not use MUI or introduce new MUI dependencies.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "openmetadata-ui/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "@mui/"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 132,
+  "violations_at_snapshot": 74,
+  "examples_at_snapshot": [
+   "openmetadata-ui/src/main/resources/ui/src/@types/mui-theme-inline.d.ts: import '@mui/material/Chip';",
+   "openmetadata-ui/src/main/resources/ui/src/@types/mui-theme-inline.d.ts: import '@mui/material/styles';",
+   "openmetadata-ui/src/main/resources/ui/src/App.tsx: import GlobalStyles from '@mui/material/GlobalStyles';"
+  ]
+ },
+ {
+  "id": 36,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "rule_text": "- **MUI**: Do not use MUI \u2014 we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "openmetadata-ui/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "@mui/",
+    "@emotion/"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 132,
+  "violations_at_snapshot": 74,
+  "examples_at_snapshot": [
+   "openmetadata-ui/src/main/resources/ui/src/@types/mui-theme-inline.d.ts: import '@mui/material/Chip';",
+   "openmetadata-ui/src/main/resources/ui/src/@types/mui-theme-inline.d.ts: import '@mui/material/styles';",
+   "openmetadata-ui/src/main/resources/ui/src/App.tsx: import GlobalStyles from '@mui/material/GlobalStyles';"
+  ]
+ },
+ {
+  "id": 37,
+  "repo": "openstreetmap-ng/openstreetmap-ng",
+  "clone": "clones_full/openstreetmap-ng__openstreetmap-ng",
+  "rule_text": "- Layering: controller \u2192 service \u2192 query. Controllers validate and orchestrate; services mutate; queries are side\u2011effect\u2011free. Read\u2011only lookup methods (even complex ones combining multiple conditions) belong in queries, not services.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "app/queries/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "app/services/",
+    "app/controllers/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 5,
+  "examples_at_snapshot": [
+   "app/queries/gravatar_query.py: from app.services.cache_service import CacheContext, CacheService",
+   "app/queries/nominatim_query.py: from app.services.cache_service import CacheContext, CacheService",
+   "app/queries/oauth2_token_query.py: from app.services.system_app_service import SYSTEM_APP_CLIENT_ID_MAP"
+  ]
+ },
+ {
+  "id": 38,
+  "repo": "phetsims/forces-and-motion-basics",
+  "clone": "clones_full/phetsims__forces-and-motion-basics",
+  "rule_text": "- Model classes should never import from view",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "js/motion/model/",
+    "js/netforce/model/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "js/common/view/",
+    "js/motion/view/",
+    "js/netforce/view/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 2,
+  "violations_at_snapshot": 2,
+  "examples_at_snapshot": [
+   "js/motion/model/MotionModel.ts: import MotionScreenView from '../view/MotionScreenView.js';",
+   "js/motion/model/MotionModel.ts: import { FallenDirection } from '../view/PusherNode.js';"
+  ]
+ },
+ {
+  "id": 39,
+  "repo": "pulumi/pulumi-java",
+  "clone": "clones_full/pulumi__pulumi-java",
+  "rule_text": "- `pkg/` Go code (outside `codegen/` and `testing/`) must not import `github.com/pulumi/pulumi/pkg/v3/` \u2014 enforced by `make lint`.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "pkg/"
+   ],
+   "exceptions": [
+    "pkg/codegen/",
+    "pkg/testing/"
+   ],
+   "ti": [],
+   "te": [
+    "github.com/pulumi/pulumi/pkg/v3"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 5,
+  "examples_at_snapshot": [
+   "pkg/cmd/pulumi-java-gen/generate.go: pschema \"github.com/pulumi/pulumi/pkg/v3/codegen/schema\"",
+   "pkg/cmd/pulumi-java-gen/util.go: pschema \"github.com/pulumi/pulumi/pkg/v3/codegen/schema\"",
+   "pkg/cmd/pulumi-language-java/main.go: hclsyntax \"github.com/pulumi/pulumi/pkg/v3/codegen/hcl2/syntax\""
+  ]
+ },
+ {
+  "id": 40,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "rule_text": "pwndbg/commands/     -> User-facing commands (NOT an API, don't import!)",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "pwndbg/commands/"
+   ],
+   "ti": [
+    "pwndbg/commands/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 20,
+  "violations_at_snapshot": 19,
+  "examples_at_snapshot": [
+   "profiling/benchmark.py: import pwndbg.commands",
+   "profiling/benchmark.py: import pwndbg.commands.context",
+   "profiling/benchmark.py: import pwndbg.commands.telescope"
+  ]
+ },
+ {
+  "id": 41,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "rule_text": "(lib can ONLY import from lib)",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "pwndbg/lib/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "pwndbg/aglib/",
+    "pwndbg/color/",
+    "pwndbg/commands/",
+    "pwndbg/dbg_mod/",
+    "pwndbg/emu/",
+    "pwndbg/gdblib/",
+    "pwndbg/integration/",
+    "pwndbg/wrappers/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 6,
+  "examples_at_snapshot": [
+   "pwndbg/lib/exception.py: import pwndbg.color as color",
+   "pwndbg/lib/pretty_print.py: import pwndbg.color",
+   "pwndbg/lib/pretty_print.py: import pwndbg.color.context"
+  ]
+ },
+ {
+  "id": 42,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "rule_text": "1. **`pwndbg/lib/` only imports `pwndbg/lib/`** - No debugger dependencies allowed",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "pwndbg/lib/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "pwndbg/aglib/",
+    "pwndbg/color/",
+    "pwndbg/commands/",
+    "pwndbg/dbg_mod/",
+    "pwndbg/emu/",
+    "pwndbg/gdblib/",
+    "pwndbg/integration/",
+    "pwndbg/wrappers/"
+   ],
+   "te": [
+    "gdb",
+    "lldb"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 6,
+  "examples_at_snapshot": [
+   "pwndbg/lib/exception.py: import pwndbg.color as color",
+   "pwndbg/lib/pretty_print.py: import pwndbg.color",
+   "pwndbg/lib/pretty_print.py: import pwndbg.color.context"
+  ]
+ },
+ {
+  "id": 43,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "rule_text": "2. **`pwndbg/dbg_mod/` never imports `aglib`** - Dependency goes the other way",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "pwndbg/dbg_mod/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "pwndbg/aglib/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 30,
+  "violations_at_snapshot": 31,
+  "examples_at_snapshot": [
+   "pwndbg/dbg_mod/gdb/__init__.py: import pwndbg.aglib",
+   "pwndbg/dbg_mod/gdb/__init__.py: import pwndbg.aglib",
+   "pwndbg/dbg_mod/gdb/__init__.py: import pwndbg.aglib.qemu"
+  ]
+ },
+ {
+  "id": 44,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "rule_text": "A command should never use gdb/lldb directly and only use aglib.",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "pwndbg/commands/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "gdb",
+    "lldb"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 22,
+  "violations_at_snapshot": 22,
+  "examples_at_snapshot": [
+   "pwndbg/commands/__init__.py: import gdb",
+   "pwndbg/commands/ai.py: import gdb",
+   "pwndbg/commands/aslr.py: import gdb"
+  ]
+ },
+ {
+  "id": 45,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "recidiviz/"
+   ],
+   "exceptions": [
+    "recidiviz/tests/"
+   ],
+   "ti": [
+    "recidiviz/tests/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 10,
+  "violations_at_snapshot": 10,
+  "examples_at_snapshot": [
+   "recidiviz/big_query/big_query_client.py: from recidiviz.tests.test_setup_utils import (  # pylint: disable=import-outside-toplevel",
+   "recidiviz/tools/ingest/development/region_files_generator.py: from recidiviz.tests.ingest.direct import (",
+   "recidiviz/tools/ingest/development/region_files_generator.py: from recidiviz.tests.ingest.direct import ("
+  ]
+ },
+ {
+  "id": 46,
+  "repo": "redhatinsights/insights-chrome",
+  "clone": "clones_full/redhatinsights__insights-chrome",
+  "rule_text": "- \u26a0\ufe0f ESLint enforces: Do NOT import directly from `react-oidc-context` or `oidc-client-ts` outside [src/auth/OIDCConnector/](src/auth/OIDCConnector/)",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "src/auth/OIDCConnector/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "react-oidc-context",
+    "oidc-client-ts"
+   ],
+   "polarity": "only",
+   "sibling": null
+  },
+  "violations_at_writing": 3,
+  "violations_at_snapshot": 3,
+  "examples_at_snapshot": [
+   "cypress/component/OIDCConnector/OIDCSecured.cy.tsx: import { AuthContext, AuthContextProps, AuthProviderProps } from 'react-oidc-context';",
+   "cypress/component/OIDCConnector/OIDCSecured.cy.tsx: import { User } from 'oidc-client-ts';",
+   "cypress/component/OIDCConnector/OIDCUserManagerErrorBoundary.cy.tsx: import { UserManager } from 'oidc-client-ts';"
+  ]
+ },
+ {
+  "id": 47,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "rule_text": "- Never import dialect modules directly",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "src/sqlfluff/dialects/",
+    "test/"
+   ],
+   "ti": [
+    "src/sqlfluff/dialects/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 11,
+  "violations_at_snapshot": 11,
+  "examples_at_snapshot": [
+   "src/sqlfluff/rules/aliasing/AL01.py: from sqlfluff.dialects.dialect_ansi import AsAliasOperatorSegment",
+   "src/sqlfluff/rules/aliasing/AL04.py: from sqlfluff.dialects.dialect_ansi import ObjectReferenceSegment",
+   "src/sqlfluff/rules/convention/CV12.py: from sqlfluff.dialects.dialect_ansi import ("
+  ]
+ },
+ {
+  "id": 48,
+  "repo": "tekrop/overfast-api",
+  "clone": "clones_full/tekrop__overfast-api",
+  "rule_text": "Four strict DDD layers; dependencies only flow inward.",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "app/domain/"
+   ],
+   "exceptions": [],
+   "ti": [
+    "app/api/",
+    "app/adapters/",
+    "app/infrastructure/"
+   ],
+   "te": [],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 12,
+  "violations_at_snapshot": 9,
+  "examples_at_snapshot": [
+   "app/domain/parsers/hero.py: from app.infrastructure.logger import logger",
+   "app/domain/parsers/player_profile.py: from app.infrastructure.logger import logger",
+   "app/domain/parsers/player_search.py: from app.infrastructure.logger import logger"
+  ]
+ },
+ {
+  "id": 49,
+  "repo": "tikv/pd",
+  "clone": "clones_full/tikv__pd",
+  "rule_text": "- golangci-lint config: see `.golangci.yml` (gofmt/goimports/gci formatters; depguard bans `github.com/pkg/errors`, `go.uber.org/atomic`, `math/rand`; prefers `math/rand/v2`; goheader copyright; revive + testifylint extensive; waitgroup-by-value forbidden).",
+  "context_file": "AGENTS.md",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "github.com/pkg/errors",
+    "go.uber.org/atomic",
+    "math/rand"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 25,
+  "violations_at_snapshot": 25,
+  "examples_at_snapshot": [
+   "client/clients/tso/client.go: \"math/rand/v2\"",
+   "client/pkg/connectionctx/manager.go: \"math/rand/v2\"",
+   "pkg/core/region_option.go: \"math/rand/v2\""
+  ]
+ },
+ {
+  "id": 50,
+  "repo": "umbraco/umbraco-cms",
+  "clone": "clones_full/umbraco__umbraco-cms",
+  "rule_text": "- `Umbraco.Core` \u2192 No dependencies (only Microsoft.Extensions.*)",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "src/Umbraco.Core/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "Umbraco.Cms.Infrastructure",
+    "Umbraco.Cms.Web",
+    "Umbraco.Cms.Api",
+    "Umbraco.Cms.Persistence",
+    "Umbraco.Cms.Imaging",
+    "Umbraco.Cms.Targets",
+    "Microsoft.AspNetCore",
+    "Microsoft.EntityFrameworkCore"
+   ],
+   "polarity": "forbid",
+   "sibling": null
+  },
+  "violations_at_writing": 5,
+  "violations_at_snapshot": 5,
+  "examples_at_snapshot": [
+   "src/Umbraco.Core/Persistence/Repositories/IUserDataRepository.cs: using Umbraco.Cms.Infrastructure.Persistence.Querying;",
+   "src/Umbraco.Core/Security/BackOfficeIdentityOptions.cs: using Microsoft.AspNetCore.Identity;",
+   "src/Umbraco.Core/Services/IUserDataService.cs: using Umbraco.Cms.Infrastructure.Persistence.Querying;"
+  ]
+ },
+ {
+  "id": 51,
+  "repo": "zenml-io/zenml",
+  "clone": "clones_full/zenml-io__zenml",
+  "rule_text": "- [ ] **Import checking:** No direct SQL imports from outside `zen_stores` (`src/zenml/zen_stores/schemas/AGENTS.md`)",
+  "context_file": "CLAUDE.md",
+  "rule": {
+   "source": [
+    "src/zenml/zen_stores/"
+   ],
+   "exceptions": [],
+   "ti": [],
+   "te": [
+    "sqlalchemy",
+    "sqlmodel"
+   ],
+   "polarity": "only",
+   "sibling": null
+  },
+  "violations_at_writing": 58,
+  "violations_at_snapshot": 60,
+  "examples_at_snapshot": [
+   "src/zenml/models/v2/base/filter.py: from sqlalchemy.sql.elements import ColumnElement",
+   "src/zenml/models/v2/base/filter.py: from sqlmodel import SQLModel",
+   "src/zenml/models/v2/base/filter.py: from sqlalchemy import Float, and_, cast"
+  ]
+ }
+]

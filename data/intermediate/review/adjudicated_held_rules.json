@@ -1,0 +1,47 @@
+[
+ {
+  "id": 1,
+  "final": "MISSED_VIOLATION",
+  "reason": "autoroute imports boardgraphics.GraphicsContext and java.awt; mapping checks only gui/."
+ },
+ {
+  "id": 2,
+  "final": "MISSED_VIOLATION",
+  "reason": "Mapping uses nonexistent viu/; viu_media/cli imports httpx directly (notification/service.py, utils/image.py)."
+ },
+ {
+  "id": 5,
+  "final": "HOLDS",
+  "reason": "No postgresw main code imports gremlin; provided-scope pom entry is a build file."
+ },
+ {
+  "id": 14,
+  "final": "HOLDS",
+  "reason": "No static imports outside module_utils; controller access is dynamic loading only."
+ },
+ {
+  "id": 16,
+  "final": "HOLDS",
+  "reason": "levanter and zephyr never import marin; subprocess invocation is runtime loading."
+ },
+ {
+  "id": 20,
+  "final": "HOLDS",
+  "reason": "Factories call provider builders but return framework interfaces; no provider types exposed or imported."
+ },
+ {
+  "id": 27,
+  "final": "HOLDS",
+  "reason": "No protocol main code imports another protocol module; cross deps only in poms."
+ },
+ {
+  "id": 30,
+  "final": "HOLDS",
+  "reason": "No static imports of api/cli/dialects/rules/utils from core; loading is dynamic."
+ },
+ {
+  "id": 34,
+  "final": "BAD_MAPPING",
+  "reason": "Rule concerns command-level utils/ dirs, mapping targets src/core/utils; command utils import only shared core."
+ }
+]

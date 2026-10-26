@@ -1,0 +1,2402 @@
+[
+ {
+  "id": 0,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Listed platform SDK folder sdk_ios absent from repo"
+ },
+ {
+  "id": 1,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Template plan file with (name) placeholder"
+ },
+ {
+  "id": 2,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Illustrative shared-code structure convention, not actual files"
+ },
+ {
+  "id": 3,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File extension pattern, not a path"
+ },
+ {
+  "id": 4,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "docs/ folder described as hosting guides, removed"
+ },
+ {
+  "id": 5,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Referenced instructions file does not exist"
+ },
+ {
+  "id": 6,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/lib/client/SuperDebug.svelte",
+  "reason": "Tree diagram root mis-resolved; file exists under src/lib/client"
+ },
+ {
+  "id": 7,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Under docs/private, explicitly excluded from version control"
+ },
+ {
+  "id": 8,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "File the scaffolding script will create"
+ },
+ {
+  "id": 9,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Illustrative shared-code structure convention"
+ },
+ {
+  "id": 10,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": ".claude/skills/add-cuda-kernel/SKILL.md",
+  "reason": "Renamed to SKILL.md (case change)"
+ },
+ {
+  "id": 11,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "packages/mock listed as package, later removed"
+ },
+ {
+  "id": 12,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Tutorial example test file to write"
+ },
+ {
+  "id": 13,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Old prompty runtime files listed, no longer present"
+ },
+ {
+  "id": 14,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic project/ monorepo layout example"
+ },
+ {
+  "id": 15,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "test/integration",
+  "reason": "Integration tests live in test/integration, not test/functional"
+ },
+ {
+  "id": 16,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Sibling repository Floorp-OS-Automator-Backend in workspace"
+ },
+ {
+  "id": 17,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Separate repository in haxtheweb ecosystem"
+ },
+ {
+  "id": 18,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "test_provider is a placeholder for provider name"
+ },
+ {
+  "id": 19,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "backend/src/main/java/com/odde/doughnut/configs",
+  "reason": "Diagram collapsed java path; configs exists deeper"
+ },
+ {
+  "id": 20,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Generated API reference docs"
+ },
+ {
+  "id": 21,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Branch prefix feat/, not a path"
+ },
+ {
+  "id": 22,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "jslib/ is gitignored build asset"
+ },
+ {
+  "id": 23,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Config descriptions file removed from repo"
+ },
+ {
+  "id": 24,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path inside sibling backend repository"
+ },
+ {
+  "id": 25,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/main/src/main.ts",
+  "reason": "Main entry moved to src/main/src/main.ts"
+ },
+ {
+  "id": 26,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": ".plan docs referenced but absent from repo"
+ },
+ {
+  "id": 27,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "User on-prem Shuffle hotload folder"
+ },
+ {
+  "id": 28,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example test file name useX"
+ },
+ {
+  "id": 29,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "cli/core/config.py described but removed"
+ },
+ {
+  "id": 30,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": ".github/workflows/pre-commit.yml",
+  "reason": "Diagram mis-parsed; file is in .github/workflows"
+ },
+ {
+  "id": 31,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "autorag/evaluator.py",
+  "reason": "Nested autorag/autorag layout does not match repo"
+ },
+ {
+  "id": 32,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "CMake build output directory"
+ },
+ {
+  "id": 33,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Branch prefix chore/, not a path"
+ },
+ {
+  "id": 34,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Foundry flavor lives outside this repo branch"
+ },
+ {
+  "id": 35,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "dependencies.py described but not in repo"
+ },
+ {
+  "id": 36,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Inside elixir-ls git submodule"
+ },
+ {
+  "id": 37,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "bpk-tokens package listed but absent"
+ },
+ {
+  "id": 38,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "ols/src/mcp module listed but absent"
+ },
+ {
+  "id": 39,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "C# SDK structure example, other repository"
+ },
+ {
+  "id": 40,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Legacy tunnel/ path mentioned as existing, absent"
+ },
+ {
+  "id": 41,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "groups-tab component folder removed"
+ },
+ {
+  "id": 42,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "aiohomematic/validator.py",
+  "reason": "Diagram nesting mis-parsed; validator.py at package root"
+ },
+ {
+  "id": 43,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Files in separate data repository"
+ },
+ {
+  "id": 44,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "contrib/diagram.py module described but absent"
+ },
+ {
+  "id": 45,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File extension list, not a path"
+ },
+ {
+  "id": 46,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Generated schema output, gitignored"
+ },
+ {
+  "id": 47,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic module naming pattern example"
+ },
+ {
+  "id": 48,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Wildcard *.yml stripped by extractor"
+ },
+ {
+  "id": 49,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "File the scaffolding script will create"
+ },
+ {
+  "id": 50,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "OpenAPI spec lives in sibling backend repository"
+ },
+ {
+  "id": 51,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "baseStyles.js described but removed"
+ },
+ {
+  "id": 52,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "docs/AI.md named as editable source, absent"
+ },
+ {
+  "id": 53,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": ".agents/skills/fix-security-vulnerability/SKILL.md",
+  "reason": "Skill moved from .claude to .agents"
+ },
+ {
+  "id": 54,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Vendored static assets not committed (siblings gitignored)"
+ },
+ {
+  "id": 55,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "IPC channel name, not a path"
+ },
+ {
+  "id": 56,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "web/viewer.js",
+  "reason": "Entry is web/viewer.js, not viewer.mjs"
+ },
+ {
+  "id": 57,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Provider README listed but removed"
+ },
+ {
+  "id": 58,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "endpointsPage.ts constants file not in repo"
+ },
+ {
+  "id": 59,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Relay persisted query map is gitignored"
+ },
+ {
+  "id": 60,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Branch prefix test/, not a path"
+ },
+ {
+  "id": 61,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "docs/ folder listed but absent"
+ },
+ {
+  "id": 62,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "config/ folder removed after doc written"
+ },
+ {
+  "id": 63,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Empty openspec/changes dir not tracked by git"
+ },
+ {
+  "id": 64,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Generator folder listed but absent"
+ },
+ {
+  "id": 65,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "APIs/ backend folder listed but absent"
+ },
+ {
+  "id": 66,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Wildcard *.props.tsx stripped by extractor"
+ },
+ {
+  "id": 67,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Usage guide doc cited but never added"
+ },
+ {
+  "id": 68,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File extension list, not a path"
+ },
+ {
+  "id": 69,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "components/affix/index.en-US.md",
+  "reason": "Placeholder component-name level dropped; files exist per component"
+ },
+ {
+  "id": 70,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "packages/common is a git submodule"
+ },
+ {
+  "id": 71,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Home Assistant core module, external package"
+ },
+ {
+  "id": 72,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "aiohomematic/model/support.py",
+  "reason": "support.py under model/custom no longer exists"
+ },
+ {
+  "id": 73,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/server/core/Application.js",
+  "reason": "Module referenced without .js extension; exists"
+ },
+ {
+  "id": 74,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in another repository (ElectronicObserver)"
+ },
+ {
+  "id": 75,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "registry/lib/agent.js described but removed"
+ },
+ {
+  "id": 76,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Lua entry point file not present"
+ },
+ {
+  "id": 77,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "galpy/orbit/Orbits.py",
+  "reason": "Main class file is Orbits.py, not Orbit.py"
+ },
+ {
+  "id": 78,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Branch prefix refactor/, not a path"
+ },
+ {
+  "id": 79,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example user project layout"
+ },
+ {
+  "id": 80,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": ".github/workflows/hassfest.yaml",
+  "reason": "Diagram mis-parsed; file in .github/workflows"
+ },
+ {
+  "id": 81,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "aiohomematic/type_aliases.py",
+  "reason": "Diagram nesting mis-parsed; file at package root"
+ },
+ {
+  "id": 82,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Wildcard *.tsx stripped by extractor"
+ },
+ {
+  "id": 83,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Local virtualenv created by Makefile"
+ },
+ {
+  "id": 84,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "src/utils/validation folder listed but absent"
+ },
+ {
+  "id": 85,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Folder inside user vault, not repo"
+ },
+ {
+  "id": 86,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File extension list, not a path"
+ },
+ {
+  "id": 87,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "IPC channel name, not a path"
+ },
+ {
+  "id": 88,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "modules/editor-api removed after doc written"
+ },
+ {
+  "id": 89,
+  "doc": "ctx",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": ".agents/skills/release/SKILL.md",
+  "reason": "Skill lives under .agents, not .claude"
+ },
+ {
+  "id": 90,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": "Skills",
+  "reason": "Path from consuming app where Framework is submodule"
+ },
+ {
+  "id": 91,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Script listed but absent"
+ },
+ {
+  "id": 92,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Referenced proposals doc absent"
+ },
+ {
+  "id": 93,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "dist/Dockerfile.rust-toolset not present"
+ },
+ {
+  "id": 94,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Laravel convention statement; says file not used"
+ },
+ {
+  "id": 95,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Frontend belongs to separate ManagementConsole repo"
+ },
+ {
+  "id": 96,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "agents/README.md",
+  "reason": "Path exists in repo tree; checker miss"
+ },
+ {
+  "id": 97,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "OpenGL.Net.Math project listed but absent"
+ },
+ {
+  "id": 98,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "android/src/main/CMakeLists.txt",
+  "reason": "CMakeLists is under android/src/main"
+ },
+ {
+  "id": 99,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "pkg/linode-bs package listed but absent"
+ },
+ {
+  "id": 100,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/IoTHub.Portal.Domain/Repositories",
+  "reason": "Shorthand layer name; exists under src/IoTHub.Portal.Domain"
+ },
+ {
+  "id": 101,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "activation-scripts folder listed but absent"
+ },
+ {
+  "id": 102,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "cmd/build-template utility removed"
+ },
+ {
+  "id": 103,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Java package name, not a path"
+ },
+ {
+  "id": 104,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Structure of separate steampipe-plugin-sdk repo"
+ },
+ {
+  "id": 105,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "crates/backend_csharp/src/pass/meta/rust/info.rs",
+  "reason": "info.rs moved under meta/rust"
+ },
+ {
+  "id": 106,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "File removed after doc written (tree predates removal)"
+ },
+ {
+  "id": 107,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "src/Infrastructure/CLI folder listed but absent"
+ },
+ {
+  "id": 108,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/IoTHub.Portal.Shared/Security/PortalPermissions.cs",
+  "reason": "Shorthand project name; file exists under src/IoTHub.Portal.Shared"
+ },
+ {
+  "id": 109,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "dsp56300 is a git submodule"
+ },
+ {
+  "id": 110,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "bpf-loader-rs/bpf-loader-lib/src/elf_container.rs",
+  "reason": "Described as folder; only elf_container.rs module exists"
+ },
+ {
+  "id": 111,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic Go layout convention advice"
+ },
+ {
+  "id": 112,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "engine/packages/engine",
+  "reason": "Packages moved under engine/packages"
+ },
+ {
+  "id": 113,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Conditional check, not claimed to exist"
+ },
+ {
+  "id": 114,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Test folder in Haxe repository"
+ },
+ {
+  "id": 115,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in separate kiali-operator repository"
+ },
+ {
+  "id": 116,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "WooCommerce connector is a separately installed package"
+ },
+ {
+  "id": 117,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "storage/src/rocksdb_storage/storage_context/batch.rs",
+  "reason": "batch.rs lives under storage_context"
+ },
+ {
+  "id": 118,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in separate kiali-operator repository"
+ },
+ {
+  "id": 119,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "templates/Umbraco.Templates.csproj",
+  "reason": "Shown as folder; only csproj file exists"
+ },
+ {
+  "id": 120,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic resource_* command file pattern"
+ },
+ {
+  "id": 121,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Wildcard *_test.go stripped by extractor"
+ },
+ {
+  "id": 122,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/Theme",
+  "reason": "Diagram root mis-resolved; package exists under packages/Webkul"
+ },
+ {
+  "id": 123,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "core/src/main/java/feign/codec/Decoder.java",
+  "reason": "Shorthand for Encoder.java and Decoder.java; both exist"
+ },
+ {
+  "id": 124,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "assets/core.ts entry removed"
+ },
+ {
+  "id": 125,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Sylius/Bundle/AdminBundle/Resources/assets/controllers",
+  "reason": "Controllers live in bundle Resources/assets, no root assets/"
+ },
+ {
+  "id": 126,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "shopware-project-schema.json",
+  "reason": "Schema file is at repo root, not internal/shop"
+ },
+ {
+  "id": 127,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic BundleNameBundle structure template"
+ },
+ {
+  "id": 128,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Splat.Drawing/PlatformModeDetector.cs",
+  "reason": "Described as folder; is a class file in Splat.Drawing"
+ },
+ {
+  "id": 129,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Angor/Avalonia/Angor.Sdk/Funding/Investor/InvestmentAppService.cs",
+  "reason": "Folder is Investor, not Investment"
+ },
+ {
+  "id": 130,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "third_party",
+  "reason": "third_party moved from gb/ to repo root"
+ },
+ {
+  "id": 131,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "status.h described but removed"
+ },
+ {
+  "id": 132,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Illustrative resource-file pattern, not actual files"
+ },
+ {
+  "id": 133,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Composer vendor directory, not committed"
+ },
+ {
+  "id": 134,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Plain word tests, not a path claim"
+ },
+ {
+  "id": 135,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/osdep/sdl_renderer.h",
+  "reason": "Shorthand .h/.cpp pair; both files exist"
+ },
+ {
+  "id": 136,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/CatalogRule",
+  "reason": "Diagram root mis-resolved; package exists under packages/Webkul"
+ },
+ {
+  "id": 137,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "crates/backend_csharp/src/pass/model/common/types/info/disposable.rs",
+  "reason": "Moved under model/common/types/info"
+ },
+ {
+  "id": 138,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "pkg/webhook/admission removed after doc written"
+ },
+ {
+  "id": 139,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "scripts/init-params not present"
+ },
+ {
+  "id": 140,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/include/hoard/thresholdsegheap.h",
+  "reason": "File is in include/hoard, not include/util"
+ },
+ {
+  "id": 141,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "agents/workflows/change-workflow.md",
+  "reason": "Path exists in repo tree; checker miss"
+ },
+ {
+  "id": 142,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in separate kiali-operator repository"
+ },
+ {
+  "id": 143,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic Package/src structure template"
+ },
+ {
+  "id": 144,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "fe/fe-common module removed"
+ },
+ {
+  "id": 145,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "mymodule placeholder for new module"
+ },
+ {
+  "id": 146,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "PlatformIO libdeps downloaded at build time"
+ },
+ {
+  "id": 147,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "myext placeholder extension structure"
+ },
+ {
+  "id": 148,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Variant folder is rp2040/rp2350, no rp2xxx"
+ },
+ {
+  "id": 149,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": ".moon/toolchains.yml",
+  "reason": "File is named toolchains.yml"
+ },
+ {
+  "id": 150,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Inside private ee/ git submodule"
+ },
+ {
+  "id": 151,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Gateway entry point path does not exist"
+ },
+ {
+  "id": 152,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/User",
+  "reason": "Diagram root mis-resolved; package under packages/Webkul"
+ },
+ {
+  "id": 153,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Doc states there is no internal/ directory"
+ },
+ {
+  "id": 154,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in separate kiali-operator repository"
+ },
+ {
+  "id": 155,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in separate kiali-operator repository"
+ },
+ {
+  "id": 156,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/Stripe",
+  "reason": "Diagram root mis-resolved; package under packages/Webkul"
+ },
+ {
+  "id": 157,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Structure of separate steampipe-postgres-fdw repo"
+ },
+ {
+  "id": 158,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Components",
+  "reason": "Components moved to src/Components"
+ },
+ {
+  "id": 159,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "shopware-extension-schema.json",
+  "reason": "Schema file is at repo root, not internal/"
+ },
+ {
+  "id": 160,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Segment of CI API URL"
+ },
+ {
+  "id": 161,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "YRpp is a git submodule"
+ },
+ {
+  "id": 162,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Workflow file removed after doc written (tree predates)"
+ },
+ {
+  "id": 163,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Composer vendor directory, not committed"
+ },
+ {
+  "id": 164,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "PcodeTranslation.hpp listed as stable interface, absent"
+ },
+ {
+  "id": 165,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Apps/DrawThings sources not in this repository"
+ },
+ {
+  "id": 166,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Utils/Language resource folder absent"
+ },
+ {
+  "id": 167,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "engine/packages/gasoline",
+  "reason": "Packages moved under engine/packages"
+ },
+ {
+  "id": 168,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "plugin-dev/Source/Sentry/Private/Microsoft",
+  "reason": "Diagram mis-parsed; Microsoft folder exists"
+ },
+ {
+  "id": 169,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "includes/Infrastructure/CLI listed but absent"
+ },
+ {
+  "id": 170,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Structure of separate steampipe-postgres-fdw repo"
+ },
+ {
+  "id": 171,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic crate/tests placeholder"
+ },
+ {
+  "id": 172,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "config/nusa.php",
+  "reason": "Package config is config/nusa.php"
+ },
+ {
+  "id": 173,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Inside private ee/ git submodule"
+ },
+ {
+  "id": 174,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "includes/Infrastructure/WordPress listed but absent"
+ },
+ {
+  "id": 175,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/nesper/esp/driver_v5/i2c_master.nim",
+  "reason": "Path exists in repo tree; checker miss"
+ },
+ {
+  "id": 176,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "controllers/cloud.redhat.com/providers/providers.go",
+  "reason": "Base interface file is providers.go"
+ },
+ {
+  "id": 177,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "c_helper.rs cited but absent"
+ },
+ {
+  "id": 178,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Runtime storage directory, not repo path"
+ },
+ {
+  "id": 179,
+  "doc": "ctx",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Controls/samples/Controls.Sample",
+  "reason": "Sample project named Controls.Sample"
+ },
+ {
+  "id": 180,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Fragment of badge URL style=flat"
+ },
+ {
+  "id": 181,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in user-generated library project"
+ },
+ {
+  "id": 182,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Setup guide removed from internal-docs"
+ },
+ {
+  "id": 183,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in user app for placing models"
+ },
+ {
+  "id": 184,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Workflow file the user is told to add"
+ },
+ {
+  "id": 185,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "content",
+  "reason": "Docs content moved to root content/"
+ },
+ {
+  "id": 186,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "User per-project Cursor config to create"
+ },
+ {
+  "id": 187,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Runtime config in ioBroker install directory"
+ },
+ {
+  "id": 188,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in ever-gauzy repository"
+ },
+ {
+  "id": 189,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "User config file in consuming repo"
+ },
+ {
+  "id": 190,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example user app layout"
+ },
+ {
+  "id": 191,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "packages/marshal cited as existing workspace, absent"
+ },
+ {
+  "id": 192,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "android",
+  "reason": "Clone folder prefix added; android/ exists"
+ },
+ {
+  "id": 193,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File on gh-pages branch"
+ },
+ {
+  "id": 194,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "docker-compose.yml",
+  "reason": "Clone folder prefix added; file exists at root"
+ },
+ {
+  "id": 195,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in user-generated library project"
+ },
+ {
+  "id": 196,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Directory inside built jar"
+ },
+ {
+  "id": 197,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "User own GitHub pages docs folder"
+ },
+ {
+  "id": 198,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "File generated by the scaffolding command"
+ },
+ {
+  "id": 199,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "sync-weaviate.js absent (sync-weaviate-ids.js exists)"
+ },
+ {
+  "id": 200,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "lib/components.ts described as import hub, absent"
+ },
+ {
+  "id": 201,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/community/index.tsx",
+  "reason": "Text says index.ts; file is index.tsx"
+ },
+ {
+  "id": 202,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Vite config removed after doc written (tree predates)"
+ },
+ {
+  "id": 203,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "HuggingFace organization name from URL"
+ },
+ {
+  "id": 204,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "docker/redis compose file not present"
+ },
+ {
+  "id": 205,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "remote_cache.md doc removed"
+ },
+ {
+  "id": 206,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "sanskrit_parser/parser/sandhi_analyzer.py",
+  "reason": "Misspelled name and missing package prefix"
+ },
+ {
+  "id": 207,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File format list warc/arc/wet"
+ },
+ {
+  "id": 208,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "worker.js removed after doc written (tree predates)"
+ },
+ {
+  "id": 209,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/dev/useInitial.js",
+  "reason": "Hook file is useInitial.js"
+ },
+ {
+  "id": 210,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Plain word, not a path"
+ },
+ {
+  "id": 211,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Seed file generated by script"
+ },
+ {
+  "id": 212,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "e2e_test/plugins folder absent"
+ },
+ {
+  "id": 213,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example rule-a upload layout"
+ },
+ {
+  "id": 214,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "config/scraper_mappings/archive",
+  "reason": "Diagram nesting mis-parsed; archive under config/scraper_mappings"
+ },
+ {
+  "id": 215,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in WSO2 Identity Server distribution"
+ },
+ {
+  "id": 216,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "playnet.sh script absent"
+ },
+ {
+  "id": 217,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Proto file in Temporal API repository"
+ },
+ {
+  "id": 218,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example user app layout"
+ },
+ {
+  "id": 219,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "State machine DSL keyword"
+ },
+ {
+  "id": 220,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example rule-b upload layout"
+ },
+ {
+  "id": 221,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "flash_attn/flash_attn_interface.py",
+  "reason": "Interface is flash_attn/flash_attn_interface.py"
+ },
+ {
+  "id": 222,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "packages/db listed but absent"
+ },
+ {
+  "id": 223,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Output directory created in user project"
+ },
+ {
+  "id": 224,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "endpoints/__init__.py absent (init.py exists)"
+ },
+ {
+  "id": 225,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Directory in user Scala project"
+ },
+ {
+  "id": 226,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/bidiMapper/CommandProcessor.ts",
+  "reason": "File renamed to CommandProcessor.ts (case)"
+ },
+ {
+  "id": 227,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/dev/previews.jsx",
+  "reason": "File is previews.jsx"
+ },
+ {
+  "id": 228,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Directory in user goqoo project"
+ },
+ {
+  "id": 229,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Project name, not a path"
+ },
+ {
+  "id": 230,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "File the CLI creates in user project"
+ },
+ {
+  "id": 231,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "HuggingFace organization name from URL"
+ },
+ {
+  "id": 232,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Sphinx conf.py listed; docs use other tooling"
+ },
+ {
+  "id": 233,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "atlas_original.png absent; only atlas.png exists"
+ },
+ {
+  "id": 234,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example user app layout"
+ },
+ {
+  "id": 235,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example user app layout"
+ },
+ {
+  "id": 236,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Changelog says file was moved away"
+ },
+ {
+  "id": 237,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "tests/globalSetup.ts absent"
+ },
+ {
+  "id": 238,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "bot.js removed after doc written (tree predates)"
+ },
+ {
+  "id": 239,
+  "doc": "readme",
+  "lang_group": "tjp",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Config file the reader is told to create"
+ },
+ {
+  "id": 240,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "SMACC2.repos now split into distro-specific files"
+ },
+ {
+  "id": 241,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Plain word, not a path"
+ },
+ {
+  "id": 242,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Local build output folder"
+ },
+ {
+  "id": 243,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Plain word, not a path"
+ },
+ {
+  "id": 244,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config in user home directory"
+ },
+ {
+  "id": 245,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/screenshot_manager.rs",
+  "reason": "Shown as folder; module is screenshot_manager.rs"
+ },
+ {
+  "id": 246,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "iris-mpc/bin/server.rs",
+  "reason": "Binary is at iris-mpc/bin/server.rs"
+ },
+ {
+  "id": 247,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "server/src/server/boot",
+  "reason": "Path omits src/; exists at server/src/server/boot"
+ },
+ {
+  "id": 248,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config file in user Symfony app"
+ },
+ {
+  "id": 249,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "crates/live_update absent (renamed crate)"
+ },
+ {
+  "id": 250,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in user Go project"
+ },
+ {
+  "id": 251,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Garbage token M, not a path"
+ },
+ {
+  "id": 252,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 253,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Generated Javadoc output"
+ },
+ {
+  "id": 254,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Core config file absent (class-core.php exists)"
+ },
+ {
+  "id": 255,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Zed extension folder absent in tree-sitter-daslang"
+ },
+ {
+  "id": 256,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config in user topaz config directory"
+ },
+ {
+  "id": 257,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in game client install"
+ },
+ {
+  "id": 258,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Plain word, not a path"
+ },
+ {
+  "id": 259,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Referenced workflow file absent"
+ },
+ {
+  "id": 260,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rustdoc URL module path"
+ },
+ {
+  "id": 261,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 262,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rust module path in use statement"
+ },
+ {
+  "id": 263,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Script absent (also misspelled)"
+ },
+ {
+  "id": 264,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": "server/src/server/state",
+  "reason": "Path omits src/; exists at server/src/server/state"
+ },
+ {
+  "id": 265,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 266,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Linked installer config absent"
+ },
+ {
+  "id": 267,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Goreleaser dist output"
+ },
+ {
+  "id": 268,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Runtime folder on server install"
+ },
+ {
+  "id": 269,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Search query term"
+ },
+ {
+  "id": 270,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rust module path in use statement"
+ },
+ {
+  "id": 271,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/README.md",
+  "reason": "Link target src/README.md exists; extension dropped"
+ },
+ {
+  "id": 272,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Gitignored runtime uploads folder"
+ },
+ {
+  "id": 273,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rust module path in use statement"
+ },
+ {
+  "id": 274,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in user topaz template directory"
+ },
+ {
+  "id": 275,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Password file generated by deploy script"
+ },
+ {
+  "id": 276,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "class-analytics.php cited but absent"
+ },
+ {
+  "id": 277,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "base/src/main/java/com/windscribe/vpn/api",
+  "reason": "Diagram collapsed source path; api package exists"
+ },
+ {
+  "id": 278,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "bin/build-storefront.sh absent"
+ },
+ {
+  "id": 279,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rust module path in use statement"
+ },
+ {
+  "id": 280,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 281,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Classpath resource in user app"
+ },
+ {
+  "id": 282,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rust module path in use statement"
+ },
+ {
+  "id": 283,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config in user home directory"
+ },
+ {
+  "id": 284,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Build output directory for compiled modules"
+ },
+ {
+  "id": 285,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File in user topaz template directory"
+ },
+ {
+  "id": 286,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config in user home directory"
+ },
+ {
+  "id": 287,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Loop device back-file path fragment"
+ },
+ {
+  "id": 288,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Rustdoc URL module path"
+ },
+ {
+  "id": 289,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 290,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Runtime folder on server install"
+ },
+ {
+  "id": 291,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "File generated by artisan in user app"
+ },
+ {
+  "id": 292,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 293,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Generated Javadoc output"
+ },
+ {
+  "id": 294,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Gutenberg block name, not a path"
+ },
+ {
+  "id": 295,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Word in README prose, not a path"
+ },
+ {
+  "id": 296,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 297,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "inc/Blocks component described but absent"
+ },
+ {
+  "id": 298,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Layout of generated eagle-layout project"
+ },
+ {
+  "id": 299,
+  "doc": "readme",
+  "lang_group": "other",
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Directory in user Symfony project"
+ }
+]

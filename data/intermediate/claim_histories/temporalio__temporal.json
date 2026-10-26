@@ -1,0 +1,1 @@
+{"repo": "temporalio/temporal", "head": "8c5ca7f0e19238edeb45b1e24c510e87c57bf8eb", "head_t": 1774650069, "docs": [{"kind": "ctx", "file": ".github/copilot-instructions.md", "nvers": 2, "claims": []}, {"kind": "ctx", "file": "AGENTS.md", "nvers": 3, "claims": []}, {"kind": "readme", "file": "README.md", "nvers": 1, "claims": []}]}

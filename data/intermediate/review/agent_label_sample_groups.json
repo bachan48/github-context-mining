@@ -1,0 +1,602 @@
+{
+ "0": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "1": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "2": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "3": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "4": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "5": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "6": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "7": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "8": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "9": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "10": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "11": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "12": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "13": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "14": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "15": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "16": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "17": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "18": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "19": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "20": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "21": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "22": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "23": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "24": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "25": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "26": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "27": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "28": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "29": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "30": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "31": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "32": {
+  "group": "new",
+  "signals": "S4"
+ },
+ "33": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "34": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "35": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "36": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "37": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "38": {
+  "group": "new",
+  "signals": "S4"
+ },
+ "39": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "40": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "41": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "42": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "43": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "44": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "45": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "46": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "47": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "48": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "49": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "50": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "51": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "52": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "53": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "54": {
+  "group": "new",
+  "signals": "S5"
+ },
+ "55": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "56": {
+  "group": "new",
+  "signals": "S4+S6"
+ },
+ "57": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "58": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "59": {
+  "group": "new",
+  "signals": "S6"
+ },
+ "60": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "61": {
+  "group": "old",
+  "signals": "S1+S2+S6"
+ },
+ "62": {
+  "group": "old",
+  "signals": "S2"
+ },
+ "63": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "64": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "65": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "66": {
+  "group": "old",
+  "signals": "S1+S2+S3+S5"
+ },
+ "67": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "68": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "69": {
+  "group": "old",
+  "signals": "S1+S3+S5"
+ },
+ "70": {
+  "group": "old",
+  "signals": "S1+S3+S4+S6"
+ },
+ "71": {
+  "group": "old",
+  "signals": "S2+S3+S5"
+ },
+ "72": {
+  "group": "old",
+  "signals": "S1+S2+S6"
+ },
+ "73": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "74": {
+  "group": "old",
+  "signals": "S1"
+ },
+ "75": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "76": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "77": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "78": {
+  "group": "old",
+  "signals": "S2+S3+S5"
+ },
+ "79": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "80": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "81": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "82": {
+  "group": "old",
+  "signals": "S2+S5"
+ },
+ "83": {
+  "group": "old",
+  "signals": "S2"
+ },
+ "84": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "85": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "86": {
+  "group": "old",
+  "signals": "S1+S3+S4+S6"
+ },
+ "87": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "88": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "89": {
+  "group": "old",
+  "signals": "S1+S2+S3+S4+S6"
+ },
+ "90": {
+  "group": "old",
+  "signals": "S1+S2+S3+S4+S6"
+ },
+ "91": {
+  "group": "old",
+  "signals": "S2"
+ },
+ "92": {
+  "group": "old",
+  "signals": "S1+S2+S5"
+ },
+ "93": {
+  "group": "old",
+  "signals": "S1"
+ },
+ "94": {
+  "group": "old",
+  "signals": "S3"
+ },
+ "95": {
+  "group": "old",
+  "signals": "S3"
+ },
+ "96": {
+  "group": "old",
+  "signals": "S3"
+ },
+ "97": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "98": {
+  "group": "old",
+  "signals": "S1+S3+S5"
+ },
+ "99": {
+  "group": "old",
+  "signals": "S1+S2"
+ },
+ "100": {
+  "group": "other",
+  "signals": ""
+ },
+ "101": {
+  "group": "other",
+  "signals": ""
+ },
+ "102": {
+  "group": "other",
+  "signals": ""
+ },
+ "103": {
+  "group": "other",
+  "signals": ""
+ },
+ "104": {
+  "group": "other",
+  "signals": ""
+ },
+ "105": {
+  "group": "other",
+  "signals": ""
+ },
+ "106": {
+  "group": "other",
+  "signals": ""
+ },
+ "107": {
+  "group": "other",
+  "signals": ""
+ },
+ "108": {
+  "group": "other",
+  "signals": ""
+ },
+ "109": {
+  "group": "other",
+  "signals": ""
+ },
+ "110": {
+  "group": "other",
+  "signals": ""
+ },
+ "111": {
+  "group": "other",
+  "signals": ""
+ },
+ "112": {
+  "group": "other",
+  "signals": ""
+ },
+ "113": {
+  "group": "other",
+  "signals": ""
+ },
+ "114": {
+  "group": "other",
+  "signals": ""
+ },
+ "115": {
+  "group": "other",
+  "signals": ""
+ },
+ "116": {
+  "group": "other",
+  "signals": ""
+ },
+ "117": {
+  "group": "other",
+  "signals": ""
+ },
+ "118": {
+  "group": "other",
+  "signals": ""
+ },
+ "119": {
+  "group": "other",
+  "signals": ""
+ },
+ "120": {
+  "group": "other",
+  "signals": ""
+ },
+ "121": {
+  "group": "other",
+  "signals": ""
+ },
+ "122": {
+  "group": "other",
+  "signals": ""
+ },
+ "123": {
+  "group": "other",
+  "signals": ""
+ },
+ "124": {
+  "group": "other",
+  "signals": ""
+ },
+ "125": {
+  "group": "other",
+  "signals": ""
+ },
+ "126": {
+  "group": "other",
+  "signals": ""
+ },
+ "127": {
+  "group": "other",
+  "signals": ""
+ },
+ "128": {
+  "group": "other",
+  "signals": ""
+ },
+ "129": {
+  "group": "other",
+  "signals": ""
+ },
+ "130": {
+  "group": "other",
+  "signals": ""
+ },
+ "131": {
+  "group": "other",
+  "signals": ""
+ },
+ "132": {
+  "group": "other",
+  "signals": ""
+ },
+ "133": {
+  "group": "other",
+  "signals": ""
+ },
+ "134": {
+  "group": "other",
+  "signals": ""
+ },
+ "135": {
+  "group": "other",
+  "signals": ""
+ },
+ "136": {
+  "group": "other",
+  "signals": ""
+ },
+ "137": {
+  "group": "other",
+  "signals": ""
+ },
+ "138": {
+  "group": "other",
+  "signals": ""
+ },
+ "139": {
+  "group": "other",
+  "signals": ""
+ },
+ "140": {
+  "group": "other",
+  "signals": ""
+ },
+ "141": {
+  "group": "other",
+  "signals": ""
+ },
+ "142": {
+  "group": "other",
+  "signals": ""
+ },
+ "143": {
+  "group": "other",
+  "signals": ""
+ },
+ "144": {
+  "group": "other",
+  "signals": ""
+ },
+ "145": {
+  "group": "other",
+  "signals": ""
+ },
+ "146": {
+  "group": "other",
+  "signals": ""
+ },
+ "147": {
+  "group": "other",
+  "signals": ""
+ },
+ "148": {
+  "group": "other",
+  "signals": ""
+ },
+ "149": {
+  "group": "other",
+  "signals": ""
+ }
+}

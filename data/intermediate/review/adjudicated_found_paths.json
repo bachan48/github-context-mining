@@ -1,0 +1,17 @@
+[
+ {
+  "id": 63,
+  "final": "WRONG_MATCH",
+  "reason": "Refers to hypothetical extension/myext/design; no extensions exist, lhc_web/design is the core folder."
+ },
+ {
+  "id": 68,
+  "final": "CORRECT",
+  "reason": "API section says define serialization in serialization/ folder; ApiBundle/Resources/config/serialization exists."
+ },
+ {
+  "id": 95,
+  "final": "CORRECT",
+  "reason": "Package table lists fixtures/ as test fixture loading package; pkg/fixtures exists."
+ }
+]

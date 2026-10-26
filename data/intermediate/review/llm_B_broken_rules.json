@@ -1,0 +1,262 @@
+[
+ {
+  "id": 0,
+  "label": "TRUE",
+  "reason": "input_manager, prompt_manager and core/prompt.py import rich Console outside display folder and __main__."
+ },
+ {
+  "id": 1,
+  "label": "TRUE",
+  "reason": "indexed-merkle-tree has regular dependency on light-merkle-tree-reference, which lives in program-tests/merkle-tree."
+ },
+ {
+  "id": 2,
+  "label": "TRUE",
+  "reason": "compressed-token and registry programs depend on light-sdk, light-sdk-types and light-compressed-token-sdk from sdk-libs."
+ },
+ {
+  "id": 3,
+  "label": "TRUE",
+  "reason": "common/str.go, utils.go and others call json.Marshal/Unmarshal directly instead of wrappers."
+ },
+ {
+  "id": 4,
+  "label": "TRUE",
+  "reason": "rules/modifiers/SituationModifier.ts imports effect/flows/SituationModifierEffectsFlow; rules must not use flows."
+ },
+ {
+  "id": 5,
+  "label": "TRUE",
+  "reason": "Presenters import wx at module level (main_frame_presenter uses wx.MessageBox etc.), contrary to delegate-to-view guidance."
+ },
+ {
+  "id": 6,
+  "label": "TRUE",
+  "reason": "options components import enums and config from background/, which rule forbids."
+ },
+ {
+  "id": 7,
+  "label": "TRUE",
+  "reason": "background/messaging imports OptionsData from options store; type-only but rule says never import either direction."
+ },
+ {
+  "id": 8,
+  "label": "TRUE",
+  "reason": "Many direct antd and @ant-design/icons imports in src, plugins and storybook outside superset-ui-core."
+ },
+ {
+  "id": 9,
+  "label": "FALSE_RESOLUTION",
+  "reason": "org.springframework.boot.configurationmetadata imports are external Spring Boot, mis-resolved to support/ same-package class."
+ },
+ {
+  "id": 10,
+  "label": "TRUE",
+  "reason": "core-authentication imports PersonDirectoryPrincipalResolver from support/person-directory-core; other flags are spring boot misresolutions."
+ },
+ {
+  "id": 11,
+  "label": "TRUE",
+  "reason": "Domain/SourceUrl.php used Infrastructure\\WordPress\\UrlUtils; real violation (later refactored away)."
+ },
+ {
+  "id": 12,
+  "label": "FALSE_MAPPING",
+  "reason": "toolkit/components is explicitly exempted in eslint no-restricted-imports override; only toolkit chart files import dayjs."
+ },
+ {
+  "id": 13,
+  "label": "FALSE_MAPPING",
+  "reason": "Imports are leaf helper packages configstate/config and ifacestate/ifacerepo, not the manager packages the rule forbids."
+ },
+ {
+  "id": 14,
+  "label": "TRUE",
+  "reason": "cmd/snap debug state imports overlord/state and ifacestate/schema; rule says *state packages not imported by CLI."
+ },
+ {
+  "id": 15,
+  "label": "FALSE_MAPPING",
+  "reason": "Host imports from cardstack.com/base are type-only usage (typeof import, type positions), which rule explicitly allows."
+ },
+ {
+  "id": 16,
+  "label": "FALSE_MAPPING",
+  "reason": "validator.py imports lxml etree only under TYPE_CHECKING for annotations; runtime uses config.etree."
+ },
+ {
+  "id": 17,
+  "label": "FALSE_MAPPING",
+  "reason": "numpy only lazily imported in optional neat/gpu backend, not in core."
+ },
+ {
+  "id": 18,
+  "label": "FALSE_MAPPING",
+  "reason": "Latest file explicitly allows tokio in runtime, deployer, benches and tests; flagged imports are in deployer."
+ },
+ {
+  "id": 19,
+  "label": "TRUE",
+  "reason": "models/RendererModel/Renderer.ts imports ReactElement from react; rule says models must not import React (type-only)."
+ },
+ {
+  "id": 20,
+  "label": "TRUE",
+  "reason": "RendererStore and useAppPanel stores import React components from src/features."
+ },
+ {
+  "id": 21,
+  "label": "TRUE",
+  "reason": "49 files import fp-ts namespaces directly from fp-ts/* rather than from @std, as the file's text forbids; lint itself passes."
+ },
+ {
+  "id": 22,
+  "label": "TRUE",
+  "reason": "elastic_agent.py imports torch.distributed.elastic.* directly; not excluded in check-torchdist hook."
+ },
+ {
+  "id": 23,
+  "label": "FALSE_MAPPING",
+  "reason": "std use in data-driver is gated behind the std-only reader feature; crate is no_std by default."
+ },
+ {
+  "id": 24,
+  "label": "FALSE_MAPPING",
+  "reason": "publish.ts imports SimpleGit only as a type; dryRun.ts is a dry-run wrapper module, which the file exempts."
+ },
+ {
+  "id": 25,
+  "label": "TRUE",
+  "reason": "Packages like pkg/adhocprofiles import pkg/og/structs/flamebearer, legacy code the rule says not to depend on."
+ },
+ {
+  "id": 26,
+  "label": "FALSE_MAPPING",
+  "reason": "Frontend imports only electron types (WebviewTag, IpcRendererEvent); lint restricts only ipcMain and ipcRenderer."
+ },
+ {
+  "id": 27,
+  "label": "TRUE",
+  "reason": "xtask and other crates declare and use serde and serde_json directly despite Norito-only rule."
+ },
+ {
+  "id": 28,
+  "label": "FALSE_MAPPING",
+  "reason": "File states the single exception ports.driver -> core.tm, which is the flagged import."
+ },
+ {
+  "id": 29,
+  "label": "FALSE_MAPPING",
+  "reason": "All flagged imports are in core/applications.py, the composition root listed as an exception in import-linter config."
+ },
+ {
+  "id": 30,
+  "label": "FALSE_MAPPING",
+  "reason": "golangci depguard config explicitly excludes pkg/api-server/gui_handler.go from the pkg-cannot-import-app rule."
+ },
+ {
+  "id": 31,
+  "label": "TRUE",
+  "reason": "hopsworks_common has function-level runtime imports of hsfs, hsml and hopsworks; only job-entry modules are exempt."
+ },
+ {
+  "id": 32,
+  "label": "TRUE",
+  "reason": "hsfs explicit_provenance.py imports hsml and hopsworks inside functions at runtime; exemption covers only feature_log_commit_job."
+ },
+ {
+  "id": 33,
+  "label": "TRUE",
+  "reason": "hsml explicit_provenance.py imports hsfs and hopsworks inside functions at runtime, not exempt."
+ },
+ {
+  "id": 34,
+  "label": "TRUE",
+  "reason": "routes/settings.tsx calls invoke directly in route loader instead of via bridge helper; literal rule says components."
+ },
+ {
+  "id": 35,
+  "label": "TRUE",
+  "reason": "openmetadata-ui had 100+ direct @mui imports despite rule saying do not use MUI (legacy code)."
+ },
+ {
+  "id": 36,
+  "label": "TRUE",
+  "reason": "openmetadata-ui had 100+ direct @mui and @emotion imports when the do-not-use-MUI rule was written (legacy code being removed)."
+ },
+ {
+  "id": 37,
+  "label": "TRUE",
+  "reason": "app/queries modules import app.services (cache_service, system_app_service), reversing controller-service-query layering."
+ },
+ {
+  "id": 38,
+  "label": "TRUE",
+  "reason": "MotionModel imports MotionScreenView and PusherNode from view and holds a view reference, though models must never import view."
+ },
+ {
+  "id": 39,
+  "label": "FALSE_MAPPING",
+  "reason": "Flagged imports are pkg/v3/codegen and testing subpackages, which Makefile lint explicitly allows."
+ },
+ {
+  "id": 40,
+  "label": "TRUE",
+  "reason": "aglib/nearpc, gdblib/prompt, wrappers and others import pwndbg.commands, which is not meant to be imported."
+ },
+ {
+  "id": 41,
+  "label": "TRUE",
+  "reason": "pwndbg/lib/exception.py, pretty_print.py and tips.py import pwndbg.color, but lib may only import lib."
+ },
+ {
+  "id": 42,
+  "label": "TRUE",
+  "reason": "lib modules import pwndbg.color and pwndbg itself, violating lib-only-imports-lib."
+ },
+ {
+  "id": 43,
+  "label": "TRUE",
+  "reason": "dbg_mod/gdb and lldb import pwndbg.aglib extensively, though dbg_mod must never import aglib."
+ },
+ {
+  "id": 44,
+  "label": "TRUE",
+  "reason": "commands modules like ai.py, attachp.py and branch.py import gdb at module level."
+ },
+ {
+  "id": 45,
+  "label": "TRUE",
+  "reason": "big_query_client.py, endpoint_documentation_generator.py and region_files_generator.py in production code import recidiviz.tests."
+ },
+ {
+  "id": 46,
+  "label": "FALSE_MAPPING",
+  "reason": "Flagged imports are in cypress component tests, where eslint no-restricted-imports is explicitly turned off."
+ },
+ {
+  "id": 47,
+  "label": "TRUE",
+  "reason": "Rule modules and utils import sqlfluff.dialects.dialect_ansi directly, against the never-import-dialect-modules rule."
+ },
+ {
+  "id": 48,
+  "label": "FALSE_MAPPING",
+  "reason": "Latest file allows domain to depend on infrastructure for logger only; all flagged imports are the logger."
+ },
+ {
+  "id": 49,
+  "label": "FALSE_RESOLUTION",
+  "reason": "math/rand/v2 matched as math/rand; depguard bans only math/rand exactly and prefers v2."
+ },
+ {
+  "id": 50,
+  "label": "FALSE_RESOLUTION",
+  "reason": "Persistence.Querying namespace is defined inside Umbraco.Core; AspNetCore.Identity comes from allowed Microsoft.Extensions.Identity.Core."
+ },
+ {
+  "id": 51,
+  "label": "FALSE_MAPPING",
+  "reason": "Detailed rule means not importing zen_stores schemas from outside; models only import sqlalchemy lazily or for type checking."
+ }
+]

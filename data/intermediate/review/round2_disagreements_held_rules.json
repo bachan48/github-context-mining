@@ -1,0 +1,55 @@
+[
+ {
+  "item": {
+   "id": 1,
+   "repo": "freerouting/freerouting",
+   "clone": "clones_full/freerouting__freerouting",
+   "snapshot": "941316f030145f57060d91e548e3d12c5a0053f2",
+   "context_file": "AGENTS.md",
+   "rule_text": "- **Separation of Concerns:** The **UI/Visualizer** and the **Routing Engine** are distinct domains. Always maintain a strict boundary between visual representation and core algorithmic logic. UI concerns should not bleed into the geometric models.",
+   "rule": {
+    "source": [
+     "src/main/java/app/freerouting/geometry/",
+     "src/main/java/app/freerouting/autoroute/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "src/main/java/app/freerouting/gui/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  },
+  "label_1": "MISSED_VIOLATION",
+  "reason_1": "Routing engine imports visual layer: autoroute/AutorouteEngine.java:9 imports app.freerouting.boardgraphics.GraphicsContext (also java.awt.Graphics).",
+  "label_2": "HOLDS",
+  "reason_2": "No import of app.freerouting.gui from geometry or autoroute; only java.awt Graphics in autoroute, not the gui folder."
+ },
+ {
+  "item": {
+   "id": 23,
+   "repo": "eclipse-theia/theia",
+   "clone": "clones_full/eclipse-theia__theia",
+   "snapshot": "efbf7e3fa194a5cd6f0fc93eb79dd8f22b357fce",
+   "context_file": "CLAUDE.md",
+   "rule_text": "- Platform folders follow strict dependency rules (browser cannot import node, etc.)",
+   "rule": {
+    "source": [
+     "packages/*/src/node/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "packages/*/src/browser/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  },
+  "label_1": "MISSED_VIOLATION",
+  "reason_1": "Mapping reversed (rule is browser->node). browser->node holds, but common re-exports browser: packages/core/src/common/menu/index.ts:17.",
+  "label_2": "HOLDS",
+  "reason_2": "Node folders import browser code only in test files."
+ }
+]

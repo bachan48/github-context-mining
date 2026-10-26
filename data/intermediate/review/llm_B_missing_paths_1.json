@@ -1,0 +1,452 @@
+[
+ {
+  "id": 75,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "registry/lib/agent.js was deleted in history; no lib dir or agent file remains."
+ },
+ {
+  "id": 76,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Entry point bunkerweb.lua does not exist; only src/bw/lua/bunkerweb/ directory with modules."
+ },
+ {
+  "id": 77,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "galpy/orbit/Orbits.py",
+  "reason": "Orbit.py renamed to Orbits.py."
+ },
+ {
+  "id": 78,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "'refactor' is a branch prefix, not a path."
+ },
+ {
+  "id": 79,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic 'File Structure Template' for user projects using the tracker."
+ },
+ {
+  "id": 80,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": ".github/workflows/hassfest.yaml",
+  "reason": "Tree line under .github/workflows/ was assigned the wrong parent by extractor."
+ },
+ {
+  "id": 81,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "aiohomematic/type_aliases.py",
+  "reason": "File sits in core modules group; extractor attached it to translations/ dir."
+ },
+ {
+  "id": 82,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Glob '*.tsx' lost its asterisk, leaving '.tsx'."
+ },
+ {
+  "id": 83,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "hga/ is a virtualenv created by the Makefile."
+ },
+ {
+  "id": 84,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/validators",
+  "reason": "No src/utils/validation; validators live in src/validators."
+ },
+ {
+  "id": 85,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Folder inside the user's notes vault at runtime, not in the repo."
+ },
+ {
+  "id": 86,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File extension convention list, not a path."
+ },
+ {
+  "id": 87,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "IPC channel names, not file paths."
+ },
+ {
+  "id": 88,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/editor-api",
+  "reason": "modules/editor-api does not exist; editor-api source is src/editor-api."
+ },
+ {
+  "id": 89,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": ".agents/skills/release/SKILL.md",
+  "reason": "Path resolves via .claude/skills symlink to ../.agents/skills; checker missed it."
+ },
+ {
+  "id": 90,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "Skills",
+  "reason": "Framework/Skills does not exist; Skills/ is at repo root."
+ },
+ {
+  "id": 91,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "scripts/update-rpc-bindings.sh",
+  "reason": "Script exists as update-rpc-bindings.sh, not generate-rpc-bindings.sh."
+ },
+ {
+  "id": 92,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "docs/TEMPLATES_EVOLUTION_PROPOSALS.md absent; no similar file in docs."
+ },
+ {
+  "id": 93,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "dist/Dockerfile.rust-toolset does not exist; only dist/Dockerfile.deploy."
+ },
+ {
+  "id": 94,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Mentioned as the old Laravel location that is no longer used; not a repo path."
+ },
+ {
+  "id": 95,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "ManagementConsole is a separate repository."
+ },
+ {
+  "id": 96,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "agents/ documentation tree does not exist; only root AGENTS.md."
+ },
+ {
+  "id": 97,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "OpenGL.Net/OpenGL.Net.Math.csproj",
+  "reason": "No OpenGL.Net.Math/ folder; math project lives inside OpenGL.Net/."
+ },
+ {
+  "id": 98,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "android/src/main/CMakeLists.txt",
+  "reason": "CMakeLists.txt is under android/src/main, not android/."
+ },
+ {
+  "id": 99,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "internal/driver",
+  "reason": "No pkg/linode-bs; driver code is in internal/driver."
+ },
+ {
+  "id": 100,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/IoTHub.Portal.Domain/Repositories",
+  "reason": "Short form omits project folder; real dir is src/IoTHub.Portal.Domain/Repositories."
+ },
+ {
+  "id": 101,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "assets/environment-interpreter/activate",
+  "reason": "assets/activation-scripts missing; activation scripts live under assets/environment-interpreter."
+ },
+ {
+  "id": 102,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "packages/orchestrator/cmd/create-build",
+  "reason": "No build-template cmd under orchestrator; create-build is the closest."
+ },
+ {
+  "id": 103,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Java package name, not a directory path."
+ },
+ {
+  "id": 104,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree is of steampipe-plugin-sdk, a different repository."
+ },
+ {
+  "id": 105,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "crates/backend_csharp/src/pass/meta/rust/info.rs",
+  "reason": "info.rs now under crates/backend_csharp/src/pass/meta/rust/."
+ },
+ {
+  "id": 106,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "No flamingock-core-api module or RecoveryStrategy.java in repo."
+ },
+ {
+  "id": 107,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Infrastructure/WordPress/Cli",
+  "reason": "CLI commands are in src/Infrastructure/WordPress/Cli."
+ },
+ {
+  "id": 108,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/IoTHub.Portal.Shared/Security/PortalPermissions.cs",
+  "reason": "Missing src/IoTHub.Portal.Shared prefix; file exists there."
+ },
+ {
+  "id": 109,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "source/dsp56300",
+  "reason": "DSP submodule is at source/dsp56300; no top-level dsp56300/ dir."
+ },
+ {
+  "id": 110,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "bpf-loader-rs/bpf-loader-lib/src/elf_container.rs",
+  "reason": "elf_container is a Rust file in bpf-loader-lib, not a directory."
+ },
+ {
+  "id": 111,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Generic Go layout advice, not a path in this repo."
+ },
+ {
+  "id": 112,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "engine/packages/engine",
+  "reason": "Packages moved to engine/packages/; core/engine now engine/packages/engine."
+ },
+ {
+  "id": 113,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Conditional check for a directory in some versions; not claimed to exist."
+ },
+ {
+  "id": 114,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Test suites live in the separate Haxe repository."
+ },
+ {
+  "id": 115,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "kiali-operator is a separate repository."
+ },
+ {
+  "id": 116,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "WooCommerce connector is a separate package, not part of core repo."
+ },
+ {
+  "id": 117,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "storage/src/rocksdb_storage/storage_context/batch.rs",
+  "reason": "batch.rs moved under rocksdb_storage/storage_context."
+ },
+ {
+  "id": 118,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "kiali-operator is a separate repository."
+ },
+ {
+  "id": 119,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "templates/Umbraco.Templates.csproj",
+  "reason": "No Umbraco.Templates folder; it is templates/Umbraco.Templates.csproj."
+ },
+ {
+  "id": 120,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic 'resource' pattern for commands, not real files."
+ },
+ {
+  "id": 121,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Glob '*_test.go' lost its asterisk."
+ },
+ {
+  "id": 122,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/Theme",
+  "reason": "Theme/ is under packages/Webkul; extractor assigned database/ as parent."
+ },
+ {
+  "id": 123,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "core/src/main/java/feign/codec/Decoder.java",
+  "reason": "'Encoder/Decoder.java' joins two files; Decoder.java is in feign/codec."
+ },
+ {
+  "id": 124,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "assets/app.ts",
+  "reason": "assets/core.ts absent; main entry is assets/app.ts."
+ },
+ {
+  "id": 125,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Sylius/Bundle/AdminBundle/Resources/assets/controllers",
+  "reason": "No top-level assets/admin; controllers live in AdminBundle Resources/assets."
+ },
+ {
+  "id": 126,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "shopware-project-schema.json",
+  "reason": "Schema file is at repo root, not internal/shop/."
+ },
+ {
+  "id": 127,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "BundleNameBundle template tree, a placeholder bundle structure."
+ },
+ {
+  "id": 128,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Splat.Drawing/PlatformModeDetector.cs",
+  "reason": "PlatformModeDetector is a file in Splat.Drawing, not a directory."
+ },
+ {
+  "id": 129,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/sdk/Angor.Sdk/Funding/Investor/InvestmentAppService.cs",
+  "reason": "Folder is Funding/Investor, not Investment."
+ },
+ {
+  "id": 130,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "third_party",
+  "reason": "third_party is at repo root, not under gb/."
+ },
+ {
+  "id": 131,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "cpp/fory/util/error.h",
+  "reason": "status.h does not exist; error.h is closest in util."
+ },
+ {
+  "id": 132,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic 'resources' API client pattern, not real files."
+ },
+ {
+  "id": 133,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "vendor/ is created by composer install."
+ },
+ {
+  "id": 134,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "The word 'tests' in prose; repo directory is test/."
+ },
+ {
+  "id": 135,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "src/osdep/sdl_renderer.h",
+  "reason": "'.h/.cpp' shorthand joined two files; both exist separately."
+ },
+ {
+  "id": 136,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/CatalogRule",
+  "reason": "CatalogRule is under packages/Webkul; extractor assigned database/ as parent."
+ },
+ {
+  "id": 137,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "crates/backend_csharp/src/pass/model/common/types/info/disposable.rs",
+  "reason": "disposable.rs lives under crates/backend_csharp/src/pass/model/common/types/info/."
+ },
+ {
+  "id": 138,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "pkg/webhook",
+  "reason": "pkg/webhook has no admission subfolder; files directly in pkg/webhook."
+ },
+ {
+  "id": 139,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "scripts/init-params does not exist; no similar file."
+ },
+ {
+  "id": 140,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/include/hoard/thresholdsegheap.h",
+  "reason": "File is in src/include/hoard, not include/util."
+ },
+ {
+  "id": 141,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "agents/ documentation tree does not exist; only root AGENTS.md."
+ },
+ {
+  "id": 142,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "kiali-operator is a separate repository."
+ },
+ {
+  "id": 143,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic package layout template in tree diagram."
+ },
+ {
+  "id": 144,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "fe/fe-common absent; frontend split into fe-core, fe-spi, fe-utils etc."
+ },
+ {
+  "id": 145,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "'mymodule' is a placeholder in a how-to-add-module example."
+ },
+ {
+  "id": 146,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "libdeps/ holds PlatformIO-installed libraries, not tracked."
+ },
+ {
+  "id": 147,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "myext/myexttheme is a template extension structure."
+ },
+ {
+  "id": 148,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "variants/rp2040",
+  "reason": "variants/rp2xxx absent; split into rp2040 and rp2350."
+ },
+ {
+  "id": 149,
+  "label": "WRONG_PATH",
+  "renamed_candidate": ".moon/toolchain.yml",
+  "reason": "File is named .moon/toolchains.yml."
+ }
+]

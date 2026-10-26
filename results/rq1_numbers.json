@@ -1,0 +1,62 @@
+{
+ "claims": {
+  "context_file": 41090,
+  "readme": 1857
+ },
+ "projects": {
+  "context_file": 3227,
+  "readme": 521
+ },
+ "missing": {
+  "context_file": 2182,
+  "readme": 226
+ },
+ "missing_rate": {
+  "context_file": 0.053102944755414945,
+  "readme": 0.12170166935918147
+ },
+ "estimated_error_rate": {
+  "context_file": {
+   "raw": 0.053102944755414945,
+   "estimate": 0.0224212433411752,
+   "low": 0.018715196505080012,
+   "high": 0.026299896561767674
+  },
+  "readme": {
+   "raw": 0.12170166935918147,
+   "estimate": 0.03549632022976126,
+   "low": 0.02650852653933608,
+   "high": 0.046057065726555824
+  }
+ },
+ "real_errors_share_never_valid": 0.5640974049697925,
+ "found_check": {
+  "CORRECT": 99,
+  "WRONG_MATCH": 1
+ },
+ "paired": {
+  "projects": 453,
+  "context_file_raw": 0.04862611917258413,
+  "readme_raw": 0.11158536585365854,
+  "context_file_adjusted": 0.020531028095091077,
+  "readme_adjusted": 0.032545731707317074
+ },
+ "rules_broken_at_snapshot": 54,
+ "breaking_imports_at_snapshot": 906,
+ "precision": {
+  "context_file": {
+   "k": 76,
+   "n": 180,
+   "p": 0.4222222222222222,
+   "lo": 0.3524323668165617,
+   "hi": 0.49526248841568915
+  },
+  "readme": {
+   "k": 35,
+   "n": 120,
+   "p": 0.2916666666666667,
+   "lo": 0.2178156362103854,
+   "hi": 0.3784423497974078
+  }
+ }
+}

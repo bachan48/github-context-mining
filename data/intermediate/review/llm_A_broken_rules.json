@@ -1,0 +1,262 @@
+[
+ {
+  "id": 0,
+  "label": "TRUE",
+  "reason": "Input/prompt managers import rich Console and print; not display managers."
+ },
+ {
+  "id": 1,
+  "label": "TRUE",
+  "reason": "program-lib depends on light-merkle-tree-reference from program-tests/."
+ },
+ {
+  "id": 2,
+  "label": "TRUE",
+  "reason": "No snapshot examples; at writing programs used light_sdk (sdk-libs), later removed."
+ },
+ {
+  "id": 3,
+  "label": "TRUE",
+  "reason": "common/topup-ratio.go etc. call json.Marshal directly; only common/json.go should."
+ },
+ {
+  "id": 4,
+  "label": "TRUE",
+  "reason": "Rules file imports effect flow; full text says rules shouldn't use flows."
+ },
+ {
+  "id": 5,
+  "label": "TRUE",
+  "reason": "main_frame_presenter calls wx.MessageBox directly; should delegate to view."
+ },
+ {
+  "id": 6,
+  "label": "TRUE",
+  "reason": "popup/options import runtime values from background/config and telemetry."
+ },
+ {
+  "id": 7,
+  "label": "FALSE_MAPPING",
+  "reason": "Only a type-only import; erased at build, rationale is bundle size."
+ },
+ {
+  "id": 8,
+  "label": "TRUE",
+  "reason": "Storybook preview imports antd App/Layout directly; other examples are wrapper layer."
+ },
+ {
+  "id": 9,
+  "label": "FALSE_RESOLUTION",
+  "reason": "org.springframework.boot.configurationmetadata is Spring Boot lib, matched a support/ module package."
+ },
+ {
+  "id": 10,
+  "label": "UNCLEAR",
+  "reason": "Core->support import is declared gradle dep; sentence vague. Spring Boot examples misresolved."
+ },
+ {
+  "id": 11,
+  "label": "TRUE",
+  "reason": "Domain SourceUrl uses Infrastructure UrlUtils."
+ },
+ {
+  "id": 12,
+  "label": "FALSE_MAPPING",
+  "reason": "toolkit/ is standalone package; eslint turns off dayjs restriction there."
+ },
+ {
+  "id": 13,
+  "label": "FALSE_MAPPING",
+  "reason": "configstate/config and ifacestate/ifacerepo are helper subpackages, not managers."
+ },
+ {
+  "id": 14,
+  "label": "TRUE",
+  "reason": "snap CLI imports overlord/state and ifacestate/schema (debug state command)."
+ },
+ {
+  "id": 15,
+  "label": "FALSE_MAPPING",
+  "reason": "typeof import is type-only; text forbids static value imports."
+ },
+ {
+  "id": 16,
+  "label": "FALSE_MAPPING",
+  "reason": "lxml imported only under TYPE_CHECKING; runtime uses fastkml.config."
+ },
+ {
+  "id": 17,
+  "label": "FALSE_MAPPING",
+  "reason": "neat/gpu is optional extra with lazy import, not core."
+ },
+ {
+  "id": 18,
+  "label": "TRUE",
+  "reason": "deployer used tokio while rule said never outside runtime/ (later relaxed)."
+ },
+ {
+  "id": 19,
+  "label": "TRUE",
+  "reason": "Model imports ReactElement from react."
+ },
+ {
+  "id": 20,
+  "label": "TRUE",
+  "reason": "Store imports React components from features/."
+ },
+ {
+  "id": 21,
+  "label": "TRUE",
+  "reason": "Direct fp-ts/* imports bypass @std aliases as sentence forbids."
+ },
+ {
+  "id": 22,
+  "label": "TRUE",
+  "reason": "elastic_agent imports torch.distributed.elastic; check-torchdist hook would flag it."
+ },
+ {
+  "id": 23,
+  "label": "FALSE_MAPPING",
+  "reason": "std gated behind 'reader' feature; crate stays no_std by default."
+ },
+ {
+  "id": 24,
+  "label": "TRUE",
+  "reason": "commands/publish.ts imports simple-git directly; not a wrapper module."
+ },
+ {
+  "id": 25,
+  "label": "TRUE",
+  "reason": "cmd/profilecli and adhocprofiles depend on legacy pkg/og."
+ },
+ {
+  "id": 26,
+  "label": "FALSE_MAPPING",
+  "reason": "Type-only electron imports; ESLint only restricts ipcMain/ipcRenderer."
+ },
+ {
+  "id": 27,
+  "label": "TRUE",
+  "reason": "xtask uses serde/serde_json directly instead of Norito."
+ },
+ {
+  "id": 28,
+  "label": "TRUE",
+  "reason": "ports/driver.py imports core.tm (import-linter ignore lists it as known exception)."
+ },
+ {
+  "id": 29,
+  "label": "FALSE_MAPPING",
+  "reason": "core.applications imports are the pyproject-listed exceptions the rule references."
+ },
+ {
+  "id": 30,
+  "label": "FALSE_MAPPING",
+  "reason": "gui_handler.go explicitly excluded in depguard config enforcing the rule."
+ },
+ {
+  "id": 31,
+  "label": "FALSE_MAPPING",
+  "reason": "Examples are TYPE_CHECKING imports; rule forbids runtime imports (real runtime ones exist elsewhere)."
+ },
+ {
+  "id": 32,
+  "label": "TRUE",
+  "reason": "hsfs explicit_provenance runtime-imports hsml and hopsworks inside functions."
+ },
+ {
+  "id": 33,
+  "label": "TRUE",
+  "reason": "hsml explicit_provenance runtime-imports hsfs inside functions."
+ },
+ {
+  "id": 34,
+  "label": "TRUE",
+  "reason": "Route component settings.tsx imports invoke directly."
+ },
+ {
+  "id": 35,
+  "label": "TRUE",
+  "reason": "App.tsx and others import @mui/material."
+ },
+ {
+  "id": 36,
+  "label": "TRUE",
+  "reason": "App.tsx and others import @mui/material."
+ },
+ {
+  "id": 37,
+  "label": "TRUE",
+  "reason": "Queries import cache_service/system_app_service from services layer."
+ },
+ {
+  "id": 38,
+  "label": "TRUE",
+  "reason": "MotionModel imports view classes."
+ },
+ {
+  "id": 39,
+  "label": "FALSE_MAPPING",
+  "reason": "Lint excludes any codegen path; importing pulumi pkg/v3/codegen is allowed."
+ },
+ {
+  "id": 40,
+  "label": "FALSE_MAPPING",
+  "reason": "Examples are profiling benchmark scripts; real breaks exist (aglib/nearpc.py)."
+ },
+ {
+  "id": 41,
+  "label": "TRUE",
+  "reason": "pwndbg/lib imports pwndbg.color."
+ },
+ {
+  "id": 42,
+  "label": "TRUE",
+  "reason": "pwndbg/lib imports pwndbg.color."
+ },
+ {
+  "id": 43,
+  "label": "TRUE",
+  "reason": "dbg_mod/gdb imports pwndbg.aglib."
+ },
+ {
+  "id": 44,
+  "label": "TRUE",
+  "reason": "Commands import gdb directly."
+ },
+ {
+  "id": 45,
+  "label": "TRUE",
+  "reason": "Production code imports recidiviz.tests (big_query_client, tools)."
+ },
+ {
+  "id": 46,
+  "label": "FALSE_MAPPING",
+  "reason": "Examples are cypress component tests of OIDCConnector itself."
+ },
+ {
+  "id": 47,
+  "label": "TRUE",
+  "reason": "Rules import dialect_ansi module directly, contrary to lazy-loading guidance."
+ },
+ {
+  "id": 48,
+  "label": "TRUE",
+  "reason": "Domain parsers import app.infrastructure.logger; domain allows stdlib only."
+ },
+ {
+  "id": 49,
+  "label": "FALSE_RESOLUTION",
+  "reason": "math/rand/v2 matched banned math/rand; text says v2 is preferred."
+ },
+ {
+  "id": 50,
+  "label": "FALSE_RESOLUTION",
+  "reason": "Namespace declared inside Umbraco.Core; AspNetCore.Identity comes from Extensions.Identity.Core."
+ },
+ {
+  "id": 51,
+  "label": "FALSE_MAPPING",
+  "reason": "Rule means importing SQL code from zen_stores, not sqlalchemy/sqlmodel libs."
+ }
+]

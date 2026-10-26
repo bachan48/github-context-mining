@@ -1,0 +1,1451 @@
+[
+ {
+  "id": 0,
+  "repo": "getsentry/sentry-go",
+  "clone": "clones/getsentry__sentry-go",
+  "head": "9bf5412274e381fdf41aa1b754817acc308d4f5c",
+  "context_file": "AGENTS.md",
+  "claimed_path": "iris",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "iris"
+  ],
+  "context": "```\n\n### Integration Sub-Modules\n\nEach lives in its own directory with a separate `go.mod`:\n\n- **HTTP middleware** \u2014 `http/`, `gin/`, `echo/`, `fiber/`, `fasthttp/`, `iris/`, `negroni/`\n- **Logging hooks** \u2014 `logrus/`, `zerolog/`, `zap/`, `slog/`\n- **Instrumentation** \u2014 `httpclient/`, `otel/`\n\nWhen adding a new integration, mirror an existing one."
+ },
+ {
+  "id": 1,
+  "repo": "z3z1ma/dbt-osmosis",
+  "clone": "clones/z3z1ma__dbt-osmosis",
+  "head": "2d43e436120392f8efa98865151f18bdebee5ad8",
+  "context_file": "AGENTS.md",
+  "claimed_path": "tests/conftest.py",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "tests/conftest.py"
+  ],
+  "context": "| `src/dbt_osmosis/core/schema/parser.py` / `reader.py` / `writer.py` | Canonical round-trip YAML filter/cache/preserve pipeline |\n| `src/dbt_osmosis/core/transforms.py` | `TransformPipeline` and main YAML mutation operations |\n| `src/dbt_osmosis/core/inheritance.py` | column lineage and inheritance logic |\n| `src/dbt_osmosis/core/sql_operations.py` | Shared SQL compile/execute helpers used outside just the CLI |\n| `src/dbt_osmosis/core/path_management.py` | YAML routing, source YAML bootstrapping, root-path validation |\n| `src/dbt_osmosis/workbench/app.py` | Streamlit workbench bootstrap and state initialization |\n| `tests/conftest.py` | expensive shared dbt fixture builders and `yaml_context` |\n| `tests/core/conftest.py` | ensures `demo_duckdb/target/manifest.json` exists before core tests |\n| `demo_duckdb/integration_tests.sh` | integration smoke sequence; resets fixture files with `git checkout`/`git clean` |\n\n## Development Commands"
+ },
+ {
+  "id": 2,
+  "repo": "getAlby/hub",
+  "clone": "clones/getAlby__hub",
+  "head": "56a8df5b691ef2f0200e7177b93df0147d373419",
+  "context_file": "AGENTS.md",
+  "claimed_path": "api/api.go",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "api/api.go"
+  ],
+  "context": "### Go\n\n- Idiomatic Go; `gofmt` formatting expected.\n- Structured logging via `logrus` with contextual fields \u2014 no `fmt.Print`.\n- Error wrapping with `fmt.Errorf(\"context: %w\", err)` for debugging.\n- Use the event publisher for cross-service communication.\n- New API endpoints belong in `api/api.go` with corresponding HTTP routes in `http/http_service.go`.\n\n### TypeScript / React\n\n- **Use shadcn/ui components** for all UI \u2014 do not create custom components unless no shadcn equivalent exists."
+ },
+ {
+  "id": 3,
+  "repo": "quay/quay",
+  "clone": "clones/quay__quay",
+  "head": "e21914a154c87aa224c9b673f00fcdbdef334cf3",
+  "context_file": "AGENTS.md",
+  "claimed_path": "auth",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "auth"
+  ],
+  "context": "# AGENTS.md\n\nAI-optimized guide for working with Project Quay container registry.\n\n## Project Overview\n\nEnterprise container registry supporting Docker Registry Protocol v2, OCI spec v1.1. Provides authentication, ACLs, team management, geo-replicated storage, and security scanning via Clair.\n\n**Stack:** Python 3.12, Flask, SQLAlchemy, PostgreSQL, Redis, Alembic migrations\n\n**Frontend:** Legacy Angular (`static/js/`) + New React/PatternFly (`web/`) - see `web/AGENTS.md` for React details"
+ },
+ {
+  "id": 4,
+  "repo": "ms609/citation-bot",
+  "clone": "clones/ms609__citation-bot",
+  "head": "11f8f4af4010a9bb37674d8d8fdae6c6fd6349cb",
+  "context_file": "AGENTS.md",
+  "claimed_path": "Template.php",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/includes/Template.php"
+  ],
+  "context": "# AGENTS.md - Citation Bot\n\nThis file provides context for AI assistants working on the Citation Bot project.\n\n## Quick Start for AI Assistants\n\n- Language: PHP 8.4+\n- Main logic: Template.php\n- Test command: php process_page.php \"Page\"\n- Code style: verbose, explicit, spaced-out, highly formatted style\n- First task: Read Template.php and Parameter.php"
+ },
+ {
+  "id": 5,
+  "repo": "sonic-net/dash",
+  "clone": "clones/sonic-net__dash",
+  "head": "62f9f0530609cc3420570f8f82c82f9bdeff1c32",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "documentation/general",
+  "tree_root": "DASH",
+  "match_type": "exact",
+  "matching_paths": [
+   "documentation/general"
+  ],
+  "context": "cd dash-pipeline\nmake\n\n# Run CI tests\n# See .github/workflows/ for CI pipeline definitions\n```\n\n## Testing\n\n- **BMv2 CI**: Automated tests run against the P4 behavioral model\n- **Test cases**: Defined in `test/test-cases/`\n- **Spellcheck**: Documentation spellcheck via GitHub Actions\n\n## Documentation\n\n- Start with `documentation/general/dash-high-level-design.md` for architecture overview\n- `documentation/general/dash-sonic-hld.md` for SONiC integration design\n- `documentation/general/sdn-features-packet-transforms.md` for networking scenarios\n"
+ },
+ {
+  "id": 6,
+  "repo": "ta-lib/ta-lib",
+  "clone": "clones/ta-lib__ta-lib",
+  "head": "5c85f0ddd3862f1748bc4d10ca8c702780f828f7",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/ta_func",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/ta_func"
+  ],
+  "context": "\n## Architecture Overview\n\nAll indicator code is **generated** by a single generator, **`ta_codegen`**\n(`ta_codegen/generator/`, Rust): it parses `ta_codegen/input/` \u2192 IR \u2192 renders\nper-backend (C, Java, C#, Rust). The C backend is generated **in place** into\n`src/ta_func` / `src/ta_abstract` (the shipped library); the Rust/Java/C#\nbindings live under `ta_codegen/output/`. `generate` owns every committed file it\nwrites \u2014 the build-system source lists and the ta-lib.org function pages included\n\u2014 so \"regenerate, then `git status` is clean\" is a total gate over the tree.\n"
+ },
+ {
+  "id": 7,
+  "repo": "keycard-tech/keycard-shell",
+  "clone": "clones/keycard-tech__keycard-shell",
+  "head": "95f24c0061e2193401b55de86c9d28165e826560",
+  "context_file": "AGENTS.md",
+  "claimed_path": "stm32/Core",
+  "tree_root": "keycard-shell",
+  "match_type": "exact",
+  "matching_paths": [
+   "stm32/Core"
+  ],
+  "context": "## Hardware Abstraction Layer (HAL)\n\nThe HAL is defined in [`app/hal.h`](app/hal.h) and provides:\n\n- **Camera**: Initialization, start/stop, frame acquisition and submission\n- **Screen**: Display initialization, pixel drawing, window management\n- **SmartCard**: ISO 7816 communication (start/stop, send/recv, PPS)\n- **USB**: HID communication (send, receive, stall control)\n- **Crypto**: Hardware-accelerated operations (SHA256, CRC32, AES, ECDSA, bignum)\n- **Flash**: Program, erase, and firmware switching\n- **GPIO/I2C/SPI**: Peripheral control\n- **Timer/ADC/PWM**: System utilities\n\n## Camera Operation\n\nThe camera uses a double-buffered DMA approach. See [`stm32/Core/Src/stm32_camera.c`](stm32/Core/Src/stm32_camera.c) for the implementation details.\n\n## QR Code Scanning\n"
+ },
+ {
+  "id": 8,
+  "repo": "tryAGI/LangChain.Providers",
+  "clone": "clones/tryAGI__LangChain.Providers",
+  "head": "45888ca973455171c1a6e543ebdacde9a486c7e1",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "ImageToText",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/Abstractions/src/ImageToText"
+  ],
+  "context": "**Text-to-Speech** (`TextToSpeech/`):\n- `ITextToSpeechModel` \u2014 speech synthesis\n\n**Speech-to-Text** (`SpeechToText/`):\n- `ISpeechToTextModel` \u2014 transcription\n\n**Image-to-Text** (`ImageToText/`):\n- `IImageToTextModel` \u2014 image captioning / visual understanding\n\n**Text-to-Music** (`TextToMusic/`):\n- `ITextToMusicModel` \u2014 music generation from text"
+ },
+ {
+  "id": 9,
+  "repo": "linux-nvme/nvme-stas",
+  "clone": "clones/linux-nvme__nvme-stas",
+  "head": "a2f0c69600948b59dd7065a3b885cf7728688836",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "staslib/defs.py",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "staslib/defs.py"
+  ],
+  "context": "Meson copies all Python source files into `.build/` at setup time. Tests run against `.build/`, not the source tree directly. After editing source files, Meson's incremental build often does **not** re-copy them (the `configure_file(copy: true)` step doesn't track file timestamps reliably). The safest approach after non-trivial edits:\n\n```bash\nrm -rf .build/ && meson setup .build && meson compile -C .build\n```\n\n`staslib/defs.py` is a template \u2014 `@VERSION@`, `@ETC@`, etc. are substituted by Meson into `.build/staslib/defs.py`. Always read the source version for logic, but the runnable version lives in `.build/`.\n\nTop-level scripts (`stafd.py`, `stacd.py`, `stafctl.py`, etc.) are installed **without the `.py` extension** \u2014 the built copies are `.build/stafd`, `.build/stafctl`, etc.\n\n## Architecture"
+ },
+ {
+  "id": 10,
+  "repo": "cooklang/cookcli",
+  "clone": "clones/cooklang__cookcli",
+  "head": "12c5127a8513e32e3965d23bf1168d879dbe7dd8",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/server/templates.rs",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/server/templates.rs"
+  ],
+  "context": "\n### Template System\nThe web UI uses server-side rendering with Askama templates:\n- Templates located in `templates/` directory\n- Base template (`base.html`) provides common layout\n- Page-specific templates extend the base template\n- Template data structures defined in `src/server/templates.rs`\n\n### Styling\n- Tailwind CSS for utility-first styling\n- Custom components defined in `static/css/input.css`"
+ },
+ {
+  "id": 11,
+  "repo": "aviator-co/av",
+  "clone": "clones/aviator-co__av",
+  "head": "e0fb25d9f70a5be1a3d928804c50f8c88b96c276",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "internal/actions",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "internal/actions"
+  ],
+  "context": "- **`internal/gh/`**: GitHub API client using GraphQL for PR management\n  - `ghui/`: Bubbletea-based interactive UI components for GitHub operations\n- **`internal/avgql/`**: Custom GraphQL client wrapper layer that abstracts GitHub API interactions\n- **`internal/meta/`**: Metadata storage system with transaction-based database interface for tracking branch relationships and stack state\n  - `jsonfiledb/`: JSON file-based database implementation for persisting metadata\n- **`internal/config/`**: Configuration management using Viper for user settings and repository state\n- **`internal/actions/`**: High-level business logic for PR operations and workflows, orchestrating git, GitHub, and metadata operations\n- **`internal/sequencer/`**: System for planning and executing complex multi-step operations with rollback support\n  - `planner/`: Planning logic for determining operation sequences\n  - `sequencerui/`: Interactive UI components for displaying and executing sequences\n- **`internal/editor/`**: Editor integration for launching and managing external text editors for interactive operations"
+ },
+ {
+  "id": 12,
+  "repo": "shafthq/shaft_engine",
+  "clone": "clones/shafthq__shaft_engine",
+  "head": "637cc0943019325647c6701c93f82eae95f0ff7f",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "docs",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "docs"
+  ],
+  "context": "- **Key Technologies**: Selenium WebDriver, Appium, REST Assured, Allure Reports\n- **Project Structure**:\n  - `src/main/java/com/shaft/` - Core framework code\n  - `src/test/java/` - Test examples and validation tests\n  - `src/test/resources/testDataFiles/` - JSON test data files\n  - `src/main/resources/` - Framework configuration and Docker compose files\n  - `docs/` - Documentation\n  - `.github/workflows/` - CI/CD pipelines\n  - `.github/instructions/` - Path-specific Copilot instructions (java-tests, framework-source)\n\n## Development Workflow"
+ },
+ {
+  "id": 13,
+  "repo": "SpecterOps/Nemesis",
+  "clone": "clones/SpecterOps__Nemesis",
+  "head": "2de94aaea84e6eabf55649dac27a1799065fbad5",
+  "context_file": "AGENTS.md",
+  "claimed_path": "jupyter",
+  "tree_root": "projects",
+  "match_type": "exact",
+  "matching_paths": [
+   "projects/jupyter"
+  ],
+  "context": "Nemesis is organized as a multi-service monorepo:\n- `projects/`: deployable services (for example `web_api`, `file_enrichment`, `frontend`, `agents`), each typically with its own `pyproject.toml` and `tests/`.\n- `libs/`: shared Python libraries (`common`, `file_linking`, `nemesis_dpapi`, `file_enrichment_modules`).\n- `infra/`: Docker, Dapr, Traefik, and observability configuration.\n- `tools/`: repo-level developer scripts (`install_dev_env.sh`, `lint.sh`, `test.sh`, `nemesis-ctl.sh`).\n- `docs/`: MkDocs content and generated API documentation assets.\n\n## Common Commands\n\n### Running Nemesis\n\n```bash\n# Start production services\n./tools/nemesis-ctl.sh start prod\n\n# Start with monitoring, jupyter, and LLM support\n./tools/nemesis-ctl.sh start prod --monitoring --jupyter --llm\n\n# Start development environment (always builds)"
+ },
+ {
+  "id": 14,
+  "repo": "mikopbx/core",
+  "clone": "clones/mikopbx__core",
+  "head": "02241c9b21c9415fcece915ddee9c95080938a4b",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/Core/Asterisk/Configs",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/Core/Asterisk/Configs"
+  ],
+  "context": "\n3. **Module System**: Extensible plugin architecture\n   - Base class: `src/Modules/PbxExtensionBase.php`\n   - Located in `/var/www/mikopbx/` on deployed systems\n\n4. **Asterisk Configuration**: Dynamic config generation system\n   - Generators in `src/Core/Asterisk/Configs/`\n   - Stage-based generation (pre-generate \u2192 generate \u2192 post-generate)\n   - Dual-stack IPv4/IPv6 support in network configurations\n\n5. **Event System**: Nginx nchan-based pub/sub messaging"
+ },
+ {
+  "id": 15,
+  "repo": "pipecat-ai/pipecat",
+  "clone": "clones/pipecat-ai__pipecat",
+  "head": "3eb7c2bcd997c9e2478d0288d1fcb5d3a4298546",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/pipecat/frames",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/pipecat/frames"
+  ],
+  "context": "```\n[Processor1] \u2192 [Processor2] \u2192 ... \u2192 [ProcessorN]\n```\n\n**Key components:**\n\n- **Frames** (`src/pipecat/frames/frames.py`): Data units (audio, text, video) and control signals. Flow DOWNSTREAM (input\u2192output) or UPSTREAM (acknowledgments/errors).\n\n- **FrameProcessor** (`src/pipecat/processors/frame_processor.py`): Base processing unit. Each processor receives frames, processes them, and pushes results downstream.\n\n- **Pipeline** (`src/pipecat/pipeline/pipeline.py`): Chains processors together."
+ },
+ {
+  "id": 16,
+  "repo": "altair-graphql/altair",
+  "clone": "clones/altair-graphql__altair",
+  "head": "8af65b3affbcb20bec64af9b3ec855526f576931",
+  "context_file": "AGENTS.md",
+  "claimed_path": ".github/instructions/app-testing.instructions.md",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   ".github/instructions/app-testing.instructions.md"
+  ],
+  "context": "\n## Additional Resources\n\n- Development setup: `.github/development.md`\n- Angular components: `.github/instructions/angular-components.instructions.md`\n- Angular services: `.github/instructions/angular-services.instructions.md`\n- Angular app testing: `.github/instructions/app-testing.instructions.md`\n- General testing: `.github/instructions/testing.instructions.md`\n- TypeScript: `.github/instructions/typescript.instructions.md`\n- NestJS API: `.github/instructions/nestjs-api.instructions.md`\n- JavaScript: `.github/instructions/javascript.instructions.md`"
+ },
+ {
+  "id": 17,
+  "repo": "openstreetmap-ng/openstreetmap-ng",
+  "clone": "clones/openstreetmap-ng__openstreetmap-ng",
+  "head": "08f28dda48c30c8d790e3836024c09f1f0d552bf",
+  "context_file": "AGENTS.md",
+  "claimed_path": "app/views/lib/i18n.ts",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "app/views/lib/i18n.ts"
+  ],
+  "context": "\n## Localization Workflow (frontend + backend)\n\n- Authoring: add English source strings in `config/locale/extra_en.yaml`. Keys must be slug\u2011like and highly descriptive so they read well at call sites. Example: `password_strength.suggestions.use_at_least_min_length_characters`.\n- Frontend usage: always call `i18next.t(\"literal.key\")` (or `t(\"literal.key\")`) with literal string keys next to the call. The i18next pipeline discovers keys via regex and prunes unused ones; dynamic construction is not detected and will be dropped.\n- Dynamic exceptions: if a dynamic family of keys is unavoidable, add a static prefix to `scripts/locale_make_i18next.py:_INCLUDE_PREFIXES`.\n- Pipeline: `locale-pipeline` runs post\u2011processing and emits both i18next hashed bundles (`config/locale/i18next`) and GNU gettext catalogs. Files are injected by `map_i18next_files(...)` and bootstrapped in the browser by `app/views/lib/i18n.ts`.\n- Backend translation: use `t()/nt()` inside the active translation context; templates get the locale via `render_jinja`/`render_response`.\n- Internal admin/moderation UIs: page\u2011specific admin text is intentionally not localized to speed up iteration and reduce maintenance. Where identical phrasing already exists elsewhere, prefer reusing those locale keys instead of duplicating strings. If an internal string becomes user\u2011facing later, migrate it to a locale key in the same change.\n- Locales hygiene: only add strings that are actually rendered; prefer reusing existing namespaces/keys over introducing near-duplicates.\n"
+ },
+ {
+  "id": 18,
+  "repo": "automattic/newspack-listings",
+  "clone": "clones/automattic__newspack-listings",
+  "head": "f3baacaa3f0c54243d3b1088297266a79bf21c86",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/blocks/listing/index.js",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/blocks/listing/index.js"
+  ],
+  "context": "- **CPT slug is abbreviated.** Marketplace post type is `newspack_lst_mktplce`, not `newspack_lst_marketplace`. Always use `Core::NEWSPACK_LISTINGS_POST_TYPES` instead of hardcoding slugs.\n\n- **Featured priority uses a custom DB table** (`wp_newspack_listings_priority`), not post meta. `get_post_meta()` won't return priority values. Use `Featured::get_priority()`. Schema changes require bumping `Featured::TABLE_VERSION`.\n\n- **Block attribute-to-meta syncing.** Block attributes auto-sync to post meta via `Core::sync_post_meta()` on `save_post`. The mapping lives in `Core::get_meta_fields()` using a `source` key. Renaming a block attribute or block name without updating the source mapping silently breaks syncing.\n\n- **\"newspack-listings/listing\" is not a real block.** The listing block dynamically registers per-CPT variants (`newspack-listings/event`, `newspack-listings/generic`, etc.) at runtime from `window.newspack_listings_data.post_types`. See `src/blocks/listing/index.js`.\n\n- **All block JS compiles into `dist/editor.js`.** Block directories under `src/blocks/` have `block.json` but no individual JS bundles in `dist/`.\n\n- **Front-end scripts are auto-discovered.** Any `.js` file in `src/assets/front-end/` automatically becomes a webpack entry point (`webpack.config.js` uses `fs.readdirSync()`)."
+ },
+ {
+  "id": 19,
+  "repo": "SukramJ/aiohomematic",
+  "clone": "clones/SukramJ__aiohomematic",
+  "head": "e38d79d944dbe4ba08734282402eff2d11d4c2e2",
+  "context_file": "AGENTS.md",
+  "claimed_path": "central",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "aiohomematic/central"
+  ],
+  "context": "# Repository Guidelines\n\n## Project Structure & Module Organization\n\n- `aiohomematic/` hosts the async library (`central/`, `client/`, `model/`, `store/`) plus assets in `rega_scripts/` and `translations/`.\n- `aiohomematic_test_support/` supplies fixtures, playback data, and factories; prefer these over bespoke mocks.\n- `tests/` contains the pytest suite with `helpers/` and `fixtures/`; keep new tests adjacent to related code.\n- `docs/` collects architecture, migration, and naming references; automation scripts live in `script/` for prek use.\n"
+ },
+ {
+  "id": 20,
+  "repo": "cloudflare/partykit",
+  "clone": "clones/cloudflare__partykit",
+  "head": "abf612c4cd30ed7e367d949bc5462cadcd61335e",
+  "context_file": "AGENTS.md",
+  "claimed_path": "packages/partysocket",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "packages/partysocket"
+  ],
+  "context": "\n## Repository Structure\n\nPartyServer is a **monorepo** using npm workspaces with multiple packages:\n\n- `packages/partyserver` - Core library for Durable Objects with WebSocket support\n- `packages/partysocket` - Reconnecting WebSocket client library\n- `packages/y-partyserver` - Yjs CRDT support for PartyServer\n- `packages/partysub` - Pub/sub at scale\n- `packages/partysync` - State synchronization (experimental)\n- `packages/partywhen` - Task scheduling at scale"
+ },
+ {
+  "id": 21,
+  "repo": "mattzcarey/shippie",
+  "clone": "clones/mattzcarey__shippie",
+  "head": "8534219219ace77874af9a2c1ff4b9e2e45dcd4f",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/common",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/common"
+  ],
+  "context": "- Do update entries in `docs/` and `templates/` whenever CLI flags or defaults change; do not alter workflow inputs or secrets without mirroring updates in `.github/workflows/`.\n- Do review `todo.md` and existing rules documentation before adding new guidance; do not remove rule files or MCP configs without a replacement plan.\n\n## Project Structure and Module Organization\n\n- Shippie is a TypeScript + Bun CLI and GitHub Action that performs automated code reviews using LLMs.\n- The CLI entrypoint is `src/index.ts`; `src/review` contains agent logic and prompts, `src/configure` handles project setup, and `src/common` holds shared platform, API, and utility code.\n- Evaluation scenarios and supporting harnesses live under `src/specs`; keep new tests aligned with this layout.\n- Documentation stays in `docs/`; `todo.md` tracks open work, while `templates/` supplies CI YAML that `tsup.config.ts` copies into `dist/` during builds.\n- GitHub automation is defined in `.github/workflows/`; the published composite action is configured through `action.yml` in the repository root.\n"
+ },
+ {
+  "id": 22,
+  "repo": "au-research/raid-au",
+  "clone": "clones/au-research__raid-au",
+  "head": "f005341afea3b3131c887862d4f1b8cfe471eefc",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "api-svc",
+  "tree_root": "raid-au",
+  "match_type": "exact",
+  "matching_paths": [
+   "api-svc"
+  ],
+  "context": "# CLAUDE.md - RAiD Registration Agency\n\n## Project Overview\n\nRAiD (Research Activity Identifier) Registration Agency system. Multi-module Gradle project with a Java/Spring Boot API, React TypeScript frontend, and Astro static site.\n\n## Project Structure\n\n```\nraid-au/\n\u251c\u2500\u2500 api-svc/              # Backend API\n\u2502   \u251c\u2500\u2500 raid-api/         # Spring Boot application (Java 17)\n\u2502   \u251c\u2500\u2500 db/               # Flyway migrations & JOOQ code generation\n\u2502   \u251c\u2500\u2500 idl-raid-v2/      # OpenAPI 3.0 spec & generated code"
+ },
+ {
+  "id": 23,
+  "repo": "turbot/steampipe-postgres-fdw",
+  "clone": "clones/turbot__steampipe-postgres-fdw",
+  "head": "c13290e283d359eca80f10830c4129a5816a3230",
+  "context_file": ".claude/CLAUDE.md",
+  "claimed_path": ".github/workflows/publish.yml",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   ".github/workflows/publish.yml"
+  ],
+  "context": "   - Linux x86_64 (`ubuntu-22.04`)\n   - Linux ARM64 (`ubuntu-22.04-arm`)\n4. On success, it creates a **draft release** on GitHub with all build artifacts.\n5. Verify all build jobs pass before proceeding.\n\n## Publishing the FDW Image\n1. Trigger the **Publish FDW Image** workflow (`.github/workflows/publish.yml`) manually via `workflow_dispatch`.\n   - **Branch:** `develop`\n   - **Input `release`:** the version tag (e.g., `v2.2.0`)\n2. This workflow downloads the draft release assets and pushes the FDW image to `ghcr.io/turbot/steampipe/fdw:<version>`.\n3. Non-RC versions are also tagged as `latest`."
+ },
+ {
+  "id": 24,
+  "repo": "tenzir/tenzir",
+  "clone": "clones/tenzir__tenzir",
+  "head": "0e309513fbdeb330f15102c7ce0764a55ce2befd",
+  "context_file": "AGENTS.md",
+  "claimed_path": "nix",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "nix"
+  ],
+  "context": "  - `src/` - Implementation files\n  - `builtins/` - Built-in operators, functions, formats, connectors, and related plugins\n  - `aux/` - Vendored dependencies (CAF, simdjson, etc.)\n  - `fbs/` - FlatBuffer schema definitions\n  - `test/` - Unit tests\n- `libtenzir_test/` - Test utilities library\n- `nix/` - Nix package management\n  - `package.nix` - Main package definition\n  - `overlay.nix` - Nix overlay for custom packages\n- `plugins/` - Additional plugins outside `libtenzir/builtins`\n  - Each subdirectory is a plugin (amqp, kafka, s3, etc.)"
+ },
+ {
+  "id": 25,
+  "repo": "eggjs/egg",
+  "clone": "clones/eggjs__egg",
+  "head": "0dc5dfbe17df09b863cfaaa29bd79e7a53301921",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "egg",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "packages/utils/test/fixtures/default-egg-app/node_modules/egg",
+   "tools/egg-bin/test/fixtures/example-ts-simple/node_modules/egg",
+   "tools/egg-bin/test/fixtures/example-ts-error-stack/node_modules/egg",
+   "tools/egg-bin/test/fixtures/example-ts-cluster/node_modules/egg",
+   "packages/egg/test/fixtures/apps/app-ts/node_modules/egg"
+  ],
+  "context": "> Node.js will be able to execute TypeScript files without additional configuration. See https://nodejs.org/en/blog/release/v22.18.0\n\n## Monorepo Structure\n\n### Packages\n\n- **`packages/egg/`** - Main Eggjs framework package\n  - `src/` - TypeScript source code\n  - `test/` - Comprehensive test suite with fixtures\n- **`packages/core/`** - Core plugin framework (merged from @eggjs/core)\n  - `src/` - Core TypeScript source code"
+ },
+ {
+  "id": 26,
+  "repo": "entur/kishar",
+  "clone": "clones/entur__kishar",
+  "head": "3d7591d80157d19662b1a85ea6b7c80c0055b7c3",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "helpers/graphql/JourneyPlannerGraphQLClient.java",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/main/java/org/entur/kishar/gtfsrt/helpers/graphql/JourneyPlannerGraphQLClient.java"
+  ],
+  "context": "4. Helper utilities in `GtfsRealtimeLibrary.java` wrap common operations\n5. Feed serialization happens in `GtfsRtData.java`\n\n### GraphQL Integration\n\nThe service can query a Journey Planner via GraphQL:\n- `helpers/graphql/JourneyPlannerGraphQLClient.java` - HTTP client\n- `helpers/graphql/ServiceJourneyService.java` - Service journey data provider\n- Used for enriching GTFS-RT data with additional journey information"
+ },
+ {
+  "id": 27,
+  "repo": "chillicream/graphql-platform",
+  "clone": "clones/chillicream__graphql-platform",
+  "head": "f1078634c59a27a4499fd682a58fffdcbe15491c",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/All.slnx",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/All.slnx"
+  ],
+  "context": "dotnet build src/HotChocolate/Core/src/Types/HotChocolate.Types.csproj\n```\n\n## Repository Layout\n\n```text\nsrc/All.slnx                   # Master solution (244 projects)\n\nsrc/HotChocolate/              # GraphQL Server\n  Core/\n    Abstractions/              # Interfaces, contracts"
+ },
+ {
+  "id": 28,
+  "repo": "defstudio/telegraph",
+  "clone": "clones/defstudio__telegraph",
+  "head": "87ce54d3ce3e51d44aff65668414ef1fc1848437",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "src/Commands",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/Commands"
+  ],
+  "context": "- `telegraph:unset-webhook` - Unregister webhook from Telegram bot\n- `telegraph:debug-webhook` - Get webhook debug info from Telegram bot\n\n### Key Package Structure\n- **Core**: `src/Telegraph.php` - Main Telegraph class with fluent API\n- **Models**: `src/Models/` - TelegraphBot and TelegraphChat Eloquent models\n- **Commands**: `src/Commands/` - Artisan commands for bot/chat management\n- **Concerns**: `src/Concerns/` - Traits for Telegraph functionality (HasStorage, ComposesMessages, etc.)\n- **Client**: `src/Client/` - HTTP client for Telegram API interaction\n- **DTO**: `src/DTO/` - Data Transfer Objects for Telegram API responses\n- **Controllers**: `src/Controllers/` - Webhook handling controllers"
+ },
+ {
+  "id": 29,
+  "repo": "datafusion-contrib/datafusion-dft",
+  "clone": "clones/datafusion-contrib__datafusion-dft",
+  "head": "cddb4d891c3378c33b343d4a23b3a6d482738017",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/stats.rs",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "crates/datafusion-app/src/stats.rs"
+  ],
+  "context": "- **`crates/datafusion-app`**: Core execution engine (reusable library)\n  - `src/local.rs` - ExecutionContext wrapping DataFusion SessionContext\n  - `src/executor/` - Dedicated executors for CPU-intensive work (inspired by InfluxDB)\n  - `src/catalog/` - Catalog management\n  - `src/extensions/` - DataFusion extensions\n  - `src/tables/` - Table provider implementations\n  - `src/stats.rs` - Query execution statistics\n  - `src/config.rs` - Execution configuration\n\n- **`crates/datafusion-functions-parquet`**: Parquet-specific UDFs\n"
+ },
+ {
+  "id": 30,
+  "repo": "danny-avila/LibreChat",
+  "clone": "clones/danny-avila__LibreChat",
+  "head": "f277b3203040020579b687f9656b45d35813d8f4",
+  "context_file": "AGENTS.md",
+  "claimed_path": "client/src/data-provider/index.ts",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "client/src/data-provider/index.ts"
+  ],
+  "context": "- Semantic HTML with ARIA labels (`role`, `aria-label`) for accessibility.\n- Group related components in feature directories (e.g., `SidePanel/Memories/`).\n- Use index files for clean exports.\n\n### Data Management\n\n- Feature hooks: `client/src/data-provider/[Feature]/queries.ts` \u2192 `[Feature]/index.ts` \u2192 `client/src/data-provider/index.ts`.\n- React Query (`@tanstack/react-query`) for all API interactions; proper query invalidation on mutations.\n- QueryKeys and MutationKeys in `packages/data-provider/src/keys.ts`.\n\n### Data-Provider Integration"
+ },
+ {
+  "id": 31,
+  "repo": "juice-shop/juice-shop",
+  "clone": "clones/juice-shop__juice-shop",
+  "head": "fc3697bc1442cd0e8eb068d5ac0efe271eaa702d",
+  "context_file": "AGENTS.md",
+  "claimed_path": "models",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "models"
+  ],
+  "context": "\n## Key Files and Directories\n\n- `app.ts` / `server.ts` - Application entry points\n- `lib/` - Utility functions and libraries (including `lib/startup/` for initialization)\n- `routes/` - Express route handlers\n- `models/` - Data models\n- `data/` - Data creation and management\n- `test/` - Unit and integration tests\n- `frontend/src/` - Angular frontend code\n- `cypress/` - E2E tests"
+ },
+ {
+  "id": 32,
+  "repo": "flowintel/misp-lite",
+  "clone": "clones/flowintel__misp-lite",
+  "head": "8d0dd530b40d08c417b7a12e5437e4f77149c239",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "stores",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "frontend/src/stores"
+  ],
+  "context": "\n### Frontend (`frontend/src/`)\n\nStore-based component architecture:\n\n- `views/` \u2014 Page-level components, organized by domain (`events/`, `attributes/`, `feeds/`, `servers/`, etc.)\n- `stores/` \u2014 Pinia stores per domain; each store owns API communication and state\n- `components/` \u2014 Shared reusable components\n- `router/` \u2014 Vue Router SPA configuration\n- `schemas/` \u2014 Yup validation schemas for forms\n- `helpers/` \u2014 Utility functions"
+ },
+ {
+  "id": 33,
+  "repo": "couchbase/testrunner",
+  "clone": "clones/couchbase__testrunner",
+  "head": "d188555c7911ff90565d4ecda1a826e61a31fa44",
+  "context_file": "AGENTS.md",
+  "claimed_path": "security",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "pytests/security",
+   "conf/security"
+  ],
+  "context": "```\n\n## Repository Layout\n\n| Path | Description |\n|------|-------------|\n| `pytests/` | Test suites by service: `gsi/` (65), `tuqquery/` (120+), `fts/`, `eventing/`, `xdcr/`, `security/`, `cbas/`, `backup/` |\n| `conf/` | 147 test suite configs + 28 service subdirectories |\n| `lib/` | Framework core: `membase/api/` (REST), `remote/` (SSH), `couchbase_helper/`, `tasks/`, `Cb_constants/` |\n| `scripts/` | Orchestration: `start_cluster_and_run_tests.sh/.py`, `install.py`, `cloud_provision.py`, dispatchers |\n| `b/resources/` | 153 cluster INI templates (topology, credentials, services) |"
+ },
+ {
+  "id": 34,
+  "repo": "kwaroran/risuai",
+  "clone": "clones/kwaroran__risuai",
+  "head": "51b9f117dfacff535c74a8dc5a58b49720e71d47",
+  "context_file": "AGENTS.md",
+  "claimed_path": "sync",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/ts/sync"
+  ],
+  "context": "| Directory/File | Purpose |\n|----------------|---------|\n| `storage/` | Data persistence layer (database, save files, platform adapters) |\n| `process/` | Core processing logic (chat, requests, memory, models) |\n| `plugins/` | Plugin system (API v3.0, sandboxing, security) |\n| `gui/` | GUI utilities (colorscheme, highlight, animation) |\n| `drive/` | Cloud sync and backup |\n| `translator/` | Translation system |\n| `model/` | Model definitions and integrations |\n| `sync/` | Multi-user synchronization |\n| `cbs.ts` | Callback system |"
+ },
+ {
+  "id": 35,
+  "repo": "pulumi/pulumi",
+  "clone": "clones/pulumi__pulumi",
+  "head": "d6f3e3a290907239b9ec6f94b4a05af33a70db17",
+  "context_file": "AGENTS.md",
+  "claimed_path": "tests/go.mod",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "tests/go.mod"
+  ],
+  "context": "- **Proto check:** `mise exec -- make check_proto`\n- **Changelog entry:** `mise exec -- make changelog` (interactive)\n- **Go workspace:** `mise exec -- make work`\n\n## Key invariants\n\n- Multiple Go modules (`pkg/go.mod`, `sdk/go.mod`, `tests/go.mod`, etc.). Changes to `go.mod` in one module may require updates in others. Run `mise exec -- make tidy` to verify.\n  - Use `mise exec -- make work` to create a `go.work` file for cross-module development.\n- Proto-generated files must stay in sync with `proto/*.proto`. CI enforces via `mise exec -- make check_proto`.\n- `pkg/codegen/schema/pulumi.json` is the metaschema. It must be valid JSON Schema and pass biome formatting.\n- Changelog entries are required for most PRs. Run `mise exec -- make changelog` to create one."
+ },
+ {
+  "id": 36,
+  "repo": "perforce/p4prometheus",
+  "clone": "clones/perforce__p4prometheus",
+  "head": "e54e474b1e0634554e25e29ae2b238de693e1597",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "p4metrics",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "cmd/p4metrics"
+  ],
+  "context": "\nThis guide helps AI coding agents work productively in the p4prometheus codebase, which integrates Perforce Helix Core Server (p4d) with Prometheus and Grafana for real-time metrics and monitoring.\n\n## Architecture Overview\n- **Main Components:**\n  - `p4prometheus`: Parses p4d log files, writes Prometheus-compatible metrics for collection via node_exporter.\n  - `p4metrics`: Generates supplementary metrics from p4d, intended to run as a systemd service. Replaces legacy shell scripts.\n  - `p4logtail` / `p4plogtail`: Tails p4d/p4p logs, outputs completed commands in JSON for integration with Elastic Search and similar tools.\n- **External Integrations:**\n  - Prometheus, VictoriaMetrics (optional), Grafana, node_exporter, windows_exporter, alertmanager.\n- **Data Flow:**"
+ },
+ {
+  "id": 37,
+  "repo": "Query-farm/airport",
+  "clone": "clones/Query-farm__airport",
+  "head": "9ef02f12b11f20d09ce04770edb9b4a042233b10",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src/include/airport_flight_exception.hpp",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/include/airport_flight_exception.hpp"
+  ],
+  "context": "- `src/airport_list_flights.cpp` - `airport_list_flights()` function to list available flights\n- `src/airport_action.cpp` - Execute Flight actions\n\n### Arrow/Flight Integration\n- `src/airport_flight_stream.cpp` - Arrow Flight stream handling\n- `src/airport_schema_utils.cpp` - Arrow schema <-> DuckDB type conversion\n- `src/include/airport_flight_exception.hpp` - Flight error handling\n\n### Catalog API\n- `src/include/storage/airport_catalog_api.hpp` - API structures for catalog metadata\n- `src/storage/airport_catalog_api.cpp` - Fetching catalog data from Flight servers"
+ },
+ {
+  "id": 38,
+  "repo": "youtrackdb/youtrackdb",
+  "clone": "clones/youtrackdb__youtrackdb",
+  "head": "2c161171ec89861bb73619e4d70ef5b912f5cc04",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "docs",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "docs"
+  ],
+  "context": "**JVM memory**: `.mvn/jvm.config` sets `-Xmx8192m` for Maven itself. Tests use `-Xms4096m -Xmx4096m` (configurable via `heapSize` property).\n\n**Important**: Tests require numerous `--add-opens` JVM flags for Java module system compatibility. These are configured in each module's `pom.xml` `<argLine>` property - do not remove them.\n\n## Project Documentation\n\nThe `docs/` folder contains project documentation. See `docs/README.md` for the index.\n\n## Key Architecture Concepts\n\n### Storage Engine"
+ },
+ {
+  "id": 39,
+  "repo": "restsharp/restsharp",
+  "clone": "clones/restsharp__restsharp",
+  "head": "9b2fe0a054eb732d4246ae5e117ffa02c703abd2",
+  "context_file": "CLAUDE.md",
+  "claimed_path": ".github/copilot-instructions.md",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   ".github/copilot-instructions.md"
+  ],
+  "context": "Use conditional compilation for TFM-specific APIs: `#if NET`, `#if NET8_0_OR_GREATER`. `System.Text.Json` is a NuGet dependency on older TFMs but built-in on net8.0+.\n\n## Code Style & Conventions\n\n- **C# version:** preview (latest features)\n- **Nullable:** Enabled in `/src`, disabled in `/test`\n- **License header required** in all `/src` files (Apache-2.0, see `.github/copilot-instructions.md` for exact text)\n- **Strong-named** assemblies via `RestSharp.snk`\n- **Partial classes** for large types, linked via `<DependentUpon>` in csproj\n- **Package versions** centrally managed in `Directory.Packages.props` \u2014 don't pin in individual projects\n- **Versioning** via MinVer from git tags (no hardcoded versions)"
+ },
+ {
+  "id": 40,
+  "repo": "cagnulein/qdomyos-zwift",
+  "clone": "clones/cagnulein__qdomyos-zwift",
+  "head": "19ffdd6cc261267b308286adf07657ba9162f2f2",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/characteristics",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/characteristics"
+  ],
+  "context": "- Adding a pattern without checking existing patterns\n- Not considering pattern order in the if-else chain\n- Adding overly broad patterns that match unintended devices\n- Not testing with actual device names\n\n### Characteristics & Protocols\n- Bluetooth characteristics handlers in `src/characteristics/`\n- FTMS (Fitness Machine Service) protocol support\n- ANT+ integration for sensors\n- Custom protocol implementations for specific brands\n"
+ },
+ {
+  "id": 41,
+  "repo": "firoorg/firo",
+  "clone": "clones/firoorg__firo",
+  "head": "b68fce8bdc1e0b54d8611a32c53187633a285ee6",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src",
+  "tree_root": "firo",
+  "match_type": "exact",
+  "matching_paths": [
+   "src"
+  ],
+  "context": "- Current version in `CMakeLists.txt`: `0.14.15.3`\n- Languages: C++20 and C11\n- Build system: CMake 3.22+ with out-of-tree builds only\n- Main executables:\n  - `firod`\n  - `firo-cli`\n  - `firo-tx`\n  - `firo-qt`\n\nCore features include Spark and Lelantus privacy protocols, deterministic masternodes, LLMQ-based ChainLocks and InstantSend, BIP47 payment codes, and FiroPOW mining.\n\n## Repository map\n\nTop-level directories you will touch most often:\n\n- `src/` - production C++ code\n- `src/test/` - Boost unit tests\n- `src/wallet/test/`, `src/libspark/test/`, `src/liblelantus/test/`, `src/hdmint/test/` - domain-specific unit tests\n- `qa/rpc-tests/` - Python functional tests"
+ },
+ {
+  "id": 42,
+  "repo": "inavflight/inav-configurator",
+  "clone": "clones/inavflight__inav-configurator",
+  "head": "955513e1dd5a82935b6398a97d85541372a82f36",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "forge.config.js",
+  "tree_root": "inav-configurator",
+  "match_type": "exact",
+  "matching_paths": [
+   "forge.config.js"
+  ],
+  "context": "\u2502   \u2502   \u251c\u2500\u2500 main.js                 # Main process entry\n\u2502   \u2502   \u2514\u2500\u2500 preload.js              # IPC bridge (renderer\u2194main)\n\u2502   \u251c\u2500\u2500 connection/             # Connection layer (factory pattern)\n\u2502   \u2502   \u251c\u2500\u2500 connectionSerial.js     # Serial port\n\u2502   \u2502   \u251c\u2500\u2500 connectionTcp.js        # TCP/IP (SITL)\n\u2502   \u2502   \u2514\u2500\u2500 connectionBle.js        # Bluetooth LE\n\u2502   \u251c\u2500\u2500 msp/                    # MSP protocol helpers\n\u2502   \u2502   \u251c\u2500\u2500 MSPCodes.js             # Command codes\n\u2502   \u2502   \u2514\u2500\u2500 MSPHelper.js            # Serialization (largest file)\n\u2502   \u2514\u2500\u2500 transpiler/             # Logic conditions compiler\n\u251c\u2500\u2500 src/css/                # Stylesheets\n\u2502   \u2514\u2500\u2500 tabs/                   # Per-tab styles\n\u251c\u2500\u2500 locale/                 # i18n translations (en, ja, ru, uk, zh_CN)\n\u251c\u2500\u2500 resources/              # 3D models, OSD fonts, SITL binaries\n\u251c\u2500\u2500 index.html              # Single-page app entry\n\u251c\u2500\u2500 forge.config.js         # Electron Forge build config\n\u2514\u2500\u2500 vite.*.config.js        # Vite build configs\n```\n"
+ },
+ {
+  "id": 43,
+  "repo": "solidinvoice/solidinvoice",
+  "clone": "clones/solidinvoice__solidinvoice",
+  "head": "a7923f8e0c8a74d4b662c651e8912930d523f551",
+  "context_file": "GEMINI.md",
+  "claimed_path": "EventSubscriber",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/SaasBundle/EventSubscriber",
+   "src/UserBundle/Onboarding/EventSubscriber",
+   "src/UserBundle/Tests/EventSubscriber",
+   "src/SaasBundle/Tests/EventSubscriber",
+   "src/UserBundle/EventSubscriber"
+  ],
+  "context": "\n```text\nBundleNameBundle/\n\u251c\u2500\u2500 Action/                      # Action classes (entry points for HTTP requests)\n\u251c\u2500\u2500 Entity/                      # Doctrine ORM entities\n\u251c\u2500\u2500 Form/                        # Symfony Form types and handlers\n\u251c\u2500\u2500 (Listener|EventSubscriber)/  # Event listeners and subscribers\n\u251c\u2500\u2500 Manager/                     # Complex business logic managers\n\u251c\u2500\u2500 Repository/                  # Database access objects\n\u251c\u2500\u2500 Resources/                   # Configuration, templates, assets\n\u2502   \u251c\u2500\u2500 config/                  # Bundle-specific configs"
+ },
+ {
+  "id": 44,
+  "repo": "ConservationInternational/trends.earth-algorithms",
+  "clone": "clones/ConservationInternational__trends.earth-algorithms",
+  "head": "5df43babf305e4ec75cbc51b066cd5c1da59df47",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "common",
+  "tree_root": "te_algorithms",
+  "match_type": "exact",
+  "matching_paths": [
+   "te_algorithms/common"
+  ],
+  "context": "```bash\n# Install pre-commit hooks\npip install pre-commit\npre-commit install\n\n# Manual validation\npre-commit run --all-files\n```\n\n## Project Architecture\n\n### Directory Structure\n```\nte_algorithms/\n\u251c\u2500\u2500 api/           # API utilities and interfaces\n\u251c\u2500\u2500 common/        # Common algorithms (soil organic carbon)\n\u251c\u2500\u2500 gdal/          # GDAL-based raster processing\n\u2502   \u2514\u2500\u2500 land_deg/  # Land degradation algorithms\n\u251c\u2500\u2500 gee/           # Google Earth Engine algorithms"
+ },
+ {
+  "id": 45,
+  "repo": "mjbots/mjlib",
+  "clone": "clones/mjbots__mjlib",
+  "head": "5b7a2b403a885f0d844650a914f158fad9d75342",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "telemetry",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "mjlib/telemetry"
+  ],
+  "context": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## Project Overview\n\nmjlib is a C++20 robotics library by mjbots, providing foundational utilities, async I/O, a multiplex communication protocol, telemetry/data recording, and microcontroller abstractions targeting STM32G4. Licensed under Apache 2.0.\n\n## Build System\n\nBazel is the build system. A vendored bazel binary is at `./tools/bazel`."
+ },
+ {
+  "id": 46,
+  "repo": "opsmill/infrahub",
+  "clone": "clones/opsmill__infrahub",
+  "head": "0ceb52b1f93613d8ba5da2eebf030f3c043703cc",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "docs/docs/reference",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "docs/docs/reference"
+  ],
+  "context": "- **Frontend**: Use npm scripts (`npm start`, `npm test`, `npm run build`) in `frontend/app/`.\n- **Docs**: Develop in `docs/`, preview with `invoke docs.build docs.serve`. Validate docs site with `invoke docs.validate`.\n\n## Project Conventions\n\n- **Testing**: Place backend tests in `backend/tests/`, SDK tests in `python_sdk/tests/`, and frontend tests alongside components.\n- **Docs**: Write guides in `docs/docs/guides/`, reference in `docs/docs/reference/`. Use Docusaurus markdown/MDX features.\n- **Community/Contributing**: See `CONTRIBUTING.md` and `SECURITY.md` at repo root for policies.\n\n## Integration Points\n"
+ },
+ {
+  "id": 47,
+  "repo": "alkem-io/client-web",
+  "clone": "clones/alkem-io__client-web",
+  "head": "0aaea6904315720ade34d7ebc45743fd32b2392c",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "src/main",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/main"
+  ],
+  "context": "\n# Alkemio Client Web \u2013 Agent Guide\n\n## Overview\n\n- React + TypeScript single-page app served by Vite; design system built on MUI and Emotion, GraphQL data layer via Apollo Client.\n- Repository is large (\u224818k modules built); main work happens under `src/core`, `src/domain`, and `src/main`. GraphQL documents live alongside features and generate strongly-typed hooks in `src/core/apollo/generated`.\n- Requires Node \u226522.0.0 and pnpm \u226510.17.1 (workspace is pinned to Node 22.21.1 via Volta). Always use pnpm; the lockfile is authoritative.\n\n## Governance & Workflow\n"
+ },
+ {
+  "id": 48,
+  "repo": "SkBlaz/py3plex",
+  "clone": "clones/SkBlaz__py3plex",
+  "head": "107bc89f581a220d78237b4fddfa147da8a111a8",
+  "context_file": "AGENTS.md",
+  "claimed_path": "py3plex/algorithms/multilayer_algorithms/multixrank.py",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "py3plex/algorithms/multilayer_algorithms/multixrank.py"
+  ],
+  "context": "- `py3plex/algorithms/centrality_toolkit.py` - Centrality computation toolkit\n\n**Specialized Multilayer Measures**:\n- `py3plex/algorithms/multilayer_algorithms/versatility.py` (16KB) - Node versatility across layers\n- `py3plex/algorithms/multilayer_algorithms/entanglement.py` (6KB) - Layer entanglement measures\n- `py3plex/algorithms/multilayer_algorithms/multirank.py` (13KB) - MultiRank centrality\n- `py3plex/algorithms/multilayer_algorithms/multixrank.py` (22KB) - MultiXRank for heterogeneous networks\n\n**Centrality Analysis**:\n- `py3plex/algorithms/centrality/explain.py` - Centrality explanation utilities\n- `py3plex/algorithms/attribute_correlation.py` - Attribute-centrality correlation analysis"
+ },
+ {
+  "id": 49,
+  "repo": "Comfy-Org/desktop",
+  "clone": "clones/Comfy-Org__desktop",
+  "head": "f0b53f06b2737254dd772787e1d38fe90cc1898c",
+  "context_file": "AGENTS.md",
+  "claimed_path": "main-process",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/main-process",
+   "tests/unit/main-process"
+  ],
+  "context": "\n### Source Code (`/src/`)\n\n- **`main.ts`**: Main Electron process entry point\n- **`desktopApp.ts`**: Core application logic\n- **`preload.ts`**: Electron preload script\n- **`main-process/`**: Main process modules\n  - `comfyDesktopApp.ts` - ComfyUI server management\n  - `appWindow.ts` - Window management\n  - `comfyServer.ts` - Server lifecycle\n- **`install/`**: Installation & setup logic"
+ },
+ {
+  "id": 50,
+  "repo": "colanode/colanode",
+  "clone": "clones/colanode__colanode",
+  "head": "ed5327a354fcc65ad6d0b66dd0453b61c6f1afd3",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "apps/server/src/lib/event-bus.ts",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "apps/server/src/lib/event-bus.ts"
+  ],
+  "context": "- `node.interactions` - Read receipts and activity tracking\n\n**Key Files:**\n\n- `packages/client/src/services/workspaces/synchronizer.ts`\n- `apps/server/src/synchronizers/*` - Server-side data fetchers\n- `apps/server/src/lib/event-bus.ts` - Event system for triggering syncs\n\n### Node Type Registry\n\n**Location:** `packages/core/src/registry/nodes/`"
+ },
+ {
+  "id": 51,
+  "repo": "specs-feup/clava",
+  "clone": "clones/specs-feup__clava",
+  "head": "caac5a353e7efcb3760367e4e881762957ed8ecc",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "src-api",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "Clava-JS/src-api"
+  ],
+  "context": "\n## Code Patterns and Conventions\n\n- **Visitor Patterns:**  \n  Used extensively in AST processing (see `ClangAstDumper.h`).\n- **TypeScript API:**  \n  Modular, with clear separation between API (`src-api/`) and code (`src-code/`).\n- **Java:**  \n  Follows standard Gradle project structure.\n- **C++:**  \n  Integrates with Clang/LLVM for AST extraction."
+ },
+ {
+  "id": 52,
+  "repo": "rh-messaging/activemq-artemis-operator",
+  "clone": "clones/rh-messaging__activemq-artemis-operator",
+  "head": "b0f85fc9240845eff2feb75a7a5bef93a2fd41db",
+  "context_file": "AGENTS.md",
+  "claimed_path": "controllers",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "controllers"
+  ],
+  "context": "1. **Naming**: Follow naming conventions (search codebase for patterns)\n    - Resources: `{cr-name}-{resource-type}-{ordinal}`\n    - Functions: Clear, descriptive names\n    - Constants: ALL_CAPS with descriptive names\n\n2. **Structure**: Follow controller pattern\n    - Reconcile functions in `controllers/`\n    - Resource generation in `pkg/resources/`\n    - Utilities in `pkg/utils/`\n\n3. **Validation**: Use validation chain pattern"
+ },
+ {
+  "id": 53,
+  "repo": "pengweiqhca/xunit.dependencyinjection",
+  "clone": "clones/pengweiqhca__xunit.dependencyinjection",
+  "head": "a8b05dcfbaa31950ed86885f9e1508ebe81f810e",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "Xunit.DependencyInjection.Logging",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/Xunit.DependencyInjection.Logging"
+  ],
+  "context": "## Key Project Structure\n\n### Source Projects (`src/`)\n- `Xunit.DependencyInjection/` - Main library (multi-targets net472;net8.0)\n- `Xunit.DependencyInjection.Analyzer/` - Roslyn analyzer for compile-time validation\n- `Xunit.DependencyInjection.AspNetCoreTesting/` - ASP.NET Core TestHost integration\n- `Xunit.DependencyInjection.Logging/` - Microsoft.Extensions.Logging integration\n- `Xunit.DependencyInjection.Template/` - dotnet new template for creating test projects\n- `Xunit.DependencyInjection.StaFact/` - STA thread support for UI tests\n- `Xunit.DependencyInjection.Demystifier/` - Enhanced stack trace support\n- `Xunit.DependencyInjection.xRetry/` - Test retry functionality"
+ },
+ {
+  "id": 54,
+  "repo": "damian-pastorini/reldens",
+  "clone": "clones/damian-pastorini__reldens",
+  "head": "e4a1d2f5d78ad1800a5f1174f246d1806aab3240",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "schemas",
+  "tree_root": "lib",
+  "match_type": "suffix",
+  "matching_paths": [
+   "lib/actions/schemas"
+  ],
+  "context": "```\n\n**Full command reference**: See `.claude/commands-reference.md`\n\n## Architecture Overview\n\n### Client-Server Organization\nThe codebase follows a **client/server split architecture** within each feature module:\n\n```\nlib/\n  \u251c\u2500\u2500 {feature}/\n  \u2502   \u251c\u2500\u2500 client/           # Client-side code (Phaser, UI, rendering)\n  \u2502   \u251c\u2500\u2500 server/           # Server-side code (Colyseus rooms, logic)\n  \u2502   \u251c\u2500\u2500 constants.js      # Shared constants\n  \u2502   \u2514\u2500\u2500 schemas/          # Colyseus state schemas (if applicable)\n```\n\n### Core Entry Points"
+ },
+ {
+  "id": 55,
+  "repo": "wp-graphql/wp-graphql",
+  "clone": "clones/wp-graphql__wp-graphql",
+  "head": "3a76fe54967945e7154ddead7a715879678ab8fe",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "plugins/wp-graphql",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "plugins/wp-graphql"
+  ],
+  "context": "## Repository Overview\n\nWPGraphQL is a monorepo containing the WPGraphQL ecosystem of WordPress plugins. The core plugin adds a `/graphql` endpoint to WordPress and defines a GraphQL Schema based on WordPress registries (post types, taxonomies, settings, etc.). Uses npm workspaces and Turborepo for orchestration.\n\n### Plugins in the Monorepo\n\n- **plugins/wp-graphql/** \u2014 Core GraphQL API plugin (PHP 7.4+, WP 6.0+)\n- **plugins/wp-graphql-ide/** \u2014 GraphiQL IDE for WordPress admin (React-based)\n- **plugins/wp-graphql-smart-cache/** \u2014 Caching and cache invalidation\n- **plugins/wp-graphql-acf/** \u2014 ACF field groups and fields in GraphQL\n- **plugins/wp-graphql-schema-monitor/** \u2014 Schema change monitoring (experimental)"
+ },
+ {
+  "id": 56,
+  "repo": "lineartapefilesystem/ltfs",
+  "clone": "clones/lineartapefilesystem__ltfs",
+  "head": "4c0e6faae661e0bfd50bc9707f59ecd88c90b7eb",
+  "context_file": "AGENTS.md",
+  "claimed_path": "utils/ltfsck.c",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/utils/ltfsck.c"
+  ],
+  "context": "- `messages`:              Message files used in the code tree\n- `src/libltfs`:           Source files for libltfs, the library that handles logical layer of the LTFS format\n- `src/iosched`:           I/O scheduler plugins for libltfs. The libltfs makes indirect calls to an ioschead plugin loaded when a command is launched for creating 512KB block for tape R/W\n- `src/tape_drivers`:      Tape drive handling plugins for libltfs. The libltfs makes indirect calls to an tape drive plugin loaded when a command is launched for issuing SCSI commands to different type of tape drives\n- `src/kmi`:               Encryption key management plugins for libltfs\n- `utils/mkltfs.c`:        Formatting tool for the LTFS like `mkfs`\n- `utils/ltfsck.c`:        Recovery tool for the LTFS like `fsck`\n- `utils/ltfsindextool.c`: Tools for capturing indexes on the tape\n- `./main.c`:              Main function for `ltfs` command, it is the file system command for FUSE\n- `./ltfs_fuse.*`:         FUSE - LTFS file operation glue layer\n- `./ltfs_copyright.h`:    Copyright definition for injecting to compiled binaries"
+ },
+ {
+  "id": 57,
+  "repo": "evilmartians/lefthook",
+  "clone": "clones/evilmartians__lefthook",
+  "head": "f8e73b947e2eefd6950d6a19c20bbde19070809d",
+  "context_file": "AGENTS.md",
+  "claimed_path": "cmd",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "cmd"
+  ],
+  "context": "```\n\n## Codebase map\n\n| Path | Purpose |\n|---|---|\n| `cmd/` | CLI commands |\n| `internal/config/` | Config parsing, validation, JSON schema |\n| `internal/run/` | Hook runner, parallelism |\n| `internal/command/` | Top-level orchestrator |\n| `internal/git/` | Git utilities |"
+ },
+ {
+  "id": 58,
+  "repo": "openshift/installer",
+  "clone": "clones/openshift__installer",
+  "head": "3fa9ca062ad263dbb676a044ae8354a6920a7023",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "pkg/asset",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "pkg/asset"
+  ],
+  "context": "\nThe installer uses a dependency-graph architecture where everything is an \"Asset\". See [docs/design/assetgeneration.md](docs/design/assetgeneration.md) for complete details.\n\nKey points:\n- **Asset**: Interface with `Dependencies()`, `Generate()`, and `Name()` methods\n- **WritableAsset**: Assets that can be written to disk and loaded\n- Main assets in `pkg/asset/`: install-config, manifests, ignition-configs, cluster\n\n### Cluster API Integration\n\nThe installer uses Cluster API (CAPI) controllers running in a local control plane. See [docs/dev/cluster-api.md](docs/dev/cluster-api.md) for complete details."
+ },
+ {
+  "id": 59,
+  "repo": "nmstate/kubernetes-nmstate",
+  "clone": "clones/nmstate__kubernetes-nmstate",
+  "head": "df8e977ae555d97d653b971ae2ff1cc33b57d7e0",
+  "context_file": "AGENTS.md",
+  "claimed_path": "pkg/nmstatectl",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "pkg/nmstatectl"
+  ],
+  "context": "\n### Key Packages\n\n- `pkg/state/`: Network state management and nmstate integration\n- `pkg/enactmentstatus/`: Tracks policy enactment status per node\n- `pkg/policyconditions/`: Policy condition management\n- `pkg/nmstatectl/`: Interface to nmstatectl CLI\n- `pkg/node/`: Node-specific operations\n- `pkg/webhook/`: Admission webhooks for CR validation\n- `pkg/bridge/`: Bridge network configuration\n- `pkg/selectors/`: Node selector matching logic"
+ },
+ {
+  "id": 60,
+  "repo": "chakra-ui/ark",
+  "clone": "clones/chakra-ui__ark",
+  "head": "1ec9b66ad358f734699669070c3cbaf9508130b2",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "packages",
+  "tree_root": "ark",
+  "match_type": "exact",
+  "matching_paths": [
+   "packages"
+  ],
+  "context": "- **[Development](@.claude/docs/development.md)** - Development workflows, commands, and processes\n- **[Component Patterns](@.claude/docs/component_patterns.md)** - Component development patterns, examples, and testing\n- **[Framework Patterns](@.claude/docs/framework_patterns.md)** - Framework-specific patterns and advanced\n  implementations\n- **[Documentation Patterns](@.claude/docs/documentation-patterns.md)** - Website documentation structure, Examples vs\n  Guides, and writing guidelines\n\n## Quick Start\n\n### Common Commands\n\n```bash\n# Install dependencies\nbun install\n\n# Build all packages\nbun run build\n\n# Run tests across all packages"
+ },
+ {
+  "id": 61,
+  "repo": "sysown/proxysql",
+  "clone": "clones/sysown__proxysql",
+  "head": "23506324bcea553ab1fda732003ffedab3667e7d",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "test/infra",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "test/infra"
+  ],
+  "context": "\n# Run specific test groups\ncd test/tap/tests && make\ncd test/tap/tests_with_deps && make\n\n# Test infrastructure (Docker environments)\n# Located in test/infra/ with docker-compose configs for:\n# mysql57, mysql84, mariadb10, pgsql16, pgsql17, clickhouse23, etc.\n```\n\nTest files follow the naming pattern `test_*.cpp` or `*-t.cpp` in `test/tap/tests/`."
+ },
+ {
+  "id": 62,
+  "repo": "kubetail-org/kubetail",
+  "clone": "clones/kubetail-org__kubetail",
+  "head": "c760112a50b702ebffbc7f17c253d4378e6dfa71",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "dashboard-ui/src",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "dashboard-ui/src"
+  ],
+  "context": "### TypeScript/React Coding Style\n\n- Use 2 spaces for indentation\n- Use functional components with hooks\n- Prefer TypeScript strict mode\n- Use Apollo Client for GraphQL queries\n- Follow existing patterns in `dashboard-ui/src/`\n\n### Go Coding Style\n\n- Follow standard Go formatting (`gofmt`)"
+ },
+ {
+  "id": 63,
+  "repo": "livehelperchat/livehelperchat",
+  "clone": "clones/livehelperchat__livehelperchat",
+  "head": "2b59107c2cf9aa7b1f83ef38c85eebf4f17c2160",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "design",
+  "tree_root": "extension/myext",
+  "match_type": "suffix",
+  "matching_paths": [
+   "lhc_web/design"
+  ],
+  "context": "\n# REFERENCE DOCUMENTATION\n# For comprehensive architecture, patterns, and domain knowledge, refer to:\n# `.github/instructions/` folder which contains:\n# - 1-techstack.md - Technology stack and framework analysis\n# - 2-file-categories.md - Complete file categorization and model inventory\n# - 3-architectural-domains.json - Domain boundaries and constraints\n# - 5-code-patterns.json - Design patterns used throughout codebase\n# - 6-integration-points.json - Integration points and APIs\n# - 4-domains/*.md - Detailed domain guides (api, auth, bot, caching, config, data-layer, departments, events, extensions, routing, ui, users)\n# - 10-summary.json - Quick reference project summary\n\n# Application folders structure\n\n* `lhc_web/cache` - Stores cached files\n* `lhc_web/design` - Contains design categories, templates, and frontend apps\n* `lhc_web/doc` - Release documentation and database schema (update_db/structure.json)\n* `lhc_web/extension` - All extensions/plugins are placed here\n* `lhc_web/ezcomponents` - eZ Components core components (database, persistence, URL handling)"
+ },
+ {
+  "id": 64,
+  "repo": "debanjandhar12/logseq-anki-sync",
+  "clone": "clones/debanjandhar12__logseq-anki-sync",
+  "head": "7fe2993158ca9869b0f01818882635be73e458df",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/anki-connect",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "src/anki-connect"
+  ],
+  "context": "\n- **Entry Point:** `src/index.ts` initializes the plugin, registers UI commands, and sets up event listeners\n- **Output:** Build artifacts go to `dist/` directory\n- **Dependencies:** Defined in `package.json`\n- **Main Modules:**\n  - `src/logseq/` - Logseq API interaction with caching layer (LogseqProxy)\n  - `src/anki-connect/` - Anki Connect API integration\n  - `src/sync/` - Core syncing logic with hash-based change detection\n  - `src/anki-notes/` - Generates Anki notes from Logseq blocks\n  - `src/ui/` - React-based UI components (modals, pages, settings)\n  - `src/utils/` - Shared utility functions"
+ },
+ {
+  "id": 65,
+  "repo": "mozilla/neqo",
+  "clone": "clones/mozilla__neqo",
+  "head": "4b58b438e3c11ab159ea08aed7934c670d686500",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "neqo-http3",
+  "tree_root": "neqo",
+  "match_type": "exact",
+  "matching_paths": [
+   "neqo-http3"
+  ],
+  "context": "# Neqo: QUIC Implementation in Rust\n\n## Overview\nNeqo is Mozilla's production QUIC, HTTP/3, and QPACK implementation used in Firefox. Written in Rust with NSS as the TLS backend. The server functionality is experimental and not production-ready.\n\n**Repository Structure**: Cargo workspace with 9 member crates plus support directories.\n- **Core crates**: `neqo-common` (shared utilities), `neqo-crypto` (TLS/NSS bindings), `neqo-transport` (QUIC protocol), `neqo-http3` (HTTP/3), `neqo-qpack` (QPACK compression), `neqo-udp` (UDP socket handling)\n- **Binary crate**: `neqo-bin` (CLI tools: `neqo-client`, `neqo-server`)\n- **Support crates**: `test-fixture` (test utilities), `fuzz` (fuzzing), `mtu` (MTU detection)\n- **Config files**: Root `.rustfmt.toml`, `.clippy.toml`, `.deny.toml`, `Cargo.toml` (workspace lints)"
+ },
+ {
+  "id": 66,
+  "repo": "firoorg/firo",
+  "clone": "clones/firoorg__firo",
+  "head": "b68fce8bdc1e0b54d8611a32c53187633a285ee6",
+  "context_file": "AGENTS.md",
+  "claimed_path": "doc/fuzzing.md",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "doc/fuzzing.md"
+  ],
+  "context": "```bash\ncmake -B build -DBUILD_BENCH=ON ...\ncmake --build build\n./build/bin/bench_firo\n```\n\nFuzz targets live in `src/fuzz/`. See `doc/fuzzing.md` for setup details.\n\n## CI reference\n\nThe main workflow is `.github/workflows/ci-master.yml`."
+ },
+ {
+  "id": 67,
+  "repo": "tale/headplane",
+  "clone": "clones/tale__headplane",
+  "head": "a5e2af9b3000de908ba659be192be5598a092247",
+  "context_file": "AGENTS.md",
+  "claimed_path": "docs",
+  "tree_root": null,
+  "match_type": "exact",
+  "matching_paths": [
+   "docs"
+  ],
+  "context": "the respective `lint` and `format` scripts, you can pass flags to them. You can\nalso run Headscale CLI commands with `docker exec headscale headscale <command>`\nwhen the dev environment is running.\n\n## Docs\n\nThe project has a documentation site available at the `docs/` directory built\nwith VitePress. The documentation is written in Markdown and can be easily\nedited and extended. If making changes to staple features, please take care to\nalso update the documentation to reflect any changes in functionality or usage.\n"
+ },
+ {
+  "id": 68,
+  "repo": "sylius/sylius",
+  "clone": "clones/sylius__sylius",
+  "head": "1020a0912f85dc73030190bbc7ed3f6fe3335ef7",
+  "context_file": "AGENTS.md",
+  "claimed_path": "serialization",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/Sylius/Bundle/ApiBundle/tests/Application/config/serialization",
+   "src/Sylius/Bundle/ApiBundle/Resources/config/serialization",
+   "src/Sylius/Bundle/CoreBundle/Resources/config/serialization"
+  ],
+  "context": "- Entity pattern: `src/Sylius/Component/Core/Model/Product.php`\n- Interface pattern: `src/Sylius/Component/Core/Model/ProductInterface.php`\n- Doctrine mapping: `src/Sylius/Bundle/CoreBundle/Resources/config/doctrine/model/`\n\n### API Platform 4.x\n- Resource definitions: `src/Sylius/Bundle/ApiBundle/Resources/config/api_platform/resources/`\n- Properties/serialization: `src/Sylius/Bundle/ApiBundle/Resources/config/api_platform/properties/`\n- Admin resources: `resources/admin/Product.xml`\n- Shop resources: `resources/shop/Product.xml`\n\n### Services & Configuration"
+ },
+ {
+  "id": 69,
+  "repo": "tokens-studio/figma-plugin",
+  "clone": "clones/tokens-studio__figma-plugin",
+  "head": "7c76e0674f3ff9cb38e2531965e4b1c71860cd7c",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "src/app",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "packages/tokens-studio-for-figma/src/app"
+  ],
+  "context": "- Jest uses ts-jest for TypeScript support\n\n## Architecture\n\n### Plugin Structure\n\n- `src/app` - React UI components\n- `src/plugin` - Figma plugin code\n- `src/storage` - Storage providers for tokens\n- `src/types` - TypeScript type definitions\n"
+ },
+ {
+  "id": 70,
+  "repo": "bagisto/bagisto",
+  "clone": "clones/bagisto__bagisto",
+  "head": "7e2356ba571f33f9e022f3a75a686e7dc68ca10d",
+  "context_file": "AGENTS.md",
+  "claimed_path": "Providers",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "packages/Webkul/SocialLogin/src/Providers",
+   "packages/Webkul/GDPR/src/Providers",
+   "packages/Webkul/Theme/src/Providers",
+   "packages/Webkul/RMA/src/Providers",
+   "packages/Webkul/Admin/src/Providers"
+  ],
+  "context": "\u251c\u2500\u2500 Config/                     # admin-menu.php, system.php, acl.php, carriers.php, etc.\n\u251c\u2500\u2500 Contracts/                  # Interfaces for each model\n\u251c\u2500\u2500 Database/\n\u2502   \u251c\u2500\u2500 Migrations/\n\u2502   \u251c\u2500\u2500 Factories/\n\u2502   \u2514\u2500\u2500 Seeders/\n\u251c\u2500\u2500 DataGrids/                  # DataGrid classes (extends Webkul\\DataGrid\\DataGrid)\n\u251c\u2500\u2500 Http/\n\u2502   \u251c\u2500\u2500 Controllers/\n\u2502   \u251c\u2500\u2500 Middleware/\n\u2502   \u2514\u2500\u2500 Requests/               # Form Request validation classes\n\u251c\u2500\u2500 Jobs/\n\u251c\u2500\u2500 Listeners/\n\u251c\u2500\u2500 Models/                     # Eloquent models + Proxy classes\n\u251c\u2500\u2500 Observers/\n\u251c\u2500\u2500 Providers/\n\u2502   \u251c\u2500\u2500 {Name}ServiceProvider.php\n\u2502   \u2514\u2500\u2500 ModuleServiceProvider.php  # Concord model registration\n\u251c\u2500\u2500 Repositories/               # Prettus L5 repositories"
+ },
+ {
+  "id": 71,
+  "repo": "python-cachier/cachier",
+  "clone": "clones/python-cachier__cachier",
+  "head": "7bf88348819097a62a92c111486a789388cd438e",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "core.py",
+  "tree_root": "cachier",
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/cachier/core.py"
+  ],
+  "context": "- **Test Framework:** `pytest` with backend-specific markers\n- **Linting:** `ruff` (replaces black/flake8)\n- **Type Checking:** `mypy`\n- **CI:** GitHub Actions (matrix for backends/OS with Dockerized services)\n- **Issue Tracking:** GitHub Issues\n- **Additional Docs:** `.github/copilot-instructions.md` for contributor guidelines\n\n______________________________________________________________________\n\n## \ud83d\uddc2\ufe0f Repository Structure\n\n```\ncachier/\n\u251c\u2500\u2500 src/cachier/           # Main library code\n\u2502   \u251c\u2500\u2500 __init__.py\n\u2502   \u251c\u2500\u2500 core.py            # Decorator logic, backend selection\n\u2502   \u251c\u2500\u2500 cores/             # Backend implementations\n\u2502   \u2502   \u251c\u2500\u2500 pickle.py\n\u2502   \u2502   \u251c\u2500\u2500 memory.py"
+ },
+ {
+  "id": 72,
+  "repo": "BitBoxSwiss/bitbox-wallet-app",
+  "clone": "clones/BitBoxSwiss__bitbox-wallet-app",
+  "head": "328eff3069c8c0f19447bfc7928b85ad9980ac84",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/api/account.ts",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "frontends/web/src/api/account.ts"
+  ],
+  "context": "Page-level components in `src/routes/` often use a wrapper/inner split. The wrapper resolves\nthe account from a route code and passes fully typed props to the inner component. See\n`src/routes/account/send/send.tsx` for an example.\n\n### Discriminated Unions\nUsed extensively for success/failure API responses and mutually exclusive props. See\n`src/api/account.ts` for response types and `src/components/forms/button.tsx` for prop unions.\n\n### Data Loading Hooks\nKey custom hooks in `src/hooks/` handle all async data:\n"
+ },
+ {
+  "id": 73,
+  "repo": "tryghost/sdk",
+  "clone": "clones/tryghost__sdk",
+  "head": "dbfb783ed0ba6007abf40bfed78fd810f7f019e2",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "test",
+  "tree_root": "packages/<package-name>",
+  "match_type": "suffix",
+  "matching_paths": [
+   "packages/admin-api/test",
+   "packages/color-utils/test",
+   "packages/admin-api-schema/test",
+   "packages/image-transform/test",
+   "packages/content-api/test"
+  ],
+  "context": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## Repository Overview\n\nThe Ghost SDK is a monorepo containing a collection of JavaScript/TypeScript packages for interacting with Ghost's APIs. It uses Lerna for monorepo management and Yarn workspaces.\n\n## Common Development Commands\n\n### Setup & Installation\n- **Initial setup**: `yarn setup` (mapped to `lerna bootstrap`)\n  - Installs all external dependencies\n  - Links all internal dependencies\n- **Install dependencies**: `yarn`\n\n### Testing\n- **Run all tests**: `yarn test` (runs `lerna run test`)\n  - This runs tests in all packages\n- **Run tests in specific package**: `cd packages/<package-name> && yarn test`\n- **Run tests with coverage**: Most packages use `NODE_ENV=testing c8 --all --reporter text --reporter cobertura mocha './test/**/*.test.js'`"
+ },
+ {
+  "id": 74,
+  "repo": "emeryberger/heap-layers",
+  "clone": "clones/emeryberger__heap-layers",
+  "head": "0ccf5bee31e6527bb1d5987b43be1ad22f273790",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "general",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "heaps/general"
+  ],
+  "context": "| `objectrep/` | Add metadata to objects (`SizeHeap`, `AddHeap`) |\n| `combining/` | Combine multiple heaps (`SegHeap`, `StrictSegHeap`, `HybridHeap`) |\n| `threads/` | Thread safety (`LockedHeap`, `ThreadSpecificHeap`) |\n| `special/` | Special allocation patterns (`ZoneHeap`, `BumpAlloc`, `ObstackHeap`) |\n| `debug/` | Debugging/stats (`DebugHeap`, `StatsHeap`, `LogHeap`) |\n| `utility/` | Utilities (`UniqueHeap`, `ExactlyOneHeap`, `NullHeap`) |\n| `general/` | Complete allocators (`KingsleyHeap`, `DLHeap`) |\n\n### Key Source Heaps\n- `MmapHeap` - Gets memory from OS via mmap/VirtualAlloc\n- `MallocHeap` - Wraps system malloc (for testing/comparison)"
+ },
+ {
+  "id": 75,
+  "repo": "sage-bionetworks/synapse-repository-services",
+  "clone": "clones/sage-bionetworks__synapse-repository-services",
+  "head": "38039edd85cbfa4acd41fcd985869a9b4ce9797a",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "WEB-INF",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "services/workers/src/main/webapp/WEB-INF",
+   "services/repository/src/main/webapp/WEB-INF"
+  ],
+  "context": "## Key Conventions\n\n- Package root: `org.sagebionetworks`\n- Branch naming: `PLFM-XXXX` (JIRA tickets)\n- Main branch: `develop`\n- Entity IDs: String-typed but numeric (`KeyFactory` converts)\n- Spring config: mix of XML (`WEB-INF/` and `src/main/resources/*-spb.xml`) and annotations\n- Logging: Log4j 2\n- **JSON serialization**: Use `JDOSecondaryPropertyUtils.createJSONFromObject()` / `createObjectFromJSON()` for converting `JSONEntity` objects to/from JSON strings. Do not write custom serialization code.\n- **SQL safety**: All SQL must use bind variables. Never concatenate strings into SQL. For generated values (UUIDs, timestamps), prefer MySQL functions (`UUID()`, `NOW(3)`) over Java-side generation.\n- **Controller testing**: Use IT tests with the Java client in `integration-test/`, not autowired controller tests. Every new controller method needs a corresponding `SynapseClient`/`SynapseClientImpl` method and an IT test."
+ },
+ {
+  "id": 76,
+  "repo": "bruin-data/bruin",
+  "clone": "clones/bruin-data__bruin",
+  "head": "677058ff5ab79f83f605e2c904d637ed1eae42e8",
+  "context_file": "AGENTS.md",
+  "claimed_path": "databricks",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "integration-tests/cloud-integration-tests/databricks",
+   "pkg/databricks",
+   "templates/databricks"
+  ],
+  "context": "- **`executor/`**: Asset execution engine\n- **`lineage/`**: Dependency tracking and visualization\n- **`query/`**: Query execution and management\n\n#### Data Platform Packages\nEach supported platform has its own package:\n- **Database platforms**: `bigquery/`, `snowflake/`, `postgres/`, `mysql/`, `duckdb/`, `clickhouse/`, `athena/`, `mssql/`, `databricks/`, `oracle/`, `sqlite/`, `trino/`, `synapse/`, `hana/`, `spanner/`\n- **Cloud storage**: `s3/`, `gcs/`\n- **Ingestion sources**: 50+ packages for different data sources (e.g., `shopify/`, `hubspot/`, `salesforce/`, `stripe/`, etc.)\n\n#### Utility Packages"
+ },
+ {
+  "id": 77,
+  "repo": "hiyouga/LlamaFactory",
+  "clone": "clones/hiyouga__LlamaFactory",
+  "head": "b5afabe3d22590ba7093a38aa453edcccbccbbf1",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "accelerator",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/llamafactory/v1/accelerator",
+   "tests_v1/accelerator"
+  ],
+  "context": "LLaMA Factory has two parallel architectures that can be switched via the `USE_V1` environment variable:\n\n**v0 (default)** - File hierarchy:\n- `api`, `webui` \u2192 `chat`, `eval`, `train` \u2192 `data`, `model` \u2192 `hparams` \u2192 `extras`\n\n**v1** - File hierarchy:\n- `trainers` \u2192 `core` \u2192 `accelerator`, `plugins`, `config` \u2192 `utils`\n\nSet `USE_V1=1` to enable v1 architecture.\n\n## Code Structure"
+ },
+ {
+  "id": 78,
+  "repo": "ComposioHQ/composio",
+  "clone": "clones/ComposioHQ__composio",
+  "head": "d54c165ec728aac7c4a3ba5d13b1fec690aa1a6d",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "test",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "ts/packages/providers/anthropic/test",
+   "ts/packages/cli/test",
+   "ts/packages/providers/claude-agent-sdk/test",
+   "ts/e2e-tests/runtimes/cloudflare/cf-workers-files/test",
+   "ts/packages/providers/openai/test"
+  ],
+  "context": "pnpm lint\npnpm lint:fix\n\n# Format code\npnpm format\n\n# Run tests\npnpm test\n```\n\n### Package Management"
+ },
+ {
+  "id": 79,
+  "repo": "globocom/globonetworkapi",
+  "clone": "clones/globocom__globonetworkapi",
+  "head": "a358ffeec51708f252887957ccb5d4141b3da37b",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "tasks.py",
+  "tree_root": "api_<resource>",
+  "match_type": "suffix",
+  "matching_paths": [
+   "networkapi/api_vlan/tasks.py"
+  ],
+  "context": "Pre-commit hooks enforce: trailing whitespace, autopep8 (ignoring E501), flake8 (ignoring E501, E402, F401-F405, F821, F841), import reordering, JSON/YAML validation.\n\n## Architecture\n\n### API Module Pattern\n\nEach `api_*` module under `networkapi/` follows this structure:\n\n```\napi_<resource>/\n\u251c\u2500\u2500 views/v1.py, v3.py    # DRF viewsets (API versions)\n\u251c\u2500\u2500 facade/v1.py, v3.py   # Business logic layer\n\u251c\u2500\u2500 serializers.py         # DRF serializers\n\u251c\u2500\u2500 permissions.py         # Permission classes\n\u251c\u2500\u2500 exceptions.py          # Custom exceptions\n\u251c\u2500\u2500 tasks.py               # Celery async tasks\n\u251c\u2500\u2500 urls.py                # URL routing\n\u251c\u2500\u2500 specs/                 # JSON specs for request validation\n\u251c\u2500\u2500 fixtures/              # Test fixtures (JSON)"
+ },
+ {
+  "id": 80,
+  "repo": "eggjs/egg",
+  "clone": "clones/eggjs__egg",
+  "head": "0dc5dfbe17df09b863cfaaa29bd79e7a53301921",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "test/fixtures",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "tools/egg-bin/test/fixtures",
+   "plugins/logrotator/test/fixtures",
+   "plugins/view/test/fixtures",
+   "plugins/view-nunjucks/test/fixtures",
+   "packages/utils/test/fixtures"
+  ],
+  "context": "\n### Testing Strategy\n\n- **IMPORTANT: All new packages MUST use Vitest for testing** - this is the standard test runner for the monorepo\n- **Exception: egg-bin and cookies use Mocha** - these packages use Mocha for consistency with their testing patterns\n- Use `pnpm --filter=egg run test` for framework tests\n- Test fixtures are in `packages/egg/test/fixtures/apps/`\n- Create apps in fixtures to test specific scenarios\n- Use `pnpm test` to run tests across all packages\n- Follow existing test patterns for consistency\n"
+ },
+ {
+  "id": 81,
+  "repo": "taskcluster/taskcluster",
+  "clone": "clones/taskcluster__taskcluster",
+  "head": "4fc048e21b82ab855e479fbf7c653011f8616c39",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "src",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "libraries/pulse/src",
+   "libraries/api/src",
+   "clients/client-rust/upload/src",
+   "services/purge-cache/src",
+   "libraries/testing/src"
+  ],
+  "context": "```\n\n## Architecture\n\n### Microservices\nEach service in `services/` is a standalone Node.js application with:\n- `src/` - Service implementation\n- `test/` - Test suite\n- `procs.yml` - Process definitions (web servers, cron jobs, background tasks)\n- `config.yml` - Service configuration schema\n- `package.json` - Dependencies"
+ },
+ {
+  "id": 82,
+  "repo": "ProvableHQ/sdk",
+  "clone": "clones/ProvableHQ__sdk",
+  "head": "9ff7cdea42fb2424309a2afd61cadfe815f8289f",
+  "context_file": ".claude/CLAUDE.md",
+  "claimed_path": "ledger",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "wasm/src/ledger"
+  ],
+  "context": "- `programs/manager/` \u2014 builds execution proofs, authorizations, proving requests and new aleo program deployments\n- `programs/` \u2014 Program, execution, keypair, offline_query\n- `synthesizer/` \u2014 Authorization, ProvingRequest\n- `types/` \u2014 Aleo scalar types (Field, Group, Scalar, I8\u2013I128, U8\u2013U128, Boolean) + type re-exports from SnarkVM\n- `algorithms/` \u2014 BHP256/512/768/1024, Pedersen64/128, Poseidon2/4/8\n- `record/` \u2014 RecordPlaintext, RecordCiphertext\n- `ledger/` \u2014 Transaction, Transition\n\n### Package: `@provablehq/sdk` (`/sdk`)\n\nTypeScript SDK wrapping `@provablehq/wasm`. Bundled with Rollup into three network variants (`testnet`, `mainnet`, `dynamic`), each with `browser.js` and `node.js` exports."
+ },
+ {
+  "id": 83,
+  "repo": "reposense/reposense",
+  "clone": "clones/reposense__reposense",
+  "head": "71b1552d4600da97f4c3777f08a6cdd1db4b6a41",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "cypress/tests",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "frontend/cypress/tests"
+  ],
+  "context": "**Testing Frontend:**\n\n```bash\n# Run E2E tests with Cypress\n./gradlew frontendTest\n\n# Write tests in: frontend/cypress/tests/\n# Support file: frontend/cypress/support.js\n```\n\n### Code Review Guidelines for Copilot"
+ },
+ {
+  "id": 84,
+  "repo": "SpecterOps/Nemesis",
+  "clone": "clones/SpecterOps__Nemesis",
+  "head": "2de94aaea84e6eabf55649dac27a1799065fbad5",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "file_enrichment_modules",
+  "tree_root": "projects",
+  "match_type": "suffix",
+  "matching_paths": [
+   "libs/file_enrichment_modules/file_enrichment_modules",
+   "libs/file_enrichment_modules"
+  ],
+  "context": "\u251c\u2500\u2500 file_enrichment/# File analysis orchestration with Dapr workflows\n\u251c\u2500\u2500 document_conversion/ # Text extraction, PDF conversion\n\u251c\u2500\u2500 cli/            # Command-line file submission tool\n\u251c\u2500\u2500 frontend/       # React web UI\n\u251c\u2500\u2500 alerting/       # Apprise-based notification service\n\u251c\u2500\u2500 housekeeping/   # Cleanup/retention service\n\u251c\u2500\u2500 agents/         # AI-powered alert triage\n\u251c\u2500\u2500 jupyter/        # Jupyter notebook service\n\u251c\u2500\u2500 dotnet_service/ # .NET assembly analysis service\n\u251c\u2500\u2500 titus_scanner/  # Secret scanning with Titus\n\u251c\u2500\u2500 velociraptor_connector/ # Velociraptor integration\n\u2514\u2500\u2500 ...\n\nlibs/               # Shared Python libraries\n\u251c\u2500\u2500 common/         # DB connections, logging, models, Dapr wrappers\n\u251c\u2500\u2500 file_enrichment_modules/ # 20+ enrichment module implementations\n\u251c\u2500\u2500 chromium/       # Chrome/Edge data extraction\n\u251c\u2500\u2500 file_linking/   # File association logic\n\u2514\u2500\u2500 nemesis_dpapi/  # Windows DPAPI credential handling"
+ },
+ {
+  "id": 85,
+  "repo": "MobilityData/mobility-feed-api",
+  "clone": "clones/MobilityData__mobility-feed-api",
+  "head": "a7836a57bc64e29d3be90e4aec6a3956fda53381",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "big_query_ingestion",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "functions-python/big_query_ingestion"
+  ],
+  "context": "- Refresh tokens from mobilitydatabase.org account\n- Access tokens valid for 1 hour\n- Test endpoint: `/v1/metadata` with Bearer token\n\n## Integration Points\n\n- **BigQuery**: Analytics data pipeline via `big_query_ingestion/` function  \n- **PostGIS**: Geospatial queries for location-based feed filtering\n- **Liquibase**: Database schema migrations in `liquibase/` directory\n- **Docker**: Multi-service setup with PostgreSQL, test DB, and schema documentation\n"
+ },
+ {
+  "id": 86,
+  "repo": "phax/phase4",
+  "clone": "clones/phax__phase4",
+  "head": "017d86f7bfcc7e8b1330fef75af1bfdba650d688",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "incoming/AS4RequestHandler.java",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "phase4-lib/src/main/java/com/helger/phase4/incoming/AS4RequestHandler.java"
+  ],
+  "context": "- **phase4-dynamic-discovery** - SMP-based dynamic discovery support.\n\n## Key Source Paths (within phase4-lib)\n\n| Path (under `src/main/java/com/helger/phase4/`) | Purpose |\n|---|---|\n| `incoming/AS4RequestHandler.java` | Core incoming message processing (2200 lines) |\n| `incoming/AS4IncomingHandler.java` | Incoming message parsing and security validation |\n| `sender/AbstractAS4UserMessageBuilder.java` | Base class for building outgoing user messages |\n| `client/AbstractAS4Client.java` | Base client with crypto, retry, HTTP configuration |\n| `servlet/AS4Servlet.java` | POST endpoint, delegates to `AS4XServletHandler` |"
+ },
+ {
+  "id": 87,
+  "repo": "solidinvoice/solidinvoice",
+  "clone": "clones/solidinvoice__solidinvoice",
+  "head": "a7923f8e0c8a74d4b662c651e8912930d523f551",
+  "context_file": ".github/copilot-instructions.md",
+  "claimed_path": "Form",
+  "tree_root": "BundleNameBundle",
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/CronBundle/Form",
+   "src/CoreBundle/Tests/Form",
+   "src/CoreBundle/Form",
+   "src/PaymentBundle/Tests/Form",
+   "src/NotificationBundle/Tests/Form"
+  ],
+  "context": "- **UserBundle** - User management, API tokens, authentication\n\n#### System & Infrastructure\n\n- **CoreBundle** - Core utilities, entities, billing logic, PDF generation, Twig extensions\n- **ApiBundle** - REST API implementation with API Platform\n- **MailerBundle** - Email configuration and delivery\n- **SettingsBundle** - Application configuration management\n- **InstallBundle** - Installation wizard and setup\n- **CronBundle** - Scheduled task management\n\n#### UI & Presentation\n\n- **DashboardBundle** - Dashboard widgets and analytics\n- **DataGridBundle** - Data grid/table rendering\n- **FormBundle** - Form customizations\n\n#### Specialized Services\n"
+ },
+ {
+  "id": 88,
+  "repo": "mataroablog/mataroa",
+  "clone": "clones/mataroablog__mataroa",
+  "head": "08cc048d1d62bb3d885175e4d00652d018afdc08",
+  "context_file": "AGENTS.md",
+  "claimed_path": "views",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "main/views"
+  ],
+  "context": "\n### Core Application (`main/`)\n\nAll business logic resides in the `main` Django app:\n\n- **`models.py`**: Database schema (User, Post, Page, Comment, etc.)\n- **`views/`**: Business logic split across modules:\n  - `general.py`: Index, dashboard, static pages\n  - `api.py`: API endpoints with key-based authentication\n  - `billing.py`: Stripe integration for subscriptions\n  - `export.py`: Export functionality (Hugo, Zola, EPUB)"
+ },
+ {
+  "id": 89,
+  "repo": "nektos/act",
+  "clone": "clones/nektos__act",
+  "head": "828d488e470fa37980566ad78205d8839921c2e1",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "testdata",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "cmd/testdata",
+   "pkg/artifactcache/testdata",
+   "pkg/exprparser/testdata",
+   "pkg/container/testdata",
+   "pkg/artifacts/testdata"
+  ],
+  "context": "- Import aliases enforced: `logrus` \u2192 `log`, `testify/assert` \u2192 `assert`\n\n## Testing\n\n- Tests use `testify/assert` and `testify/mock`\n- Table-driven tests are common in `pkg/model/` and `pkg/exprparser/`\n- Test fixtures live in `testdata/` directories alongside their packages\n- `pkg/runner/testdata/` contains extensive sample GitHub Actions workflows used as integration test fixtures\n"
+ },
+ {
+  "id": 90,
+  "repo": "adobe/helix-html-pipeline",
+  "clone": "clones/adobe__helix-html-pipeline",
+  "head": "c3f8b6f2b2d2fcfc5121e5c1480ebeea66aa1ffa",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "mdasts",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "test/fixtures/mdasts"
+  ],
+  "context": "- **Code bus** \u2014 Templates, headers, footers, scripts\n\nThe S3 loader is injected into `PipelineState` and abstracted for testing via `test/FileS3Loader.js` and `test/StaticS3Loader.js`.\n\n## Testing\n\nTests use Mocha + c8. Test fixtures live in `test/fixtures/` organized by type (`content/`, `code/`, `json/`, `mdasts/`, `sections/`). The `test/setup-env.js` file initializes the test environment.\n\nKey test files:\n- `test/rendering.test.js` \u2014 Large integration tests for HTML rendering (49KB)\n- `test/html-pipe.test.js` / `test/json-pipe.test.js` \u2014 Pipe-level integration tests"
+ },
+ {
+  "id": 91,
+  "repo": "SukramJ/homematicip_local",
+  "clone": "clones/SukramJ__homematicip_local",
+  "head": "e54e510da8911c6c3acbeabf017d5fe7c5d9b42d",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "control_unit.py",
+  "tree_root": "homematicip_local",
+  "match_type": "suffix",
+  "matching_paths": [
+   "custom_components/homematicip_local/control_unit.py"
+  ],
+  "context": "**Version:** 2.3.3\n**Primary Language:** Python 3.14+\n**Domain:** `homematicip_local`\n\nThis is a production-quality Home Assistant custom integration that enables local communication with Homematic and HomematicIP smart home devices through various hubs (CCU2/3, OpenCCU, Debmatic, Homegear). It provides bi-directional communication using XML-RPC for device control and push state updates, and JSON-RPC for fetching device names and room information.\n\n---\n\n## Repository Structure\n\n```\nhomematicip_local/\n\u251c\u2500\u2500 custom_components/homematicip_local/  # Main integration code (~7,752 lines)\n\u2502   \u251c\u2500\u2500 __init__.py                       # Integration setup & entry point\n\u2502   \u251c\u2500\u2500 config_flow.py                    # Configuration UI & validation (26.8K lines)\n\u2502   \u251c\u2500\u2500 control_unit.py                   # Central control logic (33.9K lines)\n\u2502   \u251c\u2500\u2500 services.py                       # Service registration (42.1K lines)\n\u2502   \u251c\u2500\u2500 services.yaml                     # Service schema definitions\n\u2502   \u251c\u2500\u2500 generic_entity.py                 # Base entity class (21.8K lines)"
+ },
+ {
+  "id": 92,
+  "repo": "star-history/star-history",
+  "clone": "clones/star-history__star-history",
+  "head": "d58d1da6bdefc40e7afef61c068c6080ca40fd20",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "store",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "frontend/store"
+  ],
+  "context": "All frontend code lives under `frontend/`.\n\n| Directory | Purpose |\n|-----------|---------|\n| `pages/` | Next.js page routes (Pages Router) |\n| `components/` | React UI components |\n| `store/` | React Context state management with URL hash sync |\n| `helpers/` | Utilities (storage, toast, formatting, constants) and static data JSON |\n| `styles/` | Tailwind config, global CSS, fonts (Inter font family) |\n| `server/` | LRU cache for repo star data |\n| `scripts/` | Blog JSON generation script |"
+ },
+ {
+  "id": 93,
+  "repo": "go-vikunja/vikunja",
+  "clone": "clones/go-vikunja__vikunja",
+  "head": "fb8c937d77a61177de4271c0a9d21ffbecc41e3f",
+  "context_file": "AGENTS.md",
+  "claimed_path": "src/services",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "frontend/src/services"
+  ],
+  "context": "- Component-level state with Vue 3 Composition API\n\n**Key Directories:**\n- `src/components/` - Reusable Vue components organized by feature\n- `src/views/` - Page-level components and routing\n- `src/stores/` - Pinia state management\n- `src/services/` - API service layer matching backend models\n- `src/models/` - TypeScript interfaces matching backend models\n- `src/helpers/` - Utility functions and business logic\n\n**UI Framework:**"
+ },
+ {
+  "id": 94,
+  "repo": "prabhuignoto/react-chrono",
+  "clone": "clones/prabhuignoto__react-chrono",
+  "head": "407ffc367de4576adecb2d0e1dab616d0f3ef60d",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "timeline-card-content",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/components/timeline-elements/timeline-card-content"
+  ],
+  "context": "- `src/components/timeline/timeline-toolbar.tsx` - Toolbar with controls\n\n**Reusable elements:**\n- `src/components/elements/` - Generic UI elements (popover, list, icons)\n- `src/components/timeline-elements/` - Timeline-specific components (cards, points, media)\n  - `timeline-card/` - Card containers with media support\n  - `timeline-card-content/` - Content sections (header, body, footer)\n  - `timeline-card-media/` - Media display (images, videos, YouTube)\n- `src/components/toolbar/` - Toolbar components\n- `src/components/fonts/` - Font provider and Google Fonts integration\n"
+ },
+ {
+  "id": 95,
+  "repo": "justtrackio/gosoline",
+  "clone": "clones/justtrackio__gosoline",
+  "head": "2647c2aa11c02760c54a0553fa78a1651cfcc054",
+  "context_file": "AGENTS.md",
+  "claimed_path": "fixtures",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "pkg/fixtures",
+   "test/fixtures",
+   "examples/fixtures"
+  ],
+  "context": "Operate in this repository as the maintainer of the **gosoline** application framework\u2014a Go-based toolkit for building cloud microservices with first-class AWS integration.\n\n## Quick facts\n- **Module path:** `github.com/justtrackio/gosoline`\n- **Go toolchain:** 1.24 (see `.tool-versions` for exact patch level)\n- **Primary frameworks:** Gin (HTTP), AWS SDK v2, testify, mockery\n- **Key tags:** most packages ship `fixtures` and `integration` build tags. Always include both when building, testing, or linting to pull in fixture wiring.\n\n## Repository layout\n- `pkg/`: Core framework packages (50+ packages covering application lifecycle, configuration, logging, AWS integrations, streaming, HTTP server, database, caching, etc.)\n- `examples/`: Sample applications demonstrating gosoline features and best practices."
+ },
+ {
+  "id": 96,
+  "repo": "mparticle/mparticle-web-sdk",
+  "clone": "clones/mparticle__mparticle-web-sdk",
+  "head": "765f3ba83e09650714e4eb8d15367e6c937d1b5c",
+  "context_file": "AGENTS.md",
+  "claimed_path": "apiClient.ts",
+  "tree_root": "/src",
+  "match_type": "suffix",
+  "matching_paths": [
+   "src/apiClient.ts"
+  ],
+  "context": "  - CommonJS for npm/Node.js environments\n  - ES Modules for modern bundlers with tree-shaking support\n  - Stub for capturing API calls before SDK loads\n- **Testing**: Karma (browser integration), Jest (TypeScript modules), BrowserStack (cross-browser)\n- **Code Quality**: ESLint, Prettier, GTS (Google TypeScript Style)\n- **Package Manager**: npm\n\n### Project Structure\n\n```\n/                                       # Repo root\n  jest.config.js                        # Jest config for TypeScript unit tests\n/src/                                   # Source code\n  \u251c\u2500\u2500 mparticle-instance-manager.ts  # Global manager, creates and retrieves named SDK instances\n  \u251c\u2500\u2500 mp-instance.ts            # Core SDK instance, initialization flow, public APIs, and private modules\n  \u251c\u2500\u2500 apiClient.ts              # HTTP client for making requests to mParticle Events API\n  \u251c\u2500\u2500 batchUploader.ts          # Batches events and uploads them to server with retry logic\n  \u251c\u2500\u2500 identityApiClient.ts      # Handles identity API calls (identify, login, logout, modify)\n  \u251c\u2500\u2500 configAPIClient.ts        # Fetches SDK configuration and kit settings from server"
+ },
+ {
+  "id": 97,
+  "repo": "kuaifan/dootask",
+  "clone": "clones/kuaifan__dootask",
+  "head": "4068966700e071a65739615b00194d3873af7901",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "store",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "resources/assets/js/store"
+  ],
+  "context": "**Tasks (`app/Tasks/`)**\uff1aSwoole \u5f02\u6b65\u4efb\u52a1\uff0c\u7528\u4e8e\u540e\u53f0\u5904\u7406\uff1a\n- WebSocket \u6d88\u606f\u63a8\u9001\uff1a`WebSocketDialogMsgTask.php`\u3001`PushTask.php`\n- \u5b9a\u65f6\u4efb\u52a1\uff1a`LoopTask.php`\u3001`AutoArchivedTask.php`\n- \u641c\u7d22\u540c\u6b65\uff1a`ManticoreSyncTask.php`\n\n**Observers (`app/Observers/`)**\uff1aEloquent \u89c2\u5bdf\u8005\uff0c\u76d1\u542c\u6a21\u578b\u4e8b\u4ef6\uff08created/updated/deleted\uff09\u81ea\u52a8\u89e6\u53d1\u76f8\u5173\u903b\u8f91\u3002\n\n**Services (`app/Services/`)**\uff1a\u670d\u52a1\u7c7b\uff0c\u5982 `WebSocketService.php`\u3001`RequestContext.php`\u3002\n\n### \u524d\u7aef (`resources/assets/js/`)\n\n```\n\u251c\u2500\u2500 app.js, App.vue      # \u5e94\u7528\u5165\u53e3\u4e0e\u6839\u7ec4\u4ef6\n\u251c\u2500\u2500 components/          # \u901a\u7528\u4e0e\u4e1a\u52a1\u7ec4\u4ef6\uff08\u770b\u677f\u3001\u6587\u4ef6\u9884\u89c8\u3001\u804a\u5929\uff09\n\u251c\u2500\u2500 pages/               # \u9875\u9762\u7ea7\u7ec4\u4ef6\uff08\u767b\u5f55\u3001\u9879\u76ee\u3001\u4efb\u52a1\u3001\u6d88\u606f\u3001\u62a5\u8868\uff09\n\u251c\u2500\u2500 store/               # Vuex \u72b6\u6001\u7ba1\u7406\n\u2502   \u251c\u2500\u2500 state.js         # \u72b6\u6001\u5b9a\u4e49\n\u2502   \u251c\u2500\u2500 mutations.js     # \u540c\u6b65\u4fee\u6539\n\u2502   \u251c\u2500\u2500 actions.js       # \u5f02\u6b65\u64cd\u4f5c\uff08\u542b API \u8c03\u7528\u5c01\u88c5\uff09"
+ },
+ {
+  "id": 98,
+  "repo": "mozilla/kitsune",
+  "clone": "clones/mozilla__kitsune",
+  "head": "1b9f76fccddc3d572f7a4693967bc4464e05736f",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "kpi",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "kitsune/kpi/static/kpi",
+   "kitsune/kpi",
+   "kitsune/kpi/jinja2/kpi"
+  ],
+  "context": "- `questions/` - Support questions and answers (Q&A system)\n- `forums/` - Discussion forums\n- `users/` - User profiles, authentication, and account management\n- `search/` - Elasticsearch-powered search functionality\n- `gallery/` - Media management (images, videos)\n- `products/` - Mozilla product definitions and topics\n- `kpi/` - Metrics and analytics dashboard\n\n**Supporting Applications:**\n- `sumo/` - Core utilities, base templates, middleware\n- `flagit/` - Content moderation system"
+ },
+ {
+  "id": 99,
+  "repo": "veeamhub/veeam-healthcheck",
+  "clone": "clones/veeamhub__veeam-healthcheck",
+  "head": "2dec74eddf36bcf581dd0c5b373ed89da2a87fdf",
+  "context_file": "CLAUDE.md",
+  "claimed_path": "Functions/Reporting/Html/VB365",
+  "tree_root": null,
+  "match_type": "suffix",
+  "matching_paths": [
+   "vHC/HC_Reporting/Functions/Reporting/Html/VB365"
+  ],
+  "context": "- Multi-source collection: PowerShell scripts, SQL queries, registry reads, log parsing, WMI\n- PowerShell scripts in `Tools/Scripts/HealthCheck/VBR/` and `Tools/Scripts/HealthCheck/VB365/`\n- Outputs CSV files to `C:\\temp\\vHC\\Original\\{VBR|VB365}\\{servername}\\{timestamp}\\`\n\n**Report Generation** (`Functions/Reporting/`)\n- `Functions/Reporting/Html/VBR/CHtmlCompiler.cs` - VBR report compiler\n- `Functions/Reporting/Html/VB365/CVb365HtmlCompiler.cs` - VB365 report compiler\n- `Functions/Reporting/CReportModeSelector.cs` - Routes to correct compiler based on detected product\n\n**Data Processing**\n- `Functions/Reporting/CsvHandlers/CCsvReader.cs` - CSV reading with CsvHelper"
+ }
+]

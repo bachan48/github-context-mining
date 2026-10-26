@@ -1,0 +1,284 @@
+[
+ {
+  "id": 0,
+  "label": "TRUE",
+  "reason": "program-lib imports light_sdk_types from sdk-libs; CLAUDE.md allows only program-libs/external crates.",
+  "added_in_commit": true
+ },
+ {
+  "id": 1,
+  "label": "TRUE",
+  "reason": "program imports light_sdk (sdk-libs); later PR #2188 removed these. Files only renamed here.",
+  "added_in_commit": false
+ },
+ {
+  "id": 2,
+  "label": "FALSE_MAPPING",
+  "reason": "Import used only for json.RawMessage type; context note explicitly allows type references.",
+  "added_in_commit": true
+ },
+ {
+  "id": 3,
+  "label": "TRUE",
+  "reason": "pkg/ionet/client.go calls json.Marshal/Unmarshal directly. Shallow-clone root: not added by this commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 4,
+  "label": "TRUE",
+  "reason": "Full text says 'only rules shouldn't use flows'; rules file imports effect flow. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 5,
+  "label": "TRUE",
+  "reason": "Presenters import wx for wx.ID_OK/CallAfter; guidance says avoid wx, soft 'where possible'.",
+  "added_in_commit": true
+ },
+ {
+  "id": 6,
+  "label": "FALSE_MAPPING",
+  "reason": "Platform shim .api.ts re-exporting .electron is the resolution mechanism itself, lint-disabled deliberately.",
+  "added_in_commit": true
+ },
+ {
+  "id": 7,
+  "label": "TRUE",
+  "reason": "popup/options import values from background/telemetry enums. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 8,
+  "label": "FALSE_MAPPING",
+  "reason": "Type-only import (erased); stated rationale is bundle size/runtime errors. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 9,
+  "label": "FALSE_MAPPING",
+  "reason": "superset-core is the new wrapper/theme home; files only renamed within it.",
+  "added_in_commit": false
+ },
+ {
+  "id": 10,
+  "label": "TRUE",
+  "reason": "App code in superset-frontend/src imports theme directly from antd.",
+  "added_in_commit": true
+ },
+ {
+  "id": 11,
+  "label": "FALSE_MAPPING",
+  "reason": "Commit moves UI wrappers into superset-core; these are the wrapper layer itself.",
+  "added_in_commit": false
+ },
+ {
+  "id": 12,
+  "label": "TRUE",
+  "reason": "sys_fn_autograd.py adds 'import torch' outside torch_backend.py.",
+  "added_in_commit": true
+ },
+ {
+  "id": 13,
+  "label": "FALSE_MAPPING",
+  "reason": "overlord/dot is not an overlord/*state package; rule targets *state packages only.",
+  "added_in_commit": true
+ },
+ {
+  "id": 14,
+  "label": "FALSE_MAPPING",
+  "reason": "configstate/config is a helper subpackage, not the configstate manager.",
+  "added_in_commit": true
+ },
+ {
+  "id": 15,
+  "label": "TRUE",
+  "reason": "utils imports tokio::sync; rule at the time said never outside runtime/ (later relaxed).",
+  "added_in_commit": true
+ },
+ {
+  "id": 16,
+  "label": "TRUE",
+  "reason": "utils channel imports tokio::sync; rule then forbade tokio outside runtime/ (later relaxed).",
+  "added_in_commit": true
+ },
+ {
+  "id": 17,
+  "label": "TRUE",
+  "reason": "macros uses tokio; rule then forbade it (later edit exempts commonware-macros).",
+  "added_in_commit": true
+ },
+ {
+  "id": 18,
+  "label": "TRUE",
+  "reason": "deployer uses tokio; rule then strict (later exempts deployer). Files only renamed here.",
+  "added_in_commit": false
+ },
+ {
+  "id": 19,
+  "label": "TRUE",
+  "reason": "deployer adds tokio::process; rule then strict (later edit exempts deployer).",
+  "added_in_commit": true
+ },
+ {
+  "id": 20,
+  "label": "TRUE",
+  "reason": "Direct import from fp-ts/Separated instead of @std aliases.",
+  "added_in_commit": true
+ },
+ {
+  "id": 21,
+  "label": "TRUE",
+  "reason": "Direct fp-ts/* namespace imports bypass @std, as sentence forbids. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 22,
+  "label": "TRUE",
+  "reason": "output-md feature imports from output-html feature; features must not depend on each other.",
+  "added_in_commit": true
+ },
+ {
+  "id": 23,
+  "label": "FALSE_MAPPING",
+  "reason": "std is gated behind 'reader' feature via cfg_attr no_std; no_std build preserved.",
+  "added_in_commit": true
+ },
+ {
+  "id": 24,
+  "label": "FALSE_MAPPING",
+  "reason": "dryRun.ts is itself a dry-run wrapper module; context allows raw access in wrappers.",
+  "added_in_commit": true
+ },
+ {
+  "id": 25,
+  "label": "TRUE",
+  "reason": "Ingester depends on legacy pkg/og packages. Shallow root commit, not introduced here.",
+  "added_in_commit": false
+ },
+ {
+  "id": 26,
+  "label": "TRUE",
+  "reason": "xtask uses serde directly; rule says Norito everywhere. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 27,
+  "label": "FALSE_MAPPING",
+  "reason": "Import only for HubConnectionState enum check; rule forbids calling HubConnection directly.",
+  "added_in_commit": true
+ },
+ {
+  "id": 28,
+  "label": "FALSE_MAPPING",
+  "reason": "ui/helpers is a leaf subpackage (moved from http/html); rule concerns ui package cycles.",
+  "added_in_commit": true
+ },
+ {
+  "id": 29,
+  "label": "FALSE_MAPPING",
+  "reason": "ui/paths is leaf package relocated from http/html/paths; not the ui handler package.",
+  "added_in_commit": true
+ },
+ {
+  "id": 30,
+  "label": "TRUE",
+  "reason": "Adds @mui/icons-material imports; context says do not use MUI.",
+  "added_in_commit": true
+ },
+ {
+  "id": 31,
+  "label": "TRUE",
+  "reason": "Adds @mui/icons-material imports; MUI is being removed.",
+  "added_in_commit": true
+ },
+ {
+  "id": 32,
+  "label": "TRUE",
+  "reason": "Revert re-adds MUISwitch component importing @mui/material.",
+  "added_in_commit": true
+ },
+ {
+  "id": 33,
+  "label": "TRUE",
+  "reason": "Revert re-adds MUISwitch component importing @mui/material.",
+  "added_in_commit": true
+ },
+ {
+  "id": 34,
+  "label": "TRUE",
+  "reason": "Revert re-adds DeleteModalMUI importing @mui/material.",
+  "added_in_commit": true
+ },
+ {
+  "id": 35,
+  "label": "TRUE",
+  "reason": "Revert re-adds DeleteModalMUI importing @mui/material.",
+  "added_in_commit": true
+ },
+ {
+  "id": 36,
+  "label": "TRUE",
+  "reason": "Files use @mui/material, but commit only reformatted existing imports.",
+  "added_in_commit": false
+ },
+ {
+  "id": 37,
+  "label": "TRUE",
+  "reason": "Files use @mui/material, but commit only reformatted existing imports.",
+  "added_in_commit": false
+ },
+ {
+  "id": 38,
+  "label": "TRUE",
+  "reason": "Queries import from services, reversing controller->service->query layering. Shallow root commit.",
+  "added_in_commit": false
+ },
+ {
+  "id": 39,
+  "label": "TRUE",
+  "reason": "Model MotionModel imports from view PusherNode.",
+  "added_in_commit": true
+ },
+ {
+  "id": 40,
+  "label": "TRUE",
+  "reason": "pwndbg/lib imports pwndbg.color; lib may only import lib.",
+  "added_in_commit": true
+ },
+ {
+  "id": 41,
+  "label": "TRUE",
+  "reason": "pwndbg/lib imports pwndbg.color; lib may only import lib.",
+  "added_in_commit": true
+ },
+ {
+  "id": 42,
+  "label": "TRUE",
+  "reason": "dbg_mod/gdb adds function-level aglib.qemu import; docs forbid even function-level.",
+  "added_in_commit": true
+ },
+ {
+  "id": 43,
+  "label": "TRUE",
+  "reason": "Domain imports app.api and app.infrastructure; table says domain: stdlib only.",
+  "added_in_commit": true
+ },
+ {
+  "id": 44,
+  "label": "TRUE",
+  "reason": "CLI/core utils call httpx directly outside provider/media_api. Files only renamed (fastanime->viu).",
+  "added_in_commit": false
+ },
+ {
+  "id": 45,
+  "label": "FALSE_MAPPING",
+  "reason": "Rule means importing SQL code from zen_stores, not sqlalchemy/sqlmodel libs (schemas/AGENTS.md).",
+  "added_in_commit": true
+ },
+ {
+  "id": 46,
+  "label": "FALSE_MAPPING",
+  "reason": "Rule means importing SQL code from zen_stores, not sqlalchemy/sqlmodel libs (schemas/AGENTS.md).",
+  "added_in_commit": true
+ }
+]

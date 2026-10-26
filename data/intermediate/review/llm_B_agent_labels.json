@@ -1,0 +1,752 @@
+[
+ {
+  "id": 0,
+  "label": "AGENT",
+  "evidence": "Merged branch has copilot-swe-agent[bot] commits and Co-authored-by Copilot"
+ },
+ {
+  "id": 1,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 2,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 3,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 4,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 5,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 6,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 7,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 8,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Sonnet|Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 9,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 10,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 11,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 12,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 13,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 14,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 (1M context) in commit/PR"
+ },
+ {
+  "id": 15,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 16,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 (1M context) in commit/PR"
+ },
+ {
+  "id": 17,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 18,
+  "label": "AGENT",
+  "evidence": "Merged PR branch claude/...; claude[bot] commits"
+ },
+ {
+  "id": 19,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 20,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 21,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 22,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 23,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.5 in commit/PR"
+ },
+ {
+  "id": 24,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 25,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 26,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 27,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 28,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 29,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 30,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 31,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 32,
+  "label": "AGENT",
+  "evidence": "Merged PR branch named codex/..."
+ },
+ {
+  "id": 33,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 34,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 35,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 36,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 37,
+  "label": "AGENT",
+  "evidence": "Merged PR branch claude/...; claude[bot] commits"
+ },
+ {
+  "id": 38,
+  "label": "AGENT",
+  "evidence": "Merged PR branch named codex/..."
+ },
+ {
+  "id": 39,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 40,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 41,
+  "label": "AGENT",
+  "evidence": "Claude Code session URL and Claude noreply author/trailer"
+ },
+ {
+  "id": 42,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 43,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Copilot in commit/PR"
+ },
+ {
+  "id": 44,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.5 in commit/PR"
+ },
+ {
+  "id": 45,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 46,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 47,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Sonnet 4.6 in commit/PR"
+ },
+ {
+  "id": 48,
+  "label": "AGENT",
+  "evidence": "Claude Code session URL and Claude noreply author/trailer"
+ },
+ {
+  "id": 49,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 50,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 51,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 52,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 53,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 54,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.5 in commit/PR"
+ },
+ {
+  "id": 55,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 56,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 57,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 58,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 59,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 60,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 61,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 62,
+  "label": "AGENT",
+  "evidence": "Generated with help from Claude line in message"
+ },
+ {
+  "id": 63,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 64,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 (1M context) in commit/PR"
+ },
+ {
+  "id": 65,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 66,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 67,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 68,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 69,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 70,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 71,
+  "label": "AGENT",
+  "evidence": "google-labs-jules[bot] author/co-author in commit or PR"
+ },
+ {
+  "id": 72,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 73,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 74,
+  "label": "AGENT",
+  "evidence": "Commit trailer \"Made-with: Cursor\""
+ },
+ {
+  "id": 75,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.5 in commit/PR"
+ },
+ {
+  "id": 76,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 77,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 78,
+  "label": "AGENT",
+  "evidence": "google-labs-jules[bot] author/co-author in commit or PR"
+ },
+ {
+  "id": 79,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 80,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 81,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.5 in commit/PR"
+ },
+ {
+  "id": 82,
+  "label": "AGENT",
+  "evidence": "google-labs-jules[bot] author/co-author in commit or PR"
+ },
+ {
+  "id": 83,
+  "label": "AGENT",
+  "evidence": "Generated with help from Claude line in message"
+ },
+ {
+  "id": 84,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 85,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 86,
+  "label": "AGENT",
+  "evidence": "copilot-swe-agent[bot] commits with Agent-Logs-Url in the merged branch/PR"
+ },
+ {
+  "id": 87,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude in commit/PR"
+ },
+ {
+  "id": 88,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 89,
+  "label": "AGENT",
+  "evidence": "Merged PR branch claude/...; claude[bot] commits"
+ },
+ {
+  "id": 90,
+  "label": "AGENT",
+  "evidence": "Merged PR branch claude/...; claude[bot] commits"
+ },
+ {
+  "id": 91,
+  "label": "AGENT",
+  "evidence": "Generated with help from Claude line in message"
+ },
+ {
+  "id": 92,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 93,
+  "label": "AGENT",
+  "evidence": "Commit trailer \"Made-with: Cursor\""
+ },
+ {
+  "id": 94,
+  "label": "AGENT",
+  "evidence": "Author identity \"Claude4.0s <claude4.0s@ai.assistant>\" is an AI assistant account"
+ },
+ {
+  "id": 95,
+  "label": "AGENT",
+  "evidence": "Author identity \"Claude4.0s <claude4.0s@ai.assistant>\" is an AI assistant account"
+ },
+ {
+  "id": 96,
+  "label": "AGENT",
+  "evidence": "Author identity \"Claude4.0s <claude4.0s@ai.assistant>\" is an AI assistant account"
+ },
+ {
+  "id": 97,
+  "label": "AGENT",
+  "evidence": "Co-authored-by trailer naming Claude Opus 4.6 in commit/PR"
+ },
+ {
+  "id": 98,
+  "label": "AGENT",
+  "evidence": "claude[bot] commits or co-author trailer in commit/PR"
+ },
+ {
+  "id": 99,
+  "label": "AGENT",
+  "evidence": "Generated with Claude Code line and Claude co-author trailer"
+ },
+ {
+  "id": 100,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 101,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 102,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 103,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 104,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 105,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 106,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 107,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 108,
+  "label": "UNCLEAR",
+  "evidence": "Co-authored-by \"Copilot Autofix powered by AI\" on suggestion commits; autofix, not clearly a coding agent"
+ },
+ {
+  "id": 109,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 110,
+  "label": "NO_EVIDENCE",
+  "evidence": "Only Recidiviz \"Helper Bot\" sync committer; no AI agent trace"
+ },
+ {
+  "id": 111,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 112,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 113,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 114,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 115,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 116,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 117,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 118,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 119,
+  "label": "NO_EVIDENCE",
+  "evidence": "\"[bot] Update screenshots\" CI commits only; no AI agent trace"
+ },
+ {
+  "id": 120,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 121,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 122,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 123,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 124,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 125,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 126,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 127,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 128,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 129,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 130,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 131,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 132,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 133,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 134,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 135,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 136,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 137,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 138,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 139,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 140,
+  "label": "AGENT",
+  "evidence": "PR/commit title prefixed \"[AI]\" (project convention for AI-generated PRs); no named agent"
+ },
+ {
+  "id": 141,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 142,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 143,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 144,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 145,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 146,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 147,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 148,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ },
+ {
+  "id": 149,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, or branch trace in commit or PR"
+ }
+]

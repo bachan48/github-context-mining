@@ -1,0 +1,752 @@
+[
+ {
+  "id": 0,
+  "label": "AGENT",
+  "evidence": "Merged branch contains copilot-swe-agent[bot] commits and Co-authored-by: Copilot"
+ },
+ {
+  "id": 1,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 2,
+  "label": "AGENT",
+  "evidence": "Merged PR branch commits carry Co-authored-by: Copilot trailers"
+ },
+ {
+  "id": 3,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/add-cloud-save-button branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 4,
+  "label": "NO_EVIDENCE",
+  "evidence": "Only PR commit by Ronald Barendse clean; Copilot trailers are base v13 history"
+ },
+ {
+  "id": 5,
+  "label": "AGENT",
+  "evidence": "PR commit Co-authored-by: Copilot"
+ },
+ {
+  "id": 6,
+  "label": "AGENT",
+  "evidence": "Merged PR #21744 branch includes commit Co-authored-by: Copilot (accepted suggestion)"
+ },
+ {
+  "id": 7,
+  "label": "AGENT",
+  "evidence": "PR commit Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 8,
+  "label": "AGENT",
+  "evidence": "PR commit Co-Authored-By: Claude Sonnet/Opus 4.6"
+ },
+ {
+  "id": 9,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 10,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 11,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 12,
+  "label": "AGENT",
+  "evidence": "Merged PR #21744 branch includes commit Co-authored-by: Copilot (accepted suggestion)"
+ },
+ {
+  "id": 13,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/perform-move-legality-checks branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 14,
+  "label": "AGENT",
+  "evidence": "PR commits Co-Authored-By: Claude Opus 4.6 (1M context)"
+ },
+ {
+  "id": 15,
+  "label": "AGENT",
+  "evidence": "PR includes commit authored by claude[bot]"
+ },
+ {
+  "id": 16,
+  "label": "AGENT",
+  "evidence": "PR commits Co-Authored-By: Claude Opus 4.6 (1M context)"
+ },
+ {
+  "id": 17,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 18,
+  "label": "AGENT",
+  "evidence": "Merged via claude/issue-7315 branch; commit by claude[bot]"
+ },
+ {
+  "id": 19,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 20,
+  "label": "AGENT",
+  "evidence": "Merged PR #4130 branch commits Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 21,
+  "label": "AGENT",
+  "evidence": "PR includes claude[bot] commits and Claude Opus 4.6 co-author trailers"
+ },
+ {
+  "id": 22,
+  "label": "AGENT",
+  "evidence": "Merged PR branch includes claude[bot] commit addressing review comments"
+ },
+ {
+  "id": 23,
+  "label": "AGENT",
+  "evidence": "PR commits Co-Authored-By: Claude Opus 4.5"
+ },
+ {
+  "id": 24,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/add-cloud-save-button branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 25,
+  "label": "AGENT",
+  "evidence": "PR commits Co-authored-by: Copilot and \"proposals accepted Copilot\""
+ },
+ {
+  "id": 26,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 27,
+  "label": "AGENT",
+  "evidence": "Merged PR #3739 branch commit Co-authored-by: Copilot"
+ },
+ {
+  "id": 28,
+  "label": "AGENT",
+  "evidence": "PR commit Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 29,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 30,
+  "label": "AGENT",
+  "evidence": "PR commits \"Generated with Claude Code\" and Co-Authored-By: Claude"
+ },
+ {
+  "id": 31,
+  "label": "AGENT",
+  "evidence": "PR includes claude[bot] commits and Claude Opus 4.6 co-author trailers"
+ },
+ {
+  "id": 32,
+  "label": "AGENT",
+  "evidence": "Merged via codex/simplify-hash-computation-code branch (Codex)"
+ },
+ {
+  "id": 33,
+  "label": "AGENT",
+  "evidence": "Merged PR #21823 branch commits Co-authored-by: Copilot"
+ },
+ {
+  "id": 34,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 35,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/remove-unused-exports branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 36,
+  "label": "AGENT",
+  "evidence": "PR commit \"Generated with Claude Code\"; also Co-authored-by: Copilot"
+ },
+ {
+  "id": 37,
+  "label": "AGENT",
+  "evidence": "Merged via claude/issue-7315 branch; commit by claude[bot]"
+ },
+ {
+  "id": 38,
+  "label": "AGENT",
+  "evidence": "Merged via codex/implement-fixes-for-intervalset-class branch (Codex)"
+ },
+ {
+  "id": 39,
+  "label": "AGENT",
+  "evidence": "Merged PR #4130 branch commits Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 40,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 41,
+  "label": "AGENT",
+  "evidence": "PR commit authored by Claude <noreply@anthropic.com> with claude.ai/code session link"
+ },
+ {
+  "id": 42,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 43,
+  "label": "AGENT",
+  "evidence": "Merged PR #4153 branch commits Co-authored-by: Copilot"
+ },
+ {
+  "id": 44,
+  "label": "AGENT",
+  "evidence": "PR/merged branch commits Co-Authored-By: Claude Opus 4.5"
+ },
+ {
+  "id": 45,
+  "label": "AGENT",
+  "evidence": "PR commits Co-Authored-By: Claude Opus 4.6 / Haiku 4.5"
+ },
+ {
+  "id": 46,
+  "label": "AGENT",
+  "evidence": "PR commit Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 47,
+  "label": "AGENT",
+  "evidence": "PR commit Co-Authored-By: Claude Sonnet 4.6"
+ },
+ {
+  "id": 48,
+  "label": "AGENT",
+  "evidence": "PR commit authored by Claude <noreply@anthropic.com> with claude.ai/code session link"
+ },
+ {
+  "id": 49,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 50,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/remove-unused-exports branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 51,
+  "label": "AGENT",
+  "evidence": "PR branch commits by Zuri Negrin \"Generated with Claude Code\" (branch start, Aug 2025)"
+ },
+ {
+  "id": 52,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/analyze-minimum-properties-live-games branch; PR commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 53,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/fix-selection-box-rendering branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 54,
+  "label": "AGENT",
+  "evidence": "PR commits Co-Authored-By: Claude Opus 4.5"
+ },
+ {
+  "id": 55,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/fix-overwrite-on-name-exists branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 56,
+  "label": "AGENT",
+  "evidence": "Merged via copilot/remove-unused-exports branch; commits by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 57,
+  "label": "AGENT",
+  "evidence": "PR #1066 (improve-insuffmat) includes copilot-swe-agent[bot] commit 8b07e36c with Agent-Logs-Url"
+ },
+ {
+  "id": 58,
+  "label": "NO_EVIDENCE",
+  "evidence": "Own commit/PR #2758 clean; Claude trailers belong to other PRs in big merge"
+ },
+ {
+  "id": 59,
+  "label": "NO_EVIDENCE",
+  "evidence": "Own PR commits clean; agent trailers are from other merged release/v16 PRs"
+ },
+ {
+  "id": 60,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.6"
+ },
+ {
+  "id": 61,
+  "label": "AGENT",
+  "evidence": "Commit Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 62,
+  "label": "AGENT",
+  "evidence": "Message says \"Generated with help from Claude Code\""
+ },
+ {
+  "id": 63,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI with Co-Authored-By: Claude trailer"
+ },
+ {
+  "id": 64,
+  "label": "AGENT",
+  "evidence": "Squash commit and PR commits Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 65,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI, \"Generated with Claude Code\", Co-Authored-By: Claude"
+ },
+ {
+  "id": 66,
+  "label": "AGENT",
+  "evidence": "Authored by claude[bot]; PR commits by claude[bot]"
+ },
+ {
+  "id": 67,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI, \"Generated with Claude Code\", Co-Authored-By: Claude"
+ },
+ {
+  "id": 68,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-Authored-By: Claude Opus 4.6"
+ },
+ {
+  "id": 69,
+  "label": "AGENT",
+  "evidence": "Authored by Copilot; PR commit by copilot-swe-agent[bot]"
+ },
+ {
+  "id": 70,
+  "label": "AGENT",
+  "evidence": "Authored by copilot-swe-agent[bot]; merged from copilot/add-columns-to-editor-saves"
+ },
+ {
+  "id": 71,
+  "label": "AGENT",
+  "evidence": "Authored by google-labs-jules[bot] (Jules); PR commits by Jules"
+ },
+ {
+  "id": 72,
+  "label": "AGENT",
+  "evidence": "Commit has Co-Authored-By: Claude Opus 4.6 trailer"
+ },
+ {
+  "id": 73,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.6"
+ },
+ {
+  "id": 74,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 75,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.5"
+ },
+ {
+  "id": 76,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI, \"Generated with Claude Code\", Co-Authored-By: Claude"
+ },
+ {
+  "id": 77,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI, \"Generated with Claude Code\", Co-Authored-By: Claude"
+ },
+ {
+  "id": 78,
+  "label": "AGENT",
+  "evidence": "Authored by google-labs-jules[bot] (Jules); PR commits by Jules"
+ },
+ {
+  "id": 79,
+  "label": "AGENT",
+  "evidence": "Commit trailer Co-authored-by: claude[bot]"
+ },
+ {
+  "id": 80,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.6"
+ },
+ {
+  "id": 81,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI with Co-Authored-By: Claude trailer"
+ },
+ {
+  "id": 82,
+  "label": "AGENT",
+  "evidence": "Co-authored-by google-labs-jules[bot]; PR commits by Jules"
+ },
+ {
+  "id": 83,
+  "label": "AGENT",
+  "evidence": "Message says \"Generated with help from Claude Code\""
+ },
+ {
+  "id": 84,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.5"
+ },
+ {
+  "id": 85,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI with Co-Authored-By: Claude trailer"
+ },
+ {
+  "id": 86,
+  "label": "AGENT",
+  "evidence": "Authored by copilot-swe-agent[bot]; merged from copilot/add-precommit-hook-for-path"
+ },
+ {
+  "id": 87,
+  "label": "AGENT",
+  "evidence": "Commit trailer Co-authored-by: Claude"
+ },
+ {
+  "id": 88,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.6"
+ },
+ {
+  "id": 89,
+  "label": "AGENT",
+  "evidence": "Authored by Claude <noreply@anthropic.com>, claude.ai/code session link, claude/ branch"
+ },
+ {
+  "id": 90,
+  "label": "AGENT",
+  "evidence": "Authored by Claude <noreply@anthropic.com>, claude.ai/code session link, claude/ branch"
+ },
+ {
+  "id": 91,
+  "label": "AGENT",
+  "evidence": "Message says \"Generated with help from Claude Code\""
+ },
+ {
+  "id": 92,
+  "label": "AGENT",
+  "evidence": "Commit and PR commits Co-authored-by: Claude Opus 4.6"
+ },
+ {
+  "id": 93,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 94,
+  "label": "AGENT",
+  "evidence": "Author/committer Claude4.0s <claude4.0s@ai.assistant> (Claude model identity)"
+ },
+ {
+  "id": 95,
+  "label": "AGENT",
+  "evidence": "Author/committer Claude4.0s <claude4.0s@ai.assistant> (Claude model identity)"
+ },
+ {
+  "id": 96,
+  "label": "AGENT",
+  "evidence": "Author/committer Claude4.0s <claude4.0s@ai.assistant> (Claude model identity)"
+ },
+ {
+  "id": 97,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI with Co-Authored-By: Claude trailer"
+ },
+ {
+  "id": 98,
+  "label": "AGENT",
+  "evidence": "Authored by claude[bot]; PR commits by claude[bot]"
+ },
+ {
+  "id": 99,
+  "label": "AGENT",
+  "evidence": "Author JTD+AI, \"Generated with Claude Code\", Co-Authored-By: Claude"
+ },
+ {
+  "id": 100,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 101,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 102,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 103,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 104,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 105,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 106,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 107,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 108,
+  "label": "AGENT",
+  "evidence": "PR commits Co-authored-by: Copilot Autofix powered by AI"
+ },
+ {
+  "id": 109,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 110,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 111,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 112,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 113,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 114,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 115,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 116,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 117,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 118,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 119,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 120,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 121,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 122,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 123,
+  "label": "NO_EVIDENCE",
+  "evidence": "Only CodeRabbit review feedback mentioned; no coding agent signal"
+ },
+ {
+  "id": 124,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 125,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 126,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 127,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 128,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent markers; \"amp\" refers to autocast module"
+ },
+ {
+  "id": 129,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 130,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 131,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 132,
+  "label": "UNCLEAR",
+  "evidence": "Commit edits CLAUDE.md documentation; no explicit agent trailer"
+ },
+ {
+  "id": 133,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 134,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 135,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 136,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 137,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 138,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 139,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 140,
+  "label": "UNCLEAR",
+  "evidence": "Title has generic \"[AI]\" tag; no named agent"
+ },
+ {
+  "id": 141,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 142,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 143,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 144,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 145,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 146,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 147,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 148,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ },
+ {
+  "id": 149,
+  "label": "NO_EVIDENCE",
+  "evidence": "No agent author, trailer, session link, or agent branch found"
+ }
+]

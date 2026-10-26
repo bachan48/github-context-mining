@@ -1,0 +1,202 @@
+[
+ {
+  "id": 0,
+  "label": "HOLDS",
+  "reason": "Only client import of server is type-only (cdpSession.ts:20 import type); none otherwise."
+ },
+ {
+  "id": 1,
+  "label": "HOLDS",
+  "reason": "No import of app.freerouting.gui from geometry or autoroute; only java.awt Graphics in autoroute, not the gui folder."
+ },
+ {
+  "id": 2,
+  "label": "MISSED_VIOLATION",
+  "reason": "viu_media/cli/utils/image.py:10 imports httpx outside provider/media_api; source 'viu/' misses the real viu_media package."
+ },
+ {
+  "id": 3,
+  "label": "MISSED_VIOLATION",
+  "reason": "app/backend/src/couchers/db.py:14 imports select from sqlalchemy instead of couchers.sql; not the exempt file."
+ },
+ {
+  "id": 4,
+  "label": "MISSED_VIOLATION",
+  "reason": "core/utils/MonacoUtils.ts:2 imports loader from @monaco-editor/react (plus monaco-editor DOM lib) in framework-agnostic core."
+ },
+ {
+  "id": 5,
+  "label": "HOLDS",
+  "reason": "No postgresw main code imports gremlin; only pom dependencies, which do not count."
+ },
+ {
+  "id": 6,
+  "label": "HOLDS",
+  "reason": "go2tv-lite imports no internal/gui or fyne; its imported packages are fyne-free."
+ },
+ {
+  "id": 7,
+  "label": "HOLDS",
+  "reason": "No pages/components import src/api; only a type (ImpersonationRequest) from pages/api, which is exempt."
+ },
+ {
+  "id": 8,
+  "label": "HOLDS",
+  "reason": "Renderer uses '@/electron' wrapper; no direct 'electron' imports."
+ },
+ {
+  "id": 9,
+  "label": "HOLDS",
+  "reason": "No .tsx file imports @vanilla-extract/css; only .css.ts files do."
+ },
+ {
+  "id": 10,
+  "label": "HOLDS",
+  "reason": "core/ Go files import only standard library; no forbidden internal packages."
+ },
+ {
+  "id": 11,
+  "label": "HOLDS",
+  "reason": "Task folders import only Common/Common-Auth, never sibling tasks."
+ },
+ {
+  "id": 12,
+  "label": "HOLDS",
+  "reason": "No import of widgets or controller in dioptas/model."
+ },
+ {
+  "id": 13,
+  "label": "HOLDS",
+  "reason": "libs/features imports only @keira/shared; no main or cross-feature imports."
+ },
+ {
+  "id": 14,
+  "label": "HOLDS",
+  "reason": "module_utils absolute imports are all ansible.module_utils; relative imports stay inside."
+ },
+ {
+  "id": 15,
+  "label": "HOLDS",
+  "reason": "No src-admin file imports from repo-root src/."
+ },
+ {
+  "id": 16,
+  "label": "HOLDS",
+  "reason": "No levanter, zephyr, haliax or iris code imports marin (or reverse layers)."
+ },
+ {
+  "id": 17,
+  "label": "HOLDS",
+  "reason": "No mongodbw main code imports other protocol modules; only pom entries."
+ },
+ {
+  "id": 18,
+  "label": "HOLDS",
+  "reason": "Relative and aliased imports resolved; popup and options never import each other."
+ },
+ {
+  "id": 19,
+  "label": "HOLDS",
+  "reason": "No better-sqlite3 import in src/renderer; only a markdown fixture mentions it."
+ },
+ {
+  "id": 20,
+  "label": "HOLDS",
+  "reason": "No imports of Providers in OSFramework or OutSystems; namespace references need no import."
+ },
+ {
+  "id": 21,
+  "label": "HOLDS",
+  "reason": "No _ommx_rust reference in any of the four adapter packages."
+ },
+ {
+  "id": 22,
+  "label": "HOLDS",
+  "reason": "torch imported only in torch_backend.py; other hits are tests, docs or README."
+ },
+ {
+  "id": 23,
+  "label": "HOLDS",
+  "reason": "Node folders import browser code only in test files."
+ },
+ {
+  "id": 24,
+  "label": "HOLDS",
+  "reason": "pgqueuer/domain imports only domain modules; no adapters or core."
+ },
+ {
+  "id": 25,
+  "label": "HOLDS",
+  "reason": "No direct phpseclib use outside CryptoManager, V1 library, vendor; scripts excluded; autoloader include is for fallback."
+ },
+ {
+  "id": 26,
+  "label": "HOLDS",
+  "reason": "No cmk.base imports in cmk/gui; only comments mention it."
+ },
+ {
+  "id": 27,
+  "label": "HOLDS",
+  "reason": "No protocol module main code imports another protocol module's packages."
+ },
+ {
+  "id": 28,
+  "label": "HOLDS",
+  "reason": "ipcMain imported from electron only in ipc-main.ts; others use the wrapper."
+ },
+ {
+  "id": 29,
+  "label": "HOLDS",
+  "reason": "Only JSDoc @import comments (type-only) reference framework from scene; no real imports."
+ },
+ {
+  "id": 30,
+  "label": "HOLDS",
+  "reason": "No import of sqlfluff api/cli/dialects/rules/utils from core; core.* hits are internal."
+ },
+ {
+  "id": 31,
+  "label": "HOLDS",
+  "reason": "packages/utils has no react imports."
+ },
+ {
+  "id": 32,
+  "label": "HOLDS",
+  "reason": "packages/ code does not import client/ or server/."
+ },
+ {
+  "id": 33,
+  "label": "HOLDS",
+  "reason": "IsValidExtension imports only Common/Common-Auth, never sibling tasks."
+ },
+ {
+  "id": 34,
+  "label": "HOLDS",
+  "reason": "src/core/utils imports nothing outside utils except a type-only import in path.ts."
+ },
+ {
+  "id": 35,
+  "label": "HOLDS",
+  "reason": "Renderer has no better-sqlite3 or main/db imports; only main/store types and constants."
+ },
+ {
+  "id": 36,
+  "label": "HOLDS",
+  "reason": "PackageExtension imports only Common, never sibling tasks."
+ },
+ {
+  "id": 37,
+  "label": "HOLDS",
+  "reason": "sdkcompat imports no com.google.idea plugin packages."
+ },
+ {
+  "id": 38,
+  "label": "HOLDS",
+  "reason": "InstallExtension imports only Common/Common-Auth, never sibling tasks."
+ },
+ {
+  "id": 39,
+  "label": "HOLDS",
+  "reason": "ipcRenderer imported from electron only in ipc-renderer.ts; others use the wrapper."
+ }
+]

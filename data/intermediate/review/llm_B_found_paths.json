@@ -1,0 +1,502 @@
+[
+ {
+  "id": 0,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 1,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 2,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 3,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 4,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 5,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 6,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 7,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 8,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 9,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 10,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 11,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 12,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 13,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 14,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 15,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 16,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 17,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 18,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 19,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 20,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 21,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 22,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 23,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 24,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 25,
+  "label": "CORRECT",
+  "reason": "Refers to the egg/ entry skill under packages/skills; exists there. Listed hits are node_modules but real place exists."
+ },
+ {
+  "id": 26,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 27,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 28,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 29,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 30,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 31,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 32,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 33,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 34,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 35,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 36,
+  "label": "CORRECT",
+  "reason": "p4metrics is the Go tool under cmd/p4metrics; suffix hit is the intended place."
+ },
+ {
+  "id": 37,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 38,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 39,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 40,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 41,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 42,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 43,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 44,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 45,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 46,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 47,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 48,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 49,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 50,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 51,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 52,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 53,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 54,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 55,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 56,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 57,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 58,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 59,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 60,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 61,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 62,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 63,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 64,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 65,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 66,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 67,
+  "label": "CORRECT",
+  "reason": "Path exists at repository root as written and matches the documented description."
+ },
+ {
+  "id": 68,
+  "label": "WRONG_MATCH",
+  "reason": "Text labels api_platform/properties as 'Properties/serialization'; config/serialization hits are different directories, not the one described."
+ },
+ {
+  "id": 69,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 70,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 71,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 72,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 73,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 74,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 75,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 76,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 77,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 78,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 79,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 80,
+  "label": "CORRECT",
+  "reason": "Egg-bin section describes its own test/fixtures; tools/egg-bin/test/fixtures exists."
+ },
+ {
+  "id": 81,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 82,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 83,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 84,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 85,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 86,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 87,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 88,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 89,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 90,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 91,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 92,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 93,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 94,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 95,
+  "label": "WRONG_MATCH",
+  "reason": "'fixtures' is a Go build tag in the text, not a directory; pkg/fixtures etc. only share the name."
+ },
+ {
+  "id": 96,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 97,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 98,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ },
+ {
+  "id": 99,
+  "label": "CORRECT",
+  "reason": "Suffix hit is the sub-project location the text documents (relative path inside it)."
+ }
+]

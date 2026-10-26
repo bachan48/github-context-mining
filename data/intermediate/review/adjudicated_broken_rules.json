@@ -1,0 +1,42 @@
+[
+ {
+  "id": 7,
+  "final": "FALSE_MAPPING",
+  "reason": "Only a type-only import (erased at build); rule's stated concern is bundle size and runtime errors."
+ },
+ {
+  "id": 10,
+  "final": "UNCLEAR",
+  "reason": "Vague 'respect module boundaries'; core->support dependency is declared in gradle; Spring Boot flags misresolved."
+ },
+ {
+  "id": 18,
+  "final": "TRUE",
+  "reason": "Deployer uses tokio::process and tokio::time; rule then said never outside runtime/; deployer exemption added later."
+ },
+ {
+  "id": 24,
+  "final": "FALSE_MAPPING",
+  "reason": "publish.ts uses SimpleGit only as a type; dryRun.ts is the wrapper; lint only blocks simpleGit() calls."
+ },
+ {
+  "id": 28,
+  "final": "FALSE_MAPPING",
+  "reason": "import-linter config referenced by the rule explicitly ignores ports.driver -> core.tm, the only flagged import."
+ },
+ {
+  "id": 31,
+  "final": "TRUE",
+  "reason": "Examples are TYPE_CHECKING, but runtime imports exist (type_systems.py imports hsfs; connection.py function-level hsfs import)."
+ },
+ {
+  "id": 40,
+  "final": "TRUE",
+  "reason": "Production modules (aglib/nearpc.py, hexdump.py, gdblib/prompt.py) import pwndbg.commands at writing commit."
+ },
+ {
+  "id": 48,
+  "final": "TRUE",
+  "reason": "At writing, domain services import app.api.helpers; logger allowance only added later."
+ }
+]

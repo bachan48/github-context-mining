@@ -1,0 +1,83 @@
+{
+ "funnel": {
+  "sentences": 1645,
+  "projects": 875,
+  "dependency_rules": 357,
+  "checkable_sentences": 176,
+  "checkable_rules": 184,
+  "rule_projects": 115
+ },
+ "status": {
+  "held": 129,
+  "broken_when_written": 51,
+  "broken_later": 4
+ },
+ "still_broken_at_snapshot": 50,
+ "r3_labels": {
+  "CONFIRMED_BROKEN": 33,
+  "FALSE_MAPPING": 15,
+  "FALSE_RESOLUTION": 2,
+  "UNCLEAR": 1
+ },
+ "confirmed_broken": 33,
+ "projects_with_confirmed": 0.20869565217391303,
+ "confirmed_still_broken": 32,
+ "r4": {
+  "HOLDS": 35,
+  "MISSED_VIOLATION": 5
+ },
+ "attribution": {
+  "rules": 33,
+  "rule_written_by_agent": 9,
+  "all_breaking_code_older": 26,
+  "some_breaking_code_by_agent": 4
+ },
+ "commits": {
+  "other": 5752,
+  "agent_assisted": 1728
+ },
+ "commit_projects": 96,
+ "agent_projects": 56,
+ "traces": {
+  "message (S1/S2)": 1332,
+  "account only (S3)": 65,
+  "pull request only (S4-S6)": 331
+ },
+ "r6": {
+  "NO_BREAK": 100
+ },
+ "breaks": {
+  "commits": {
+   "agent_assisted": 1728,
+   "other": 5752
+  },
+  "flagged": {
+   "agent_assisted": 7,
+   "other": 23
+  },
+  "confirmed": {
+   "agent_assisted": 5,
+   "other": 9
+  },
+  "repairs": {
+   "agent_assisted": 2,
+   "other": 27
+  },
+  "flagged %": {
+   "agent_assisted": 0.40509259259259256,
+   "other": 0.39986091794158557
+  },
+  "confirmed %": {
+   "agent_assisted": 0.28935185185185186,
+   "other": 0.1564673157162726
+  }
+ },
+ "mantel_haenszel": {
+  "odds_ratio": 2.6383404243702144,
+  "ci_low": 0.6855266139655676,
+  "ci_high": 10.154004312975703,
+  "p": 0.20894000283513425,
+  "projects": 51,
+  "projects_with_any_break": 8
+ }
+}

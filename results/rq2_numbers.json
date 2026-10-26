@@ -1,0 +1,95 @@
+{
+ "outcomes": {
+  "context_file": {
+   "deleted_while_valid": 4776,
+   "stale_fixed": 706,
+   "stale_unfixed": 445,
+   "still_valid": 38805,
+   "All": 44732
+  },
+  "readme": {
+   "deleted_while_valid": 271,
+   "stale_fixed": 63,
+   "stale_unfixed": 12,
+   "still_valid": 1607,
+   "All": 1953
+  },
+  "All": {
+   "deleted_while_valid": 5047,
+   "stale_fixed": 769,
+   "stale_unfixed": 457,
+   "still_valid": 40412,
+   "All": 46685
+  }
+ },
+ "staleness": {
+  "valid when written": {
+   "context_file": 44732,
+   "readme": 1953
+  },
+  "went stale": {
+   "context_file": 1151,
+   "readme": 75
+  },
+  "share stale": {
+   "context_file": 0.025731020298667622,
+   "readme": 0.03840245775729647
+  },
+  "median months followed": {
+   "context_file": 1.7052987510342141,
+   "readme": 1.2335050433153258
+  },
+  "stale per 100 claim-months": {
+   "context_file": 0.987145474773601,
+   "readme": 1.7382104697057994
+  }
+ },
+ "paired_rate": {
+  "projects": 441,
+  "context_file": 1.8606435420219936,
+  "readme": 1.8333618876425637
+ },
+ "projects_with_stale_claim": 0.12426584234930448,
+ "timing_context_file": {
+  "n_stale": 1065,
+  "median_days_to_stale": 20.04980324074074,
+  "q1": 3.7709027777777777,
+  "q3": 60.85126157407407,
+  "within_week": 0.34178403755868547,
+  "within_month": 0.5934272300469483,
+  "over_90": 0.15868544600938966,
+  "n_fixed": 706,
+  "fixed_same_commit": 0.6118980169971672,
+  "fixed_same_day": 0.7535410764872521,
+  "fixed_over_30": 0.07507082152974505,
+  "n_unfixed_known": 363,
+  "median_age_unfixed": 59.10627314814815
+ },
+ "timing_readme": {
+  "n_stale": 72,
+  "median_days_to_stale": 8.789594907407409,
+  "q1": 3.3128819444444444,
+  "q3": 59.172662037037036,
+  "within_week": 0.4722222222222222,
+  "within_month": 0.6527777777777778,
+  "over_90": 0.1388888888888889,
+  "n_fixed": 63,
+  "fixed_same_commit": 0.6349206349206349,
+  "fixed_same_day": 0.873015873015873,
+  "fixed_over_30": 0.031746031746031744,
+  "n_unfixed_known": 9,
+  "median_age_unfixed": 82.13993055555555
+ },
+ "fixed": {
+  "sum": {
+   "context_file": 706,
+   "readme": 63
+  },
+  "mean": {
+   "context_file": 0.6133796698523023,
+   "readme": 0.84
+  }
+ },
+ "projects_with_unfixed_stale": 0.06776556776556776,
+ "files_never_edited": 0.3778456413103831
+}

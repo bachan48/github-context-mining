@@ -1,0 +1,1422 @@
+[
+ {
+  "id": 0,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "3a3a84abbda676dc95f4eaa767d987527db06379",
+  "hint": {
+   "merge_commit": "c50f094805dd1d9389ccf4f890aeffb0b998320a",
+   "merged_branch_commits_cmd": "git -C clones_full/automattic__newspack-plugin log e430a00e26cde72a3318fb66f7eff783e30e8985 --not c5ebf7dda270b629ebce64d10fa819639ebcce2c"
+  }
+ },
+ {
+  "id": 1,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "c2e315d36c430b8449e8ab03d566d27be4ac5d87",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 2,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "d77bb74db2fa2021c26630f651830f0dfdf82c64",
+  "hint": {
+   "merge_commit": "6048b6476aa5c5fd8aca5bfefa99761934195edc",
+   "merged_branch_commits_cmd": "git -C clones_full/desktop__desktop log f3b3ff0149a4b092eb5ce039c931a3512495d454 --not 88f886d42554ac2b5e922bbd9dab0d1c172106a7"
+  }
+ },
+ {
+  "id": 3,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "78cf1410b93a144b3537af92321b67f7af66b445",
+  "hint": {
+   "merge_commit": "76e300017abec8604f43d234b2e0a3205d7e698f",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 9e8b1e7c7205112fc23b5bae6ed893ba18829c64 --not f4ab74858795fcdb033bc488e64b91d719a82674"
+  }
+ },
+ {
+  "id": 4,
+  "repo": "umbraco/umbraco-cms",
+  "clone": "clones_full/umbraco__umbraco-cms",
+  "sha": "5642c624d80bba148e3b5f5b642f53e9d412d173",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/21884",
+   "pr_parent": "7c0e33200166f18a1fb615a22faf836af4f1465f"
+  }
+ },
+ {
+  "id": 5,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "714c8b79f66a83f099a906d829833c3118ba2dee",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4529",
+   "pr_parent": "6f3688922b5fe00cfd6385dd14d3c63a1cee5acc"
+  }
+ },
+ {
+  "id": 6,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "14866657290f0b081ec08119671a7b703901766e",
+  "hint": {
+   "merge_commit": "5fb95571e19a3c4ce9d0156c144b978a706d31cc",
+   "merged_branch_commits_cmd": "git -C clones_full/desktop__desktop log d6af6ae9fb4e84f4f1c8c116daa2493a684de109 --not 9883b5c259d697665bbda60920713aa7a864e9a6"
+  }
+ },
+ {
+  "id": 7,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "58149adcd097e617c2f750b55f400660a9574b59",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4217",
+   "pr_parent": "962e4eac585246fe716ba01e312e05212bc2ef76"
+  }
+ },
+ {
+  "id": 8,
+  "repo": "compiler-explorer/compiler-explorer",
+  "clone": "clones_full/compiler-explorer__compiler-explorer",
+  "sha": "9e23c1f8bb54c9f1f771bf62fbc53a86fbe89598",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/8571",
+   "pr_parent": "e308b9f0b890cc053d5ccf784c478e392630ec3d"
+  }
+ },
+ {
+  "id": 9,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "79a1dacb9cb154f9360ffa3ec1fee17cf652aace",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 10,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "6d23827a9a72858e300c132241085be490e72efa",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 11,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "b3906bd64a9352b2d82601b224a1d36c25dd3018",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 12,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "7e82f24f1d2f81e442bd943be8ddcc6f495dcea9",
+  "hint": {
+   "merge_commit": "5fb95571e19a3c4ce9d0156c144b978a706d31cc",
+   "merged_branch_commits_cmd": "git -C clones_full/desktop__desktop log d6af6ae9fb4e84f4f1c8c116daa2493a684de109 --not 9883b5c259d697665bbda60920713aa7a864e9a6"
+  }
+ },
+ {
+  "id": 13,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "343afb29d6c9952a0e31337bef62715423b66e9a",
+  "hint": {
+   "merge_commit": "4a5ed5b94515429626d6e9094ce3071162cdeefc",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log f0fac8825a0a51dd456181860d3f1ad9690a588a --not c988820043d6c8f75d1105f49a78e41aa46cff76"
+  }
+ },
+ {
+  "id": 14,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "cef1d08d4d115f0267236f26c1e7c1c58eccae8e",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3822",
+   "pr_parent": "43ca35177a7898f2d08526e0d7907fe04445d4c8"
+  }
+ },
+ {
+  "id": 15,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "2204d94c375896fb4c992a06749f5ded827fed63",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3791",
+   "pr_parent": "b93b623d26d9aca2a7f8c1ed8778116d38aa79e6"
+  }
+ },
+ {
+  "id": 16,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "02ffb52f4a2ef95ab35b57dd8600ca450e05b7ff",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38705",
+   "pr_parent": "361afff798c1a16823586259f2704f6d0a65c657"
+  }
+ },
+ {
+  "id": 17,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "a36ceaddae45d1b374adcd480550cfd980a1bd85",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 18,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "b19b4a5d18717b90eb0e6ef8fcef74e77e2fdd85",
+  "hint": {
+   "merge_commit": "b06c0cb89d9b003667f2fde3ce1c85a583cacdb5",
+   "merged_branch_commits_cmd": "git -C clones_full/couchers-org__couchers log b27e7fa7bd69f79edce84bef1011a2f747296611 --not ddc97b4cd2939102ec4f62d4a2393c464219e122"
+  }
+ },
+ {
+  "id": 19,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "8cdad1d8b1ac7dc5f638ce0d3b0c8eb06def8887",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 20,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "cb922075973488460216f1a2af46e24c444e1a87",
+  "hint": {
+   "merge_commit": "734461949caa4e53ece56bdf26da400e1952e14e",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log fdc1229108b2a4f7e2eabd0c3b6331da96cf4269 --not 133109f0f957408f683e4e285d46df61d6dd2b9e"
+  }
+ },
+ {
+  "id": 21,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "d6679bf209494cda5a556902a8811ba4561e7239",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3990",
+   "pr_parent": "9406cc0970cf54deffc23dfe8e2cf9b27f37813c"
+  }
+ },
+ {
+  "id": 22,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "0f8189866c767900055450349cb182f51115b471",
+  "hint": {
+   "merge_commit": "c20152dbaf400fe282be143729e9e4301194f68f",
+   "merged_branch_commits_cmd": "git -C clones_full/couchers-org__couchers log 39e76bd17291514da3fbf784d77232264e20b143 --not 8dc6c3ede526146d09f416526f63dff30079616a"
+  }
+ },
+ {
+  "id": 23,
+  "repo": "arcadedata/arcadedb",
+  "clone": "clones_full/arcadedata__arcadedb",
+  "sha": "20bdabf2073c10f08fdc12fbb8dedecd350c4b59",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3286",
+   "pr_parent": "03fbcc7d3293e7b0aa914da0647d5ee9577ececd"
+  }
+ },
+ {
+  "id": 24,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "8cc6a946566194cb772f5bb1d91051472058f728",
+  "hint": {
+   "merge_commit": "76e300017abec8604f43d234b2e0a3205d7e698f",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 9e8b1e7c7205112fc23b5bae6ed893ba18829c64 --not f4ab74858795fcdb033bc488e64b91d719a82674"
+  }
+ },
+ {
+  "id": 25,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "c30edaf075cb18a2a36a792cc56ef8336fc5e8a2",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/36332",
+   "pr_parent": "54f19856de1eb278ea3bfdc96ad41421445b290c"
+  }
+ },
+ {
+  "id": 26,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "66252828dcf6f2d2ff352516ef5dc381e6134d0e",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 27,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "d57f23e2c619a8cca025a1d9d7bac174850ae32a",
+  "hint": {
+   "merge_commit": "d6eba2c0fc94c0187f9a6ef0d3168029012220c3",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log 73792ce3a7298360ea188a04f15747159bf7328a --not c1b07d5541191fb643b7a099687d1e6f8e20f490"
+  }
+ },
+ {
+  "id": 28,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "8eb3046888458ecc241435a6ba8bb66b48ac07eb",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38201",
+   "pr_parent": "615f13419cb576c9b877d8c72d595e7ed32b9a30"
+  }
+ },
+ {
+  "id": 29,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "63a1c88d272998a760e7a0dd35869980dfbf668a",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 30,
+  "repo": "compiler-explorer/compiler-explorer",
+  "clone": "clones_full/compiler-explorer__compiler-explorer",
+  "sha": "b5e7219baa89e9a43478a8efa51a66130bedc91f",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7839",
+   "pr_parent": "d0da32c241f5c2909dc3e157e717d219238afbf7"
+  }
+ },
+ {
+  "id": 31,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "2eede72843d51139968615a92ed099c01f2f4498",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3894",
+   "pr_parent": "5b21a2e07ba5b7f9f762ad74a726539d8df15ed1"
+  }
+ },
+ {
+  "id": 32,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "29440b1aafaea0779ba50c22e442d41ad3522e60",
+  "hint": {
+   "merge_commit": "845c07b90783c75e19044f4b75fc2bf92efd01d0",
+   "merged_branch_commits_cmd": "git -C clones_full/jdereg__java-util log 29440b1aafaea0779ba50c22e442d41ad3522e60 --not ecac3365f6eacfbd3b535896b4ee04380902c986"
+  }
+ },
+ {
+  "id": 33,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "e5252d9bf9691db3a7bc1332e678963da4ac64b8",
+  "hint": {
+   "merge_commit": "88f886d42554ac2b5e922bbd9dab0d1c172106a7",
+   "merged_branch_commits_cmd": "git -C clones_full/desktop__desktop log 5de669d82a740d5382cbfa0b19fbbde0baf1b6c8 --not 6aa2179f04933caba3e539eceae0dd14c4638969"
+  }
+ },
+ {
+  "id": 34,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "5fcdd7781954d90761ccc16787b7c08cb97f9144",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 35,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "74ac284cd6fb6544351af430a3ca4354c34233e4",
+  "hint": {
+   "merge_commit": "21075d169f703deafd6097585244d870e200b707",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log c98c6fc54b5530bfeb04fda466c5719221b52a18 --not 878ff43f41601699c285ce1c9717340caf461a58"
+  }
+ },
+ {
+  "id": 36,
+  "repo": "compiler-explorer/compiler-explorer",
+  "clone": "clones_full/compiler-explorer__compiler-explorer",
+  "sha": "de311208105fb6e693ad1e9c90e388f60981d647",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7836",
+   "pr_parent": "e58ef76a7bd7ae4d96385eeaab9620588a3f7ff1"
+  }
+ },
+ {
+  "id": 37,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "b27e7fa7bd69f79edce84bef1011a2f747296611",
+  "hint": {
+   "merge_commit": "b06c0cb89d9b003667f2fde3ce1c85a583cacdb5",
+   "merged_branch_commits_cmd": "git -C clones_full/couchers-org__couchers log b27e7fa7bd69f79edce84bef1011a2f747296611 --not ddc97b4cd2939102ec4f62d4a2393c464219e122"
+  }
+ },
+ {
+  "id": 38,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "6064509944b4e127bc790451ec424543d09b4776",
+  "hint": {
+   "merge_commit": "a390c75f11ea8ccba36da3b19982472dd6e47f42",
+   "merged_branch_commits_cmd": "git -C clones_full/jdereg__java-util log 6064509944b4e127bc790451ec424543d09b4776 --not 9bd6e147a93825af55c71c30ca33f2448089deb6"
+  }
+ },
+ {
+  "id": 39,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "acc20605e8df6dfa1c9560291f424c47e700a9e0",
+  "hint": {
+   "merge_commit": "734461949caa4e53ece56bdf26da400e1952e14e",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log fdc1229108b2a4f7e2eabd0c3b6331da96cf4269 --not 133109f0f957408f683e4e285d46df61d6dd2b9e"
+  }
+ },
+ {
+  "id": 40,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "c2a8140cab1fb77b2b596636d83fefd6ef8737d8",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 41,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "f5ef509d216df63a9d38a6b5ee0da060550f5bef",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4192",
+   "pr_parent": "d294a59a80538aede982f556a056e89a9cbb3fd0"
+  }
+ },
+ {
+  "id": 42,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "a1dfb4b9236b814cc9abed57d928ca91526816dc",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 43,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "1e24933cb11585222da6ceadc7fce6e99d7ed01c",
+  "hint": {
+   "merge_commit": "f9f2aed6516cf347f7ab4d540ca924a019204fec",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log 57f2a383a423c76c5020f58b7db3c9773193919b --not 52f8a0696396fb2083a24e59d760f3e4963a0e38"
+  }
+ },
+ {
+  "id": 44,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "9478c3a291e634af9c2c6e6e45ee7fcea4b9bb06",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3917",
+   "pr_parent": "18055da6dd6911bb215aaf717d1342344a971a89",
+   "merge_commit": "1bf3e37825fd9c5fe1865d2c71937112e5e94aaf",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log 46555b435199fc3ab908c58c83b3ba0b313b5194 --not 397e601f8e86e03bf4b1f032f9827668ce87dc95"
+  }
+ },
+ {
+  "id": 45,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "61fbfda501ef00d24e5dfeeabaf6b8220b73c4c7",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38361",
+   "pr_parent": "9017b9a74f295fe4890958fff977082c356e99de"
+  }
+ },
+ {
+  "id": 46,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "7942fa540a47f61fc96800892bfcf5a4543bd891",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3996",
+   "pr_parent": "f9f87e642a4eab71b4142a54aa67e7f2c3558598"
+  }
+ },
+ {
+  "id": 47,
+  "repo": "cowprotocol/cowswap",
+  "clone": "clones_full/cowprotocol__cowswap",
+  "sha": "592ecdcb519921a17c1f864756c85ff29e565232",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7143",
+   "pr_parent": "88fd2fdcd58063dd30f67dd3f81c3e33ee263425"
+  }
+ },
+ {
+  "id": 48,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "8c6ac466b5ab77352b5cba6206d4dfe744843433",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4185",
+   "pr_parent": "b47a42bf2578b6d198e9057b86a15d9b49dd9caa"
+  }
+ },
+ {
+  "id": 49,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "5d1b4ecb226420c0f3802de845d1bfd67bc2dfd3",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 50,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "62254e0c74d0ad8267141de45dacfff70d279ad2",
+  "hint": {
+   "merge_commit": "21075d169f703deafd6097585244d870e200b707",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log c98c6fc54b5530bfeb04fda466c5719221b52a18 --not 878ff43f41601699c285ce1c9717340caf461a58"
+  }
+ },
+ {
+  "id": 51,
+  "repo": "zenml-io/zenml",
+  "clone": "clones_full/zenml-io__zenml",
+  "sha": "99be87376cfc126e55a8d1f50a5af4b91c988d40",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4241",
+   "pr_parent": "cd6fdeee814246774a36be5f932210049364e4f9"
+  }
+ },
+ {
+  "id": 52,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "5d14bbe7d2b8115e49dff1a18a2b06f107265589",
+  "hint": {
+   "merge_commit": "13d0e9272703539748400a6494d76c0a388c4af3",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 27f14b437e8e95ec499eadef16efbe4a212facd2 --not 8045d79753b6aa8545828d669fd9f9f097077e14"
+  }
+ },
+ {
+  "id": 53,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "a30cffad93c0a257880c5813c47b3c780b23bbf2",
+  "hint": {
+   "merge_commit": "d0bed836eb9b325a212a2935bbcc20aa6653158e",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log a30cffad93c0a257880c5813c47b3c780b23bbf2 --not 67635f6c932a5ad2cb53854b02d0f5de4e471176"
+  }
+ },
+ {
+  "id": 54,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "55493d997d01a9713991be4351e38de523e26b68",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3944",
+   "pr_parent": "4a90bd7148e5a9cd10029aa7a8f405c2a7c87444"
+  }
+ },
+ {
+  "id": 55,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "aa28aed264fa27630924ac437aad1ad7131d70ab",
+  "hint": {
+   "merge_commit": "024bb139046a2f085c16999cd11e6f8b4989ea73",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 0da570a20fdb450eb0569b448f4445c70297380a --not a929ddcc89da91bbf7420f891441fdf84ab6ef39"
+  }
+ },
+ {
+  "id": 56,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "840b11ab0b836722e42694a2ddab891e39971ac7",
+  "hint": {
+   "merge_commit": "21075d169f703deafd6097585244d870e200b707",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log c98c6fc54b5530bfeb04fda466c5719221b52a18 --not 878ff43f41601699c285ce1c9717340caf461a58"
+  }
+ },
+ {
+  "id": 57,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "754560ab1db649f18addab056a9ba446e49d19bf",
+  "hint": {
+   "merge_commit": "e4acf65bd52845cf77bd673649cc752644a8f1ce",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log 5e00cc2c36e7e6bdffbd116745bc7934640c2c4e --not ac5f71c57c0280919207791b6b6d1cbba9d83257"
+  }
+ },
+ {
+  "id": 58,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "7f22bbb1920948712ddc575e03a0b1292ba94822",
+  "hint": {
+   "merge_commit": "cc0e55764356a545ab357fb459a9bbb8755aabf2",
+   "merged_branch_commits_cmd": "git -C clones_full/mindspore-lab__mindnlp log 7dd3e355d3f383c352ee94184ce0b208ad50abd6 --not 42559c49811cc0f209531db8ac56a83845d3d75b"
+  }
+ },
+ {
+  "id": 59,
+  "repo": "umbraco/umbraco-cms",
+  "clone": "clones_full/umbraco__umbraco-cms",
+  "sha": "80ae0380a203e44fa7248bf3726446c6138017d0",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/21053",
+   "pr_parent": "fd0128279836af7eb44185018c61f0c9405dc6a6",
+   "merge_commit": "59aaa00bab41e450fbf71a010470625ddb30a9c8",
+   "merged_branch_commits_cmd": "git -C clones_full/umbraco__umbraco-cms log 9c0a0a1086b3696e3149daa87d2e1af56e0f6e24 --not a429170842d9d64b7d08fcd7fd467a57cdcd48fa"
+  }
+ },
+ {
+  "id": 60,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "3b656f9cc2fcdb754275cb782ee91df4296c933a",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38349",
+   "pr_parent": "3d5694ee0f18cd026f4222a947164ee5f8c5c425"
+  }
+ },
+ {
+  "id": 61,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "d9178ea941f3f3c44d7a3db7913c3ca623d0e844",
+  "hint": {
+   "merge_commit": "719bdcfbb7a8bccb8571e8a10de2c91c3c7b93b4",
+   "merged_branch_commits_cmd": "git -C clones_full/cardstack__boxel log e435530e5ff2188f0b2f1bf18dd959eb5b6b253c --not 5deeb086bea73715b17a7ec939fb0bfd5ad29b95"
+  }
+ },
+ {
+  "id": 62,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "bf36c0bfec0aa5f83c75380662ecc5fae9f10b77",
+  "hint": {}
+ },
+ {
+  "id": 63,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "558b6ebff9b19b1f229655ca84277708cd184889",
+  "hint": {}
+ },
+ {
+  "id": 64,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "sha": "6d99ba2dc02f15c6e74e14a388e573c0333c7c16",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/25886",
+   "pr_parent": "09654329321266d1bdcdaa9f3b0813e9c27de3a6"
+  }
+ },
+ {
+  "id": 65,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "c84b636e2bf18c6126d31f467900f97dd4bc206f",
+  "hint": {}
+ },
+ {
+  "id": 66,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "8ddb117aa2fc27bdcab853ceb89111badedc07e3",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3889",
+   "pr_parent": "303f1a519f1cbcb864986164490ec797f6e4f5ab"
+  }
+ },
+ {
+  "id": 67,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "5289cf17032431dc06cb428b44b947d21eae44a8",
+  "hint": {}
+ },
+ {
+  "id": 68,
+  "repo": "naomiaro/waveform-playlist",
+  "clone": "clones_full/naomiaro__waveform-playlist",
+  "sha": "0cbe1a53c341fc6d0812b9bfb2695b85dd08958b",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/308",
+   "pr_parent": "b39d781ef1de73a90d0b51706d9ec5235d34f481"
+  }
+ },
+ {
+  "id": 69,
+  "repo": "microsoft/playwright",
+  "clone": "clones_full/microsoft__playwright",
+  "sha": "85579af87636d0af8d6c1c5641dbb983423ddc76",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/39882",
+   "pr_parent": "ae521ddf1a8b3bb781f76f02ff87ac4462438c8a"
+  }
+ },
+ {
+  "id": 70,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "c341a498f38765bb86b820ce37ea925e4f503aec",
+  "hint": {
+   "merge_commit": "209a90007c5a25708d73794b22a802d80a3f34af",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log c341a498f38765bb86b820ce37ea925e4f503aec --not 22b23b5c2abf79ce115b9ad45ed28e537089efcf"
+  }
+ },
+ {
+  "id": 71,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "sha": "e0a791dcb659249ce37980a1cfa7629de2d9b711",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/973",
+   "pr_parent": "ddcb9108d694c081c67506721bc1ae39faf8cc01"
+  }
+ },
+ {
+  "id": 72,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "943abe10cc47bc95bc0b7edadda544949b0891c9",
+  "hint": {
+   "merge_commit": "56f25d4cbbdd8461ece02e7959f1ee1fcf31a262",
+   "merged_branch_commits_cmd": "git -C clones_full/couchers-org__couchers log 779064cc3d7974d25075897f72e5eec1611f3b5e --not 16a1a25c98029ddb52cd88ad28d744d10691a7ac"
+  }
+ },
+ {
+  "id": 73,
+  "repo": "naomiaro/waveform-playlist",
+  "clone": "clones_full/naomiaro__waveform-playlist",
+  "sha": "7c9c54f1d00f2c88a6ce50a0e333f40b44850ce3",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/301",
+   "pr_parent": "15e3c87fda7d407b4df391cdb040e5d3fca08771"
+  }
+ },
+ {
+  "id": 74,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "77ae2317f16e0361c98529fb5c4771190332ba76",
+  "hint": {}
+ },
+ {
+  "id": 75,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "9c0337d092c0a9d4dfb0f4e958a08db75a6dfe8c",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/37554",
+   "pr_parent": "3ef33dcb7669b68ec6c2e6548b7c5534e731b27f"
+  }
+ },
+ {
+  "id": 76,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "d2b32b7396e3df99085886707456ee5728be261f",
+  "hint": {}
+ },
+ {
+  "id": 77,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "ea525491561d1445830bb2159a163ef16727ad1f",
+  "hint": {}
+ },
+ {
+  "id": 78,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "sha": "05fc9e62eb362e4cb8146829b68b1543afea22ea",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/845",
+   "pr_parent": "28a240b8b565240a48b1a112ea984c28e335f39f"
+  }
+ },
+ {
+  "id": 79,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "f29141708984002b2c30ea85521d2f155e94d486",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7297",
+   "pr_parent": "26f62110432ce75afdb3546d05113d1f38ab3631"
+  }
+ },
+ {
+  "id": 80,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "367088e1e72176ed462972f5f1c708636001571a",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2666",
+   "pr_parent": "1bbd28529916158030b238be672560f405ec40ae"
+  }
+ },
+ {
+  "id": 81,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "6b8ee7b8ab369f926febe7994309a4951083f7a0",
+  "hint": {}
+ },
+ {
+  "id": 82,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "sha": "cafbefff2b5109de236200aa94d1f2aac29ca366",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/793",
+   "pr_parent": "4a9f19e33f7a6812fbb8c4f348523e6173c93c61"
+  }
+ },
+ {
+  "id": 83,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "e90961424ad1c658579affc8fab8e9ba8ad45f78",
+  "hint": {}
+ },
+ {
+  "id": 84,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "41f07a9447735d381b825d1dbaffc7bf01f606b6",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2726",
+   "pr_parent": "8f7a0d79879dc44197ae9e3fef39ca7e9c43e1a5"
+  }
+ },
+ {
+  "id": 85,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "6f6287fae62eb58d5bbae4c0b5b6d726d2cc9dc0",
+  "hint": {}
+ },
+ {
+  "id": 86,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "8f7cff72fbd2567be51984d797ab598bab5b7527",
+  "hint": {
+   "merge_commit": "a99b90c68620dc1e3b4a65524df657832872be67",
+   "merged_branch_commits_cmd": "git -C clones_full/Infinite-Chess__infinitechess.org log edb1c317b0436314f07dbb17ff6db7597bb9778d --not c3c3da9128cf4a7d17088bb98867c1900c402e1e"
+  }
+ },
+ {
+  "id": 87,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "19f15eb49511617d03cb2dab44fb9422667859ff",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4579",
+   "pr_parent": "dffeb272b02584261d3b58d4a513415ada63dc61"
+  }
+ },
+ {
+  "id": 88,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "d6f3e79f8044748aaccf3e2c9be76507f34c9c77",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2642",
+   "pr_parent": "4fbfaf147b3d1b46fa178bec4ab4be54d57b29f7"
+  }
+ },
+ {
+  "id": 89,
+  "repo": "danielo515/obsidian-modal-form",
+  "clone": "clones_full/danielo515__obsidian-modal-form",
+  "sha": "2fc7e30a3b6143d4a07cf00cbf6ac6c70da5bc20",
+  "hint": {
+   "merge_commit": "8a9865c2cdcdc80015d131d477c0ef4e6352a12a",
+   "merged_branch_commits_cmd": "git -C clones_full/danielo515__obsidian-modal-form log 2fc7e30a3b6143d4a07cf00cbf6ac6c70da5bc20 --not 8e49c5c85c2cf0c4eb11a421f9800c2959776b64"
+  }
+ },
+ {
+  "id": 90,
+  "repo": "danielo515/obsidian-modal-form",
+  "clone": "clones_full/danielo515__obsidian-modal-form",
+  "sha": "518696256862739c332d27638011f6e553ee7faf",
+  "hint": {
+   "merge_commit": "8a9865c2cdcdc80015d131d477c0ef4e6352a12a",
+   "merged_branch_commits_cmd": "git -C clones_full/danielo515__obsidian-modal-form log 2fc7e30a3b6143d4a07cf00cbf6ac6c70da5bc20 --not 8e49c5c85c2cf0c4eb11a421f9800c2959776b64"
+  }
+ },
+ {
+  "id": 91,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "873fff703c3df5b19ca611a3c3b355b1bec7e51d",
+  "hint": {}
+ },
+ {
+  "id": 92,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "e30a9caba51c79e5dc52fa4b7d1be16c530d4a9e",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38123",
+   "pr_parent": "79372465757d420ab824604599f78a2b5b4c8662"
+  }
+ },
+ {
+  "id": 93,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "d102415e5bbed55224ced3882af1d1bf32675908",
+  "hint": {}
+ },
+ {
+  "id": 94,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "64c236b02a7b57ac828b42de765a619728aaf847",
+  "hint": {}
+ },
+ {
+  "id": 95,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "9ae9702b5c6ca34b3b49dd0b9e52b1851f818d1e",
+  "hint": {}
+ },
+ {
+  "id": 96,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "aa298fd8c020459ed4ffa9961dec4349c12ccbb9",
+  "hint": {}
+ },
+ {
+  "id": 97,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "560ef857abbc0efe49e0066dfec04d9a8e261480",
+  "hint": {}
+ },
+ {
+  "id": 98,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "75113b4c3d14805876d037ea2c48e99f0d6a5d7d",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3899",
+   "pr_parent": "5a35c1591e7d907f608b0ce814cab20c2b94bfad"
+  }
+ },
+ {
+  "id": 99,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "b9dc9d2eb640fe36480a0ff2b5bd6810f4f66cef",
+  "hint": {}
+ },
+ {
+  "id": 100,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "c5c573e2e9b769a27d8c0032b1ba5f1e1e861b6e",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2613",
+   "pr_parent": "b74d6d426f3eae64d977c613953f30b8c3fbd118"
+  }
+ },
+ {
+  "id": 101,
+  "repo": "mlrun/mlrun",
+  "clone": "clones_full/mlrun__mlrun",
+  "sha": "a33e09aca94add461ae657bfe73e9a2773d34514",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/9243",
+   "pr_parent": "659913b5ea02a26b3f45a22a38d92a291f2eb31c"
+  }
+ },
+ {
+  "id": 102,
+  "repo": "tikv/pd",
+  "clone": "clones_full/tikv__pd",
+  "sha": "27ee39bdae5b3ae3a5e2297723cd7815720fdc6a",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/10256",
+   "pr_parent": "294ed96be6902a44a0221b2964b959d41b9a58ad"
+  }
+ },
+ {
+  "id": 103,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "sha": "b51c369dbca6eff59b19bfb0492a032de98d70c3",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7285",
+   "pr_parent": "6300cfe89bbbc54a65cc533c2b07433db57aa9d7"
+  }
+ },
+ {
+  "id": 104,
+  "repo": "dart-code/dart-code",
+  "clone": "clones_full/dart-code__dart-code",
+  "sha": "74935e9cfa0352b9b0272588e5b5a3ef06602eb7",
+  "hint": {}
+ },
+ {
+  "id": 105,
+  "repo": "microsoft/playwright",
+  "clone": "clones_full/microsoft__playwright",
+  "sha": "a7e92d159f8fdc2e087434ea8c35da6d0cb53298",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/39879",
+   "pr_parent": "1d12d2076ef7f6b7d8b4d64a31977e4f06289a0c"
+  }
+ },
+ {
+  "id": 106,
+  "repo": "kumahq/kuma",
+  "clone": "clones_full/kumahq__kuma",
+  "sha": "d0971b8818d7d34096c29c6135239313d117e16b",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/15682",
+   "pr_parent": "4d4c3495a8a40cf4fb73345328546388ff66887f"
+  }
+ },
+ {
+  "id": 107,
+  "repo": "nilsteampassnet/teampass",
+  "clone": "clones_full/nilsteampassnet__teampass",
+  "sha": "b42d5b4fcf854171b5e6e16f5090f8704073c050",
+  "hint": {
+   "merge_commit": "a22874bdac6258b6a6903960ca76f18704151aa4",
+   "merged_branch_commits_cmd": "git -C clones_full/nilsteampassnet__teampass log b42d5b4fcf854171b5e6e16f5090f8704073c050 --not 771f1249dbb87f33730be6354ebfe350b9ec3ac0"
+  }
+ },
+ {
+  "id": 108,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "c45961711a8ff1d866c4ce42b4ecbb263c7a656d",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4193",
+   "pr_parent": "2b56d0787438b3b67621e1c4efc6d64119512ecf"
+  }
+ },
+ {
+  "id": 109,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "670eeb2cde8cc34b3e7b13605758c19e2a32cf8a",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2562",
+   "pr_parent": "6972046ef3d9b610c24bf7c8d072871acfe7f307"
+  }
+ },
+ {
+  "id": 110,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "6e36a642261a6e209903891ad552228be494734b",
+  "hint": {}
+ },
+ {
+  "id": 111,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "be404f9b84440f5141a8ea85e4ac605e0b752872",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/37452",
+   "pr_parent": "11257c0536966b90a2ebe5b80fe6b3c0d4fce7bb"
+  }
+ },
+ {
+  "id": 112,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "b072235e7241c04101258cdc6adb1a68f104c5d7",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2926",
+   "pr_parent": "7a41436ab813c0f453ffb9052439820e78eaa210"
+  }
+ },
+ {
+  "id": 113,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "5a134170a031d091b4f3fee4177b4037f5915689",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/37755",
+   "pr_parent": "c1c012fb529421f021afa9f8975ec30c9ab07449"
+  }
+ },
+ {
+  "id": 114,
+  "repo": "dart-code/dart-code",
+  "clone": "clones_full/dart-code__dart-code",
+  "sha": "a752e366e05acb743e54475a1e4f4bc2ef74fade",
+  "hint": {}
+ },
+ {
+  "id": 115,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "6d58e767927e151a7c08739a8001449f40ea2062",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2698",
+   "pr_parent": "36cab5d640e6c33f9620de7a4ae5b737a2c8c8c7"
+  }
+ },
+ {
+  "id": 116,
+  "repo": "umbraco/umbraco-cms",
+  "clone": "clones_full/umbraco__umbraco-cms",
+  "sha": "d8e1318290ed204998047b9f84e36ad259debd03",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/22050",
+   "pr_parent": "23bc9ed702ffa0de1dff47eef899279dba27ed1a"
+  }
+ },
+ {
+  "id": 117,
+  "repo": "mlrun/mlrun",
+  "clone": "clones_full/mlrun__mlrun",
+  "sha": "c8beba759868affc144a222a548db26bede7dc59",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/9206",
+   "pr_parent": "75f73c2ee2b32a7f94a33c22187f8cb5e65c7acd"
+  }
+ },
+ {
+  "id": 118,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "0b2cbd31d397252d2bcb635048d0b8b2f16515b6",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4515",
+   "pr_parent": "02e2555eb9b714268314fac5703d7a4a2306594b"
+  }
+ },
+ {
+  "id": 119,
+  "repo": "telefonica/mistica-web",
+  "clone": "clones_full/telefonica__mistica-web",
+  "sha": "86213c87cb1c87f06edd564214c50e4d6c6fe7fb",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/1499",
+   "pr_parent": "31ab59159f118c7d4944c4c6c470090bb60bf0d1"
+  }
+ },
+ {
+  "id": 120,
+  "repo": "kumahq/kuma",
+  "clone": "clones_full/kumahq__kuma",
+  "sha": "593973433d08d6a17555988fe69dffbd6b8b4b14",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/15859",
+   "pr_parent": "f9081ca5a1e010a441c8049c2ac28a0c192f8638"
+  }
+ },
+ {
+  "id": 121,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "cf4a9f39bb653a47cf5b8aa8bfa68b5e7468a720",
+  "hint": {}
+ },
+ {
+  "id": 122,
+  "repo": "rivet-dev/rivet",
+  "clone": "clones_full/rivet-dev__rivet",
+  "sha": "74d553cde3bcd25ae9596a17e1f775431751af18",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4481",
+   "pr_parent": "f00b3ebbd21d74dad434115b3b8c724615d21087"
+  }
+ },
+ {
+  "id": 123,
+  "repo": "cowprotocol/cowswap",
+  "clone": "clones_full/cowprotocol__cowswap",
+  "sha": "7b937020ad4209ece2d3d38972e8aaf722e0dbcf",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/6793",
+   "pr_parent": "b1020c44615b49c5f05f0a6dcf0d21b96b628846"
+  }
+ },
+ {
+  "id": 124,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "29af52ab458cfaf06c227c89bd39050f61cf8a4a",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3191",
+   "pr_parent": "204059e70a51a8560db353316f7832546c5a7df0"
+  }
+ },
+ {
+  "id": 125,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "e8b8084fd5c21f117300382f294c88de85bab8dc",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3283",
+   "pr_parent": "0fbb557f4a4935ffb0065f6e11497bab90ac600e"
+  }
+ },
+ {
+  "id": 126,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "sha": "fb8effe863a5684ea4ead3973b0d84acd5654acf",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7540",
+   "pr_parent": "40058c81b8f197b08ec265c78c2b33833753f7a3"
+  }
+ },
+ {
+  "id": 127,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "c3dca9982ad4e8b542a70fd732d4f29b9cdf4229",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4111",
+   "pr_parent": "d67e0f75dd1aa8252e494e725f49d1438c67a595"
+  }
+ },
+ {
+  "id": 128,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "a385485f8e07b8611a53d55c1d8862ba5c8170e1",
+  "hint": {
+   "merge_commit": "93212a70fcf542a595b89b475f1c0f370f5e165b",
+   "merged_branch_commits_cmd": "git -C clones_full/mindspore-lab__mindnlp log a385485f8e07b8611a53d55c1d8862ba5c8170e1 --not 1c693359f682305312372bc00c806270ea92fb8a"
+  }
+ },
+ {
+  "id": 129,
+  "repo": "rivet-dev/rivet",
+  "clone": "clones_full/rivet-dev__rivet",
+  "sha": "f0da0c32728d4eef9492adfc17298e23630f1632",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4293",
+   "pr_parent": "49efb3ec1e25172c09508c6b674e42852bb85244"
+  }
+ },
+ {
+  "id": 130,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "709d24861c4ebe0091e50337f6d2f61d1547fdb1",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2439",
+   "pr_parent": "4a5fca0223772b1a1627138d970ce231f876e6ff"
+  }
+ },
+ {
+  "id": 131,
+  "repo": "canonical/snapd",
+  "clone": "clones_full/canonical__snapd",
+  "sha": "69d924a7043f57b260891cccd9f035b5bb6ffeb6",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/16838",
+   "pr_parent": "704bdd50b6116cffab483f28d1a3c9d68d840b3f"
+  }
+ },
+ {
+  "id": 132,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "2e974ef773c429d01f6f2a80243e682e25094b53",
+  "hint": {}
+ },
+ {
+  "id": 133,
+  "repo": "QuantumNous/new-api",
+  "clone": "clones_full/QuantumNous__new-api",
+  "sha": "d087cc5025bd9f33024c38bec0e28c4a34016c0a",
+  "hint": {
+   "merge_commit": "45a59d32fbd259b360f19f015dccfe42dc0e2438",
+   "merged_branch_commits_cmd": "git -C clones_full/QuantumNous__new-api log c1c07d063df8fea5bfd54f26fa21bb85c04ecb6d --not 7fc39363d7442add1820da37ee5cc90999673afb"
+  }
+ },
+ {
+  "id": 134,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "f172992b6128beb423bd3ddb746d2783afdcc513",
+  "hint": {}
+ },
+ {
+  "id": 135,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "a6020d75fbbdbae0b9340f6b43f8a84ec882b5be",
+  "hint": {}
+ },
+ {
+  "id": 136,
+  "repo": "phetsims/forces-and-motion-basics",
+  "clone": "clones_full/phetsims__forces-and-motion-basics",
+  "sha": "72487a7f91e23a5f0cd6337313ed0f5562d22404",
+  "hint": {}
+ },
+ {
+  "id": 137,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "ee233d16d690350fcc981c1b2460c6f7b65c76ce",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/38524",
+   "pr_parent": "65f13f773e51ebc46aeab50d6f6cb35defc5fdb5"
+  }
+ },
+ {
+  "id": 138,
+  "repo": "adobe/react-spectrum-charts",
+  "clone": "clones_full/adobe__react-spectrum-charts",
+  "sha": "28ffd4dd47cae40bc0fb39f6e7ae4223eba9bf33",
+  "hint": {
+   "merge_commit": "3327914d76fffbfd7c8f7445691af1ad3adf5236",
+   "merged_branch_commits_cmd": "git -C clones_full/adobe__react-spectrum-charts log 760f21165272abd0bb5c8498402163709b419681 --not b4ae4c38d38df8d772c7dc0f4dde97c5bf379c21"
+  }
+ },
+ {
+  "id": 139,
+  "repo": "canonical/snapd",
+  "clone": "clones_full/canonical__snapd",
+  "sha": "07e268f8e38372387e22b0097905c5beaaa21a62",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/16809",
+   "pr_parent": "cc641b65ea28ecb7b0e2ef4e2a5ead86167f30a2"
+  }
+ },
+ {
+  "id": 140,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "85e3166495a1313211cd78b86f52ef83226e1ce6",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7187",
+   "pr_parent": "5d4bbc9ebb776cb7fdb29b5049b5c93de6f97458"
+  }
+ },
+ {
+  "id": 141,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "f8933c27433e742132b0efe89911e9f319a745e3",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/36087",
+   "pr_parent": "b051f779e678a317a175bb77de267d13d7fa04b4"
+  }
+ },
+ {
+  "id": 142,
+  "repo": "cowprotocol/cowswap",
+  "clone": "clones_full/cowprotocol__cowswap",
+  "sha": "b1020c44615b49c5f05f0a6dcf0d21b96b628846",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/7022",
+   "pr_parent": "9c6611e90a4b23e23f6aaadc513de3c6d7f3b562"
+  }
+ },
+ {
+  "id": 143,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "079e8cd1f696625ef27cfaca75d51f6ee67fa2e9",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/4180",
+   "pr_parent": "1e301c843bb0001e3506365d2e12021b026589ec"
+  }
+ },
+ {
+  "id": 144,
+  "repo": "arcadedata/arcadedb",
+  "clone": "clones_full/arcadedata__arcadedb",
+  "sha": "bd2df8821b197ffa44d8457167013c3782d3f570",
+  "hint": {}
+ },
+ {
+  "id": 145,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "c8e6103459ebbe21311b5318e3ffe21e88d6a487",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/3036",
+   "pr_parent": "c17e192a10d602e113ec08364def2cc4ab76b8b7"
+  }
+ },
+ {
+  "id": 146,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "f50fa297e67db234e983ad4034322b0288a78132",
+  "hint": {
+   "pull_request_branch_ref": "refs/prs/2607",
+   "pr_parent": "8f4464fc2cd7c0947d961d90a6f7efa3543174f7"
+  }
+ },
+ {
+  "id": 147,
+  "repo": "apereo/cas",
+  "clone": "clones_full/apereo__cas",
+  "sha": "27d9d34526264bd5a5fb28112a61edddaedc54d2",
+  "hint": {}
+ },
+ {
+  "id": 148,
+  "repo": "Checkmk/checkmk",
+  "clone": "clones_full/Checkmk__checkmk",
+  "sha": "4cbf1e36adb168f46ff943b6a1b549fa7ac0654b",
+  "hint": {}
+ },
+ {
+  "id": 149,
+  "repo": "nilsteampassnet/teampass",
+  "clone": "clones_full/nilsteampassnet__teampass",
+  "sha": "9c27b52202c46d75b380f1b4418d37a9ca5b928b",
+  "hint": {
+   "merge_commit": "a22874bdac6258b6a6903960ca76f18704151aa4",
+   "merged_branch_commits_cmd": "git -C clones_full/nilsteampassnet__teampass log b42d5b4fcf854171b5e6e16f5090f8704073c050 --not 771f1249dbb87f33730be6354ebfe350b9ec3ac0"
+  }
+ }
+]

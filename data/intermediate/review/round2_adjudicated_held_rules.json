@@ -1,0 +1,4 @@
+[
+  {"id": 1, "final": "MISSED_VIOLATION", "reason": "Rule targets visual layer generally; autoroute/AutorouteEngine.java:9 (and others) imports boardgraphics.GraphicsContext, the screen-drawing context, in production code."},
+  {"id": 23, "final": "MISSED_VIOLATION", "reason": "Mapping reversed, but 'etc.' covers Theia platform rules; common/menu/index.ts:17 statically re-exports browser, plugin-dev common/index.ts:19 re-exports node."}
+]

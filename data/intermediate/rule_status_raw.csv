@@ -1,0 +1,185 @@
+repo,rid,text,cat,intro,head,lab
+SigmaNight/basiliskLLM,SigmaNight/basiliskLLM#83,Business logic layer. Receive a view via constructor injection. Avoid `import wx` where possible — delegate wx calls to the view.,external_boundary,9,9,TRUE
+grafana/pyroscope,grafana/pyroscope#140,1. **Don't** introduce dependencies on `pkg/og/` - this is legacy code being phased out,internal_boundary,21,21,TRUE
+microsoft/playwright,microsoft/playwright#6,**Key rule**: Client code NEVER imports server code. Server code NEVER imports client code. Communication is only through the protocol.,internal_boundary,0,0,
+microsoft/playwright,microsoft/playwright#7,**Key rule**: Client code NEVER imports server code. Server code NEVER imports client code. Communication is only through the protocol.,internal_boundary,0,0,
+couchers-org/couchers,couchers-org/couchers#23,- Always import `from couchers.sql import couchers_select as select` instead of something else,external_boundary,0,0,
+nogdb/libnogdb,nogdb/libnogdb#171,- Internal symbols stay in `src/` — never leak into public headers,internal_boundary,0,0,
+lone-lang/lone,lone-lang/lone#109,"(allocation, hashing) never depend on the Lisp layer.",internal_boundary,0,0,
+marin-community/marin,marin-community/marin#61,"Dependency direction: {`iris`, `haliax`} → {`levanter`, `zephyr`} → `marin`. Each layer may only import from layers to its left. Never introduce reverse dependencies (e.g., levanter importing from marin).",internal_boundary,0,0,
+marin-community/marin,marin-community/marin#62,"Dependency direction: {`iris`, `haliax`} → {`levanter`, `zephyr`} → `marin`. Each layer may only import from layers to its left. Never introduce reverse dependencies (e.g., levanter importing from marin).",internal_boundary,0,0,
+jdereg/java-util,jdereg/java-util#141,- json-io is test-scope only (java-util has zero runtime dependencies),external_boundary,0,0,
+automattic/wpcom-legacy-redirector,automattic/wpcom-legacy-redirector#177,- **DDD layering**: Domain classes must not depend on Infrastructure or Application.,internal_boundary,1,1,TRUE
+tikv/pd,tikv/pd#121,"- golangci-lint config: see `.golangci.yml` (gofmt/goimports/gci formatters; depguard bans `github.com/pkg/errors`, `go.uber.org/atomic`, `math/rand`; prefers `math/rand/v2`; goheader copyright; revive + testifylint extensive; waitgroup-by-value forbidden).",external_boundary,0,0,
+kumahq/kuma,kumahq/kuma#168,- **`pkg/` cannot import `app/`**: architectural boundary enforced by depguard linter,internal_boundary,1,1,FALSE_MAPPING
+bitrise-io/bitrise-workflow-editor,bitrise-io/bitrise-workflow-editor#3,- **`core/` is framework-agnostic** — no React or DOM dependencies. Pure TypeScript only,external_boundary,0,0,
+adobe/react-spectrum-charts,adobe/react-spectrum-charts#1,- Internal test fixtures live in `<mark>TestUtils.ts` (e.g. `lineTestUtils.ts`) — never import these outside `vega-spec-builder`,internal_boundary,0,0,
+DataRecce/recce,DataRecce/recce#81,"- **Storybook imports:** Never import from `ui/src` internal paths (e.g., `../../../ui/src/...`). Always use `@datarecce/ui/components` or other `@datarecce/ui` package exports. This keeps the package boundary intact.",internal_boundary,0,0,
+blockscout/frontend,blockscout/frontend#50,- Use `lib/date/dayjs.ts` instead of importing `dayjs` directly.,external_boundary,3,3,FALSE_MAPPING
+gregrickaby/nextjs-wordpress,gregrickaby/nextjs-wordpress#86,"**Critical: ALWAYS import test utilities from `@/test-utils`, never directly from libraries.**",external_boundary,0,0,
+automattic/edit-flow,automattic/edit-flow#155,"- **Modules are self-contained**: Do not create cross-dependencies between modules. If module A needs data from module B, use WordPress hooks/filters as the interface.",internal_boundary,0,0,
+wilm0r/giggity,wilm0r/giggity#122,It also should never pick up a dependency on Play Services.,external_boundary,0,0,
+Checkmk/checkmk,Checkmk/checkmk#67,- GUI cannot import cmk/base internals (enforced by component isolation),internal_boundary,0,0,
+deepspeedai/DeepSpeed,deepspeedai/DeepSpeed#24,- `check-torchdist` hook: NEVER directly import torch's distributed module. Use `import deepspeed.comm as dist` instead.,external_boundary,13,13,TRUE
+actualbudget/actual,actualbudget/actual#18,"- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",internal_boundary,0,3,
+freerouting/freerouting,freerouting/freerouting#165,- **Separation of Concerns:** The **UI/Visualizer** and the **Routing Engine** are distinct domains. Always maintain a strict boundary between visual representation and core algorithmic logic. UI concerns should not bleed into the geometric models.,internal_boundary,0,0,
+OpenCyphal/pydsdl,OpenCyphal/pydsdl#152,"- Tests are mostly co-located with implementation. Larger suites are in `pydsdl/_test*.py`, they are never imported.",internal_boundary,0,0,
+hyperledger-iroha/iroha,hyperledger-iroha/iroha#106,"- Serialization: Use Norito everywhere instead of serde. For binary codecs use `norito::{Encode, Decode}`; for JSON use the `norito::json` helpers/macros (`norito::json::from_*`, `to_*`, `json!`, `Value`) and never fall back to `serde_json`. Do not add direct `serde`/`serde_json` dependencies to crates; if serde is required internally, rely on Norito’s wrappers.",external_boundary,24,24,TRUE
+realvizu/nsdepcop,realvizu/nsdepcop#117,"- **RoslynAnalyzer/** — Entry point. `NsDepCopAnalyzer` extends Roslyn `DiagnosticAnalyzer`, registered for `IdentifierName`, `GenericName`, and `DefaultLiteralExpression` syntax kinds. Wires together config and analysis. Must only depend on other modules via interfaces (not `.Implementation` namespaces).",internal_boundary,0,0,
+artsy/eigen,artsy/eigen#2,- Do not import components/hooks/functions directly from a different Scene — extract shared code to `src/app/Components/` or `src/app/utils/`,internal_boundary,0,0,
+nevalang/neva,nevalang/neva#169,- `internal/runtime/*.go`: stdlib imports only,internal_boundary,0,0,
+umbraco/umbraco-cms,umbraco/umbraco-cms#144,- `Umbraco.Core` → No dependencies (only Microsoft.Extensions.*),internal_boundary,5,5,FALSE_RESOLUTION
+vitessce/vitessce,vitessce/vitessce#80,- The `packages/utils/` directory contains pure utility functions that should not import React.,external_boundary,0,0,
+sqlfluff/sqlfluff,sqlfluff/sqlfluff#78,"- `core` layer cannot import `api`, `cli`, `dialects`, `rules`, or `utils`",internal_boundary,0,0,
+sqlfluff/sqlfluff,sqlfluff/sqlfluff#79,- `api` layer cannot import `cli`,internal_boundary,0,0,
+sqlfluff/sqlfluff,sqlfluff/sqlfluff#119,- Never import dialect modules directly,internal_boundary,11,11,TRUE
+cleder/fastkml,cleder/fastkml#52,- **Constraint**: Do NOT import `lxml` or `xml.etree` directly.,external_boundary,1,1,FALSE_MAPPING
+koel/koel,koel/koel#107,- Import from `vite-plus` instead of `vite` (e.g. `import { defineConfig } from 'vite-plus'`),external_boundary,0,0,
+koel/koel,koel/koel#108,"- Import from `vite-plus/test` instead of `vitest` (e.g. `import { describe, expect, it, vi } from 'vite-plus/test'`)",external_boundary,0,0,
+logicalclocks/hopsworks-api,logicalclocks/hopsworks-api#180,"- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",internal_boundary,127,124,TRUE
+logicalclocks/hopsworks-api,logicalclocks/hopsworks-api#181,"- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",internal_boundary,14,14,TRUE
+logicalclocks/hopsworks-api,logicalclocks/hopsworks-api#182,"- `hopsworks_common` must not runtime-import `hopsworks`, `hsfs`, or `hsml`; `hsfs` and `hsml` must not runtime-import each other or `hopsworks`",internal_boundary,12,12,TRUE
+openRin/Rin,openRin/Rin#94,- Shared packages must not depend on `client/` or `server/` application modules.,internal_boundary,0,0,
+codereclaimers/neat-python,codereclaimers/neat-python#53,"- Pure Python only — no compiled extensions, no C dependencies, no NumPy/SciPy in core.",external_boundary,1,1,FALSE_MAPPING
+codereclaimers/neat-python,codereclaimers/neat-python#156,"- **No framework dependencies:** The library intentionally avoids depending on NumPy,",external_boundary,0,0,
+masscodeio/masscode,masscodeio/masscode#90,| **Renderer** | Frontend | **NO** Node.js/DB access. Only via API/IPC. | Calls API (`api.*`) or IPC (`ipc.invoke`) |,internal_boundary,0,0,
+masscodeio/masscode,masscodeio/masscode#91,- **Renderer:** **NEVER** import `better-sqlite3`. Use `import { api } from '~/renderer/services/api'`,external_boundary,0,0,
+masscodeio/masscode,masscodeio/masscode#92,- **Renderer:** Access Electron only via `src/renderer/electron.ts`.,external_boundary,0,0,
+jihadkhawaja/Egroo,jihadkhawaja/Egroo#167,"- Service calls from UI: use `jihadkhawaja.chat.client` services (`ChatMessageService`, `AuthService`, `ChatChannelService`, etc.) — don't call SignalR `HubConnection` directly.",external_boundary,0,1,
+pulumi/pulumi-java,pulumi/pulumi-java#172,- `pkg/` Go code (outside `codegen/` and `testing/`) must not import `github.com/pulumi/pulumi/pkg/v3/` — enforced by `make lint`.,external_boundary,5,5,FALSE_MAPPING
+commonwarexyz/monorepo,commonwarexyz/monorepo#134,"5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",external_boundary,3,7,TRUE
+openchemistry/avogadrolibs,openchemistry/avogadrolibs#110,- File format classes are handled in `io` which only depends on `core`. Quantum chemical program formats are generally handled in `quantumio`,internal_boundary,0,0,
+zenml-io/zenml,zenml-io/zenml#66,- [ ] **Import checking:** No direct SQL imports from outside `zen_stores` (`src/zenml/zen_stores/schemas/AGENTS.md`),external_boundary,58,60,FALSE_MAPPING
+whitphx/stlite,whitphx/stlite#17,**Never import `streamlit.web`** in stlite-lib (Tornado can't run on Pyodide). Use `stlite_lib.server.Server` instead. `streamlit.runtime` is safe.,external_boundary,0,0,
+eclipse-theia/theia,eclipse-theia/theia#136,"- Platform folders follow strict dependency rules (browser cannot import node, etc.)",internal_boundary,0,0,
+eclipse-theia/theia,eclipse-theia/theia#137,"- Platform folders follow strict dependency rules (browser cannot import node, etc.)",internal_boundary,0,0,
+eclipse-theia/theia,eclipse-theia/theia#138,"- Platform folders follow strict dependency rules (browser cannot import node, etc.)",internal_boundary,0,0,
+apereo/cas,apereo/cas#174,"**Key principle**: `api/` modules define contracts, `core/` implements them, `support/` adds features. Respect module boundaries.",internal_boundary,8,8,UNCLEAR
+apereo/cas,apereo/cas#175,"**Key principle**: `api/` modules define contracts, `core/` implements them, `support/` adds features. Respect module boundaries.",internal_boundary,5,5,UNCLEAR
+bazelbuild/intellij,bazelbuild/intellij#98,- Compat classes must never import plugin code,internal_boundary,0,0,
+dusk-network/rusk,dusk-network/rusk#163,"- **`no_std`**: `contracts/*`, `core/`, `wallet-core/`, `data-drivers/` — don't add `std` imports",external_boundary,1,3,FALSE_MAPPING
+automattic/newspack-plugin,automattic/newspack-plugin#176,- Never import `react-router-dom` directly in source code. Use the proxy: `import Router from '../../packages/components/src/proxied-imports/router'`. Tests may import `react-router-dom` directly.,external_boundary,0,0,
+signnow/signnow.net,signnow/signnow.net#118,- **Infrastructure Layer:** HTTP concerns stay here. Services never see `HttpResponseMessage` or status codes directly.,external_boundary,0,0,
+openstreetmap-ng/openstreetmap-ng,openstreetmap-ng/openstreetmap-ng#183,"- Layering: controller → service → query. Controllers validate and orchestrate; services mutate; queries are side‑effect‑free. Read‑only lookup methods (even complex ones combining multiple conditions) belong in queries, not services.",internal_boundary,5,5,TRUE
+openstreetmap-ng/openstreetmap-ng,openstreetmap-ng/openstreetmap-ng#184,"- Layering: controller → service → query. Controllers validate and orchestrate; services mutate; queries are side‑effect‑free. Read‑only lookup methods (even complex ones combining multiple conditions) belong in queries, not services.",internal_boundary,0,0,
+formkit/auto-animate,formkit/auto-animate#104,- Core must remain framework-agnostic; adapters import from `../index` only.,internal_boundary,0,0,
+ansible/ansible,ansible/ansible#84,- `lib/ansible/modules/` can only import from `lib/ansible/module_utils/` (modules are packaged for remote execution),internal_boundary,0,0,
+ansible/ansible,ansible/ansible#85,- `lib/ansible/module_utils/` cannot import from outside itself,internal_boundary,0,0,
+dart-code/dart-code,dart-code/dart-code#135,- Code in `src/extension/` must not be imported outside of that folder (enforce by lints).,internal_boundary,0,0,
+mindspore-lab/mindnlp,mindspore-lab/mindnlp#63,"- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",external_boundary,0,0,
+mindspore-lab/mindnlp,mindspore-lab/mindnlp#64,- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code,external_boundary,0,0,
+canonical/snapd,canonical/snapd#99,- `snapstate` is imported BY other managers but CANNOT import them,internal_boundary,8,9,FALSE_MAPPING
+canonical/snapd,canonical/snapd#100,"- **`overlord/*state` packages**: Only for snapd daemon, not imported by CLI tools",internal_boundary,3,4,TRUE
+shieldbattery/shieldbattery,shieldbattery/shieldbattery#43,"**Architecture Rule**: `client/`, `server/`, and `app/` must not depend on each other. All can depend on `common/`.",internal_boundary,0,0,
+shieldbattery/shieldbattery,shieldbattery/shieldbattery#44,"**Architecture Rule**: `client/`, `server/`, and `app/` must not depend on each other. All can depend on `common/`.",internal_boundary,0,0,
+shieldbattery/shieldbattery,shieldbattery/shieldbattery#45,"**Architecture Rule**: `client/`, `server/`, and `app/` must not depend on each other. All can depend on `common/`.",internal_boundary,0,0,
+martpie/museeks,martpie/museeks#75,- Never call `invoke` directly from React components — extend the `bridge-*.ts` helpers in `src/lib` (or re-use the same pattern).,external_boundary,1,1,TRUE
+viu-media/viu,viu-media/viu#16,*   ❌ **DON'T** make direct `httpx` calls outside of a `provider` or `media_api` library.,external_boundary,0,0,
+getsentry/craft,getsentry/craft#166,- `no-restricted-imports`: Blocks direct `simple-git` imports,external_boundary,2,2,TRUE
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#28,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#29,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#30,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#31,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#32,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#33,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#34,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#35,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#36,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+microsoft/azure-devops-extension-tasks,microsoft/azure-devops-extension-tasks#37,"- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",internal_boundary,0,0,
+glzr-io/glazewm,glzr-io/glazewm#105,- **wm-platform** (lib): Wrappers over platform-specific APIs; other crates do not call Windows/macOS APIs directly.,external_boundary,0,0,
+pwndbg/pwndbg,pwndbg/pwndbg#10,"pwndbg/commands/     -> User-facing commands (NOT an API, don't import!)",internal_boundary,20,19,FALSE_MAPPING
+pwndbg/pwndbg,pwndbg/pwndbg#11,(lib can ONLY import from lib),internal_boundary,5,6,TRUE
+pwndbg/pwndbg,pwndbg/pwndbg#12,1. **`pwndbg/lib/` only imports `pwndbg/lib/`** - No debugger dependencies allowed,internal_boundary,5,6,TRUE
+pwndbg/pwndbg,pwndbg/pwndbg#13,2. **`pwndbg/dbg_mod/` never imports `aglib`** - Dependency goes the other way,internal_boundary,30,31,TRUE
+pwndbg/pwndbg,pwndbg/pwndbg#14,3. **`pwndbg/dbg_mod/__init__.py` never imports debugger-specific code** - Breaks abstraction,internal_boundary,0,0,
+pwndbg/pwndbg,pwndbg/pwndbg#116,A command should never use gdb/lldb directly and only use aglib.,external_boundary,22,22,TRUE
+recidiviz/pulse-data,recidiviz/pulse-data#42,- Never import from `recidiviz/tests/` in production code (code outside of,internal_boundary,10,10,TRUE
+desktop/desktop,desktop/desktop#72,- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods,external_boundary,0,0,
+desktop/desktop,desktop/desktop#73,- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods,external_boundary,0,0,
+icflorescu/mantine-datatable,icflorescu/mantine-datatable#74,Examples use `import { DataTable } from '__PACKAGE__'` - this resolves to the local package during development. Never import from `mantine-datatable` in examples.,external_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#125,"- Cross-module test dependencies → scope: `test` only (e.g., postgresw should not depend on gremlin for compilation)",internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#126,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#127,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#128,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#129,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#130,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#131,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#132,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+arcadedata/arcadedb,arcadedata/arcadedb#133,- Protocol modules do NOT depend on other protocol modules in compile scope,internal_boundary,0,0,
+compiler-explorer/compiler-explorer,compiler-explorer/compiler-explorer#54,- **Frontend/Backend Separation**: Frontend code (`static/`) MUST NOT import from backend code (`lib/`),internal_boundary,0,0,
+go-openapi/runtime,go-openapi/runtime#139,- **OpenTracing kept in a separate module**: avoids pulling the OpenTracing dependency,external_boundary,0,0,
+nerds-odd-e/doughnut,nerds-odd-e/doughnut#41,│   └── doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only,internal_boundary,0,0,
+apache/superset,apache/superset#19,"- **Use @superset-ui/core** - Don't import Ant Design directly, prefer Ant Design component wrappers from @superset-ui/core/components",external_boundary,22,28,TRUE
+evstack/ev-node,evstack/ev-node#164,"- **core/** - Contains only interfaces and types, no external dependencies",internal_boundary,0,0,
+danielo515/obsidian-modal-form,danielo515/obsidian-modal-form#102,"- fp-ts namespace imports must use the single-letter aliases (`O`, `E`, `A`, etc.) imported from `@std` — direct imports from `fp-ts/*` paths violate the `fp-ts/no-lib-imports` rule.",external_boundary,42,43,TRUE
+clidey/whodb,clidey/whodb#101,- `env` package is for pure env var declarations only (no `log` import). Functions that parse env vars and need `log` for error reporting go in `envconfig`,internal_boundary,0,0,
+ChristianLempa/boilerplates,ChristianLempa/boilerplates#0,- NEVER import `Console` from `rich.console` except in display manager classes or `cli/__main__.py`,external_boundary,3,3,TRUE
+consensys/teku,consensys/teku#157,2. **ethereum/spec** - Depends only on infrastructure,internal_boundary,0,0,
+dequelabs/axe-core,dequelabs/axe-core#56,- **Never** import `commons` from `core/utils`. This is the most commonly rejected violation.,internal_boundary,0,0,
+wysaid/android-gpuimage-plus,wysaid/android-gpuimage-plus#123,- `cgeDemo/` is a demo app — never couple library APIs to demo-only code.,internal_boundary,0,0,
+Mezeporta/Erupe,Mezeporta/Erupe#173,Headless MHF client implementing the complete sign → entrance → channel flow. Shares `common/` and `network/crypto` but avoids `config` dependency via its own `conn/` package.,internal_boundary,0,0,
+leg100/otf,leg100/otf#142,- Avoids import cycles by having the ui package import domain services (not vice versa),internal_boundary,0,3,
+open-metadata/openmetadata,open-metadata/openmetadata#76,- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library — do not use MUI or introduce new MUI dependencies.,external_boundary,132,74,TRUE
+open-metadata/openmetadata,open-metadata/openmetadata#77,- **MUI**: Do not use MUI — we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`,external_boundary,132,74,TRUE
+naomiaro/waveform-playlist,naomiaro/waveform-playlist#93,"**Decision:** Do NOT add a full UI library (Material-UI, Chakra, etc.) as peer dependency.",external_boundary,0,0,
+tekrop/overfast-api,tekrop/overfast-api#120,Four strict DDD layers; dependencies only flow inward.,internal_boundary,12,9,TRUE
+chakra-ui/zag,chakra-ui/zag#4,2. **Framework Agnostic**: Core logic never depends on framework specifics,external_boundary,0,0,
+Jij-Inc/ommx,Jij-Inc/ommx#146,"1. **API Philosophy**: Always use `ommx.v1` unified API, avoid direct `_ommx_rust` imports",internal_boundary,0,0,
+Jij-Inc/ommx,Jij-Inc/ommx#147,- **NEVER import from `_ommx_rust` in adapters** - Use `ommx.v1` unified API,internal_boundary,0,0,
+briangu/klongpy,briangu/klongpy#51,2. Don't reference torch outside of `klongpy/backends/torch_backend.py`.,external_boundary,0,0,
+rivet-dev/rivet,rivet-dev/rivet#143,- Do not use the legacy upstream package directly. `@rivetkit/sqlite` is the maintained fork used in this repository and is sourced from `rivet-dev/wa-sqlite`.,external_boundary,0,0,
+playcanvas/engine,playcanvas/engine#8,"- Example: `core/` cannot import from `platform/`, `scene/`, or `framework/`",internal_boundary,0,0,
+playcanvas/engine,playcanvas/engine#9,- Example: `scene/` cannot import from `framework/`,internal_boundary,0,0,
+playcanvas/engine,playcanvas/engine#112,- Lower-level modules **cannot import** from higher-level modules,internal_boundary,0,0,
+playcanvas/engine,playcanvas/engine#113,- Lower-level modules **cannot import** from higher-level modules,internal_boundary,0,0,
+playcanvas/engine,playcanvas/engine#114,- Lower-level modules **cannot import** from higher-level modules,internal_boundary,0,0,
+playcanvas/engine,playcanvas/engine#115,- Lower-level modules **cannot import** from higher-level modules,internal_boundary,0,0,
+SR5-FoundryVTT/SR5-FoundryVTT,SR5-FoundryVTT/SR5-FoundryVTT#154,"Flows wrap specific features or functions into a modularized file, either using objects or classes, allowing for better organization and reusability of code. Flows wrap both document and rule functionality. They can contain data manipulation and retrieval for other layers as well (documents, sheets); only rules shouldn't use flows.",internal_boundary,1,1,TRUE
+dioptas/dioptas,dioptas/dioptas#25,- Models should never import from `widgets` or `controller` packages,internal_boundary,0,0,
+Infinite-Chess/infinitechess.org,Infinite-Chess/infinitechess.org#96,- `dev-utils/` — Depricated code. Do not maintain. It is not imported by the source code.,internal_boundary,0,0,
+heroic-games-launcher/heroicgameslauncher,heroic-games-launcher/heroicgameslauncher#26,- **No direct Electron imports in frontend** — everything goes through `window.api` (enforced by ESLint `no-restricted-imports`).,external_boundary,2,2,FALSE_MAPPING
+heroic-games-launcher/heroicgameslauncher,heroic-games-launcher/heroicgameslauncher#178,The codebase has four layers — never import across boundaries except through the defined IPC bridge:,internal_boundary,0,0,
+heroic-games-launcher/heroicgameslauncher,heroic-games-launcher/heroicgameslauncher#179,The codebase has four layers — never import across boundaries except through the defined IPC bridge:,internal_boundary,0,0,
+cowprotocol/cowswap,cowprotocol/cowswap#55,- apps/cowswap-frontend: common/ is leaf-only and must not import from modules/.,internal_boundary,0,0,
+adguardteam/adguardvpnextension,adguardteam/adguardvpnextension#68,- Never import from `background/` into `popup/` or `options/` (or vice versa),internal_boundary,93,93,FALSE_MAPPING
+adguardteam/adguardvpnextension,adguardteam/adguardvpnextension#69,- Never import from `background/` into `popup/` or `options/` (or vice versa),internal_boundary,1,1,FALSE_MAPPING
+adguardteam/adguardvpnextension,adguardteam/adguardvpnextension#70,- Never import between `popup/` and `options/`,internal_boundary,0,0,
+adguardteam/adguardvpnextension,adguardteam/adguardvpnextension#71,- Never import between `popup/` and `options/`,internal_boundary,0,0,
+telefonica/mistica-web,telefonica/mistica-web#48,- NEVER import `@vanilla-extract/css` in `.tsx` files (only in `.css.ts`),external_boundary,0,0,
+telefonica/mistica-web,telefonica/mistica-web#49,- NEVER import `**/sprinkles.css` in `.tsx` files,internal_boundary,0,0,
+nilsteampassnet/teampass,nilsteampassnet/teampass#170,**CryptoManager** (`/includes/libraries/teampassclasses/cryptomanager/src/CryptoManager.php`) is the single entry point for all crypto operations — never call phpseclib directly:,external_boundary,0,0,
+redhatinsights/insights-chrome,redhatinsights/insights-chrome#65,- ⚠️ ESLint enforces: Do NOT import directly from `react-oidc-context` or `oidc-client-ts` outside [src/auth/OIDCConnector/](src/auth/OIDCConnector/),external_boundary,3,3,FALSE_MAPPING
+azerothcore/keira3,azerothcore/keira3#20,Features can only import from shared. Main-window can import from features and shared. This is enforced via `@nx/enforce-module-boundaries`.,internal_boundary,0,0,
+azerothcore/keira3,azerothcore/keira3#21,Features can only import from shared. Main-window can import from features and shared. This is enforced via `@nx/enforce-module-boundaries`.,internal_boundary,0,0,
+janbjorge/PgQueuer,janbjorge/PgQueuer#58,1. **Domain** (`pgqueuer/domain/`) must NOT import from adapters or core,internal_boundary,0,0,
+janbjorge/PgQueuer,janbjorge/PgQueuer#59,2. **Ports** (`pgqueuer/ports/`) must NOT import from adapters or core,internal_boundary,1,1,TRUE
+janbjorge/PgQueuer,janbjorge/PgQueuer#60,3. **Core** (`pgqueuer/core/`) must NOT import from adapters (exceptions listed in `pyproject.toml` for migration period),internal_boundary,8,8,FALSE_MAPPING
+cytoscape/cytoscape-web,cytoscape/cytoscape-web#158,**Rules:** Models must NOT import from React or Zustand. Stores must NOT import React components. Features consume stores through hooks.,external_boundary,1,1,TRUE
+cytoscape/cytoscape-web,cytoscape/cytoscape-web#159,**Rules:** Models must NOT import from React or Zustand. Stores must NOT import React components. Features consume stores through hooks.,external_boundary,2,2,TRUE
+iTwin/itwinjs-core,iTwin/itwinjs-core#27,- **`core/frontend`**: Browser-based visualization (`@itwin/core-frontend`) - depends on common packages only,internal_boundary,0,0,
+ioBroker/ioBroker.matter,ioBroker/ioBroker.matter#87,1. **Never import from `src-admin/` in backend code** - The backend tsconfig does not include src-admin,internal_boundary,0,0,
+ioBroker/ioBroker.matter,ioBroker/ioBroker.matter#88,2. **Never import from `src/` in frontend code** - The frontend tsconfig does not include src,internal_boundary,0,0,
+apache/iceberg,apache/iceberg#124,- Engine-specific concepts must not leak into core. Follow existing patterns before introducing new ones.,external_boundary,0,0,
+drawthingsai/draw-things-community,drawthingsai/draw-things-community#103,"- Keep `Tokenizers` in `Apps/DrawThings/Sources` (app-only dependency), not in `LocalImageGenerator`.",external_boundary,0,0,
+OutSystems/outsystems-maps,OutSystems/outsystems-maps#82,- Never import provider types into `OSFramework/` or `OutSystems/` namespaces (see [ARCHITECTURE.md T2](./ARCHITECTURE.md#t2-public-api-must-return-framework-interfaces-not-provider-types)),internal_boundary,0,0,
+alexballas/go2tv,alexballas/go2tv#97,cmd/go2tv-lite/        - Minimal CLI-only build (no GUI dependencies),internal_boundary,0,0,
+just-jeb/angular-builders,just-jeb/angular-builders#89,"**MUST NEVER:** Cross-import between builder packages (e.g., `custom-esbuild` importing from `custom-webpack`). Shared code goes in `common`.",internal_boundary,0,0,
+sockethub/sockethub,sockethub/sockethub#46,- NEVER add direct imports between server and platform code,internal_boundary,0,0,
+sockethub/sockethub,sockethub/sockethub#47,- NEVER add direct imports between server and platform code,internal_boundary,0,0,
+QuantumNous/new-api,QuantumNous/new-api#153,"Do NOT directly import or call `encoding/json` in business code. These wrappers exist for consistency and future extensibility (e.g., swapping to a faster JSON library).",external_boundary,107,107,TRUE
+tambo-ai/tambo,tambo-ai/tambo#95,"- **packages/core**: pure utilities (validation, JSON, crypto, threading, tool utilities). Avoid DB access here. This package should not have any dependencies on the database.",internal_boundary,0,0,
+cardstack/boxel,cardstack/boxel#22,- Only card definitions (files run through the card loader) can use static ESM imports from `https://cardstack.com/base/*`. Host-side modules must load the module at runtime via `loader.import(`${baseRealm.url}...`)`. Static value imports from the HTTPS specifier inside host code trigger build-time `webpackMissingModule` failures. Type imports are OK using static ESM syntax.,external_boundary,37,2,FALSE_MAPPING
+phetsims/forces-and-motion-basics,phetsims/forces-and-motion-basics#111,- Model classes should never import from view,internal_boundary,2,2,TRUE
+mlrun/mlrun,mlrun/mlrun#38,- **Import boundaries**: `mlrun.common` must NOT import higher-level `mlrun.*` modules (enforced by import-linter in `pyproject.toml`).,internal_boundary,0,0,
+mlrun/mlrun,mlrun/mlrun#39,"- In `mlrun/`, do NOT import `kfp` directly; use `mlrun_pipelines` adapters instead.",external_boundary,0,0,
+mlrun/mlrun,mlrun/mlrun#40,"- In `mlrun/`, do NOT import `server/py` (server-side code).",internal_boundary,0,0,
+Lightprotocol/light-protocol,Lightprotocol/light-protocol#148,- depend on other program-libs or external crates only,internal_boundary,1,1,TRUE
+Lightprotocol/light-protocol,Lightprotocol/light-protocol#149,"- unit test must not depend on light-test-utils, any test that requires light-test-utils must be in program-tests",internal_boundary,0,0,
+Lightprotocol/light-protocol,Lightprotocol/light-protocol#150,- depend on program-libs and external crates only,internal_boundary,9,0,TRUE
+Lightprotocol/light-protocol,Lightprotocol/light-protocol#151,"- unit test must not depend on light-test-utils, any test that requires light-test-utils must be in program-tests",internal_boundary,0,0,
+diplodoc-platform/cli,diplodoc-platform/cli#57,- **Utils** cannot depend on anything outside of `utils/`,internal_boundary,0,0,
+diplodoc-platform/cli,diplodoc-platform/cli#160,- **Features** do not depend on each other,internal_boundary,0,1,
+diplodoc-platform/cli,diplodoc-platform/cli#161,- **Features** do not depend on each other,internal_boundary,0,0,
+diplodoc-platform/cli,diplodoc-platform/cli#162,- **Services** do not depend on each other,internal_boundary,0,0,
+hyperlane-xyz/hyperlane-registry,hyperlane-xyz/hyperlane-registry#5,6. **No Node.js in main src/** - Only `src/fs/` can import Node.js modules,external_boundary,0,0,
+yuanjian-org/app,yuanjian-org/app#145,"**Important**: Never import server-side code (`src/api`) into client-side code (`src/pages`, `src/components`). This will break the build and is prevented by ESLint rules.",internal_boundary,0,0,

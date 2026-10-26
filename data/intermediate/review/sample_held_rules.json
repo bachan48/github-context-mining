@@ -1,0 +1,929 @@
+[
+ {
+  "id": 0,
+  "repo": "microsoft/playwright",
+  "clone": "clones_full/microsoft__playwright",
+  "snapshot": "facd84299aa6f9bed4a0ff72ad05f981936f7fab",
+  "context_file": "CLAUDE.md",
+  "rule_text": "**Key rule**: Client code NEVER imports server code. Server code NEVER imports client code. Communication is only through the protocol.",
+  "rule": {
+   "source": [
+    "packages/playwright-core/src/client/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "packages/playwright-core/src/server/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 1,
+  "repo": "freerouting/freerouting",
+  "clone": "clones_full/freerouting__freerouting",
+  "snapshot": "941316f030145f57060d91e548e3d12c5a0053f2",
+  "context_file": "AGENTS.md",
+  "rule_text": "- **Separation of Concerns:** The **UI/Visualizer** and the **Routing Engine** are distinct domains. Always maintain a strict boundary between visual representation and core algorithmic logic. UI concerns should not bleed into the geometric models.",
+  "rule": {
+   "source": [
+    "src/main/java/app/freerouting/geometry/",
+    "src/main/java/app/freerouting/autoroute/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/main/java/app/freerouting/gui/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 2,
+  "repo": "viu-media/viu",
+  "clone": "clones_full/viu-media__viu",
+  "snapshot": "91aa6b599ef0777c9a4e667571997f9da9dcfbae",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "*   \u274c **DON'T** make direct `httpx` calls outside of a `provider` or `media_api` library.",
+  "rule": {
+   "source": [
+    "viu/"
+   ],
+   "exceptions": [
+    "viu/libs/provider/",
+    "viu/libs/media_api/"
+   ],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "httpx"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 3,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "snapshot": "4d0093229553eddb2ffc258a39b92aca51bc3965",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Always import `from couchers.sql import couchers_select as select` instead of something else",
+  "rule": {
+   "source": [
+    "app/backend/src/"
+   ],
+   "exceptions": [
+    "app/backend/src/couchers/sql.py"
+   ],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "sqlalchemy.select",
+    "sqlalchemy.sql.select",
+    "sqlalchemy.future.select"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 4,
+  "repo": "bitrise-io/bitrise-workflow-editor",
+  "clone": "clones_full/bitrise-io__bitrise-workflow-editor",
+  "snapshot": "4e5c2917d3a8da3817801be14572bb80ee3dcf7c",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- **`core/` is framework-agnostic** \u2014 no React or DOM dependencies. Pure TypeScript only",
+  "rule": {
+   "source": [
+    "source/javascripts/core/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "react",
+    "react-dom"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 5,
+  "repo": "arcadedata/arcadedb",
+  "clone": "clones_full/arcadedata__arcadedb",
+  "snapshot": "c74969f348f1b640b03912906a6b62c3460b45fd",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Cross-module test dependencies \u2192 scope: `test` only (e.g., postgresw should not depend on gremlin for compilation)",
+  "rule": {
+   "source": [
+    "postgresw/"
+   ],
+   "exceptions": [
+    "postgresw/src/test/"
+   ],
+   "forbidden_internal": [
+    "gremlin/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 6,
+  "repo": "alexballas/go2tv",
+  "clone": "clones_full/alexballas__go2tv",
+  "snapshot": "7c41db1a5fccd2579f9f550c49e19816e035b847",
+  "context_file": "AGENTS.md",
+  "rule_text": "cmd/go2tv-lite/        - Minimal CLI-only build (no GUI dependencies)",
+  "rule": {
+   "source": [
+    "cmd/go2tv-lite/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "internal/gui/"
+   ],
+   "forbidden_external": [
+    "fyne.io/fyne"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 7,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "snapshot": "246ee4c85a6757d4e405edabf41e728e6aba68b9",
+  "context_file": ".cursorrules",
+  "rule_text": "**Important**: Never import server-side code (`src/api`) into client-side code (`src/pages`, `src/components`). This will break the build and is prevented by ESLint rules.",
+  "rule": {
+   "source": [
+    "src/pages/",
+    "src/components/"
+   ],
+   "exceptions": [
+    "src/pages/api/"
+   ],
+   "forbidden_internal": [
+    "src/api/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 8,
+  "repo": "masscodeio/masscode",
+  "clone": "clones_full/masscodeio__masscode",
+  "snapshot": "21f6a4e4f2ba4f5311bd90fa3da2de8095e85790",
+  "context_file": "AGENTS.md",
+  "rule_text": "- **Renderer:** Access Electron only via `src/renderer/electron.ts`.",
+  "rule": {
+   "source": [
+    "src/renderer/"
+   ],
+   "exceptions": [
+    "src/renderer/electron.ts"
+   ],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "electron"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 9,
+  "repo": "telefonica/mistica-web",
+  "clone": "clones_full/telefonica__mistica-web",
+  "snapshot": "c1119bb54289089dea37b2ef0444b95c5ef672b7",
+  "context_file": "AGENTS.md",
+  "rule_text": "- NEVER import `@vanilla-extract/css` in `.tsx` files (only in `.css.ts`)",
+  "rule": {
+   "source": [
+    "**/*.tsx"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "@vanilla-extract/css"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 10,
+  "repo": "evstack/ev-node",
+  "clone": "clones_full/evstack__ev-node",
+  "snapshot": "763e8c6a802460241b68edda723185dcd14bbaff",
+  "context_file": "AGENTS.md",
+  "rule_text": "- **core/** - Contains only interfaces and types, no external dependencies",
+  "rule": {
+   "source": [
+    "core/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "block/",
+    "pkg/",
+    "node/",
+    "types/",
+    "execution/",
+    "apps/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 11,
+  "repo": "microsoft/azure-devops-extension-tasks",
+  "clone": "clones_full/microsoft__azure-devops-extension-tasks",
+  "snapshot": "a9ddad875f863e8ed20809701c7ba5ac751b1d21",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",
+  "rule": {
+   "source": [
+    "BuildTasks/PublishVSExtension/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "BuildTasks/ExtensionVersion/",
+    "BuildTasks/InstallExtension/",
+    "BuildTasks/IsValidExtension/",
+    "BuildTasks/IsValidExtensionAgent/",
+    "BuildTasks/PackageExtension/",
+    "BuildTasks/PublishExtension/",
+    "BuildTasks/ShareExtension/",
+    "BuildTasks/TfxInstaller/",
+    "BuildTasks/UnpublishExtension/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 12,
+  "repo": "dioptas/dioptas",
+  "clone": "clones_full/dioptas__dioptas",
+  "snapshot": "56126796ec485841239ff4c0a08e971dc4084000",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Models should never import from `widgets` or `controller` packages",
+  "rule": {
+   "source": [
+    "dioptas/model/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "dioptas/widgets/",
+    "dioptas/controller/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 13,
+  "repo": "azerothcore/keira3",
+  "clone": "clones_full/azerothcore__keira3",
+  "snapshot": "c1fc9b726abd585be747beb81a7d80086909183e",
+  "context_file": "CLAUDE.md",
+  "rule_text": "Features can only import from shared. Main-window can import from features and shared. This is enforced via `@nx/enforce-module-boundaries`.",
+  "rule": {
+   "source": [
+    "libs/features/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "libs/main/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 14,
+  "repo": "ansible/ansible",
+  "clone": "clones_full/ansible__ansible",
+  "snapshot": "8d24f0d32ffbc135cd1890c494ffa6730b994c8f",
+  "context_file": "AGENTS.md",
+  "rule_text": "- `lib/ansible/module_utils/` cannot import from outside itself",
+  "rule": {
+   "source": [
+    "lib/ansible/module_utils/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "lib/ansible/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 15,
+  "repo": "ioBroker/ioBroker.matter",
+  "clone": "clones_full/ioBroker__ioBroker.matter",
+  "snapshot": "c168966ff8fe911c1392d2cdc1b065401fec6010",
+  "context_file": "CLAUDE.md",
+  "rule_text": "2. **Never import from `src/` in frontend code** - The frontend tsconfig does not include src",
+  "rule": {
+   "source": [
+    "src-admin/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 16,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "snapshot": "8c92e7bc64c3b3639b4578e22818fc4eab3e6e3f",
+  "context_file": "AGENTS.md",
+  "rule_text": "Dependency direction: {`iris`, `haliax`} \u2192 {`levanter`, `zephyr`} \u2192 `marin`. Each layer may only import from layers to its left. Never introduce reverse dependencies (e.g., levanter importing from marin).",
+  "rule": {
+   "source": [
+    "lib/levanter/",
+    "lib/zephyr/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "lib/marin/"
+   ],
+   "forbidden_external": [
+    "marin"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 17,
+  "repo": "arcadedata/arcadedb",
+  "clone": "clones_full/arcadedata__arcadedb",
+  "snapshot": "c74969f348f1b640b03912906a6b62c3460b45fd",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Protocol modules do NOT depend on other protocol modules in compile scope",
+  "rule": {
+   "source": [
+    "mongodbw/"
+   ],
+   "exceptions": [
+    "mongodbw/src/test/"
+   ],
+   "forbidden_internal": [
+    "gremlin/",
+    "graphql/",
+    "redisw/",
+    "postgresw/",
+    "bolt/",
+    "grpcw/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 18,
+  "repo": "adguardteam/adguardvpnextension",
+  "clone": "clones_full/adguardteam__adguardvpnextension",
+  "snapshot": "b1db361ed81f124ea30050806363500f7f998b35",
+  "context_file": "AGENTS.md",
+  "rule_text": "- Never import between `popup/` and `options/`",
+  "rule": {
+   "source": [
+    "src/popup/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/options/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 19,
+  "repo": "masscodeio/masscode",
+  "clone": "clones_full/masscodeio__masscode",
+  "snapshot": "21f6a4e4f2ba4f5311bd90fa3da2de8095e85790",
+  "context_file": "AGENTS.md",
+  "rule_text": "- **Renderer:** **NEVER** import `better-sqlite3`. Use `import { api } from '~/renderer/services/api'`",
+  "rule": {
+   "source": [
+    "src/renderer/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "better-sqlite3"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 20,
+  "repo": "OutSystems/outsystems-maps",
+  "clone": "clones_full/OutSystems__outsystems-maps",
+  "snapshot": "13e00b2ed1c072e3e8070492d12a0b10f68e44bb",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Never import provider types into `OSFramework/` or `OutSystems/` namespaces (see [ARCHITECTURE.md T2](./ARCHITECTURE.md#t2-public-api-must-return-framework-interfaces-not-provider-types))",
+  "rule": {
+   "source": [
+    "src/OSFramework/",
+    "src/OutSystems/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/Providers/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 21,
+  "repo": "Jij-Inc/ommx",
+  "clone": "clones_full/Jij-Inc__ommx",
+  "snapshot": "f0ee2ee63fd5149793fae24bc4f920f2df372881",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- **NEVER import from `_ommx_rust` in adapters** - Use `ommx.v1` unified API",
+  "rule": {
+   "source": [
+    "python/ommx-highs-adapter/",
+    "python/ommx-openjij-adapter/",
+    "python/ommx-pyscipopt-adapter/",
+    "python/ommx-python-mip-adapter/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "ommx._ommx_rust"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 22,
+  "repo": "briangu/klongpy",
+  "clone": "clones_full/briangu__klongpy",
+  "snapshot": "57e25c9d765eb6ddbcddf1979d3983603cb4c25f",
+  "context_file": "AGENTS.md",
+  "rule_text": "2. Don't reference torch outside of `klongpy/backends/torch_backend.py`.",
+  "rule": {
+   "source": [
+    "klongpy/backends/torch_backend.py"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "torch"
+   ],
+   "polarity": "only",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 23,
+  "repo": "eclipse-theia/theia",
+  "clone": "clones_full/eclipse-theia__theia",
+  "snapshot": "efbf7e3fa194a5cd6f0fc93eb79dd8f22b357fce",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Platform folders follow strict dependency rules (browser cannot import node, etc.)",
+  "rule": {
+   "source": [
+    "packages/*/src/node/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "packages/*/src/browser/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 24,
+  "repo": "janbjorge/PgQueuer",
+  "clone": "clones_full/janbjorge__PgQueuer",
+  "snapshot": "4d5d55536f87736ebe2dcba1b6079d2e3e873d2d",
+  "context_file": "AGENTS.md",
+  "rule_text": "1. **Domain** (`pgqueuer/domain/`) must NOT import from adapters or core",
+  "rule": {
+   "source": [
+    "pgqueuer/domain/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "pgqueuer/adapters/",
+    "pgqueuer/core/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 25,
+  "repo": "nilsteampassnet/teampass",
+  "clone": "clones_full/nilsteampassnet__teampass",
+  "snapshot": "a22874bdac6258b6a6903960ca76f18704151aa4",
+  "context_file": "CLAUDE.md",
+  "rule_text": "**CryptoManager** (`/includes/libraries/teampassclasses/cryptomanager/src/CryptoManager.php`) is the single entry point for all crypto operations \u2014 never call phpseclib directly:",
+  "rule": {
+   "source": [
+    "*"
+   ],
+   "exceptions": [
+    "includes/libraries/teampassclasses/cryptomanager/",
+    "includes/libraries/phpseclibV1/",
+    "vendor/"
+   ],
+   "forbidden_internal": [
+    "includes/libraries/phpseclibV1/"
+   ],
+   "forbidden_external": [
+    "phpseclib3",
+    "phpseclib"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 26,
+  "repo": "Checkmk/checkmk",
+  "clone": "clones_full/Checkmk__checkmk",
+  "snapshot": "ce431f5407f630b7b0b5b7076bcac01df47b4a38",
+  "context_file": "AGENTS.md",
+  "rule_text": "- GUI cannot import cmk/base internals (enforced by component isolation)",
+  "rule": {
+   "source": [
+    "cmk/gui/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "cmk/base/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 27,
+  "repo": "arcadedata/arcadedb",
+  "clone": "clones_full/arcadedata__arcadedb",
+  "snapshot": "c74969f348f1b640b03912906a6b62c3460b45fd",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Protocol modules do NOT depend on other protocol modules in compile scope",
+  "rule": {
+   "source": [
+    "gremlin/",
+    "graphql/",
+    "mongodbw/",
+    "redisw/",
+    "postgresw/",
+    "bolt/",
+    "grpcw/"
+   ],
+   "exceptions": [
+    "gremlin/src/test/",
+    "graphql/src/test/",
+    "mongodbw/src/test/",
+    "redisw/src/test/",
+    "postgresw/src/test/",
+    "bolt/src/test/",
+    "grpcw/src/test/"
+   ],
+   "forbidden_internal": [
+    "gremlin/",
+    "graphql/",
+    "mongodbw/",
+    "redisw/",
+    "postgresw/",
+    "bolt/",
+    "grpcw/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 28,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "snapshot": "63d84e01de72f57d5e54c90cbe1bee2e5033a555",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods",
+  "rule": {
+   "source": [
+    "**/ipc-main.ts"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "electron::ipcMain",
+    "electron/main::ipcMain"
+   ],
+   "polarity": "only",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 29,
+  "repo": "playcanvas/engine",
+  "clone": "clones_full/playcanvas__engine",
+  "snapshot": "ad2e9ffae9a19eaaad08353f7fc8330871dbdeab",
+  "context_file": "AGENTS.md",
+  "rule_text": "- Example: `scene/` cannot import from `framework/`",
+  "rule": {
+   "source": [
+    "src/scene/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/framework/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 30,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "snapshot": "c43ef9913cda9477e368917b44160b732cf85c88",
+  "context_file": "AGENTS.md",
+  "rule_text": "- `core` layer cannot import `api`, `cli`, `dialects`, `rules`, or `utils`",
+  "rule": {
+   "source": [
+    "src/sqlfluff/core/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/sqlfluff/api/",
+    "src/sqlfluff/cli/",
+    "src/sqlfluff/dialects/",
+    "src/sqlfluff/rules/",
+    "src/sqlfluff/utils/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 31,
+  "repo": "vitessce/vitessce",
+  "clone": "clones_full/vitessce__vitessce",
+  "snapshot": "3c87516cf981859ddf299ea9941eb816afcde48c",
+  "context_file": "AGENTS.md",
+  "rule_text": "- The `packages/utils/` directory contains pure utility functions that should not import React.",
+  "rule": {
+   "source": [
+    "packages/utils/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "react"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 32,
+  "repo": "openRin/Rin",
+  "clone": "clones_full/openRin__Rin",
+  "snapshot": "8cd58e57a68429b997248b04914e78f466f051ed",
+  "context_file": "AGENTS.md",
+  "rule_text": "- Shared packages must not depend on `client/` or `server/` application modules.",
+  "rule": {
+   "source": [
+    "packages/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "client/",
+    "server/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 33,
+  "repo": "microsoft/azure-devops-extension-tasks",
+  "clone": "clones_full/microsoft__azure-devops-extension-tasks",
+  "snapshot": "a9ddad875f863e8ed20809701c7ba5ac751b1d21",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",
+  "rule": {
+   "source": [
+    "BuildTasks/IsValidExtension/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "BuildTasks/ExtensionVersion/",
+    "BuildTasks/InstallExtension/",
+    "BuildTasks/IsValidExtensionAgent/",
+    "BuildTasks/PackageExtension/",
+    "BuildTasks/PublishExtension/",
+    "BuildTasks/PublishVSExtension/",
+    "BuildTasks/ShareExtension/",
+    "BuildTasks/TfxInstaller/",
+    "BuildTasks/UnpublishExtension/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 34,
+  "repo": "diplodoc-platform/cli",
+  "clone": "clones_full/diplodoc-platform__cli",
+  "snapshot": "843f0651d2781a47b1f990c4926366392a3e6c1b",
+  "context_file": "AGENTS.md",
+  "rule_text": "- **Utils** cannot depend on anything outside of `utils/`",
+  "rule": {
+   "source": [
+    "src/core/utils/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/commands/",
+    "src/extensions/",
+    "src/steps/",
+    "src/core/config/",
+    "src/core/leading/",
+    "src/core/logger/",
+    "src/core/markdown/",
+    "src/core/meta/",
+    "src/core/program/",
+    "src/core/run/",
+    "src/core/template/",
+    "src/core/toc/",
+    "src/core/vars/",
+    "src/core/vcs/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 35,
+  "repo": "masscodeio/masscode",
+  "clone": "clones_full/masscodeio__masscode",
+  "snapshot": "21f6a4e4f2ba4f5311bd90fa3da2de8095e85790",
+  "context_file": "AGENTS.md",
+  "rule_text": "| **Renderer** | Frontend | **NO** Node.js/DB access. Only via API/IPC. | Calls API (`api.*`) or IPC (`ipc.invoke`) |",
+  "rule": {
+   "source": [
+    "src/renderer/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "src/main/db/"
+   ],
+   "forbidden_external": [
+    "better-sqlite3"
+   ],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 36,
+  "repo": "microsoft/azure-devops-extension-tasks",
+  "clone": "clones_full/microsoft__azure-devops-extension-tasks",
+  "snapshot": "a9ddad875f863e8ed20809701c7ba5ac751b1d21",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",
+  "rule": {
+   "source": [
+    "BuildTasks/PackageExtension/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "BuildTasks/ExtensionVersion/",
+    "BuildTasks/InstallExtension/",
+    "BuildTasks/IsValidExtension/",
+    "BuildTasks/IsValidExtensionAgent/",
+    "BuildTasks/PublishExtension/",
+    "BuildTasks/PublishVSExtension/",
+    "BuildTasks/ShareExtension/",
+    "BuildTasks/TfxInstaller/",
+    "BuildTasks/UnpublishExtension/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 37,
+  "repo": "bazelbuild/intellij",
+  "clone": "clones_full/bazelbuild__intellij",
+  "snapshot": "d5a509406d1b9181e5190020ae45676994528424",
+  "context_file": "CLAUDE.md",
+  "rule_text": "- Compat classes must never import plugin code",
+  "rule": {
+   "source": [
+    "sdkcompat/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "base/",
+    "clwb/",
+    "cpp/",
+    "dart/",
+    "javascript/",
+    "python/",
+    "skylark/",
+    "terminal/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 38,
+  "repo": "microsoft/azure-devops-extension-tasks",
+  "clone": "clones_full/microsoft__azure-devops-extension-tasks",
+  "snapshot": "a9ddad875f863e8ed20809701c7ba5ac751b1d21",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- Each task folder structure: `BuildTasks/<Name>/v5/{<Name>.ts, task.json, package.json, tsconfig.json}`; compiled JS ends parallel to TS. Avoid cross-imports between tasks except via `../Common/v5/Common.js`.",
+  "rule": {
+   "source": [
+    "BuildTasks/InstallExtension/"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [
+    "BuildTasks/ExtensionVersion/",
+    "BuildTasks/IsValidExtension/",
+    "BuildTasks/IsValidExtensionAgent/",
+    "BuildTasks/PackageExtension/",
+    "BuildTasks/PublishExtension/",
+    "BuildTasks/PublishVSExtension/",
+    "BuildTasks/ShareExtension/",
+    "BuildTasks/TfxInstaller/",
+    "BuildTasks/UnpublishExtension/"
+   ],
+   "forbidden_external": [],
+   "polarity": "forbid",
+   "sibling_scope": null
+  }
+ },
+ {
+  "id": 39,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "snapshot": "63d84e01de72f57d5e54c90cbe1bee2e5033a555",
+  "context_file": ".github/copilot-instructions.md",
+  "rule_text": "- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods",
+  "rule": {
+   "source": [
+    "**/ipc-renderer.ts"
+   ],
+   "exceptions": [],
+   "forbidden_internal": [],
+   "forbidden_external": [
+    "electron::ipcRenderer",
+    "electron/renderer::ipcRenderer"
+   ],
+   "polarity": "only",
+   "sibling_scope": null
+  }
+ }
+]

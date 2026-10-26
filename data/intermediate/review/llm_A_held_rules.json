@@ -1,0 +1,202 @@
+[
+ {
+  "id": 0,
+  "label": "HOLDS",
+  "reason": "Only a type-only import of server/chromium/protocol in client/cdpSession.ts; no runtime client-to-server imports."
+ },
+ {
+  "id": 1,
+  "label": "MISSED_VIOLATION",
+  "reason": "autoroute/AutorouteEngine.java:9 imports app.freerouting.boardgraphics.GraphicsContext; visual layer leaks into routing engine. Mapping only checks gui/."
+ },
+ {
+  "id": 2,
+  "label": "BAD_MAPPING",
+  "reason": "Code lives in viu_media/, not viu/ (viu is a script file). Real httpx imports exist, e.g. viu_media/cli/utils/image.py:10."
+ },
+ {
+  "id": 3,
+  "label": "MISSED_VIOLATION",
+  "reason": "app/backend/src/couchers/helpers/strong_verification.py:3 'from sqlalchemy import select' instead of couchers_select; many similar files."
+ },
+ {
+  "id": 4,
+  "label": "MISSED_VIOLATION",
+  "reason": "source/javascripts/core/utils/MonacoUtils.ts:2 imports loader from '@monaco-editor/react' (React package); core also uses document/window DOM APIs."
+ },
+ {
+  "id": 5,
+  "label": "HOLDS",
+  "reason": "No postgresw main code imports gremlin; note pom declares arcadedb-gremlin in provided (compile-visible) scope, not test."
+ },
+ {
+  "id": 6,
+  "label": "HOLDS",
+  "reason": "go2tv-lite imports only castprotocol, devices, httphandlers, soapcalls, utils, bubbletea; none pull in fyne or internal/gui."
+ },
+ {
+  "id": 7,
+  "label": "HOLDS",
+  "reason": "Only src/pages/api (excepted) imports src/api; Sidebar.tsx imports a type from pages/api, not src/api."
+ },
+ {
+  "id": 8,
+  "label": "HOLDS",
+  "reason": "Renderer accesses Electron only via '@/electron' (src/renderer/electron.ts); no direct electron imports."
+ },
+ {
+  "id": 9,
+  "label": "HOLDS",
+  "reason": "No .tsx file imports @vanilla-extract/css; only @vanilla-extract/dynamic, which is allowed."
+ },
+ {
+  "id": 10,
+  "label": "HOLDS",
+  "reason": "core/ is its own Go module with no external or internal ev-node imports."
+ },
+ {
+  "id": 11,
+  "label": "HOLDS",
+  "reason": "PublishVSExtension imports only its own Utils.js and npm packages; no other task folders."
+ },
+ {
+  "id": 12,
+  "label": "HOLDS",
+  "reason": "dioptas/model imports only model internals and package-level constants; no widgets or controller imports."
+ },
+ {
+  "id": 13,
+  "label": "HOLDS",
+  "reason": "No @keira/main or cross-feature imports from libs/features; only shared libs used."
+ },
+ {
+  "id": 14,
+  "label": "HOLDS",
+  "reason": "No static imports outside module_utils; controller modules loaded only via sanctioned import_controller_module bypass."
+ },
+ {
+  "id": 15,
+  "label": "HOLDS",
+  "reason": "src-admin has no imports from root src/; '../../types' resolves inside src-admin/src."
+ },
+ {
+  "id": 16,
+  "label": "HOLDS",
+  "reason": "levanter and zephyr never import marin; only same-layer levanter<->zephyr imports exist."
+ },
+ {
+  "id": 17,
+  "label": "HOLDS",
+  "reason": "mongodbw main code imports no other protocol module; pom has no protocol-module dependencies."
+ },
+ {
+  "id": 18,
+  "label": "HOLDS",
+  "reason": "No imports between src/popup and src/options; 'ExtraOptions' matches are local popup components."
+ },
+ {
+  "id": 19,
+  "label": "HOLDS",
+  "reason": "No better-sqlite3 import anywhere under src/renderer."
+ },
+ {
+  "id": 20,
+  "label": "HOLDS",
+  "reason": "Global TS namespaces, no imports; OSFramework/OutSystems call provider factories but expose no provider types in signatures."
+ },
+ {
+  "id": 21,
+  "label": "HOLDS",
+  "reason": "No adapter package references _ommx_rust."
+ },
+ {
+  "id": 22,
+  "label": "HOLDS",
+  "reason": "torch imported only in torch_backend.py; registry.py uses find_spec('torch') string check, not an import."
+ },
+ {
+  "id": 23,
+  "label": "HOLDS",
+  "reason": "No node folder imports browser code, locally or via @theia/*/lib/browser; browser->node also clean."
+ },
+ {
+  "id": 24,
+  "label": "HOLDS",
+  "reason": "pgqueuer/domain imports only its own modules; nothing from adapters or core."
+ },
+ {
+  "id": 25,
+  "label": "MISSED_VIOLATION",
+  "reason": "scripts/scan_pre_migration.php:96,191 require_once phpseclib v1 Crypt/AES.php and call new Crypt_AES() directly, bypassing CryptoManager."
+ },
+ {
+  "id": 26,
+  "label": "HOLDS",
+  "reason": "No cmk.base imports (static or string-based) in cmk/gui."
+ },
+ {
+  "id": 27,
+  "label": "HOLDS",
+  "reason": "No protocol module's main code imports another protocol module; cross deps only test/provided scope in poms."
+ },
+ {
+  "id": 28,
+  "label": "HOLDS",
+  "reason": "ipcMain imported from electron only in main-process/ipc-main.ts; others use './ipc-main' wrapper."
+ },
+ {
+  "id": 29,
+  "label": "HOLDS",
+  "reason": "scene/ references framework/ only in JSDoc @import type annotations; no runtime imports."
+ },
+ {
+  "id": 30,
+  "label": "HOLDS",
+  "reason": "No static imports of api/cli/dialects/rules/utils from core; dialect loading is dynamic by design."
+ },
+ {
+  "id": 31,
+  "label": "HOLDS",
+  "reason": "No React imports in packages/utils sub-packages."
+ },
+ {
+  "id": 32,
+  "label": "HOLDS",
+  "reason": "packages/* import only react, react-loading, @rin/api; nothing from client/ or server/."
+ },
+ {
+  "id": 33,
+  "label": "HOLDS",
+  "reason": "IsValidExtension folder contains only task.json and icon; no code imports."
+ },
+ {
+  "id": 34,
+  "label": "HOLDS",
+  "reason": "src/core/utils imports only its own modules and ~/core/utils."
+ },
+ {
+  "id": 35,
+  "label": "HOLDS",
+  "reason": "Renderer imports no better-sqlite3 or main/db; ~/main imports are pure constants/types."
+ },
+ {
+  "id": 36,
+  "label": "HOLDS",
+  "reason": "PackageExtension imports only ../Common/Common.js and task-lib; no other task folders."
+ },
+ {
+  "id": 37,
+  "label": "HOLDS",
+  "reason": "sdkcompat imports only IntelliJ/CIDR SDK and Guava; BUILD deps only intellij_platform_sdk."
+ },
+ {
+  "id": 38,
+  "label": "HOLDS",
+  "reason": "InstallExtension imports only Common and Common-Auth shared folders, no other tasks."
+ },
+ {
+  "id": 39,
+  "label": "HOLDS",
+  "reason": "ipcRenderer imported from electron only in lib/ipc-renderer.ts; others use the wrapper."
+ }
+]

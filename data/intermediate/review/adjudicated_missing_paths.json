@@ -1,0 +1,262 @@
+[
+ {
+  "id": 2,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "Illustrative shared-code convention tree (Card.tsx, Dialog.tsx); real code under apps/storefront with B3 names."
+ },
+ {
+  "id": 3,
+  "final": "NOT_REPO_PATH",
+  "reason": "File extension pattern for test files, not a path."
+ },
+ {
+  "id": 9,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "Illustrative convention tree; not a claim about actual files in components/button."
+ },
+ {
+  "id": 26,
+  "final": "GENERATED_OR_IGNORED",
+  "reason": "/.plan is listed in .gitignore; local-only docs directory."
+ },
+ {
+  "id": 34,
+  "final": "NOT_REPO_PATH",
+  "reason": "Foundry flavor lives in generated projects/other branch, not this hardhat-based tree."
+ },
+ {
+  "id": 36,
+  "final": "NOT_REPO_PATH",
+  "reason": "Path inside elixir-ls git submodule, i.e. another repository."
+ },
+ {
+  "id": 40,
+  "final": "NOT_REPO_PATH",
+  "reason": "Legacy path named only to forbid use; repo explicitly flattened, no existence claim."
+ },
+ {
+  "id": 45,
+  "final": "NOT_REPO_PATH",
+  "reason": "List of file extensions, not a path."
+ },
+ {
+  "id": 52,
+  "final": "WRONG_PATH",
+  "reason": "Named as canonical doc to edit; docs/AI.md deleted in docs cleanup commit."
+ },
+ {
+  "id": 53,
+  "final": "NOT_REPO_PATH",
+  "reason": "Not missing: resolves via .claude/skills symlink to .agents/skills; checker false positive."
+ },
+ {
+  "id": 68,
+  "final": "NOT_REPO_PATH",
+  "reason": "List of file extensions, not a path."
+ },
+ {
+  "id": 69,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "Belongs under generic component-name/ template directory; extractor dropped that level."
+ },
+ {
+  "id": 70,
+  "final": "PARSE_ERROR",
+  "reason": "Tree join dropped style/web level; real location is in common submodule."
+ },
+ {
+  "id": 73,
+  "final": "NOT_REPO_PATH",
+  "reason": "Module specifier without extension; src/server/core/Application.js exists."
+ },
+ {
+  "id": 89,
+  "final": "NOT_REPO_PATH",
+  "reason": "Not missing: resolves via .claude/skills symlink to .agents/skills; checker false positive."
+ },
+ {
+  "id": 90,
+  "final": "NOT_REPO_PATH",
+  "reason": "Written from consuming app where Framework is submodule; Skills/ exists at repo root."
+ },
+ {
+  "id": 96,
+  "final": "WRONG_PATH",
+  "reason": "Read-order lists agents/ docs as existing; no agents/ directory in repo, not ignored."
+ },
+ {
+  "id": 100,
+  "final": "NOT_REPO_PATH",
+  "reason": "Layer/project-relative shorthand; exists as src/IoTHub.Portal.Domain/Repositories."
+ },
+ {
+  "id": 108,
+  "final": "NOT_REPO_PATH",
+  "reason": "Project-relative shorthand; file exists at src/IoTHub.Portal.Shared/Security/PortalPermissions.cs."
+ },
+ {
+  "id": 109,
+  "final": "NOT_REPO_PATH",
+  "reason": "Relative to source/; inside dsp56300 git submodule, another repository."
+ },
+ {
+  "id": 111,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "Generic Go layout convention advice, not a claim about this repo."
+ },
+ {
+  "id": 141,
+  "final": "WRONG_PATH",
+  "reason": "Listed as existing agent doc; no agents/ directory in repo, not ignored."
+ },
+ {
+  "id": 150,
+  "final": "NOT_REPO_PATH",
+  "reason": "Inside private ee git submodule, another repository."
+ },
+ {
+  "id": 161,
+  "final": "NOT_REPO_PATH",
+  "reason": "Inside YRpp git submodule, another repository."
+ },
+ {
+  "id": 172,
+  "final": "NOT_REPO_PATH",
+  "reason": "Publish destination config_path('creasi/nusa.php') in user's Laravel app."
+ },
+ {
+  "id": 173,
+  "final": "NOT_REPO_PATH",
+  "reason": "Inside private ee git submodule, another repository."
+ },
+ {
+  "id": 175,
+  "final": "WRONG_PATH",
+  "reason": "Presented as existing mapping target; driver_v5 absent, file is at esp/driver/i2c_master.nim."
+ },
+ {
+  "id": 177,
+  "final": "NOT_REPO_PATH",
+  "reason": "Describes sibling libhimmelblau repository layout."
+ },
+ {
+  "id": 178,
+  "final": "NOT_REPO_PATH",
+  "reason": "Runtime storage namespace in cluster filesystem, not a repo path."
+ },
+ {
+  "id": 180,
+  "final": "NOT_REPO_PATH",
+  "reason": "flat/ is an ESLint config-name prefix, not a path."
+ },
+ {
+  "id": 184,
+  "final": "NOT_REPO_PATH",
+  "reason": "Workflow file the user adds to their own repository."
+ },
+ {
+  "id": 186,
+  "final": "NOT_REPO_PATH",
+  "reason": "User's own per-project Cursor config."
+ },
+ {
+  "id": 187,
+  "final": "NOT_REPO_PATH",
+  "reason": "Config in ioBroker installation directory on user's machine."
+ },
+ {
+  "id": 189,
+  "final": "NOT_REPO_PATH",
+  "reason": "Config file in the consuming user's repository."
+ },
+ {
+  "id": 192,
+  "final": "NOT_REPO_PATH",
+  "reason": "Prefixed with clone folder name; android/build.gradle exists at repo root."
+ },
+ {
+  "id": 193,
+  "final": "NOT_REPO_PATH",
+  "reason": "File on gh-pages branch of the user's repository."
+ },
+ {
+  "id": 194,
+  "final": "NOT_REPO_PATH",
+  "reason": "Prefixed with clone folder name; docker-compose.yml exists at repo root."
+ },
+ {
+  "id": 196,
+  "final": "NOT_REPO_PATH",
+  "reason": "Directory inside a built distribution jar, not the repo."
+ },
+ {
+  "id": 198,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "Illustrative output of generator command; actual generated file named differently."
+ },
+ {
+  "id": 210,
+  "final": "PLACEHOLDER_OR_EXAMPLE",
+  "reason": "path/ is placeholder --source value in CLI usage."
+ },
+ {
+  "id": 219,
+  "final": "NOT_REPO_PATH",
+  "reason": "entry/ is smcat DSL activity keyword, not a path."
+ },
+ {
+  "id": 229,
+  "final": "NOT_REPO_PATH",
+  "reason": "esphome/ is a web proxy context route, not a repo path."
+ },
+ {
+  "id": 230,
+  "final": "NOT_REPO_PATH",
+  "reason": "File the CLI writes into the user's own project."
+ },
+ {
+  "id": 243,
+  "final": "NOT_REPO_PATH",
+  "reason": "stable/ is a git branch name prefix, not a path."
+ },
+ {
+  "id": 245,
+  "final": "NOT_REPO_PATH",
+  "reason": "Rust module name; exists as src/screenshot_manager.rs."
+ },
+ {
+  "id": 251,
+  "final": "NOT_REPO_PATH",
+  "reason": "M/ is BIP32 derivation path prefix, not a file path."
+ },
+ {
+  "id": 256,
+  "final": "NOT_REPO_PATH",
+  "reason": "Config in user's $HOME/.config/topaz directory."
+ },
+ {
+  "id": 274,
+  "final": "NOT_REPO_PATH",
+  "reason": "Installed into user's $HOME/.config/topaz by template command."
+ },
+ {
+  "id": 277,
+  "final": "NOT_REPO_PATH",
+  "reason": "Logical Java package (com.windscribe.vpn.api); exists under base/src/main/java."
+ },
+ {
+  "id": 278,
+  "final": "NOT_REPO_PATH",
+  "reason": "Script in the user's Shopware installation root."
+ },
+ {
+  "id": 285,
+  "final": "NOT_REPO_PATH",
+  "reason": "Installed into user's $HOME/.config/topaz by template command."
+ },
+ {
+  "id": 291,
+  "final": "NOT_REPO_PATH",
+  "reason": "Example file in user's Laravel app created by artisan."
+ }
+]

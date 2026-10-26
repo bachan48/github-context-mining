@@ -1,0 +1,2779 @@
+[
+ {
+  "id": 0,
+  "repo": "playcanvas/engine",
+  "clone": "clones_full/playcanvas__engine",
+  "sha": "69f96af307c385a37207830957ad90168c80bcd3",
+  "rules": [
+   {
+    "rule_text": "- Example: `scene/` cannot import from `framework/`",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/scene/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "src/framework/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- Lower-level modules **cannot import** from higher-level modules",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/scene/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "src/framework/",
+     "src/extras/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 1,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "b7aa08dec1d447ad69a1ebd7285197b4779e60bf",
+  "rules": [
+   {
+    "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "recidiviz/"
+    ],
+    "exceptions": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_internal": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "a080b433bd5a7613b7bc33335cd7e24b96dcf883",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "843e957757709c5e2484a697b78ab8533c949c90",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "386f1c0add6328638065a103907923f172dcbf26",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "3d19873e4fcd4b3ee6694b3f474d19cfd0289f94",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "repo": "rivet-dev/rivet",
+  "clone": "clones_full/rivet-dev__rivet",
+  "sha": "1a4440c3e0aeba8fe049bcd35e787502ffa452f6",
+  "rules": [
+   {
+    "rule_text": "- Do not use the legacy upstream package directly. `@rivetkit/sqlite` is the maintained fork used in this repository and is sourced from `rivet-dev/wa-sqlite`.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "wa-sqlite"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "repo": "apache/superset",
+  "clone": "clones_full/apache__superset",
+  "sha": "a1d65c7529ca3d2bbf7f44138167c62b36943b1f",
+  "rules": [
+   {
+    "rule_text": "- **Use @superset-ui/core** - Don't import Ant Design directly, prefer Ant Design component wrappers from @superset-ui/core/components",
+    "context_file": "AGENTS.md",
+    "source": [
+     "superset-frontend/"
+    ],
+    "exceptions": [
+     "superset-frontend/packages/superset-ui-core/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "antd"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "4b396c35c8019574082fd250aefaa23d377b2669",
+  "rules": [
+   {
+    "rule_text": "- Never import `react-router-dom` directly in source code. Use the proxy: `import Router from '../../packages/components/src/proxied-imports/router'`. Tests may import `react-router-dom` directly.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "packages/components/src/proxied-imports/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "react-router-dom"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "c68202f7b4f72ad15c6e0423af2fd2376a2c3894",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "bd08833a2eac5b84d49130ccf264d686fd1eeee9",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "218ad71b3287fb0b4e0a71548287329dacc538bf",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "68d4338a93ca2494974a168a0879eff15ddc113c",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "repo": "hyperlane-xyz/hyperlane-registry",
+  "clone": "clones_full/hyperlane-xyz__hyperlane-registry",
+  "sha": "b0d88c320e3f765a5e02f205fe1b0ad810a43983",
+  "rules": [
+   {
+    "rule_text": "6. **No Node.js in main src/** - Only `src/fs/` can import Node.js modules",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [
+     "src/fs/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "fs",
+     "fs/promises",
+     "path",
+     "os",
+     "child_process",
+     "url",
+     "crypto",
+     "stream",
+     "util",
+     "http",
+     "https",
+     "net",
+     "events",
+     "module",
+     "node:"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "sha": "bdb073f971096cc35c4f1547460b38e0c2e8bdec",
+  "rules": [
+   {
+    "rule_text": "- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library \u2014 do not use MUI or introduce new MUI dependencies.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **MUI**: Do not use MUI \u2014 we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/",
+     "@emotion/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "28884a770c4aeef4b581b59b7092463f631c2767",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "cc7fa312bb3ab478d2787fc396e83e6789a44346",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "0f8189866c767900055450349cb182f51115b471",
+  "rules": [
+   {
+    "rule_text": "- Always import `from couchers.sql import couchers_select as select` instead of something else",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "app/backend/src/"
+    ],
+    "exceptions": [
+     "app/backend/src/couchers/sql.py"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "sqlalchemy.select",
+     "sqlalchemy.sql.select",
+     "sqlalchemy.future.select"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "77ae2317f16e0361c98529fb5c4771190332ba76",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "sha": "029e9b6eeb74151c6b1b01ace9ae4bf3877087c8",
+  "rules": [
+   {
+    "rule_text": "- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library \u2014 do not use MUI or introduce new MUI dependencies.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **MUI**: Do not use MUI \u2014 we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/",
+     "@emotion/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "repo": "naomiaro/waveform-playlist",
+  "clone": "clones_full/naomiaro__waveform-playlist",
+  "sha": "960a1226afb89a67f7ce8345029dc162f2f7fd57",
+  "rules": [
+   {
+    "rule_text": "**Decision:** Do NOT add a full UI library (Material-UI, Chakra, etc.) as peer dependency.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/material",
+     "@chakra-ui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "c540a5dc7db1f6c589b165adb0b94059cb4faffe",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "da5085efb4428091d0e5b3b46fe33f01f71a8230",
+  "rules": [
+   {
+    "rule_text": "- `dev-utils/` \u2014 Depricated code. Do not maintain. It is not imported by the source code.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dev-utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "459cf7479fed474caf87432b1adffb260810f9a4",
+  "rules": [
+   {
+    "rule_text": "- Always import `from couchers.sql import couchers_select as select` instead of something else",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "app/backend/src/"
+    ],
+    "exceptions": [
+     "app/backend/src/couchers/sql.py"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "sqlalchemy.select",
+     "sqlalchemy.sql.select",
+     "sqlalchemy.future.select"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "repo": "naomiaro/waveform-playlist",
+  "clone": "clones_full/naomiaro__waveform-playlist",
+  "sha": "2eef5cb8b537fd1de3996931ae47385a602b4f44",
+  "rules": [
+   {
+    "rule_text": "**Decision:** Do NOT add a full UI library (Material-UI, Chakra, etc.) as peer dependency.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/material",
+     "@chakra-ui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "560ef857abbc0efe49e0066dfec04d9a8e261480",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "a196bb51f826659be075dcfce29eb5f9c3171fad",
+  "rules": [
+   {
+    "rule_text": "- Only card definitions (files run through the card loader) can use static ESM imports from `https://cardstack.com/base/*`. Host-side modules must load the module at runtime via `loader.import(`${baseRealm.url}...`)`. Static value imports from the HTTPS specifier inside host code trigger build-time `webpackMissingModule` failures. Type imports are OK using static ESM syntax.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/host/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "https://cardstack.com/base/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 27,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "86ad41a122692fb39761d143736651ae03057449",
+  "rules": [
+   {
+    "rule_text": "- `dev-utils/` \u2014 Depricated code. Do not maintain. It is not imported by the source code.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dev-utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 28,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "dccb5e3d8eef570cd53a07bf786fe6f79d008805",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 29,
+  "repo": "QuantumNous/new-api",
+  "clone": "clones_full/QuantumNous__new-api",
+  "sha": "d595ef499070cc4156444a12d6d864e509598ec7",
+  "rules": [
+   {
+    "rule_text": "Do NOT directly import or call `encoding/json` in business code. These wrappers exist for consistency and future extensibility (e.g., swapping to a faster JSON library).",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "common/json.go"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "encoding/json"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 30,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "c32c268f8086cd6460ece3686e52430ddc4bd646",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 31,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "0c95eb483897a2f5ba35962e4525f2149f1c000c",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 32,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "69c56475626f963536c0675cade4db123033e366",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 33,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "cd4496a11023052a721ab5f963d57c2d10f76827",
+  "rules": [
+   {
+    "rule_text": "- `dev-utils/` \u2014 Depricated code. Do not maintain. It is not imported by the source code.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dev-utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 34,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "ffc1d80a3406954881596d68e088c280423de52a",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 35,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "7dd3e355d3f383c352ee94184ce0b208ad50abd6",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 36,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "c031d9aa4fe9d8d7faa603ea54addc5921c38d3d",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 37,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "f08825285547cc66b94ae3e81741275d12805b73",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 38,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "f3b3ff0149a4b092eb5ce039c931a3512495d454",
+  "rules": [
+   {
+    "rule_text": "- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-renderer.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcRenderer",
+     "electron/renderer::ipcRenderer"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-main.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcMain",
+     "electron/main::ipcMain"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 39,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "95116fc81fe7fcc7b72eb2b02ffc88052212b87e",
+  "rules": [
+   {
+    "rule_text": "- `dev-utils/` \u2014 Depricated code. Do not maintain. It is not imported by the source code.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dev-utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 40,
+  "repo": "marin-community/marin",
+  "clone": "clones_full/marin-community__marin",
+  "sha": "3f7f62ba249e84238f37c460c148e63467f17856",
+  "rules": [
+   {
+    "rule_text": "Dependency direction: {`iris`, `haliax`} \u2192 {`levanter`, `zephyr`} \u2192 `marin`. Each layer may only import from layers to its left. Never introduce reverse dependencies (e.g., levanter importing from marin).",
+    "context_file": "AGENTS.md",
+    "source": [
+     "lib/levanter/",
+     "lib/zephyr/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "lib/marin/"
+    ],
+    "forbidden_external": [
+     "marin"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 41,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "sha": "d156dd9b2bf371d150ed78cb33b6a12d3b79f86d",
+  "rules": [
+   {
+    "rule_text": "- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library \u2014 do not use MUI or introduce new MUI dependencies.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **MUI**: Do not use MUI \u2014 we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/",
+     "@emotion/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 42,
+  "repo": "rivet-dev/rivet",
+  "clone": "clones_full/rivet-dev__rivet",
+  "sha": "52bb3d20d46f7c4f14a8783fa262572dca6641c3",
+  "rules": [
+   {
+    "rule_text": "- Do not use the legacy upstream package directly. `@rivetkit/sqlite` is the maintained fork used in this repository and is sourced from `rivet-dev/wa-sqlite`.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "wa-sqlite"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 43,
+  "repo": "Infinite-Chess/infinitechess.org",
+  "clone": "clones_full/Infinite-Chess__infinitechess.org",
+  "sha": "09acf06e4cfb6a5fdb51cfa72550a61c51d225e8",
+  "rules": [
+   {
+    "rule_text": "- `dev-utils/` \u2014 Depricated code. Do not maintain. It is not imported by the source code.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dev-utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 44,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "4f806f96c47e60e3bcccad568d8f056b448b7f68",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 45,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "9a0bb3def2012604c6182d6ae5f617c5a43e711f",
+  "rules": [
+   {
+    "rule_text": "- Never import `react-router-dom` directly in source code. Use the proxy: `import Router from '../../packages/components/src/proxied-imports/router'`. Tests may import `react-router-dom` directly.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "packages/components/src/proxied-imports/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "react-router-dom"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 46,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "8d988e641b8ec1f0e6f7c65b159e06fe13ec3496",
+  "rules": [
+   {
+    "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "recidiviz/"
+    ],
+    "exceptions": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_internal": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 47,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "e4903ca6e30a8cf755265c2f44ed28008d4c1032",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 48,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "459971136a4e9f432fec0c69fa7844277cca9504",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 49,
+  "repo": "jdereg/java-util",
+  "clone": "clones_full/jdereg__java-util",
+  "sha": "a0ae913f04b640b3ecab1ee576544341261436a8",
+  "rules": [
+   {
+    "rule_text": "- json-io is test-scope only (java-util has zero runtime dependencies)",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "src/main/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "com.cedarsoftware.io"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 50,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "sha": "774226f20b9dec8060c4e45556ca0b7d98c49223",
+  "rules": [
+   {
+    "rule_text": "- Never import dialect modules directly",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "src/sqlfluff/dialects/",
+     "test/"
+    ],
+    "forbidden_internal": [
+     "src/sqlfluff/dialects/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 51,
+  "repo": "nilsteampassnet/teampass",
+  "clone": "clones_full/nilsteampassnet__teampass",
+  "sha": "b45910a2be854d1b55df9c5af27e4d635c446b66",
+  "rules": [
+   {
+    "rule_text": "**CryptoManager** (`/includes/libraries/teampassclasses/cryptomanager/src/CryptoManager.php`) is the single entry point for all crypto operations \u2014 never call phpseclib directly:",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "includes/libraries/teampassclasses/cryptomanager/",
+     "includes/libraries/phpseclibV1/",
+     "vendor/"
+    ],
+    "forbidden_internal": [
+     "includes/libraries/phpseclibV1/"
+    ],
+    "forbidden_external": [
+     "phpseclib3",
+     "phpseclib"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 52,
+  "repo": "dioptas/dioptas",
+  "clone": "clones_full/dioptas__dioptas",
+  "sha": "3946417bb4d5491cae35158116565d2701a794b3",
+  "rules": [
+   {
+    "rule_text": "- Models should never import from `widgets` or `controller` packages",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "dioptas/model/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dioptas/widgets/",
+     "dioptas/controller/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 53,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "85e08b2e9e646d1b818473dd392534df6ef769c8",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 54,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "a66ec78a50c9efb39e2efaf1d474c2cb6d50ef11",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 55,
+  "repo": "mlrun/mlrun",
+  "clone": "clones_full/mlrun__mlrun",
+  "sha": "9b6993be6ba01c6df8e73c3e5ff74ec7ca6746bd",
+  "rules": [
+   {
+    "rule_text": "- **Import boundaries**: `mlrun.common` must NOT import higher-level `mlrun.*` modules (enforced by import-linter in `pyproject.toml`).",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/common/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "mlrun/alerts/",
+     "mlrun/artifacts/",
+     "mlrun/auth/",
+     "mlrun/data_types/",
+     "mlrun/datastore/",
+     "mlrun/db/",
+     "mlrun/feature_store/",
+     "mlrun/frameworks/",
+     "mlrun/hub/",
+     "mlrun/launcher/",
+     "mlrun/model_monitoring/",
+     "mlrun/package/",
+     "mlrun/platforms/",
+     "mlrun/projects/",
+     "mlrun/runtimes/",
+     "mlrun/serving/",
+     "mlrun/track/",
+     "mlrun/utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- In `mlrun/`, do NOT import `kfp` directly; use `mlrun_pipelines` adapters instead.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "kfp"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- In `mlrun/`, do NOT import `server/py` (server-side code).",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "server/py/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 56,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "c7e5bb8853e573d8e66c596b185dc8b7827effc8",
+  "rules": [
+   {
+    "rule_text": "- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-renderer.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcRenderer",
+     "electron/renderer::ipcRenderer"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-main.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcMain",
+     "electron/main::ipcMain"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 57,
+  "repo": "phetsims/forces-and-motion-basics",
+  "clone": "clones_full/phetsims__forces-and-motion-basics",
+  "sha": "177c4c52e2bf6e00958f8d8e4d0c2ecbfb4e058a",
+  "rules": [
+   {
+    "rule_text": "- Model classes should never import from view",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "js/motion/model/",
+     "js/netforce/model/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "js/common/view/",
+     "js/motion/view/",
+     "js/netforce/view/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 58,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "16866f998bc173e58d0a50de546880fa196e553d",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 59,
+  "repo": "masscodeio/masscode",
+  "clone": "clones_full/masscodeio__masscode",
+  "sha": "f3c85ca7fbbc812cc46f0e16a328f2d222c24136",
+  "rules": [
+   {
+    "rule_text": "| **Renderer** | Frontend | **NO** Node.js/DB access. Only via API/IPC. | Calls API (`api.*`) or IPC (`ipc.invoke`) |",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/renderer/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "src/main/db/"
+    ],
+    "forbidden_external": [
+     "better-sqlite3"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Renderer:** **NEVER** import `better-sqlite3`. Use `import { api } from '~/renderer/services/api'`",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/renderer/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "better-sqlite3"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Renderer:** Access Electron only via `src/renderer/electron.ts`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/renderer/"
+    ],
+    "exceptions": [
+     "src/renderer/electron.ts"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 60,
+  "repo": "playcanvas/engine",
+  "clone": "clones_full/playcanvas__engine",
+  "sha": "d7f571007facc6c46475edb2f1fe941c1f41665b",
+  "rules": [
+   {
+    "rule_text": "- Lower-level modules **cannot import** from higher-level modules",
+    "context_file": "AGENTS.md",
+    "source": [
+     "src/platform/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "src/scene/",
+     "src/framework/",
+     "src/extras/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 61,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "651e8874b0c705847e434c4d672904aa0b2f27bd",
+  "rules": [
+   {
+    "rule_text": "- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-renderer.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcRenderer",
+     "electron/renderer::ipcRenderer"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-main.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcMain",
+     "electron/main::ipcMain"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 62,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "a71a33f44abe3fa69fe325ad5edacf8c4757dd7d",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 63,
+  "repo": "desktop/desktop",
+  "clone": "clones_full/desktop__desktop",
+  "sha": "ebd6985949671c9fa5fdeac460bca8b054efbd40",
+  "rules": [
+   {
+    "rule_text": "- **Never import `ipcRenderer` directly** from `electron` or `electron/renderer` - use `import * as ipcRenderer from 'ipc-renderer'` (app/src/lib/ipc-renderer.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-renderer.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcRenderer",
+     "electron/renderer::ipcRenderer"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **Never import `ipcMain` directly** from `electron` or `electron/main` - use `import * as ipcMain from 'ipc-main'` (app/src/lib/ipc-main.ts) for strongly typed IPC methods",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "**/ipc-main.ts"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "electron::ipcMain",
+     "electron/main::ipcMain"
+    ],
+    "polarity": "only",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 64,
+  "repo": "apereo/cas",
+  "clone": "clones_full/apereo__cas",
+  "sha": "96992eac07fa58a9eb837914df0b9f50c7b725b3",
+  "rules": [
+   {
+    "rule_text": "**Key principle**: `api/` modules define contracts, `core/` implements them, `support/` adds features. Respect module boundaries.",
+    "context_file": ".github/copilot-instructions.md",
+    "source": [
+     "core/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "support/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 65,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "1a845583efd890e387c0af6b8076d65c389130d6",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 66,
+  "repo": "ansible/ansible",
+  "clone": "clones_full/ansible__ansible",
+  "sha": "e2ae13cf3889099932025347abc2f1b5ef86987d",
+  "rules": [
+   {
+    "rule_text": "- `lib/ansible/modules/` can only import from `lib/ansible/module_utils/` (modules are packaged for remote execution)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "lib/ansible/modules/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "lib/ansible/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 67,
+  "repo": "compiler-explorer/compiler-explorer",
+  "clone": "clones_full/compiler-explorer__compiler-explorer",
+  "sha": "98a417aa2ccc4bcc8c7a8fae8022f4b3c9d9381b",
+  "rules": [
+   {
+    "rule_text": "- **Frontend/Backend Separation**: Frontend code (`static/`) MUST NOT import from backend code (`lib/`)",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "static/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "lib/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 68,
+  "repo": "bitrise-io/bitrise-workflow-editor",
+  "clone": "clones_full/bitrise-io__bitrise-workflow-editor",
+  "sha": "0c4ed1ac059ee5f31e399d1ee1416b07e7074362",
+  "rules": [
+   {
+    "rule_text": "- **`core/` is framework-agnostic** \u2014 no React or DOM dependencies. Pure TypeScript only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "source/javascripts/core/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "react",
+     "react-dom"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 69,
+  "repo": "compiler-explorer/compiler-explorer",
+  "clone": "clones_full/compiler-explorer__compiler-explorer",
+  "sha": "69cd083301fb3e22154dcfd512bc3dec73bce921",
+  "rules": [
+   {
+    "rule_text": "- **Frontend/Backend Separation**: Frontend code (`static/`) MUST NOT import from backend code (`lib/`)",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "static/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "lib/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 70,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "517b1b4a81838cab765e21aa595d4101c87b2c1f",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 71,
+  "repo": "couchers-org/couchers",
+  "clone": "clones_full/couchers-org__couchers",
+  "sha": "52580bae5d4493211c8af7a6325ba5b07b27d210",
+  "rules": [
+   {
+    "rule_text": "- Always import `from couchers.sql import couchers_select as select` instead of something else",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "app/backend/src/"
+    ],
+    "exceptions": [
+     "app/backend/src/couchers/sql.py"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "sqlalchemy.select",
+     "sqlalchemy.sql.select",
+     "sqlalchemy.future.select"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 72,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "sha": "28fbb58600c46baa9ec427a3c18b2767ac25cd74",
+  "rules": [
+   {
+    "rule_text": "**Important**: Never import server-side code (`src/api`) into client-side code (`src/pages`, `src/components`). This will break the build and is prevented by ESLint rules.",
+    "context_file": ".cursorrules",
+    "source": [
+     "src/pages/",
+     "src/components/"
+    ],
+    "exceptions": [
+     "src/pages/api/"
+    ],
+    "forbidden_internal": [
+     "src/api/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 73,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "2e6718f2223d037303c29f25ce2d9dec6258eee6",
+  "rules": [
+   {
+    "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "recidiviz/"
+    ],
+    "exceptions": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_internal": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 74,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "d1a647c9d0c4bc7950075ab231ee1b2739e2338c",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 75,
+  "repo": "mlrun/mlrun",
+  "clone": "clones_full/mlrun__mlrun",
+  "sha": "872277fdfc4d0164228848374187389e7108372e",
+  "rules": [
+   {
+    "rule_text": "- **Import boundaries**: `mlrun.common` must NOT import higher-level `mlrun.*` modules (enforced by import-linter in `pyproject.toml`).",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/common/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "mlrun/alerts/",
+     "mlrun/artifacts/",
+     "mlrun/auth/",
+     "mlrun/data_types/",
+     "mlrun/datastore/",
+     "mlrun/db/",
+     "mlrun/feature_store/",
+     "mlrun/frameworks/",
+     "mlrun/hub/",
+     "mlrun/launcher/",
+     "mlrun/model_monitoring/",
+     "mlrun/package/",
+     "mlrun/platforms/",
+     "mlrun/projects/",
+     "mlrun/runtimes/",
+     "mlrun/serving/",
+     "mlrun/track/",
+     "mlrun/utils/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- In `mlrun/`, do NOT import `kfp` directly; use `mlrun_pipelines` adapters instead.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "kfp"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- In `mlrun/`, do NOT import `server/py` (server-side code).",
+    "context_file": "AGENTS.md",
+    "source": [
+     "mlrun/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "server/py/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 76,
+  "repo": "Checkmk/checkmk",
+  "clone": "clones_full/Checkmk__checkmk",
+  "sha": "82f8691f535708653ef446a7f1f2832dc69c5fae",
+  "rules": [
+   {
+    "rule_text": "- GUI cannot import cmk/base internals (enforced by component isolation)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "cmk/gui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "cmk/base/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 77,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "f2e07edd3524d8ceceb15e06eed5ac6595c9c494",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 78,
+  "repo": "dioptas/dioptas",
+  "clone": "clones_full/dioptas__dioptas",
+  "sha": "5c21726cf6c2c87964269a87b48329b02199a66a",
+  "rules": [
+   {
+    "rule_text": "- Models should never import from `widgets` or `controller` packages",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "dioptas/model/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "dioptas/widgets/",
+     "dioptas/controller/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 79,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "36ec767b8bd5abada10bd85b46ae3f4cad00e58d",
+  "rules": [
+   {
+    "rule_text": "- Only card definitions (files run through the card loader) can use static ESM imports from `https://cardstack.com/base/*`. Host-side modules must load the module at runtime via `loader.import(`${baseRealm.url}...`)`. Static value imports from the HTTPS specifier inside host code trigger build-time `webpackMissingModule` failures. Type imports are OK using static ESM syntax.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/host/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "https://cardstack.com/base/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 80,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "397f3559a01be488e9d9ac54a762ac4f88d1d4b0",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 81,
+  "repo": "yuanjian-org/app",
+  "clone": "clones_full/yuanjian-org__app",
+  "sha": "7b0b9815d1dbaf6d4f347d5775d17199b6010736",
+  "rules": [
+   {
+    "rule_text": "**Important**: Never import server-side code (`src/api`) into client-side code (`src/pages`, `src/components`). This will break the build and is prevented by ESLint rules.",
+    "context_file": ".cursorrules",
+    "source": [
+     "src/pages/",
+     "src/components/"
+    ],
+    "exceptions": [
+     "src/pages/api/"
+    ],
+    "forbidden_internal": [
+     "src/api/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 82,
+  "repo": "sqlfluff/sqlfluff",
+  "clone": "clones_full/sqlfluff__sqlfluff",
+  "sha": "8fcdf6147c3f67a9e87d3986017869b1b2bfce7c",
+  "rules": [
+   {
+    "rule_text": "- Never import dialect modules directly",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "src/sqlfluff/dialects/",
+     "test/"
+    ],
+    "forbidden_internal": [
+     "src/sqlfluff/dialects/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 83,
+  "repo": "phetsims/forces-and-motion-basics",
+  "clone": "clones_full/phetsims__forces-and-motion-basics",
+  "sha": "bb0c77aeb6d012c13a6b4f8904c5bb5b50a508cf",
+  "rules": [
+   {
+    "rule_text": "- Model classes should never import from view",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "js/motion/model/",
+     "js/netforce/model/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "js/common/view/",
+     "js/motion/view/",
+     "js/netforce/view/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 84,
+  "repo": "Lightprotocol/light-protocol",
+  "clone": "clones_full/Lightprotocol__light-protocol",
+  "sha": "46514947d10d0bed1dccb2b13b9037275e3fe57b",
+  "rules": [
+   {
+    "rule_text": "- depend on other program-libs or external crates only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "program-libs/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "programs/",
+     "anchor-programs/",
+     "sdk-libs/",
+     "program-tests/",
+     "sdk-tests/",
+     "forester/",
+     "forester-utils/",
+     "prover/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- unit test must not depend on light-test-utils, any test that requires light-test-utils must be in program-tests",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "program-libs/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "light_test_utils"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- depend on program-libs and external crates only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "programs/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "sdk-libs/",
+     "program-tests/",
+     "sdk-tests/",
+     "forester/",
+     "forester-utils/",
+     "prover/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- unit test must not depend on light-test-utils, any test that requires light-test-utils must be in program-tests",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "programs/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "light_test_utils"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 85,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "48fb7330f3c8cffff631d78acedad42690cff6f4",
+  "rules": [
+   {
+    "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "recidiviz/"
+    ],
+    "exceptions": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_internal": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 86,
+  "repo": "cardstack/boxel",
+  "clone": "clones_full/cardstack__boxel",
+  "sha": "f6925dd12e48e7acc0b491a8e076fac4e7572784",
+  "rules": [
+   {
+    "rule_text": "- Only card definitions (files run through the card loader) can use static ESM imports from `https://cardstack.com/base/*`. Host-side modules must load the module at runtime via `loader.import(`${baseRealm.url}...`)`. Static value imports from the HTTPS specifier inside host code trigger build-time `webpackMissingModule` failures. Type imports are OK using static ESM syntax.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/host/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "https://cardstack.com/base/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 87,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "084d6422ef46e7a797b45bdc77fb6dc1af56b3d2",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 88,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "fbcbfd0392fa2c5fa96eb65e8ab68cfdbbecdc3f",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 89,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "2c4a49b0cf2fbf25187b4a6215b24b8ca98b913a",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 90,
+  "repo": "mindspore-lab/mindnlp",
+  "clone": "clones_full/mindspore-lab__mindnlp",
+  "sha": "4d97466913d57947d1e9f3efc29de46f1742468a",
+  "rules": [
+   {
+    "rule_text": "- **NEVER** import `mindspore`, `mindspore.ops`, `mindspore.mint`, or any mindspore submodule in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "mindspore"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **NEVER** import `torch` or any PyTorch module in mindtorch_v2 code",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "src/mindtorch_v2/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "torch"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 91,
+  "repo": "open-metadata/openmetadata",
+  "clone": "clones_full/open-metadata__openmetadata",
+  "sha": "f056aeca797c3be81f645059fa28ba0f94531e7b",
+  "rules": [
+   {
+    "rule_text": "- **Component Library**: Use components from `openmetadata-ui-core-components` for all new UI work. This is the canonical component library \u2014 do not use MUI or introduce new MUI dependencies.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- **MUI**: Do not use MUI \u2014 we are actively removing MUI from the codebase. Do not import from `@mui/*` or `@emotion/*`",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "openmetadata-ui/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "@mui/",
+     "@emotion/"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 92,
+  "repo": "nerds-odd-e/doughnut",
+  "clone": "clones_full/nerds-odd-e__doughnut",
+  "sha": "b9827d54c33ac0dfda41c28ddd1b32084c6610fd",
+  "rules": [
+   {
+    "rule_text": "\u2502   \u2514\u2500\u2500 doughnut-test-fixtures/    # Shared `makeMe` API-shaped builders; **public import:** `doughnut-test-fixtures/makeMe` only",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "doughnut-test-fixtures/src"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 93,
+  "repo": "automattic/newspack-plugin",
+  "clone": "clones_full/automattic__newspack-plugin",
+  "sha": "d51eb541e9af3cc22f8a15d10b270ed9a4e06a4f",
+  "rules": [
+   {
+    "rule_text": "- Never import `react-router-dom` directly in source code. Use the proxy: `import Router from '../../packages/components/src/proxied-imports/router'`. Tests may import `react-router-dom` directly.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "packages/components/src/proxied-imports/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "react-router-dom"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 94,
+  "repo": "recidiviz/pulse-data",
+  "clone": "clones_full/recidiviz__pulse-data",
+  "sha": "9f27f26bd8dd61648af75e43962fbf9c4cf03ccd",
+  "rules": [
+   {
+    "rule_text": "- Never import from `recidiviz/tests/` in production code (code outside of",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "recidiviz/"
+    ],
+    "exceptions": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_internal": [
+     "recidiviz/tests/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 95,
+  "repo": "commonwarexyz/monorepo",
+  "clone": "clones_full/commonwarexyz__monorepo",
+  "sha": "cedbcf84dee0bf7eb3e6a6f420a87b75b13683a9",
+  "rules": [
+   {
+    "rule_text": "5. **Abstract Runtime**: All code outside the `runtime` primitive must be runtime-agnostic (never import `tokio` directly outside of `runtime/`). When requiring some `runtime`, use the provided traits in `runtime/src/lib.rs`.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "runtime/"
+    ],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "tokio"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 96,
+  "repo": "pwndbg/pwndbg",
+  "clone": "clones_full/pwndbg__pwndbg",
+  "sha": "045056e0a29b260522be0b6187391255f728775a",
+  "rules": [
+   {
+    "rule_text": "pwndbg/commands/     -> User-facing commands (NOT an API, don't import!)",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "*"
+    ],
+    "exceptions": [
+     "pwndbg/commands/"
+    ],
+    "forbidden_internal": [
+     "pwndbg/commands/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "(lib can ONLY import from lib)",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "pwndbg/lib/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "pwndbg/aglib/",
+     "pwndbg/color/",
+     "pwndbg/commands/",
+     "pwndbg/dbg_mod/",
+     "pwndbg/emu/",
+     "pwndbg/gdblib/",
+     "pwndbg/integration/",
+     "pwndbg/wrappers/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "1. **`pwndbg/lib/` only imports `pwndbg/lib/`** - No debugger dependencies allowed",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "pwndbg/lib/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "pwndbg/aglib/",
+     "pwndbg/color/",
+     "pwndbg/commands/",
+     "pwndbg/dbg_mod/",
+     "pwndbg/emu/",
+     "pwndbg/gdblib/",
+     "pwndbg/integration/",
+     "pwndbg/wrappers/"
+    ],
+    "forbidden_external": [
+     "gdb",
+     "lldb"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "A command should never use gdb/lldb directly and only use aglib.",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "pwndbg/commands/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [
+     "gdb",
+     "lldb"
+    ],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 97,
+  "repo": "leg100/otf",
+  "clone": "clones_full/leg100__otf",
+  "sha": "73a0f6ad2ca3113263ba29036705e83000c8b6c5",
+  "rules": [
+   {
+    "rule_text": "- Avoids import cycles by having the ui package import domain services (not vice versa)",
+    "context_file": "CLAUDE.md",
+    "source": [
+     "internal/configversion/",
+     "internal/module/",
+     "internal/notifications/",
+     "internal/organization/",
+     "internal/run/",
+     "internal/runner/",
+     "internal/sshkey/",
+     "internal/state/",
+     "internal/team/",
+     "internal/tokens/",
+     "internal/user/",
+     "internal/variable/",
+     "internal/workspace/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "internal/ui/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 98,
+  "repo": "actualbudget/actual",
+  "clone": "clones_full/actualbudget__actual",
+  "sha": "7a5bfe7c205daa3816f72b1a110ca47307c00818",
+  "rules": [
+   {
+    "rule_text": "- Don't directly reference platform-specific imports (`.api`, `.web`, `.electron`)",
+    "context_file": "AGENTS.md",
+    "source": [
+     "packages/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ },
+ {
+  "id": 99,
+  "repo": "openstreetmap-ng/openstreetmap-ng",
+  "clone": "clones_full/openstreetmap-ng__openstreetmap-ng",
+  "sha": "5d19781a3f204eb69babe865e76c2013eb39608e",
+  "rules": [
+   {
+    "rule_text": "- Layering: controller \u2192 service \u2192 query. Controllers validate and orchestrate; services mutate; queries are side\u2011effect\u2011free. Read\u2011only lookup methods (even complex ones combining multiple conditions) belong in queries, not services.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "app/queries/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "app/services/",
+     "app/controllers/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   },
+   {
+    "rule_text": "- Layering: controller \u2192 service \u2192 query. Controllers validate and orchestrate; services mutate; queries are side\u2011effect\u2011free. Read\u2011only lookup methods (even complex ones combining multiple conditions) belong in queries, not services.",
+    "context_file": "AGENTS.md",
+    "source": [
+     "app/services/"
+    ],
+    "exceptions": [],
+    "forbidden_internal": [
+     "app/controllers/"
+    ],
+    "forbidden_external": [],
+    "polarity": "forbid",
+    "sibling_scope": null
+   }
+  ]
+ }
+]

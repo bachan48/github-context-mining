@@ -1,0 +1,202 @@
+[
+ {
+  "id": 0,
+  "label": "HOLDS",
+  "reason": "Only client/cdpSession.ts:20 imports '../server/chromium/protocol', and it is type-only. No value imports from server."
+ },
+ {
+  "id": 1,
+  "label": "BAD_MAPPING",
+  "reason": "Rule is vague UI vs engine. Forbidden gui/ only; autoroute imports boardgraphics.GraphicsContext, interactive.RatsNest and java.awt (AutorouteEngine.java:9). Real UI packages unmapped."
+ },
+ {
+  "id": 2,
+  "label": "MISSED_VIOLATION",
+  "reason": "Paths wrong: viu/ does not exist, code is viu_media/. Direct httpx use outside provider/media_api, e.g. viu_media/cli/service/notification/service.py:5,148."
+ },
+ {
+  "id": 3,
+  "label": "MISSED_VIOLATION",
+  "reason": "Many files import sqlalchemy select directly, e.g. app/backend/src/couchers/servicers/account.py:9, couchers/db.py:14. Only sql.py is exempt."
+ },
+ {
+  "id": 4,
+  "label": "MISSED_VIOLATION",
+  "reason": "core/utils/MonacoUtils.ts:2 imports loader from '@monaco-editor/react' (React binding) into core; DOM use also present. Package not in forbidden list."
+ },
+ {
+  "id": 5,
+  "label": "MISSED_VIOLATION",
+  "reason": "postgresw/pom.xml:49 declares arcadedb-gremlin with scope provided (compile classpath), not test. Rule says cross-module deps test-only. No Java imports in main."
+ },
+ {
+  "id": 6,
+  "label": "HOLDS",
+  "reason": "cmd/go2tv-lite imports no fyne or internal/gui. Fyne is used only in internal/gui and cmd/fynedo-check; gui is imported only by cmd/go2tv."
+ },
+ {
+  "id": 7,
+  "label": "HOLDS",
+  "reason": "No import of src/api from src/pages or src/components, including baseUrl 'api/...' form. Only src/pages/api (exempt) imports it; Sidebar imports a type from pages/api."
+ },
+ {
+  "id": 8,
+  "label": "HOLDS",
+  "reason": "No electron imports in renderer other than window.electron inside src/renderer/electron.ts. Other files import '@/electron'."
+ },
+ {
+  "id": 9,
+  "label": "HOLDS",
+  "reason": "No .tsx file imports @vanilla-extract/css. Only @vanilla-extract/dynamic (different package) appears, in theme-context-provider.tsx and utils/css.tsx."
+ },
+ {
+  "id": 10,
+  "label": "HOLDS",
+  "reason": "core is its own Go module with zero requires; non-test Go files import only stdlib. No imports of block, pkg, node, types, execution or apps."
+ },
+ {
+  "id": 11,
+  "label": "HOLDS",
+  "reason": "PublishVSExtension imports only ./Utils.js and npm packages. No imports of other task folders; no Common reference needed."
+ },
+ {
+  "id": 12,
+  "label": "HOLDS",
+  "reason": "No occurrence of widgets or controller in dioptas/model files, whether absolute or relative imports."
+ },
+ {
+  "id": 13,
+  "label": "HOLDS",
+  "reason": "No import of @keira/main, libs/main or main-window in libs/features. Features import only @keira/shared (and no cross-feature imports)."
+ },
+ {
+  "id": 14,
+  "label": "UNCLEAR",
+  "reason": "No static imports outside module_utils, but dynamic _internal.import_controller_module('ansible.errors') etc. exist. forbidden lib/ansible/ also contains source."
+ },
+ {
+  "id": 15,
+  "label": "HOLDS",
+  "reason": "No import in src-admin resolves outside it; no relative path to ../src, no tsconfig paths or vite alias to src."
+ },
+ {
+  "id": 16,
+  "label": "UNCLEAR",
+  "reason": "No import of marin in levanter or zephyr. But zephyr/src/zephyr/cli.py:166 runs subprocess 'python -m marin.run.ray_run', a runtime reverse dependency."
+ },
+ {
+  "id": 17,
+  "label": "HOLDS",
+  "reason": "mongodbw pom has no other protocol module dependency; Java main has no com.arcadedb.gremlin, graphql, redis, postgres, bolt or grpc imports."
+ },
+ {
+  "id": 18,
+  "label": "HOLDS",
+  "reason": "No imports between src/popup and src/options in either direction (relative or alias). Both import background, a separate rule."
+ },
+ {
+  "id": 19,
+  "label": "HOLDS",
+  "reason": "No better-sqlite3 import or reference in renderer code; renderer uses ipc/api layers."
+ },
+ {
+  "id": 20,
+  "label": "MISSED_VIOLATION",
+  "reason": "TS namespace refs to Provider.* in framework and API: OSFramework/Maps/Marker/Factory.ts:12, DrawingTools/Factory.ts:15, OutSystems/Maps/MapAPI/MarkerManager.ts:176."
+ },
+ {
+  "id": 21,
+  "label": "HOLDS",
+  "reason": "No _ommx_rust reference anywhere in the four adapter packages."
+ },
+ {
+  "id": 22,
+  "label": "HOLDS",
+  "reason": "Only klongpy/backends/torch_backend.py imports torch. registry.py:18 uses find_spec('torch') as availability probe, not an import."
+ },
+ {
+  "id": 23,
+  "label": "HOLDS",
+  "reason": "No node folder imports browser code except node/messaging/test/test-web-socket-channel.ts, a test helper. No @theia/*/lib/browser imports."
+ },
+ {
+  "id": 24,
+  "label": "HOLDS",
+  "reason": "domain files import only stdlib, pydantic and pgqueuer.domain. No adapters or core imports."
+ },
+ {
+  "id": 25,
+  "label": "MISSED_VIOLATION",
+  "reason": "scripts/scan_pre_migration.php:103-104 requires phpseclib v1 Crypt/AES.php and RSA.php and uses new Crypt_AES (line 191) directly, bypassing CryptoManager."
+ },
+ {
+  "id": 26,
+  "label": "HOLDS",
+  "reason": "cmk/gui mentions cmk.base only in comments. No import statements of cmk.base."
+ },
+ {
+  "id": 27,
+  "label": "MISSED_VIOLATION",
+  "reason": "postgresw/pom.xml:49 depends on arcadedb-gremlin with scope provided (compile classpath); rule allows cross-module deps in test scope only."
+ },
+ {
+  "id": 28,
+  "label": "HOLDS",
+  "reason": "Only app/src/main-process/ipc-main.ts imports ipcMain from electron. Others use the wrapper; electron/main imports elsewhere are types."
+ },
+ {
+  "id": 29,
+  "label": "HOLDS",
+  "reason": "scene references framework only in JSDoc @import type annotations (e.g. layer.js:11, scene.js:19). No runtime imports."
+ },
+ {
+  "id": 30,
+  "label": "UNCLEAR",
+  "reason": "No static imports, but core/dialects/__init__.py:74 and core/rules/loader.py:31 import_module sqlfluff.dialects / sqlfluff.rules dynamically; importlinter allows it."
+ },
+ {
+  "id": 31,
+  "label": "HOLDS",
+  "reason": "packages/utils has no react import or dependency; only eslint-disable comments mention react-refresh."
+ },
+ {
+  "id": 32,
+  "label": "HOLDS",
+  "reason": "packages/* have no imports or dependencies on client, server or cli. Only dependency is @rin/api workspace."
+ },
+ {
+  "id": 33,
+  "label": "HOLDS",
+  "reason": "IsValidExtension is a server HttpRequest task with only task.json and icon; no source, so no cross-task imports."
+ },
+ {
+  "id": 34,
+  "label": "MISSED_VIOLATION",
+  "reason": "Rule is for command-level utils/ dirs, mapping targets core/utils. src/commands/translate/utils/config.ts:8 imports '~/core/config' (value import) from utils."
+ },
+ {
+  "id": 35,
+  "label": "HOLDS",
+  "reason": "Renderer has no better-sqlite3 or main/db import by relative, ~ or @ alias. Only ~/main/store, i18n and type imports."
+ },
+ {
+  "id": 36,
+  "label": "HOLDS",
+  "reason": "PackageExtension imports only ../Common/Common.js and npm packages; no other task folders."
+ },
+ {
+  "id": 37,
+  "label": "HOLDS",
+  "reason": "sdkcompat Java imports only guava and own package; no com.google.idea.blaze imports and no BUILD deps on plugin dirs."
+ },
+ {
+  "id": 38,
+  "label": "HOLDS",
+  "reason": "InstallExtension imports only Common and Common-Auth plus npm packages; no other task folders."
+ },
+ {
+  "id": 39,
+  "label": "HOLDS",
+  "reason": "Only app/src/lib/ipc-renderer.ts imports ipcRenderer from electron. Production code uses the wrapper; direct electron use only in e2e test."
+ }
+]

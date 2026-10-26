@@ -1,0 +1,452 @@
+[
+ {
+  "id": 150,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "ee is a private git submodule, not checked out; its docs are not in this tree."
+ },
+ {
+  "id": 151,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "gateway/fedimint-gateway-server/src/bin/gatewayd.rs",
+  "reason": "Binary entry point exists as gatewayd.rs, not main.rs."
+ },
+ {
+  "id": 152,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/User",
+  "reason": "Tree entry under packages/Webkul wrongly resolved to database/."
+ },
+ {
+  "id": 153,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Text explicitly says there is no internal/ directory."
+ },
+ {
+  "id": 154,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Operator lives in separate kiali-operator repo."
+ },
+ {
+  "id": 155,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Operator lives in separate kiali-operator repo."
+ },
+ {
+  "id": 156,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "packages/Webkul/Stripe",
+  "reason": "Tree entry under packages/Webkul wrongly resolved to database/."
+ },
+ {
+  "id": 157,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree describes steampipe-postgres-fdw, a separate repo."
+ },
+ {
+  "id": 158,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Components",
+  "reason": "Components live in src/Components; src/View/Components does not exist."
+ },
+ {
+  "id": 159,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "shopware-extension-schema.json",
+  "reason": "Schema file is at repo root, not internal/."
+ },
+ {
+  "id": 160,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Part of a CI API URL, not a repo path."
+ },
+ {
+  "id": 161,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "YRpp is a git submodule, contents not in this tree."
+ },
+ {
+  "id": 162,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Workflow file referenced as existing but missing; only copilot-instructions.md exists."
+ },
+ {
+  "id": 163,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "vendor/ is Composer-managed, not committed."
+ },
+ {
+  "id": 164,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "PcodeTranslation.hpp listed as stable interface but absent from Ghidra include dir."
+ },
+ {
+  "id": 165,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Referenced as existing app source file; no Apps/DrawThings directory exists."
+ },
+ {
+  "id": 166,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "Mafia2Libs/Utils/Settings/Language.cs",
+  "reason": "Utils/Language/ resource folder does not exist; only Language.cs under Settings."
+ },
+ {
+  "id": 167,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "engine/packages/gasoline",
+  "reason": "Package is engine/packages/gasoline; packages/common/gasoline does not exist."
+ },
+ {
+  "id": 168,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Xbox comes from a comment on Microsoft/ tree entry; path wrongly joined."
+ },
+ {
+  "id": 169,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree shows includes/Infrastructure/CLI but no such directory exists."
+ },
+ {
+  "id": 170,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree describes steampipe-postgres-fdw repo, not this one."
+ },
+ {
+  "id": 171,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Generic testing guideline mentioning possible test locations."
+ },
+ {
+  "id": 172,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": "config/nusa.php",
+  "reason": "Publish destination in user's Laravel app; package source is config/nusa.php."
+ },
+ {
+  "id": 173,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "ee is a private git submodule, not checked out."
+ },
+ {
+  "id": 174,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree shows includes/Infrastructure/WordPress but no such directory exists."
+ },
+ {
+  "id": 175,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/nesper/esp/driver/i2c_master.nim",
+  "reason": "driver_v5 dir absent; i2c_master.nim exists under esp/driver."
+ },
+ {
+  "id": 176,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "controllers/cloud.redhat.com/providers/providers.go",
+  "reason": "provider.go absent at providers root; base file is providers.go."
+ },
+ {
+  "id": 177,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path refers to the sibling libhimmelblau repo, not this one."
+ },
+ {
+  "id": 178,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "_cluster/ is a runtime storage directory, not a repo path."
+ },
+ {
+  "id": 179,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/Controls/samples/Controls.Sample",
+  "reason": "Sample project renamed to Controls.Sample."
+ },
+ {
+  "id": 180,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Extracted 'flat' from badge style text, not a path."
+ },
+ {
+  "id": 181,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Generated project layout in user's mylib, not this repo."
+ },
+ {
+  "id": 182,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "internal-docs exists but opencode-setup.md is not there."
+ },
+ {
+  "id": 183,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Android path in the end user's own app."
+ },
+ {
+  "id": 184,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Usage instruction for the user's own repo workflow."
+ },
+ {
+  "id": 185,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "content",
+  "reason": "docs/ directory absent; content directory is at repo root."
+ },
+ {
+  "id": 186,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "User's own Cursor config, per-project or global."
+ },
+ {
+  "id": 187,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Config created by ioBroker at runtime in install directory."
+ },
+ {
+  "id": 188,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path in the separate ever-gauzy repo, linked by URL."
+ },
+ {
+  "id": 189,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Config path in the user's own repo in usage example."
+ },
+ {
+  "id": 190,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example project layout under myapp."
+ },
+ {
+  "id": 191,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "packages/marshal absent; marshal moved to external endo dependency."
+ },
+ {
+  "id": 192,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": "android",
+  "reason": "BlueWallet/ is the clone directory name; android exists at repo root."
+ },
+ {
+  "id": 193,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "data.js lives on gh-pages branch, generated by the action."
+ },
+ {
+  "id": 194,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": "docker-compose.yml",
+  "reason": "balancer-main is the repo name prefix; file is at root."
+ },
+ {
+  "id": 195,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Generated project layout in user's mylib, not this repo."
+ },
+ {
+  "id": 196,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "META-INF/services is generated in built jar."
+ },
+ {
+  "id": 197,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Refers to user's own repo docs directory for GitHub Pages."
+ },
+ {
+  "id": 198,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "Files created by a generation command described in the text."
+ },
+ {
+  "id": 199,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "backend/sync/syncWeaviate.js",
+  "reason": "Tree lists sync-weaviate.js; sync script is backend/sync/syncWeaviate.js."
+ },
+ {
+  "id": 200,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "packages/lesswrong/lib/vulcan-lib/components.tsx",
+  "reason": "lib/components.ts missing; components.tsx lives in lib/vulcan-lib."
+ },
+ {
+  "id": 201,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/community/index.tsx",
+  "reason": "File is index.tsx, not index.ts."
+ },
+ {
+  "id": 202,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "frontend/vite.config.ts",
+  "reason": "Config file is vite.config.ts, not .js."
+ },
+ {
+  "id": 203,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Hugging Face organization name, not a path."
+ },
+ {
+  "id": 204,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "docker/redis/docker-compose.yml",
+  "reason": "File extension is .yml, not .yaml."
+ },
+ {
+  "id": 205,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "docs/REMOTE_CACHE.md",
+  "reason": "File exists with uppercase name REMOTE_CACHE.md."
+ },
+ {
+  "id": 206,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "sanskrit_parser/parser/sandhi_analyzer.py",
+  "reason": "Typo and wrong dir; real file is sandhi_analyzer.py under sanskrit_parser/parser."
+ },
+ {
+  "id": 207,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "File type in pip extras description, not a path."
+ },
+ {
+  "id": 208,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree lists worker.js but no such file exists in repo."
+ },
+ {
+  "id": 209,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/dev/useInitial.js",
+  "reason": "File is named useInitial.js."
+ },
+ {
+  "id": 210,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "Literal word 'path' extracted from prose."
+ },
+ {
+  "id": 211,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "seed.sql produced by running the described script."
+ },
+ {
+  "id": 212,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Table lists plugins/index.ts but e2e_test/plugins does not exist."
+ },
+ {
+  "id": 213,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example upload tree with rule-a placeholder."
+ },
+ {
+  "id": 214,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": "config/scraper_mappings/archive",
+  "reason": "Archive entry belongs under config/scraper_mappings, wrongly attached to chrome-extensions."
+ },
+ {
+  "id": 215,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Path inside a WSO2 Identity Server distribution pack."
+ },
+ {
+  "id": 216,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "scripts/playnet.js",
+  "reason": "playnet.sh missing; scripts/playnet.js exists."
+ },
+ {
+  "id": 217,
+  "label": "NOT_REPO_PATH",
+  "renamed_candidate": null,
+  "reason": "Proto path from the external Temporal API repo."
+ },
+ {
+  "id": 218,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example project layout under myapp."
+ },
+ {
+  "id": 219,
+  "label": "PARSE_ERROR",
+  "renamed_candidate": null,
+  "reason": "smcat 'entry/' syntax cut from state diagram, not a path."
+ },
+ {
+  "id": 220,
+  "label": "PLACEHOLDER_OR_EXAMPLE",
+  "renamed_candidate": null,
+  "reason": "Example upload tree with rule-b placeholder."
+ },
+ {
+  "id": 221,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "flash_attn/flash_attn_interface.py",
+  "reason": "Interface is flash_attn/flash_attn_interface.py; src/ does not exist."
+ },
+ {
+  "id": 222,
+  "label": "WRONG_PATH",
+  "renamed_candidate": null,
+  "reason": "Tree lists packages/db but no such package exists."
+ },
+ {
+  "id": 223,
+  "label": "GENERATED_OR_IGNORED",
+  "renamed_candidate": null,
+  "reason": "ai-evals output directory written at runtime."
+ },
+ {
+  "id": 224,
+  "label": "WRONG_PATH",
+  "renamed_candidate": "src/app/endpoints/init.py",
+  "reason": "endpoints has init.py, not __init__.py."
+ }
+]

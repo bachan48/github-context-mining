@@ -1,0 +1,42 @@
+[
+ {
+  "id": 4,
+  "final": "NO_EVIDENCE",
+  "reason": "PR's only own commit (Ronald Barendse) has no trailer; Copilot trailers are v13 base history."
+ },
+ {
+  "id": 58,
+  "final": "NO_EVIDENCE",
+  "reason": "Commit and PR #2758 clean; Claude trailers belong to other PRs in the merge."
+ },
+ {
+  "id": 59,
+  "final": "NO_EVIDENCE",
+  "reason": "PR's two own commits clean; Claude/Copilot traces come from other merged release PRs."
+ },
+ {
+  "id": 74,
+  "final": "AGENT",
+  "reason": "Commit carries 'Made-with: Cursor' trailer."
+ },
+ {
+  "id": 93,
+  "final": "AGENT",
+  "reason": "Commit carries 'Made-with: Cursor' trailer."
+ },
+ {
+  "id": 108,
+  "final": "AGENT",
+  "reason": "Own PR commits co-authored by 'Copilot Autofix powered by AI' bot."
+ },
+ {
+  "id": 132,
+  "final": "NO_EVIDENCE",
+  "reason": "No trailer, agent author or branch trace; editing CLAUDE.md is not agent participation."
+ },
+ {
+  "id": 140,
+  "final": "AGENT",
+  "reason": "PR title has [AI] prefix, which repo agent rules mandate for agent-made PRs."
+ }
+]

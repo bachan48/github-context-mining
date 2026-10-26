@@ -1,0 +1,502 @@
+[
+ {
+  "id": 0,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 1,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 2,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 3,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 4,
+  "label": "CORRECT",
+  "reason": "Shorthand for src/includes/Template.php, the only Template.php; intended main logic file."
+ },
+ {
+  "id": 5,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 6,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 7,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 8,
+  "label": "CORRECT",
+  "reason": "Listed under Core Abstractions (src/Abstractions/src/); matched path is that folder."
+ },
+ {
+  "id": 9,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 10,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 11,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 12,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 13,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 14,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 15,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 16,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 17,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 18,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 19,
+  "label": "CORRECT",
+  "reason": "Listed under aiohomematic/ package; matches aiohomematic/central."
+ },
+ {
+  "id": 20,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 21,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 22,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 23,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 24,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 25,
+  "label": "CORRECT",
+  "reason": "Refers to packages/skills/egg/ skill folder, which exists (matched list truncated to node_modules copies)."
+ },
+ {
+  "id": 26,
+  "label": "CORRECT",
+  "reason": "Relative to kishar source package; unique match is the intended client."
+ },
+ {
+  "id": 27,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 28,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 29,
+  "label": "CORRECT",
+  "reason": "Described under crates/datafusion-app; matches crates/datafusion-app/src/stats.rs."
+ },
+ {
+  "id": 30,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 31,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 32,
+  "label": "CORRECT",
+  "reason": "Under Frontend (frontend/src/) section; matches frontend/src/stores."
+ },
+ {
+  "id": 33,
+  "label": "CORRECT",
+  "reason": "Listed as pytests/ subfolder; pytests/security exists."
+ },
+ {
+  "id": 34,
+  "label": "CORRECT",
+  "reason": "Table under /src/ts; matches src/ts/sync."
+ },
+ {
+  "id": 35,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 36,
+  "label": "CORRECT",
+  "reason": "p4metrics component lives in cmd/p4metrics."
+ },
+ {
+  "id": 37,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 38,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 39,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 40,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 41,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 42,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 43,
+  "label": "CORRECT",
+  "reason": "Generic bundle layout; real bundles contain EventSubscriber folders."
+ },
+ {
+  "id": 44,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 45,
+  "label": "CORRECT",
+  "reason": "Module list for mjlib; mjlib/telemetry exists."
+ },
+ {
+  "id": 46,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 47,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 48,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 49,
+  "label": "CORRECT",
+  "reason": "Under /src/ section; matches src/main-process."
+ },
+ {
+  "id": 50,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 51,
+  "label": "CORRECT",
+  "reason": "Text elsewhere says Clava-JS/src-api; matched path is intended."
+ },
+ {
+  "id": 52,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 53,
+  "label": "CORRECT",
+  "reason": "Under src/ projects list; matches src/Xunit.DependencyInjection.Logging."
+ },
+ {
+  "id": 54,
+  "label": "CORRECT",
+  "reason": "Generic lib/{feature}/schemas pattern; lib/actions/schemas instantiates it."
+ },
+ {
+  "id": 55,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 56,
+  "label": "CORRECT",
+  "reason": "Text omits src/ prefix but clearly means the ltfsck tool at src/utils/ltfsck.c."
+ },
+ {
+  "id": 57,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 58,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 59,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 60,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 61,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 62,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 63,
+  "label": "WRONG_MATCH",
+  "reason": "Hypothetical extension/myext/design template; no extension exists, matched unrelated lhc_web/design."
+ },
+ {
+  "id": 64,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 65,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 66,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 67,
+  "label": "CORRECT",
+  "reason": "Exact path from repo root (or stated tree root) exists and matches the text."
+ },
+ {
+  "id": 68,
+  "label": "CORRECT",
+  "reason": "API serialization folder; ApiBundle Resources/config/serialization exists."
+ },
+ {
+  "id": 69,
+  "label": "CORRECT",
+  "reason": "Plugin package structure; matches packages/tokens-studio-for-figma/src/app."
+ },
+ {
+  "id": 70,
+  "label": "CORRECT",
+  "reason": "Generic package layout; real Webkul packages have src/Providers."
+ },
+ {
+  "id": 71,
+  "label": "CORRECT",
+  "reason": "Tree under cachier/ shows src/cachier/core.py; exists."
+ },
+ {
+  "id": 72,
+  "label": "CORRECT",
+  "reason": "Frontend Patterns section, relative to frontends/web; file exists there."
+ },
+ {
+  "id": 73,
+  "label": "CORRECT",
+  "reason": "Per-package test dirs under packages/<package-name>; exist."
+ },
+ {
+  "id": 74,
+  "label": "CORRECT",
+  "reason": "Heap category table refers to heaps/ subfolders; heaps/general exists."
+ },
+ {
+  "id": 75,
+  "label": "CORRECT",
+  "reason": "Spring WEB-INF folders exist in service webapps."
+ },
+ {
+  "id": 76,
+  "label": "CORRECT",
+  "reason": "Platform packages under pkg/; pkg/databricks exists."
+ },
+ {
+  "id": 77,
+  "label": "CORRECT",
+  "reason": "v1 architecture module; src/llamafactory/v1/accelerator exists."
+ },
+ {
+  "id": 78,
+  "label": "CORRECT",
+  "reason": "Text says test/ dirs within each package; they exist."
+ },
+ {
+  "id": 79,
+  "label": "CORRECT",
+  "reason": "Generic api_<resource> pattern; api_vlan/tasks.py instantiates it."
+ },
+ {
+  "id": 80,
+  "label": "CORRECT",
+  "reason": "egg-bin uses test/fixtures; tools/egg-bin/test/fixtures exists."
+ },
+ {
+  "id": 81,
+  "label": "CORRECT",
+  "reason": "Each service has src/; services/*/src exist."
+ },
+ {
+  "id": 82,
+  "label": "CORRECT",
+  "reason": "Listed under wasm/src modules; wasm/src/ledger exists."
+ },
+ {
+  "id": 83,
+  "label": "CORRECT",
+  "reason": "Text says frontend/cypress/tests/; exists."
+ },
+ {
+  "id": 84,
+  "label": "CORRECT",
+  "reason": "Listed under libs/; libs/file_enrichment_modules exists."
+ },
+ {
+  "id": 85,
+  "label": "CORRECT",
+  "reason": "Cloud function folder functions-python/big_query_ingestion exists."
+ },
+ {
+  "id": 86,
+  "label": "CORRECT",
+  "reason": "Path stated relative to phase4-lib src/main/java/com/helger/phase4/; exists."
+ },
+ {
+  "id": 87,
+  "label": "CORRECT",
+  "reason": "Generic bundle layout; real bundles contain Form folders."
+ },
+ {
+  "id": 88,
+  "label": "CORRECT",
+  "reason": "Under main/ Django app; main/views exists."
+ },
+ {
+  "id": 89,
+  "label": "CORRECT",
+  "reason": "testdata dirs alongside packages; exist."
+ },
+ {
+  "id": 90,
+  "label": "CORRECT",
+  "reason": "Under test/fixtures/; test/fixtures/mdasts exists."
+ },
+ {
+  "id": 91,
+  "label": "CORRECT",
+  "reason": "Tree under custom_components/homematicip_local; file exists."
+ },
+ {
+  "id": 92,
+  "label": "CORRECT",
+  "reason": "Frontend directory table; frontend/store exists."
+ },
+ {
+  "id": 93,
+  "label": "CORRECT",
+  "reason": "Frontend section; frontend/src/services exists."
+ },
+ {
+  "id": 94,
+  "label": "CORRECT",
+  "reason": "Nested under src/components/timeline-elements; exists."
+ },
+ {
+  "id": 95,
+  "label": "CORRECT",
+  "reason": "Package table under pkg/; pkg/fixtures exists."
+ },
+ {
+  "id": 96,
+  "label": "CORRECT",
+  "reason": "Tree rooted at /src; src/apiClient.ts exists."
+ },
+ {
+  "id": 97,
+  "label": "CORRECT",
+  "reason": "Frontend tree under resources/assets/js; store exists."
+ },
+ {
+  "id": 98,
+  "label": "CORRECT",
+  "reason": "Django apps under kitsune/; kitsune/kpi exists."
+ },
+ {
+  "id": 99,
+  "label": "CORRECT",
+  "reason": "Relative to vHC/HC_Reporting; folder exists."
+ }
+]
